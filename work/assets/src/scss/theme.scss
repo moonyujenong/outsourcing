@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@import "theme/header"; // 헤더
+@import "theme/main"; // 메인
+@import "theme/footer"; // 푸터
+   
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    -webkit-text-size-adjust: 100%;
+    word-break: keep-all;
+    background-color: #fff;
+    font-family: 'Inter', 'Noto Sans KR', sans-serif !important ;
+    height: 100%;
+}
+
+ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+
+    &:focus, &:active {          
+        outline: none;
+    }
+}
+
+#wrap {
+    overflow-x: hidden;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+}
+
+#container {
+    flex: auto 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
