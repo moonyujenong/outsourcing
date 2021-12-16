@@ -1,1 +1,1 @@
-{"version":3,"sources":["work/assets/src/scss/theme/main.scss","work/assets/src/scss/theme/main.css"],"names":[],"mappings":"AAAA;EACI,eAAe;ACCnB","file":"main.css","sourcesContent":["b {\r\n    font-size: 50px;\r\n}","b {\n  font-size: 50px;\n}\n"]}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"main.css","sourcesContent":[]}

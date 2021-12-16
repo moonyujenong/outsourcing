@@ -9,7 +9,7 @@ if (process.env.SOURCEMAPS === 'true' || process.env.SOURCEMAPS === '1') {
 
 // scss 사용 할 때
 const taskSass = function () { 
-  return gulp.src(['./**/assets/src/scss/**/**/*.scss'])
+  return gulp.src(['./**/assets/src/scss/**/*.scss'])
     .pipe($.if(generateSourceMaps, $.sourcemaps.init()))
     .pipe($.plumber())
     .pipe($.sass({
@@ -21,7 +21,7 @@ const taskSass = function () {
       filepath.dirname = Path.join(filepath.dirname, '../../css')
     }))
     .pipe($.if(generateSourceMaps, $.sourcemaps.write('.')))
-    .pipe(gulp.dest('./src'))
+    .pipe(gulp.dest('.'))
 }
 taskSass.displayName = 'sass'
 
