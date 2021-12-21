@@ -1,3 +1,95 @@
-<header class="theme-header">
-    헤더
+
+<header class="theme-header" id="ui_header">
+    <div class="inner-header">
+        <div class="head-logo-box">
+            <img src="" alt="로고 이미지">
+        </div>
+
+        
+        <nav class="theme-nav pc-mode">
+            <ul class="menu-list">
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link"><span class="menu-list-text">HOME</span></a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link"><span class="menu-list-text">ABOUT</span></a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link"><span class="menu-list-text">HISTORY</span></a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link"><span class="menu-list-text">CLIENTS & BRANDS</span></a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link"><span class="menu-list-text">SHOPPING & INFORMATION</span></a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link"><span class="menu-list-text">CONTACT</span></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="mobile-side-menu-wrap">
+            <button class="menu-btn" type="button">
+                <i class="xi-bars"></i>
+            </button>
+            
+
+            
+        </div>
+        
+       
+    </div>
+
+    
 </header>
+
+<div class="mobile-side-menu">
+    <div class="mobile-side-dimmed">
+        <button class="mobile-nav-close-btn"> 
+            <i class="xi-close-thin"></i>
+        </button>
+    </div>
+    
+
+
+    <nav class="theme-nav mobile-mode open">
+       
+        <ul class="menu-list">
+            <li class="menu-list-item">
+                <a href="#" class="menu-list-link"><span class="menu-list-text">HOME</span></a>
+            </li>
+            <li class="menu-list-item">
+                <a href="#" class="menu-list-link"><span class="menu-list-text">ABOUT</span></a>
+            </li>
+            <li class="menu-list-item">
+                <a href="#" class="menu-list-link"><span class="menu-list-text">HISTORY</span></a>
+            </li>
+            <li class="menu-list-item">
+                <a href="#" class="menu-list-link"><span class="menu-list-text">CLIENTS & BRANDS</span></a>
+            </li>
+            <li class="menu-list-item">
+                <a href="#" class="menu-list-link"><span class="menu-list-text">SHOPPING & INFORMATION</span></a>
+            </li>
+            <li class="menu-list-item">
+                <a href="#" class="menu-list-link"><span class="menu-list-text">CONTACT</span></a>
+            </li>
+        </ul>
+    </nav>    
+</div>
+
+
+<script type="text/javascript">
+    
+    $(function(){
+        $('.menu-btn').click(function(){
+            $('.mobile-side-menu').toggleClass('open');
+        });
+
+        $('.mobile-side-dimmed, .mobile-nav-close-btn' ).click(function(){
+            $('.mobile-side-menu').removeClass('open');
+        });
+    });
+
+
+</script> 

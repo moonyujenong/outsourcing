@@ -1,0 +1,191 @@
+.theme-main {
+  padding-top: 60px;
+}
+
+.theme-main .content-layout {
+  width: 100%;
+}
+
+.theme-main .content-layout .layout-bg {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.theme-main .content-layout .layout-bg .layout-inner {
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.theme-main .content-layout .layout-bg.layout-01 {
+  display: table;
+  background-color: #ececec;
+}
+
+.theme-main .content-layout .layout-bg.layout-02 {
+  height: auto;
+  display: table;
+  background-color: #f36468;
+  padding: 70px 0 267px;
+  height: 530px;
+}
+
+.theme-main .content-layout .layout-bg.layout-02::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100vw;
+  left: 50%;
+  -webkit-transform: translateX(-50vw);
+          transform: translateX(-50vw);
+  background-color: red;
+  bottom: 0;
+  height: 160px;
+}
+
+.theme-main .content-layout .layout-bg.layout-03 {
+  display: table;
+  background-color: #ffe6e5;
+  padding: 70px 0 77px;
+}
+
+.theme-main .top-layout-text-box {
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  color: #0a0a10;
+  line-height: 1.29;
+  letter-spacing: normal;
+}
+
+.theme-main .about-fargo-btn {
+  width: 100%;
+  max-width: 260px;
+  margin: 27px auto 0;
+  display: block;
+  border-radius: 100px;
+  border: 2px solid #f36468;
+  background-color: #ed4922;
+  padding: 8px 0;
+  cursor: pointer;
+  color: #fff;
+  letter-spacing: normal;
+  line-height: normal;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.theme-main .about-fargo-btn b {
+  font-weight: 600;
+}
+
+.theme-main .about-fargo-btn i {
+  margin-left: 4px;
+  display: inline-block;
+  margin-top: 3px;
+}
+
+.theme-main .flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.theme-main .top-layout-inner-wrap {
+  width: 100%;
+}
+
+.theme-main .about-text-box .about-text-title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.8;
+  letter-spacing: normal;
+  color: #fff;
+  display: block;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 50px;
+}
+
+.theme-main .about-text-box .about-text-title::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.theme-main .about-text-box .about-text-title.history {
+  color: #41667c;
+}
+
+.theme-main .about-text-box .about-text-title.history::after {
+  background-color: #41667c;
+}
+
+.theme-main .about-text-box p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.5;
+  letter-spacing: normal;
+  margin: 32px 0 0;
+}
+
+.theme-main .about-text-box p:first-child {
+  margin: 0;
+}
+
+.theme-main .history-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+  .theme-main {
+    padding-top: 93px;
+  }
+  .theme-main .content-layout .layout-bg.layout-02 {
+    height: 600px;
+    padding: 70px;
+  }
+  .theme-main .content-layout .layout-bg.layout-02::after {
+    height: 170px;
+  }
+  .theme-main .about-text-box {
+    width: 100%;
+    max-width: 642px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .theme-main .about-text-box .about-text-title {
+    margin-bottom: 37px;
+  }
+  .theme-main .about-text-box p {
+    font-size: 22px;
+    line-height: 1.36;
+    margin: 30px 0 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

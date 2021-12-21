@@ -1,0 +1,203 @@
+.theme-main {
+    padding-top: 60px;
+    
+
+    .content-layout {
+        width: 100%;
+       
+
+        .layout-bg {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+
+            .layout-inner {
+                width: 100%;
+                max-width: 1170px;
+                padding: 0 15px;
+                margin: 0 auto; 
+            }
+            
+            &.layout-01 {
+                display: table; 
+                background-color: #ececec;
+            }
+
+            &.layout-02 {
+                height: auto;
+                display: table;
+                background-color: #f36468;
+                padding: 70px 0 267px;
+                height: 530px;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 100vw;
+                    left: 50%;
+                    transform: translateX(-50vw);
+                    background-color: red;
+                    bottom: 0;
+                    height: 160px;
+                }
+                
+            }
+
+            &.layout-03 {
+                display: table;
+                background-color: #ffe6e5;
+                padding: 70px 0 77px;
+
+            }
+
+        }
+    }
+
+    .top-layout-text-box {
+        width: 100%;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 400;
+        color: #0a0a10;
+        line-height: 1.29;
+        letter-spacing: normal;
+    }
+
+    .about-fargo-btn {
+        width: 100%;
+        max-width: 260px;
+        margin: 27px auto 0;
+        display: block;
+        border-radius: 100px;
+        border: 2px solid #f36468;
+        background-color: #ed4922;
+        padding: 8px 0;
+        cursor: pointer;
+
+        color: #fff;
+        letter-spacing: normal;
+        line-height: normal;
+        font-size: 20px;
+        font-weight: 400;
+
+        b {
+            font-weight: 600;
+        }
+
+        i {
+            margin-left: 4px;
+            display: inline-block;
+            margin-top: 3px;
+        }
+
+    }
+
+    .flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .top-layout-inner-wrap {
+        width: 100%;
+    }
+
+    .about-text-box {
+        
+
+        .about-text-title {
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 1.8;
+            letter-spacing: normal;
+            color: #fff;
+            display: block;
+            position: relative;
+            width: fit-content;
+            margin: 0 auto 50px;
+
+
+            &::after {
+                content: '';
+                display: block;
+                width: 30px;
+                height: 5px;
+                background-color: #fff;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                
+
+            }
+
+            &.history {
+                color: #41667c;
+
+                &::after {
+                    background-color: #41667c;
+                }
+            }
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            color: #fff;
+            line-height: 1.5;
+            letter-spacing: normal;
+            margin: 32px 0 0;
+
+            &:first-child {
+                margin: 0;
+            }
+
+            
+        }
+    }
+
+    .history-box {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
+
+@media screen and (min-width:992px) {
+    .theme-main {
+        padding-top: 93px;
+
+        .content-layout {
+            .layout-bg {
+                &.layout-02 {
+                    height: 600px;
+                    padding: 70px;
+
+                    &::after {
+                        height: 170px;
+                    }
+                }
+            }
+        }
+
+        .about-text-box {
+            width: 100%;
+            max-width: 642px;
+            margin: 0 auto;
+            text-align: center;
+
+            .about-text-title  {
+                margin-bottom: 37px;
+            }
+            
+            p {
+                font-size: 22px;
+                line-height: 1.36;
+                margin: 30px 0 0;
+            }
+        }
+    }
+}
