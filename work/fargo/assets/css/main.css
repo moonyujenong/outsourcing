@@ -19,9 +19,18 @@
   margin: 0 auto;
 }
 
+.theme-main .content-layout .layout-bg .layout-inner.shopping-inner {
+  max-width: 1260px;
+}
+
 .theme-main .content-layout .layout-bg.layout-01 {
   display: table;
   background-color: #ececec;
+  background-image: url(../img/top-banner.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .theme-main .content-layout .layout-bg.layout-02 {
@@ -53,6 +62,7 @@
 
 .theme-main .content-layout .layout-bg.layout-04 {
   display: table;
+  height: auto;
   margin: 150px 0;
   background-color: #8fd0cc;
   padding: 85px 0 77px;
@@ -327,11 +337,14 @@
 
 .theme-main .brand-logo-list-wrap .brand-logo-list .brand-logo-item {
   width: 33.333%;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .theme-main .brand-logo-list-wrap .brand-logo-list .brand-logo-item img {
   width: 100%;
+  max-width: 140px;
+  padding: 0 7px;
   height: auto;
 }
 
@@ -407,7 +420,7 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: normal;
-  font-weight: 16px;
+  font-size: 16px;
   margin-bottom: 30px;
 }
 
@@ -486,11 +499,27 @@
     padding-top: 93px;
   }
   .theme-main .content-layout .layout-bg.layout-02 {
-    height: 600px;
-    padding: 70px;
+    padding: 175px 0 375px;
   }
   .theme-main .content-layout .layout-bg.layout-02::after {
-    height: 170px;
+    height: 200px;
+  }
+  .theme-main .content-layout .layout-bg.layout-03 {
+    padding: 160px 0 166px;
+  }
+  .theme-main .content-layout .layout-bg.layout-04 {
+    margin: 198px 0;
+    padding: 160px 0 133px;
+  }
+  .theme-main .content-layout .layout-bg.layout-05 {
+    padding: 160px 0 168px;
+    margin-bottom: 230px;
+  }
+  .theme-main .content-layout .layout-bg.layout-05 .about-text-title {
+    margin-bottom: 0;
+  }
+  .theme-main .content-layout .layout-bg.layout-06 {
+    padding: 110px 0 153px;
   }
   .theme-main .about-text-box {
     width: 100%;
@@ -503,8 +532,100 @@
     line-height: 1.36;
     margin: 30px 0 0;
   }
+  .theme-main .about-text-box p:first-child {
+    margin-top: 38px;
+  }
   .theme-main .about-text-title {
     margin-bottom: 37px;
+  }
+  .theme-main .top-layout-text-box {
+    font-size: 50px;
+    line-height: 1.3;
+  }
+  .theme-main .about-fargo-btn {
+    margin-top: 28px;
+  }
+  .theme-main .about-text-title {
+    font-size: 30px;
+  }
+  .theme-main .layout-history-content {
+    margin-top: 45px;
+  }
+  .theme-main .history-box .history-content-left .history-year {
+    font-size: 16px;
+  }
+  .theme-main .history-box .history-content-left .history-year::before {
+    width: 10px;
+    height: 10px;
+    right: -25px;
+  }
+  .theme-main .history-box .history-content-left .history-year.round {
+    font-size: 20px;
+    padding: 2px 12px;
+  }
+  .theme-main .history-box .history-content-left .history-year.round::before {
+    width: 14px;
+    height: 14px;
+    right: -27px;
+  }
+  .theme-main .history-box .right-content-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .theme-main .history-box .right-content-sub {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .theme-main .brand-logo-list-wrap .brand-logo-list .brand-logo-item {
+    width: 20%;
+  }
+  .theme-main .shopping-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    margin: 0 -45px;
+  }
+  .theme-main .shopping-list .shopping-item {
+    width: 33.333%;
+    max-width: initial;
+    margin: 58px 0 0;
+    padding: 0 45px;
+  }
+  .theme-main .shopping-list .shopping-item .shopping-item-link {
+    height: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .theme-main .shopping-list .shopping-item .shopping-item-link .shopping-item-thumbnail-box .thumbnail-img {
+    padding-top: 61%;
+  }
+  .theme-main .shopping-list .shopping-item .shopping-info {
+    padding: 18px 13px;
+  }
+  .theme-main .shopping-list .shopping-item .shopping-info .info-title {
+    margin-bottom: 6px;
+  }
+  .theme-main .contact-content-wrap {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .theme-main .contact-content-wrap .contact-left-box {
+    width: auto;
+    max-width: initial;
+    margin: 0;
+  }
+  .theme-main .contact-content-wrap .contact-right-box {
+    width: auto;
+    max-width: 256px;
+    margin: 0;
+  }
+  .theme-main .contact-content-wrap .contact-left-list-item {
+    margin-bottom: 32px;
   }
 }
 

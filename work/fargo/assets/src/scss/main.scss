@@ -16,11 +16,20 @@
                 max-width: 1170px;
                 padding: 0 15px;
                 margin: 0 auto; 
+
+                &.shopping-inner {
+                    max-width: 1260px;
+                }
             }
             
             &.layout-01 {
                 display: table; 
                 background-color: #ececec;
+                background-image: url(../img/top-banner.png);
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
 
             &.layout-02 {
@@ -36,9 +45,9 @@
                     position: absolute;
                     width: 100vw;
                     left: 50%;
-                    transform: translateX(-50vw);
+                    transform: translateX(-50vw);     
                     background-color: red;
-                    bottom: 0;
+                    bottom: 0;  
                     height: 160px;
                 }
                 
@@ -54,6 +63,7 @@
 
             &.layout-04 {
                 display: table;
+                height: auto;
                 margin: 150px 0;
                 background-color: #8fd0cc;
                 padding: 85px 0 77px;
@@ -334,10 +344,13 @@
 
             .brand-logo-item {
                 width: 33.333%;
-                margin-bottom: 4px;
+                margin-bottom: 10px;
+                text-align: center;
 
                 img {
                     width: 100%;
+                    max-width: 140px;
+                    padding: 0 7px;
                     height: auto;
                 }
             }
@@ -421,7 +434,7 @@
             font-weight: 400;
             line-height: normal;
             letter-spacing: normal;
-            font-weight: 16px;
+            font-size: 16px;
             margin-bottom: 30px;
 
             &:last-child {
@@ -509,12 +522,33 @@
         .content-layout {
             .layout-bg {
                 &.layout-02 {
-                    height: 600px;
-                    padding: 70px;
+                    // height: 600px;
+                    padding: 175px 0 375px;
 
                     &::after {
-                        height: 170px;
+                        height: 200px;
                     }
+                }
+
+                &.layout-03 {
+                    padding: 160px 0 166px;
+                }
+
+                &.layout-04 {
+                    margin: 198px 0;
+                    padding: 160px 0 133px;
+                }
+
+                &.layout-05 {
+                    padding: 160px 0 168px;
+                    margin-bottom: 230px;
+                    .about-text-title {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &.layout-06 {
+                    padding: 110px 0 153px;
                 }
             }
         }
@@ -530,6 +564,10 @@
                 font-size: 22px;
                 line-height: 1.36;
                 margin: 30px 0 0;
+
+                &:first-child {
+                    margin-top: 38px;
+                }
             }
         }
 
@@ -537,5 +575,123 @@
             margin-bottom: 37px;
         }
         
+        .top-layout-text-box {
+            font-size: 50px;
+            line-height: 1.3;
+        }
+
+        .about-fargo-btn {
+            margin-top: 28px;
+        }
+
+        .about-text-title {
+            font-size: 30px;
+        }
+
+        .layout-history-content {
+            margin-top: 45px;
+        }
+
+        .history-box {
+            .history-content-left {
+                .history-year {
+                    font-size: 16px;
+
+                    &::before {
+                        width: 10px;
+                        height: 10px;
+                        right: -25px;
+
+                    }
+
+                    &.round {
+                        font-size: 20px;
+                        padding: 2px 12px;
+
+                        &::before {
+                            width: 14px;
+                            height: 14px;
+                            right: -27px;
+                        }
+                    }
+                }
+            }
+
+            .right-content-title {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+
+            .right-content-sub {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .brand-logo-list-wrap {
+            .brand-logo-list {
+                .brand-logo-item  {
+                    width: 20%;
+                }
+            }
+        }
+
+        .shopping-list {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            margin:  0 -45px;
+            
+
+            .shopping-item  {
+                width: 33.333%;
+                max-width: initial;
+                
+                margin: 58px 0 0;
+                padding: 0 45px;
+                
+                .shopping-item-link {
+                    height: 100%;
+                    box-shadow: none;
+
+                    .shopping-item-thumbnail-box {
+                        .thumbnail-img {
+                            padding-top: 61%;
+                        }
+                    }
+                }
+
+                .shopping-info {
+                    padding: 18px 13px;
+
+                    .info-title {
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+        }
+        
+
+        .contact-content-wrap {
+            justify-content: space-around;
+
+            .contact-left-box {
+                width: auto;
+                max-width: initial;
+                margin: 0;
+                
+            }
+
+            .contact-right-box  {
+                width: auto;
+                max-width: 256px;
+                margin: 0;
+                
+            }
+
+            .contact-left-list-item {
+                margin-bottom: 32px;
+            }
+        }
     }
 }
