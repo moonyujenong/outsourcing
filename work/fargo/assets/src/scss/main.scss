@@ -63,7 +63,7 @@
                 display: table;
                 margin-bottom: 150px;
                 background-color: #8fd0cc;
-                padding: 85px 0 223px;
+                padding: 85px 0 123px;
             }
 
             &.layout-06 {
@@ -330,6 +330,7 @@
         .brand-logo-list {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
 
             .brand-logo-item {
                 width: 33.333%;
@@ -374,6 +375,7 @@
                         background-repeat: no-repeat;
                         padding-top: 60%;
                         background-color: #ececec;
+                        
                     }
                 }
             }
