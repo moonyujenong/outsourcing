@@ -255,7 +255,7 @@
   background-color: #ececec;
   background-image: url(../img/top-banner.png);
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -273,12 +273,15 @@
   display: block;
   position: absolute;
   width: 100vw;
-  left: 50%;
-  -webkit-transform: translateX(-50vw);
-          transform: translateX(-50vw);
-  background-color: red;
+  background-image: url(../img/topbanner.png);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   bottom: 0;
   height: 160px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .theme-main .content-layout .layout-bg.layout-03 {
@@ -302,10 +305,19 @@
   padding: 85px 0 123px;
 }
 
+.theme-main .content-layout .layout-bg.layout-05 .about-text-title {
+  margin-bottom: 20px;
+}
+
 .theme-main .content-layout .layout-bg.layout-06 {
   display: table;
-  padding: 85px 0;
+  padding: 85px 0 0;
   background-color: #40657c;
+  height: auto;
+}
+
+.theme-main .content-layout .layout-bg.layout-07 {
+  display: block;
   height: auto;
 }
 
@@ -455,7 +467,7 @@
 .theme-main .history-box .history-content-left .history-year {
   font-size: 13px;
   color: #41667c;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: normal;
   line-height: normal;
   display: block;
@@ -575,10 +587,23 @@
   height: auto;
 }
 
+.theme-main .shopping-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -10px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
 .theme-main .shopping-list .shopping-item {
   width: 100%;
   max-width: 303px;
-  margin: 0 auto 37px;
+  margin: 37px auto 0;
+  padding: 0 10px;
 }
 
 .theme-main .shopping-list .shopping-item:last-child {
@@ -593,6 +618,7 @@
           box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
   border-radius: 5px;
   overflow: hidden;
+  height: 100%;
 }
 
 .theme-main .shopping-list .shopping-item .shopping-item-link .shopping-item-thumbnail-box {
@@ -692,10 +718,35 @@
   border: 0;
   padding: 0 15px;
   width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  color: #0a0a10;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 .theme-main .contact-content-wrap .contact-right-box .user-info-input:focus, .theme-main .contact-content-wrap .contact-right-box .user-info-input:active {
   outline: none;
+}
+
+.theme-main .contact-content-wrap .contact-right-box .user-info-input::-webkit-input-placeholder {
+  color: #0a0a10;
+}
+
+.theme-main .contact-content-wrap .contact-right-box .user-info-input::-moz-placeholder {
+  color: #0a0a10;
+}
+
+.theme-main .contact-content-wrap .contact-right-box .user-info-input:-ms-input-placeholder {
+  color: #0a0a10;
+}
+
+.theme-main .contact-content-wrap .contact-right-box .user-info-input::-ms-input-placeholder {
+  color: #0a0a10;
+}
+
+.theme-main .contact-content-wrap .contact-right-box .user-info-input::placeholder {
+  color: #0a0a10;
 }
 
 .theme-main .contact-content-wrap .contact-right-box .type-content {
@@ -705,6 +756,30 @@
   resize: none;
   min-height: 100px;
   padding: 15px;
+}
+
+.theme-main .contact-content-wrap .contact-right-box .type-content:focus, .theme-main .contact-content-wrap .contact-right-box .type-content:active {
+  outline: none;
+}
+
+.theme-main .contact-content-wrap .contact-right-box .type-content::-webkit-input-placeholder {
+  color: #0a0a10;
+}
+
+.theme-main .contact-content-wrap .contact-right-box .type-content::-moz-placeholder {
+  color: #0a0a10;
+}
+
+.theme-main .contact-content-wrap .contact-right-box .type-content:-ms-input-placeholder {
+  color: #0a0a10;
+}
+
+.theme-main .contact-content-wrap .contact-right-box .type-content::-ms-input-placeholder {
+  color: #0a0a10;
+}
+
+.theme-main .contact-content-wrap .contact-right-box .type-content::placeholder {
+  color: #0a0a10;
 }
 
 .theme-main .contact-content-wrap .submit-mail-btn {
@@ -719,6 +794,13 @@
   color: #0a0a10;
   line-height: normal;
   letter-spacing: normal;
+  font-weight: 600;
+}
+
+.theme-main .load-map {
+  width: 100%;
+  position: relative;
+  margin-top: 85px;
 }
 
 @media screen and (min-width: 992px) {
@@ -746,7 +828,10 @@
     margin-bottom: 0;
   }
   .theme-main .content-layout .layout-bg.layout-06 {
-    padding: 110px 0 153px;
+    padding: 110px 0px 0;
+  }
+  .theme-main .content-layout .layout-bg.layout-06 .about-text-title {
+    margin-bottom: 47px;
   }
   .theme-main .about-text-box {
     width: 100%;
@@ -784,7 +869,7 @@
   .theme-main .history-box .history-content-left .history-year::before {
     width: 10px;
     height: 10px;
-    right: -25px;
+    right: -24.5px;
   }
   .theme-main .history-box .history-content-left .history-year.round {
     font-size: 20px;
@@ -793,7 +878,7 @@
   .theme-main .history-box .history-content-left .history-year.round::before {
     width: 14px;
     height: 14px;
-    right: -27px;
+    right: -26px;
   }
   .theme-main .history-box .right-content-title {
     font-size: 16px;
@@ -805,6 +890,7 @@
   }
   .theme-main .brand-logo-list-wrap .brand-logo-list .brand-logo-item {
     width: 20%;
+    margin-bottom: 42px;
   }
   .theme-main .shopping-list {
     display: -webkit-box;
@@ -847,17 +933,89 @@
     margin: 0;
   }
   .theme-main .contact-content-wrap .contact-right-box {
-    width: auto;
-    max-width: 256px;
     margin: 0;
   }
   .theme-main .contact-content-wrap .contact-left-list-item {
     margin-bottom: 32px;
   }
+  .theme-main .load-map {
+    margin-top: 153px;
+  }
 }
 
 html, body {
   background-color: #fff;
+  font-family: 'Roboto', "THEmpgt",   sans-serif  !important;
+}
+
+@font-face {
+  font-family: 'THEmpgt';
+  src: url("../font/thempgtm_u-webfont.woff2") format("woff2"), url("../font/thempgtm_u-webfont.woff") format("woff"), url("../font/thempgtm_u-webfont.ttf") format("truetype"), url("../font/thempgtm_u-webfont.svg#theluxgom_uregular") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'THEmpgt';
+  src: url("../font/thempgtb_u-webfont.woff2") format("woff2"), url("../font/thempgtb_u-webfont.woff") format("woff"), url("../font/thempgtb_u-webfont.ttf") format("truetype"), url("../font/thempgtb_u-webfont.svg#theluxgob_uregular") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'THEmpgt';
+  src: url("../font/thempgteb_u-webfont.woff2") format("woff2"), url("../font/thempgteb_u-webfont.woff") format("woff"), url("../font/thempgteb_u-webfont.ttf") format("truetype"), url("../font/thempgteb_u-webfont.svg#theluxgoeb_uregular") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'THEmpgt';
+  src: url("../font/thempgtl_u-webfont.woff2") format("woff2"), url("../font/thempgtl_u-webfont.woff") format("woff"), url("../font/thempgtl_u-webfont.ttf") format("truetype"), url("../font/thempgtl_u-webfont.svg#theluxgol_uregular") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'THEmpgt';
+  src: url("../font/thempgtr_u-webfont.woff2") format("woff2"), url("../font/thempgtr_u-webfont.woff") format("woff"), url("../font/thempgtr_u-webfont.ttf") format("truetype"), url("../font/thempgtr_u-webfont.svg#theluxgor_uregular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url(//fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2"), url(//fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url(//fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2"), url(//fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"), url(//fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2"), url(//fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url(//fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format("woff2"), url(//fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc-.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local("Roboto Black"), local("Roboto-Black"), url(//fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmYUtfBBc4.woff2) format("woff2"), url(//fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmYUtfBBc-.woff) format("woff");
 }
 
 /*# sourceMappingURL=theme.css.map */

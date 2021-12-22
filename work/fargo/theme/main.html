@@ -1,6 +1,6 @@
 <main class="theme-main" id="container">
     <div class="content-layout">
-        <div class="layout-bg layout-01">
+        <div class="layout-bg layout-01" id="layout_01">
             <div class="layout-inner flex-center">
                 <div class="top-layout-inner-wrap">
                     <div class="top-layout-text-box">
@@ -16,7 +16,7 @@
             </div>
         </div>
 
-        <div class="layout-bg layout-02">
+        <div class="layout-bg layout-02" id="layout_02">
             <div class="layout-inner">
                 <div class="about-text-box">
                     <span class="about-text-title">ABOUT</span>
@@ -33,7 +33,7 @@
             
         </div>
 
-        <div class="layout-bg layout-03">
+        <div class="layout-bg layout-03" id="layout_03">
             <div class="layout-inner">
                 <div class="about-text-box">
                     <span class="about-text-title history">HISTORY</span>
@@ -66,7 +66,7 @@
                             <span class="history-year round">2010</span>
                         </div>
                         <div class="history-content-right">
-                            <span class="right-content-title bold">Omada Sanaliving (Italy) 독점수입계약</span>
+                            <span class="right-content-title">Omada Sanaliving (Italy) 독점수입계약</span>
                             <span class="right-content-sub">AK플라자 입점</span>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                             <span class="history-year round">2013</span>
                         </div>
                         <div class="history-content-right">
-                            <span class="right-content-title bold">Rosti Mepal (Netherlands) 독점수입계약</span>
+                            <span class="right-content-title ">Rosti Mepal (Netherlands) 독점수입계약</span>
                             <span class="right-content-sub">SILTEQ 자체 브랜드 런칭</span>
                         </div>
                     </div>
@@ -169,8 +169,8 @@
             
         </div>
 
-
-        <div class="layout-bg layout-04">
+ 
+        <div class="layout-bg layout-04" id="layout_04">
             <div class="layout-inner">
                 
                 <span class="about-text-title">CLIENTS & BRANDS</span>
@@ -240,10 +240,10 @@
                 </div>
                 
             </div>
-        </div>
+        </div> 
 
 
-        <div class="layout-bg layout-05">
+        <div class="layout-bg layout-05" id="layout_05">
             <div class="layout-inner shopping-inner">
                 
                 <span class="about-text-title">SHOPPING & INFORMATION</span>
@@ -350,7 +350,7 @@
             
         </div>
 
-        <div class="layout-bg layout-06">
+        <div class="layout-bg layout-06" id="layout_06">
             <div class="layout-inner">
                 
                 <span class="about-text-title contact">CONTACT</span>
@@ -387,12 +387,12 @@
 
                     <div class="contact-right-box">
                         <form action="">
-                            <div class="right-content-box">
+                            <div class="right-content-box" style="justify-content: space-between;">
                                 
-                                    <input type="text" class="user-info-input" placeholder="Name">
+                                    <input type="text" class="user-info-input" placeholder="Name" style="width: 110px;">
                                 
                                 
-                                    <input type="text" class="user-info-input" placeholder="E-mail">
+                                    <input type="text" class="user-info-input" placeholder="E-mail" style="width: 130px;">
                                 
                             </div>
 
@@ -414,13 +414,47 @@
                     </div>
                 </div>
 
-                <!-- 지도 -->
-                <div class="load-map">
-
-                </div>
             </div>
-            
-            
+
+            <!-- 지도 -->
+            <div class="load-map">
+                <!-- * 카카오맵 - 지도퍼가기 -->
+                <!-- 1. 지도 노드 -->
+                <div id="daumRoughmapContainer1640138223104" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;"></div>
+
+                <!--
+                    2. 설치 스크립트
+                    * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                -->
+                
+
+                <!-- 3. 실행 스크립트 -->
+                <script charset="UTF-8" type="text/javascript">
+                    new daum.roughmap.Lander({
+                        "timestamp" : "1640138223104",
+                        "key" : "28if7",
+                        // "mapWidth" : "640",
+                        "mapHeight" : "360" 
+                    }).render();
+                </script>
+            </div>
         </div>
+        </div>
+
+
+        
     </div>
 </main>
+
+
+<script type="text/javascript">
+    $(function(){
+        $('.about-fargo-btn').click(function(){
+            var layoutSecond = $("#layout_02").offset().top - 94; 
+
+            $('html, body').animate({
+                scrollTop : document.body.scrollTop + layoutSecond
+            },200);
+        });
+    });
+</script>

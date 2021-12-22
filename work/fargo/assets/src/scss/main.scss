@@ -27,7 +27,7 @@
                 background-color: #ececec;
                 background-image: url(../img/top-banner.png);
                 background-attachment: fixed;
-                background-position: center;
+                background-position: top;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
@@ -44,11 +44,14 @@
                     display: block;
                     position: absolute;
                     width: 100vw;
-                    left: 50%;
-                    transform: translateX(-50vw);     
-                    background-color: red;
+                    background-image: url(../img/topbanner.png);   
+                    background-attachment: fixed;
+                    background-position: bottom;
+                    background-repeat: no-repeat;
+                    background-size: cover;
                     bottom: 0;  
                     height: 160px;
+                    transform: scale(1.1);
                 }
                 
             }
@@ -74,12 +77,21 @@
                 margin-bottom: 150px;
                 background-color: #8fd0cc;
                 padding: 85px 0 123px;
+
+                .about-text-title  {
+                    margin-bottom: 20px;
+                }
             }
 
             &.layout-06 {
                 display: table;
-                padding: 85px 0;
+                padding: 85px 0 0;
                 background-color: #40657c;
+                height: auto;
+            }
+
+            &.layout-07 {
+                display: block;
                 height: auto;
             }
 
@@ -232,7 +244,7 @@
             .history-year {
                font-size: 13px; 
                color: #41667c;
-               font-weight: 400;
+               font-weight: 600;
                letter-spacing: normal;
                line-height: normal;
                display: block;
@@ -359,11 +371,16 @@
 
 
     .shopping-list {
+        display: flex;    
+        flex-wrap: wrap;
+        margin: 0 -10px;
+        align-items: stretch;
 
         .shopping-item {
             width: 100%;
             max-width: 303px;
-            margin: 0 auto 37px;
+            margin: 37px auto 0;
+            padding: 0 10px;
 
             &:last-child {
                 margin-bottom: 0;
@@ -377,6 +394,7 @@
                 box-shadow: 0 0 6px 0 rgba(0,0,0,0.16);
                 border-radius: 5px;
                 overflow: hidden;
+                height: 100%;
 
                 .shopping-item-thumbnail-box {
                     width: 100%;
@@ -478,9 +496,18 @@
                 border: 0;
                 padding: 0 15px;
                 width: 100%;
+                font-size: 14px;
+                font-weight: 400;
+                color: #0a0a10;
+                line-height: normal;
+                letter-spacing: normal;
 
                 &:focus, &:active {
                     outline: none;
+                }
+
+                &::placeholder {
+                    color: #0a0a10;
                 }
 
             }
@@ -492,6 +519,14 @@
                 resize: none;
                 min-height: 100px;
                 padding: 15px;
+
+                &:focus, &:active {
+                    outline: none;
+                }
+
+                &::placeholder {
+                    color: #0a0a10;
+                }
             }
         }
 
@@ -507,7 +542,15 @@
             color: #0a0a10;
             line-height: normal;
             letter-spacing: normal;
+            font-weight: 600;
         }
+    }
+
+    .load-map {
+        width: 100%;
+        position: relative;
+        // height: 300px;
+        margin-top: 85px;
     }
 
 }
@@ -548,7 +591,11 @@
                 }
 
                 &.layout-06 {
-                    padding: 110px 0 153px;
+                    padding: 110px 0px 0; 
+
+                    .about-text-title {
+                        margin-bottom: 47px;
+                    }
                 }
             }
         }
@@ -600,7 +647,7 @@
                     &::before {
                         width: 10px;
                         height: 10px;
-                        right: -25px;
+                        right: -24.5px;
 
                     }
 
@@ -611,7 +658,7 @@
                         &::before {
                             width: 14px;
                             height: 14px;
-                            right: -27px;
+                            right: -26px;
                         }
                     }
                 }
@@ -632,6 +679,7 @@
             .brand-logo-list {
                 .brand-logo-item  {
                     width: 20%;
+                    margin-bottom: 42px;
                 }
             }
         }
@@ -683,8 +731,8 @@
             }
 
             .contact-right-box  {
-                width: auto;
-                max-width: 256px;
+                // width: auto;
+                // max-width: 256px;
                 margin: 0;
                 
             }
@@ -692,6 +740,10 @@
             .contact-left-list-item {
                 margin-bottom: 32px;
             }
+        }
+
+        .load-map {
+            margin-top: 153px;
         }
     }
 }
