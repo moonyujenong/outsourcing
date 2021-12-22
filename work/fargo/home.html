@@ -50,19 +50,32 @@
        $(function(){
         //스크롤 이동
         $(".menu-list li").click(function(){
-                    var scrollTarget = $($(this).attr('data-target')).offset().top - 94;
+                var scrollTarget = $($(this).attr('data-target')).offset().top - 94;
 
-                    console.log(scrollTarget);
+                console.log(scrollTarget);
+
+                $('html, body').animate({
+                    scrollTop : document.body.scrollTop + scrollTarget 
+                    
+                },200);
+                
+
+             
+                if ($(window).width() < 992) { // 모바일
+                    $('.mobile-side-menu ').removeClass("open");
 
                     $('html, body').animate({
                         scrollTop : document.body.scrollTop + scrollTarget 
-                       
+                        
                     },200);
                     
+                }
 
-                    return false;
-                });
+                return false;
             });
+
+            
+        });
            
        
     </script>

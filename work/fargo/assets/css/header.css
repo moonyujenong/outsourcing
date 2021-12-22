@@ -102,7 +102,7 @@
   z-index: 99;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   overflow: hidden;
