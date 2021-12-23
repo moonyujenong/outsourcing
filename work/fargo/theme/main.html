@@ -451,10 +451,23 @@
     $(function(){
         $('.about-fargo-btn').click(function(){
             var layoutSecond = $("#layout_02").offset().top - 94; 
+            var MobilelayoutSecond = $("#layout_02").offset().top - 60; 
 
-            $('html, body').animate({
-                scrollTop : document.body.scrollTop + layoutSecond
-            },200);
+            if ($(window).width() < 992) {
+                $('html, body').animate({
+                    scrollTop : document.body.scrollTop + MobilelayoutSecond
+                    
+                },500);
+            }
+            else {
+                $('html, body').animate({
+                    scrollTop : document.body.scrollTop + layoutSecond
+                },200);
+                
+                return false;
+            }
+
+            
         });
     });
 </script>
