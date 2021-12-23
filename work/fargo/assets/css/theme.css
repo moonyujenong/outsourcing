@@ -2,10 +2,11 @@
   width: 100vw;
   position: relative;
   left: 50%;
-  -webkit-transform: translateX(-50vw);
-          transform: translateX(-50vw);
+  -webkit-transform: translateX(-50vw) translateZ(0);
+          transform: translateX(-50vw) translateZ(0);
   background-color: #bde4fa;
   position: fixed;
+  will-change: transform;
   top: 0;
   z-index: 90;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -244,6 +245,8 @@
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+  position: relative;
+  z-index: 5;
 }
 
 .theme-main .content-layout .layout-bg .layout-inner.shopping-inner {
@@ -252,36 +255,31 @@
 
 .theme-main .content-layout .layout-bg.layout-01 {
   display: table;
-  background-color: #ececec;
-  background-image: url(../img/top-banner.png);
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: transparent;
+  position: relative;
 }
 
 .theme-main .content-layout .layout-bg.layout-02 {
-  height: auto;
   display: table;
+  height: auto;
   background-color: #f36468;
-  padding: 70px 0 267px;
-  height: 530px;
-}
-
-.theme-main .content-layout .layout-bg.layout-02::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100vw;
-  background-image: url(../img/topbanner.png);
-  background-attachment: fixed;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  bottom: 0;
-  height: 160px;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  padding: 70px 0;
+  position: relative;
+  margin-bottom: 150px;
+  /* .layout-02-bg {
+                    position: absolute;
+                    width: 100vw;
+                    background-image: url(../img/topbanner.png);   
+                    background-attachment: fixed;
+                    background-position: bottom; 
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    left: 0; 
+                    bottom: 0;  
+                    height: 160px;
+                    will-change: transform;
+                    transform: translateZ(0) scale(1.1);
+                } */
 }
 
 .theme-main .content-layout .layout-bg.layout-03 {
@@ -808,10 +806,8 @@
     padding-top: 93px;
   }
   .theme-main .content-layout .layout-bg.layout-02 {
-    padding: 175px 0 375px;
-  }
-  .theme-main .content-layout .layout-bg.layout-02::after {
-    height: 200px;
+    padding: 175px 0;
+    margin-bottom: 198px;
   }
   .theme-main .content-layout .layout-bg.layout-03 {
     padding: 160px 0 166px;
@@ -949,10 +945,23 @@ html, body {
   position: relative;
   -webkit-text-size-adjust: 100%;
   word-break: keep-all;
-  background-color: #fff;
   font-family: 'Roboto', "THEmpgt",   sans-serif  !important;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  background-image: url(../img/full-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html::after, html::before, body::after, body::before {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 ul {

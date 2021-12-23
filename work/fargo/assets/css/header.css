@@ -2,10 +2,11 @@
   width: 100vw;
   position: relative;
   left: 50%;
-  -webkit-transform: translateX(-50vw);
-          transform: translateX(-50vw);
+  -webkit-transform: translateX(-50vw) translateZ(0);
+          transform: translateX(-50vw) translateZ(0);
   background-color: #bde4fa;
   position: fixed;
+  will-change: transform;
   top: 0;
   z-index: 90;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
