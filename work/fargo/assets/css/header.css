@@ -91,6 +91,7 @@
   letter-spacing: normal;
   padding: 8px 15px;
   display: block;
+  text-align: left;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -159,7 +160,6 @@
   position: relative;
   letter-spacing: normal;
   line-height: normal;
-  text-align: center;
 }
 
 .menu-list .menu-list-item .menu-list-link:hover::before {
