@@ -950,6 +950,7 @@ html, body {
   -webkit-overflow-scrolling: touch;
   background-image: url(../img/full-back.png);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   position: fixed;
   top: 0;
