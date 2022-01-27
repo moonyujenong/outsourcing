@@ -3,7 +3,7 @@
   padding: 30px 0;
 }
 
-.makao-footer .footer-content-wrap {
+.makao-footer .footer-content-wrap .footer-content-innter {
   position: relative;
   width: 100%;
   display: -webkit-box;
@@ -47,7 +47,7 @@
 }
 
 @media screen and (min-width: 992px) {
-  .makao-footer .footer-content-wrap {
+  .makao-footer .footer-content-wrap .footer-content-innter {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }

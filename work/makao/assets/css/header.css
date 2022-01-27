@@ -256,7 +256,7 @@
   /* border-bottom: 0; */
 }
 
-.user-login {
+.user-login-mobile {
   color: #fff;
   background-color: #ad93ef;
   font-weight: 400;
@@ -268,7 +268,7 @@
   width: fit-content;
 }
 
-.user-login:hover {
+.user-login-mobile:hover {
   color: #fff;
 }
 

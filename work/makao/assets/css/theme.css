@@ -344,7 +344,7 @@ button:focus, button:active {
   /* border-bottom: 0; */
 }
 
-.user-login {
+.user-login-mobile {
   color: #fff;
   background-color: #ad93ef;
   font-weight: 400;
@@ -356,7 +356,7 @@ button:focus, button:active {
   width: fit-content;
 }
 
-.user-login:hover {
+.user-login-mobile:hover {
   color: #fff;
 }
 
@@ -433,7 +433,7 @@ button:focus, button:active {
   padding: 30px 0;
 }
 
-.makao-footer .footer-content-wrap {
+.makao-footer .footer-content-wrap .footer-content-innter {
   position: relative;
   width: 100%;
   display: -webkit-box;
@@ -477,7 +477,7 @@ button:focus, button:active {
 }
 
 @media screen and (min-width: 992px) {
-  .makao-footer .footer-content-wrap {
+  .makao-footer .footer-content-wrap .footer-content-innter {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }

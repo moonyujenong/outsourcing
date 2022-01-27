@@ -3,11 +3,15 @@
     padding: 30px 0;
 
     .footer-content-wrap {
-        position: relative;
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        flex-wrap: wrap;
+
+        .footer-content-innter {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+       
     
     
         .footer-content-logo {
@@ -50,7 +54,11 @@
 @media screen and (min-width:992px) {
     .makao-footer {
         .footer-content-wrap {
-            flex-wrap: nowrap;
+
+            .footer-content-innter {
+                flex-wrap: nowrap;
+            }
+            
 
             .footer-content-logo {
                 width: auto;
