@@ -54,7 +54,7 @@
 
                         <li class="menu-item">
                             <a href="#" class="menu-link" data-toggle="modal" >
-                                <img src="" alt="마카오 로고">
+                                <img src="./assets/img/logo.png" alt="마카오 로고">
                             </a>
                         </li>
 
@@ -79,13 +79,13 @@
                             </a>
                         </li>
 
-                        <li class="menu-item">
+                        <li class="menu-item" style="flex:inherit;">
                             <div class="user-btn-box">
                                 <a href="#" class="user-login">
                                     로그인
                                 </a>
                                 <a href="#" class="user-mypage">
-                                    마이페이지
+                                    회원가입
                                 </a>
                             </div>
                         </li>
@@ -97,17 +97,306 @@
                 <div class="header-menu-wrap mobile-header">
                     <i class="xi-bars"></i>
                     <div class="mobile-logo-box">
-                        <img src="" alt="마카오 로고" >
+                        <img src="./assets/img/logo.png" alt="마카오 로고" >
                     </div>
-                    
+                     
                 </div>
             </div>
+
+
+            <nav class="theme-nav makao-nav">
+                <i class="xi-close"></i>
+                <div class="nav-inner-wrap">
+                    <!-- todo : 로그인 했을때 -->
+                    <div class="nav-inner-top">
+                        <span class="user-name">MAKAO</span> 님
+
+                        <a href="#" class="user-mypage">마이페이지</a>
+
+                        <a href="#" class="user-logout">로그아웃</a>
+                    </div>
+
+                    <!-- todo : 로그인 안했을때 -->
+                    <div class="nav-inner-top">
+                        <a href="#" class="user-login">로그인</a>
+                    </div>
+
+                    <ul class="nav-menu-list">
+                        <li class="nav-menu-item">
+                            <a href="#" class="nav-menu-link">
+                                라이브카지노
+                            </a>
+                        </li>
+
+                        <li class="nav-menu-item">
+                            <a href="#" class="nav-menu-link">
+                                호텔카지노
+                            </a>
+                        </li>
+
+                        <li class="nav-menu-item">
+                            <a href="#" class="nav-menu-link">
+                                슬롯게임
+                            </a>
+                        </li>
+
+                        <li class="nav-menu-item">
+                            <a href="#" class="nav-menu-link">
+                                입금신청
+                            </a>
+                        </li>
+
+                        <li class="nav-menu-item">
+                            <a href="#" class="nav-menu-link">
+                                출금신청
+                            </a>
+                        </li>
+
+                        <li class="nav-menu-item">
+                            <a href="#" class="nav-menu-link">
+                                공지사항
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>
 
         <!-- todo  : 메인 -->
         <main id="container" class="theme-main makao-main">
             <div class="container">
-                메인
+                <div class="main-visual-banner-wrap">
+                    <div class="swiper visual-banner-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-banner-img-box">
+                                    <img src="./assets/img/main-banner.png" alt="메인 배너 이미지">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide-banner-img-box">
+                                    <img src="./assets/img/main-banner.png" alt="메인 배너 이미지">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide-banner-img-box">
+                                    <img src="./assets/img/main-banner.png" alt="메인 배너 이미지">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination main-visual-paging"></div>
+                </div>
+
+
+                <div class="content-grid-wrap">
+                    <div class="grid-inner-content">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div  class="middle-content-modal-btn">
+                                    <div class="middle-content-box">
+                                        <div class="middle-content-img" style="background-image: url(./assets/img/middle01.png);"></div>
+                                    </div>
+
+                                    <div class="middle-content-hover-box">
+                                        <div class="hover-content-inner">
+                                            <h3 class="hover-content-title">라이브카지노</h3>
+                                            <span class="hover-content-child-title">에볼루션, 아시안게이밍, 빅게이밍, 드림게이밍, 섹시게이밍, 마이크로게이밍 온라인카지노</span>
+
+                                            <a href="#" class="hover-popup-btn">시작하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="middle-content-modal-btn">
+                                    <div class="middle-content-box">
+                                        <div class="middle-content-img" style="background-image: url(./assets/img/middle02.png);"></div>
+                                    </div>
+
+                                    <div class="middle-content-hover-box">
+                                        <div class="hover-content-inner">
+                                            <h3 class="hover-content-title">호텔카지노</h3>
+                                            <span class="hover-content-child-title">워터프론트, 제이파크, 힐튼, 솔레어, 오카다 생생한 라이브를 즐기세요!</span>
+
+                                            <a href="#" class="hover-popup-btn">시작하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="middle-content-modal-btn">
+                                    <div class="middle-content-box">
+                                        <div class="middle-content-img" style="background-image: url(./assets/img/middle03.png);"></div>
+                                    </div>
+
+                                    <div class="middle-content-hover-box">
+                                        <div class="hover-content-inner">
+                                            <h3 class="hover-content-title">슬롯게임</h3>
+                                            <span class="hover-content-child-title">다양한 슬롯 게임을 즐기세요!</span>
+
+                                            <a href="#" class="hover-popup-btn">시작하기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       
+                        <div class="security-img-box">
+                            <img src="./assets/img/middle04.png" alt="카지노 먹튀검증 커뮤니티에 보증 인증 완료!">
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="guide-img-bg guide-bg">
+                                    <a href="#" class="user-consulting-link">
+                                        <div class="guide-inner">
+                                            <span class="guide-text">
+                                                <h3 class="guide-title">가상화폐 입금 가이드</h3>
+                                                <p class="guide-child-title">회원님들의 안전과 보안을 위해 가상화폐 입금 방식으로 진행됩니다.</p>
+                                            </span>
+
+                                            <span class="inner-right-icon guide"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="guide-img-bg kakao-bg ">
+                                    <a href="#" class="user-consulting-link">
+                                        <div class="guide-inner">
+                                            <span class="guide-text">
+                                                <h3 class="guide-title">고객센터</h3>
+                                                <p class="guide-child-title">24시간 언제든지 문의해주세요</p>
+                                            </span>
+
+                                            <span class="inner-right-icon kakao"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- todo : 게시판 갯수는 모두 최대 5개 고정 -->
+                        <div class="row" style="align-items: stretch;">
+                            <div class="col-md-4">
+                                <div class="board-list-wrap">
+                                    <div class="board-list-category">
+                                        <h3 class="board-list-title">공지사항</h3>
+                                        <a href="#" class="board-more-link">전체보기 +</a>
+                                    </div>
+
+                                    <ul class="board-content-list">
+                                        <li class="board-content-item">
+                                            <a href="#" class="board-content-link">
+                                                <span class="notice-title">쿠키/캐시 삭제 방법 안내</span>
+                                                <span class="notice-write-date">22-01-26</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="board-content-item">
+                                            <a href="#" class="board-content-link">
+                                                <span class="notice-title">쿠키/캐시 삭제 방법 안내</span>
+                                                <span class="notice-write-date">22-01-26</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="board-list-wrap">
+                                    <div class="board-list-category">
+                                        <h3 class="board-list-title">실시간 입금 현황</h3>
+                                        
+                                    </div>
+
+                                    <ul class="board-content-list">
+                                        <li class="board-content-item">
+                                            <a href="#" class="account-info">
+                                                <span class="deel-date">15:00:00</span>
+                                                <span class="deel-pay">500,000</span>
+                                                <!-- todo : 유저 아이디 3자 이상 *로 표기 -->
+                                                <span class="deel-user-name">gl***</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="board-content-item">
+                                            <a href="#" class="account-info">
+                                                <span class="deel-date">15:00:00</span>
+                                                <span class="deel-pay">500,000</span>
+                                                <!-- todo : 유저 아이디 3자 이상 *로 표기 -->
+                                                <span class="deel-user-name">gl***</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="board-content-item">
+                                            <a href="#" class="account-info">
+                                                <span class="deel-date">15:00:00</span>
+                                                <span class="deel-pay">500,000</span>
+                                                <!-- todo : 유저 아이디 3자 이상 *로 표기 -->
+                                                <span class="deel-user-name">gl***</span>
+                                            </a>
+                                        </li>
+
+                                     
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="board-list-wrap">
+                                    <div class="board-list-category">
+                                        <h3 class="board-list-title">실시간 출금 현황</h3>
+                                        
+                                    </div>
+
+                                    <ul class="board-content-list">
+                                        <li class="board-content-item">
+                                            <a href="#" class="account-info">
+                                                <span class="deel-date">15:00:00</span>
+                                                <span class="deel-pay">500,000</span>
+                                                <!-- todo : 유저 아이디 3자 이상 *로 표기 -->
+                                                <span class="deel-user-name">gl***</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="board-content-item">
+                                            <a href="#" class="account-info">
+                                                <span class="deel-date">15:00:00</span>
+                                                <span class="deel-pay">500,000</span>
+                                                <!-- todo : 유저 아이디 3자 이상 *로 표기 -->
+                                                <span class="deel-user-name">gl***</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="board-content-item">
+                                            <a href="#" class="account-info">
+                                                <span class="deel-date">15:00:00</span>
+                                                <span class="deel-pay">500,000</span>
+                                                <!-- todo : 유저 아이디 3자 이상 *로 표기 -->
+                                                <span class="deel-user-name">gl***</span>
+                                            </a>
+                                        </li>
+
+                                     
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
 
@@ -116,20 +405,60 @@
             <div class="container">
                 <div class="footer-content-wrap">
                     <div class="footer-content-logo">
-                        <img src="" alt="마카오 로고">
+                        <img src="./assets/img/logo.png" alt="마카오 로고">
                     </div>
 
                     <div class="family-logo-list-wrap">
                         <ul class="family-logo-list">
                             <li class="family-logo-item">
-                                <img src=""  alt="">
+                                <img src="./assets/img/family-logo-list.png"  alt="패밀리 사이트 로고">
                             </li>
                         </ul>
+
+
+                        <span class="copyright">
+                            마카오카지노 ⓒ Copyrights. 2022 All rights
+                        </span>
                     </div>
                 </div>
             
             </div>
         </footer>
     </div>
+
+
+    <script>
+        var swiper = new Swiper(".visual-banner-slide", {
+            lidesPerView: 3,
+            pagination: {
+                el: ".swiper-pagination.main-visual-paging",
+                clickable: true,
+            },
+        });
+
+
+        $(function(){
+            $('.mobile-header .xi-bars').click(function(){
+                $('.makao-nav').addClass('open');
+                $('.nav-inner-wrap').animate({
+                    'left': '0' 
+                },200);
+            });
+ 
+            $('.makao-nav').click(function(){
+                $('.makao-nav').removeClass('open');
+                $('.nav-inner-wrap').animate({
+                    'left': '-100%' 
+                },200);
+
+                
+                
+            });
+
+            $('.nav-inner-wrap').click(function(e){
+                e.stopPropagation();
+            });
+        });
+      </script>
 </body>
 </html>

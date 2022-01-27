@@ -1,0 +1,485 @@
+.makao-main {
+    
+
+    .main-visual-banner-wrap {
+        position: relative;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50vw);
+    
+        .slide-banner-img-box {
+            width: 100%;
+            position: relative;
+    
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0,0,0,0.2);
+            }
+    
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    
+        .main-visual-paging {
+            bottom: 10px;
+        }
+        
+        .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            border: 1px solid #f9e168;
+            opacity: 1;
+    
+            &.swiper-pagination-bullet-active {
+                background-color: #f9e168;
+            }
+            
+        }
+    }
+
+    .content-grid-wrap {
+        position: relative;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50vw);
+       
+        padding: 30px 0 40px;
+
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            background-image: url(../img/main-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+        }
+
+        .grid-inner-content {
+            width: 100%;
+            max-width: 1170px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+    }
+
+    .middle-content-modal-btn {
+        position: relative;
+        display: block;
+
+        &:hover {
+            .middle-content-hover-box {
+                opacity: 1;
+                transition: all .2s ease-in-out;
+                display: flex;
+                background-color: rgba(0,0,0,0.4);
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 10;
+        
+                .hover-content-title {
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    color: #fff;
+                    font-weight: 600;
+                    line-height: 1.2;
+                    letter-spacing: -0.8px;
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                    text-shadow: 0px 10px 9.8px rgba(0, 0, 0, 0.7);
+                    -webkit-text-stroke: 1px #fff;
+                    background-blend-mode: luminosity;
+                    background-image: linear-gradient(to top, #489fdc, #fff, #906a00, #d99f00, #fff), linear-gradient(to bottom, #fff, #fff);
+                }
+        
+                .hover-content-child-title {
+                    color: #fff;
+                    line-height: 1.45;
+                    letter-spacing: -0.44px;
+                    font-size: 15px;
+                    display: block;
+                    font-weight: 400;
+                }
+        
+                .hover-popup-btn {
+                    display: block;
+                    margin: 25px auto 0;
+                    background-color: #f9e168;
+                    border-radius: 50px;
+                    width: 100%;
+                    max-width: 140px;
+                    padding: 6px;
+                    color: #000;
+                    letter-spacing: -0.36px;
+                    font-size: 16px;
+                }
+        
+            }
+        }
+        
+        .middle-content-hover-box {
+            opacity: 0;
+            transition: all .2s ease-in-out;
+            display: none;
+        }
+       
+    }
+
+   
+
+    .middle-content-box {
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+        border: 1px solid #ad93ef;
+        box-sizing: border-box;
+
+        .middle-content-img {
+            width: 100%;
+            padding-top: 63%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; 
+            
+        }
+    }
+
+    .security-img-box {
+        width: 100%;
+        margin-bottom: 20px;
+       
+        
+        
+        img {
+            width: 100%;
+            height: auto;
+            position: relative;
+            border: 1px solid #ad93ef;
+            box-sizing: border-box;
+        }
+    }
+
+    .guide-img-bg {
+        margin-bottom: 20px;
+        
+        position: relative;
+
+        &.guide-bg, &.kakao-bg {
+            &::before {
+                content: '';
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+
+            }
+        }
+
+        &.guide-bg {
+            &::before {
+                background-image: url(../img/guide-bg.png);
+            }
+        }
+
+        &.kakao-bg {
+            &::before {
+                background-image: url(../img/kakao.png);
+            }
+        }
+    }
+
+    .user-consulting-link {
+        display: block;
+        position: relative;
+        z-index: 5;
+        padding: 20px;
+        border: 1px solid #ad93ef;
+        box-sizing: border-box;
+
+        .guide-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .guide-title {
+            text-shadow: 0px 10px 9.8px rgba(0, 0, 0, 0.7);
+            -webkit-text-stroke: 1px #fff;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 20px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 9px;
+            background-image: linear-gradient(to top, #489fdc, #fff, #906a00, #d99f00, #fff), linear-gradient(to bottom, #fff, #fff);
+            background-blend-mode: luminosity;
+        }
+
+        .guide-child-title {
+            text-shadow: 0px 10px 9.8px rgba(0, 0, 0, 0.7);
+            -webkit-text-stroke: 1px #fff;
+            background-blend-mode: luminosity;
+            background-image: linear-gradient(to top, #489fdc, #fff, #906a00, #d99f00, #fff), linear-gradient(to bottom, #fff, #fff);
+            font-size: 12px;
+            font-weight: 300;
+            display: block;
+            -webkit-text-stroke: 1px #fff;
+            -webkit-background-clip: text;
+            margin: 0;
+            
+
+
+        }
+
+        .inner-right-icon {
+            display: block;
+            width: 60px;
+            height: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            min-width: 60px;
+
+            &.guide {
+                background-image: url(../img/guide-icon.png);
+            }
+
+            &.kakao {
+                background-image: url(../img/kakao-icon.png);
+            }
+            
+        }
+    }
+
+    .guide-text {
+        padding-right: 15px;
+    }
+
+
+    .board-list-wrap {
+        margin-bottom: 25px;
+        border-top: 4px solid #ad93ef;
+        position: relative;
+        background-color: rgba(102, 102, 102, 0.3);
+       /* padding: 0 15px; */
+       height: 100%;
+
+        .board-list-category {
+            padding: 20px 15px;
+            position: relative;
+
+            .board-list-title {
+                display: block;
+                text-align: center;
+                line-height: 1.11;
+                letter-spacing: -0.72px;
+                text-align: center;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+                margin: 0;
+            }
+
+            .board-more-link {
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: -0.32px;
+                position: absolute;
+                right: 0px;
+                top: 19px;
+                color: #ad93ef;
+
+            }
+        }
+
+        .board-content-list {
+            /* padding: 0 20px; */
+            padding: 0 15px;
+
+            .board-content-link {
+                display: block;
+                padding: 15px 0;
+                border-bottom: 1px solid #5c2fcb;
+                font-weight: 500;
+                color: #fff;
+                letter-spacing: normal;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 16px;
+                opacity: 0.7;
+
+                .notice-title {
+                    display: block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 1;
+                    padding-right: 15px;
+                    width: 80%;
+                }
+
+            }
+
+            .notice-write-date {
+                font-size: 12px;
+                white-space: nowrap;
+                
+            }
+
+            > li:last-child {
+                .board-content-link, .account-info {
+                    border-bottom: 0;
+                }
+            }
+        }
+
+        .account-info {
+            display: block;
+            padding: 15px 0;
+            border-bottom: 1px solid #5c2fcb;
+            display: flex;
+            align-items: center;
+            letter-spacing: normal;
+            font-weight: 500;
+
+        }
+
+        .deel-date {
+            flex: 0.3;
+            color: #fff;
+            font-size: 12px;
+            opacity: 0.7;
+          
+        }
+
+        .deel-pay {
+            flex: 0.4;
+            font-size: 16px;
+            font-weight: 600;
+            color: #f9e168;
+        }
+
+        .deel-user-name {
+            text-align: right;
+            font-size: 12px;
+            color: #fff;
+            opacity: 0.7;
+            flex: 0.3;
+        }
+    }
+}
+
+@media screen and (min-width:992px) {
+    .makao-main {
+        .main-visual-banner-wrap {
+            .slide-banner-img-box {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        .middle-content-box {
+            .middle-content-img {
+                padding-top: 74%;
+            }
+        }
+
+        .middle-content-modal-btn {
+            &:hover {
+                .middle-content-hover-box {
+                    .hover-content-title {
+                        font-size: 40px;
+                    }
+
+                    .hover-content-child-title {
+                        font-size: 17px;
+                        padding: 0 15px;
+                    }
+
+                    .hover-popup-btn {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+
+        .user-consulting-link {
+            padding: 40px;
+
+            .guide-title {
+                font-size: 36px;
+                margin-bottom: 18px;
+            }
+
+            .guide-child-title {
+                font-size: 13px;
+            }
+
+            .inner-right-icon {
+                width: 100px;
+                height: 100px;
+                min-width: 100px;
+            }
+
+            
+        }
+
+        
+
+        .board-list-wrap {
+            .board-list-category {
+                padding: 30px 15px;
+                .board-list-title {
+                    font-size: 36px;
+                }
+
+                .board-more-link {
+                    font-size: 16px;
+                    top: 36px;
+                    right: 20px; 
+                }
+            }
+
+            .board-content-list {
+                padding: 0 30px;
+                
+                .board-content-link {
+                    font-size: 18px;
+                }
+
+                .notice-write-date {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

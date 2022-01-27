@@ -1,7 +1,65 @@
-.footer-content-wrap {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
+.makao-footer {
+    background-color: #000;
+    padding: 30px 0;
+
+    .footer-content-wrap {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
     
+    
+        .footer-content-logo {
+           width: 100%;
+           text-align: center;
+    
+            img {
+                width: 80px;
+                height: auto;
+            }
+    
+        }
+    
+        .family-logo-list-wrap {
+            width: 100%;
+            margin-top: 20px;
+
+            .family-logo-item {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        font-size: 16px;
+        font-weight: 500;
+        color: #515151;
+        letter-spacing: -0.32px;
+        margin-top: 30px;
+        display: block;
+    }
+}
+
+
+
+@media screen and (min-width:992px) {
+    .makao-footer {
+        .footer-content-wrap {
+            flex-wrap: nowrap;
+
+            .footer-content-logo {
+                width: auto;
+            }
+
+            .family-logo-list-wrap {
+                width: auto;
+                margin: 0;
+                padding-left: 100px;
+            }
+        }
+    }
 }
