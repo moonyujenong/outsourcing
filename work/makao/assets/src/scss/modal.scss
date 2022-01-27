@@ -1,0 +1,145 @@
+.modal {
+    .modal-content {
+        background-image: url(../img/modal-bg.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        border: 1px solid #cac353;
+        box-sizing: border-box;
+        
+    }
+
+    .modal-dialog {
+        width: 100%;
+        max-width: 970px;
+    }
+
+    .modal-header {
+        border: 0;
+        padding: 0;
+        display: block;
+        position: relative;
+        padding: 50px;
+        
+
+        i {
+            font-size: 25px;
+            color: #fff;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+
+        }
+        
+        .modal-logo {
+            width: 100%;
+            text-align: center;
+
+            img {
+                width: 110px;
+                height: auto;
+            }
+        }
+    }
+
+    .group-box {
+        margin-bottom: 20px;
+        display: flex;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.flex-group-box {
+            align-items: center;
+
+            .registe-left {
+                width: 25%;
+                min-width: 25%;
+                word-wrap: break-word;
+            }
+
+        }
+
+        .dark-input {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            height: 50px;
+            background-color: #000;
+            border: 1px solid #43335b;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 0 20px;
+            color: #fff;
+            
+
+            &::placeholder {
+                color: #adadad;
+            }
+
+            &.registe-input {
+                /* max-width: 80%; */ 
+            }
+        }
+
+        
+    }
+    .registe-left {
+        display: block;
+        width: 100%;
+        max-width: 140px;
+       
+    }
+
+    .inner-body {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .registe-category {
+        position: relative;
+        font-size: 22px;
+        font-weight: 500;
+        color: #fff;
+
+        &.required {
+            &::after {
+                content: '*';
+                display: block;
+                position: absolute;
+                top: -5px;
+                right: -12px;
+                color: #cac353;
+            }
+        }
+    }
+
+    .number-btn {
+        margin-left: 10px;
+        background-color: #4a1f96;
+        color: #fff;
+        height: 50px;
+        text-align: center;
+        min-width: 140px;
+    }
+
+    .modal-footer {
+        border: 0;
+        padding: 0;
+        display: block;
+        padding: 60px 15px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .modal-bottom-btn {
+            max-width: 140px;
+            width: 100%;
+            border-radius: 100px;
+            background-color: #ebe034;
+            padding: 9px 7px 6px;
+        }
+    }
+}

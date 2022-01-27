@@ -1,8 +1,7 @@
  .makao-header {
     width: 100%;
     // position: relative;
-    background-color: rgba(0,0,0,0.6);
-    position: absolute;
+    background-color: #000;
     top: 0;
     left: 0;
     right: 0;
@@ -18,7 +17,7 @@
         }
 
         &.mobile-header {
-            display: flex;
+            display: block;
             align-items: center;
             padding: 8px 0;
 
@@ -34,7 +33,7 @@
                 text-align: center;
                 
                 img {
-                    width: 50px;
+                    width: 60px;
                     height: auto;
                 }
             }
@@ -63,6 +62,21 @@
         align-items: center;
         width: 100px;
 
+        &:hover {
+            color: #ad93ef;
+        }
+
+    }
+
+    .mobile-user-box {
+        flex: inherit;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 15px 0;
+        border-top: 1px solid #ad93ef;
+        margin-top: 15px;
     }
 
     .user-name-text {
@@ -138,18 +152,7 @@
         }
     }
 
-    .user-mypage {
-        border-radius: 50px;
-        color: #ad93ef;
-        border: 1px solid #ad93ef;
-        font-weight: 400;
-        font-size: 12px;
-        padding: 2px 10px;
-        display: inline-block;
-        width: fit-content;
-        vertical-align: middle;
-        margin-left: 10px;
-    }
+    
  }
 
  .makao-nav {
@@ -192,11 +195,15 @@
     .nav-inner-wrap {
         // width: 100%;
         margin-right: 30px;
-        max-width: 375px;
-        background-color: #fff;
+        /* max-width: 375px; */
+        width: fit-content;
+        background-color: #000;
         height: 100%;
         position: relative;
         left: -100%;
+        border: 1px solid #ad93ef;
+        overflow: hidden;
+        overflow-y: auto;
 
         .nav-inner-top {
             background-color: #000;
@@ -215,40 +222,13 @@
             }
         }
 
-        .user-logout {
-            border-radius: 50px;
-            color: #ad93ef;
-            border: 1px solid #ad93ef;
-            font-weight: 400;
-            font-size: 12px;
-            padding: 2px 10px;
-            display: block;
-            position: absolute;
-            top: 25px;
-            right: 20px;
-            width: fit-content;
-        }
-
-        .user-login {
-            border-radius: 50px;
-            color: #ad93ef;
-            border: 1px solid #ad93ef;
-            font-weight: 400;
-            font-size: 12px;
-            padding: 2px 10px;
-            display: block;
-            width: fit-content;
-        }
+        
 
         
 
-        .user-mypage {
-            font-weight: 400;
-            font-size: 12px;
-            display: inline-block;
-            margin-left: 10px;
-            color: #ad93ef;
-        }
+        
+
+        
 
         .nav-menu-list {
             padding: 20px;
@@ -260,17 +240,23 @@
                 .nav-menu-link {
                     display: block;
                     width: 100%;
-                    padding: 15px 0;
-                    border-bottom: 1px solid #ad93ef;
-                    color: #000;
-                    opacity: 0.8;
+                    padding: 15px;
+                    border: 1px solid #ad93ef;
+                    border-radius: 10px;
+                    color: #fff;
+                    text-align: center;
+
+                    
                     font-weight: 400;
                 }
 
+                margin-bottom: 20px;
+
 
                 &:last-child {
+                    margin-bottom: 0;
                     .nav-menu-link  {
-                        border-bottom: 0;
+                        /* border-bottom: 0; */
                     }
                 }
             }
@@ -278,9 +264,66 @@
     }
 }
 
+.user-login {
+    
+    color: #fff;
+    background-color:  #ad93ef;
+    font-weight: 400;
+    font-size: 12px;
+    padding:10px;
+    display: block;
+    width: fit-content;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.user-mypage {
+    font-weight: 400;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 10px;
+    color: #ad93ef;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.user-logout {
+    
+    color: #fff;
+    background-color: #ad93ef;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 10px;
+    display: block;
+   
+    width: fit-content;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.user-mypage {
+    
+    color: #fff;
+    background-color:  #ad93ef;
+    font-weight: 400;
+    font-size: 12px;
+    padding:10px;
+    display: inline-block;
+    width: fit-content;
+    vertical-align: middle;
+    margin-left: 10px;
+}
 
 @media screen and (min-width:992px) {
     .makao-header  {
+        background-color: rgba(0,0,0,0.6);
+        position: absolute;
         .header-menu-wrap {
             
     

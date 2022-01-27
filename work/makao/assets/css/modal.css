@@ -1,0 +1,164 @@
+.modal .modal-content {
+  background-image: url(../img/modal-bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  border: 1px solid #cac353;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.modal .modal-dialog {
+  width: 100%;
+  max-width: 970px;
+}
+
+.modal .modal-header {
+  border: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+  padding: 50px;
+}
+
+.modal .modal-header i {
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.modal .modal-header .modal-logo {
+  width: 100%;
+  text-align: center;
+}
+
+.modal .modal-header .modal-logo img {
+  width: 110px;
+  height: auto;
+}
+
+.modal .group-box {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal .group-box:last-child {
+  margin-bottom: 0;
+}
+
+.modal .group-box.flex-group-box {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .group-box.flex-group-box .registe-left {
+  width: 25%;
+  min-width: 25%;
+  word-wrap: break-word;
+}
+
+.modal .group-box .dark-input {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 50px;
+  background-color: #000;
+  border: 1px solid #43335b;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.modal .group-box .dark-input::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.modal .group-box .dark-input::-moz-placeholder {
+  color: #adadad;
+}
+
+.modal .group-box .dark-input:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.modal .group-box .dark-input::-ms-input-placeholder {
+  color: #adadad;
+}
+
+.modal .group-box .dark-input::placeholder {
+  color: #adadad;
+}
+
+.modal .group-box .dark-input.registe-input {
+  /* max-width: 80%; */
+}
+
+.modal .registe-left {
+  display: block;
+  width: 100%;
+  max-width: 140px;
+}
+
+.modal .inner-body {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.modal .registe-category {
+  position: relative;
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.modal .registe-category.required::after {
+  content: '*';
+  display: block;
+  position: absolute;
+  top: -5px;
+  right: -12px;
+  color: #cac353;
+}
+
+.modal .number-btn {
+  margin-left: 10px;
+  background-color: #4a1f96;
+  color: #fff;
+  height: 50px;
+  text-align: center;
+  min-width: 140px;
+}
+
+.modal .modal-footer {
+  border: 0;
+  padding: 0;
+  display: block;
+  padding: 60px 15px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .modal-footer .modal-bottom-btn {
+  max-width: 140px;
+  width: 100%;
+  border-radius: 100px;
+  background-color: #ebe034;
+  padding: 9px 7px 6px;
+}
+
+/*# sourceMappingURL=modal.css.map */

@@ -157,7 +157,7 @@
 
 .makao-main .middle-content-box .middle-content-img {
   width: 100%;
-  padding-top: 63%;
+  padding-top: 60%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -403,7 +403,7 @@
     display: none;
   }
   .makao-main .middle-content-box .middle-content-img {
-    padding-top: 74%;
+    padding-top: 60%;
   }
   .makao-main .middle-content-modal-btn:hover .middle-content-hover-box .hover-content-title {
     font-size: 40px;
