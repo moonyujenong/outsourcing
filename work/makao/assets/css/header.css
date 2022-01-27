@@ -64,6 +64,27 @@
           flex: auto 1;
 }
 
+.makao-header .user-name {
+  color: #ad93ef;
+  font-size: 18px;
+  font-weight: 500;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+}
+
+.makao-header .user-name-text {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .makao-header .sub-title {
   letter-spacing: -0.32px;
   text-align: center;
@@ -123,6 +144,21 @@
   background-color: #4d034f;
   right: -12px;
   top: 4px;
+}
+
+.makao-header .user-mypage {
+  border-radius: 50px;
+  color: #ad93ef;
+  border: 1px solid #ad93ef;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 2px 10px;
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  vertical-align: middle;
+  margin-left: 10px;
 }
 
 .makao-nav {
