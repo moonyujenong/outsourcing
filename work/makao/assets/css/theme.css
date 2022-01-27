@@ -343,6 +343,7 @@ button:focus, button:active {
   border-radius: 10px;
   color: #fff;
   text-align: center;
+  position: relative;
   font-weight: 400;
 }
 
@@ -938,6 +939,10 @@ button:focus, button:active {
   -webkit-box-flex: 0.3;
       -ms-flex: 0.3;
           flex: 0.3;
+}
+
+.modal-open {
+  padding-right: 0 !important;
 }
 
 @media screen and (min-width: 992px) {

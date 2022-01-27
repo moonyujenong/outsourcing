@@ -139,20 +139,20 @@
                    
 
                     <ul class="nav-menu-list">
-                        <li class="nav-menu-item">
-                            <a href="#" class="nav-menu-link">
+                        <li class="nav-menu-item"> 
+                            <a href="#" class="nav-menu-link" data-toggle="modal"  data-target="#loginModal" data-dismiss="modal">
                                 입금신청
                             </a>
                         </li>
 
                         <li class="nav-menu-item">
-                            <a href="#" class="nav-menu-link">
+                            <a href="#" class="nav-menu-link" data-toggle="modal"  data-target="#loginModal" data-dismiss="modal">
                                출금신청
                             </a>
                         </li>
 
                         <li class="nav-menu-item">
-                            <a href="#" class="nav-menu-link">
+                            <a href="#" class="nav-menu-link" data-toggle="modal"  data-target="#loginModal">
                                 카지노
                             </a>
                         </li>
@@ -164,19 +164,19 @@
                         </li>
 
                         <li class="nav-menu-item">
-                            <a href="#" class="nav-menu-link">
+                            <a href="#" class="nav-menu-link" data-toggle="modal"  data-target="#game">
                                 슬롯게임
                             </a>
                         </li>
 
                         <li class="nav-menu-item">
-                            <a href="#" class="nav-menu-link">
+                            <a href="#" class="nav-menu-link" data-toggle="modal"  data-target="#coupon">
                                 쿠폰
                             </a>
                         </li>
 
                         <li class="nav-menu-item">
-                            <a href="#" class="nav-menu-link">
+                            <a href="#" class="nav-menu-link" data-toggle="modal"  data-target="#mypageModal">
                                 마이페이지
                             </a>
                         </li>
@@ -223,7 +223,7 @@
                 <div class="content-grid-wrap">
                     <div class="grid-inner-content">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-lg-4">
                                 <div  class="middle-content-modal-btn">
                                     <div class="middle-content-box">
                                         <div class="middle-content-img" style="background-image: url(./assets/img/middle01.png);"></div>
@@ -240,7 +240,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-lg-4">
                                 <div class="middle-content-modal-btn">
                                     <div class="middle-content-box">
                                         <div class="middle-content-img" style="background-image: url(./assets/img/middle02.png);"></div>
@@ -259,7 +259,7 @@
 
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-lg-4">
                                 <div class="middle-content-modal-btn">
                                     <div class="middle-content-box">
                                         <div class="middle-content-img" style="background-image: url(./assets/img/middle03.png);"></div>
@@ -947,6 +947,31 @@
         </div>
     </div>
 
+    <!-- todo : 쿠폰 모달 -->
+    <div class="modal fade" id="coupon_modal" tabindex="-1" aria-labelledby="coupon_modal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <form action="">
+                    <div class="modal-header">
+                        <i class="xi-close" data-dismiss="modal"></i>
+                        <div class="modal-logo">
+                            <img src="./assets/img/logo.png" alt="마카오 로고">
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+                       
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="submit-btn modal-bottom-btn">확인</button>
+                        <button type="button" class="cancel-btn modal-bottom-btn" data-dismiss="modal">취소</button>
+                    </div>
+                </form>
+          </div>
+        </div>
+    </div>
+
     <script>
         var swiper = new Swiper(".visual-banner-slide", {
             slidesPerView: 1,
@@ -981,8 +1006,13 @@
                 
             });
 
-            $('.nav-inner-wrap').click(function(e){
-                e.stopPropagation();
+            $('.nav-menu-list').click(function(e){
+                /* e.stopPropagation(); */
+            });
+
+            $('.nav-menu-link').click(function(e){
+                e.preventDefault();
+                console.log('test');
             });
         });
       </script>

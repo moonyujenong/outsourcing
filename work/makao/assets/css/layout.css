@@ -403,6 +403,10 @@
           flex: 0.3;
 }
 
+.modal-open {
+  padding-right: 0 !important;
+}
+
 @media screen and (min-width: 992px) {
   .makao-main .main-visual-banner-wrap .slide-banner-img-box::before {
     display: none;
