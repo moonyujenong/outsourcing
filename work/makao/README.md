@@ -1,5 +1,5 @@
 Fargo
-- url : https://moonyujenong.github.io/outsourcing/work/fargo/home.html
+- url : https://moonyujenong.github.io/outsourcing/work/makao/main.html
 
 * 작업물은 위의 링크에서 확인하실 수 있습니다.
 * 감사합니다.
