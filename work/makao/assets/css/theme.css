@@ -502,6 +502,8 @@ button:focus, button:active {
 .makao-main .main-visual-banner-wrap .slide-banner-img-box {
   width: 100%;
   position: relative;
+  /* height: 400px; */
+  overflow: hidden;
 }
 
 .makao-main .main-visual-banner-wrap .slide-banner-img-box::before {
@@ -515,9 +517,12 @@ button:focus, button:active {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.makao-main .main-visual-banner-wrap .slide-banner-img-box img {
+.makao-main .main-visual-banner-wrap .slide-banner-img-box .slide-banner-img {
   width: 100%;
-  height: auto;
+  padding-top: 28%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .makao-main .main-visual-banner-wrap .main-visual-paging {

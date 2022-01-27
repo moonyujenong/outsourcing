@@ -10,6 +10,8 @@
         .slide-banner-img-box {
             width: 100%;
             position: relative;
+            /* height: 400px; */
+            overflow: hidden;
     
             &::before {
                 content: '';
@@ -22,9 +24,12 @@
                 background-color: rgba(0,0,0,0.2);
             }
     
-            img {
-                width: 100%;
-                height: auto;
+            .slide-banner-img {
+               width: 100%;
+               padding-top: 28%;
+               background-size: cover;
+               background-repeat: no-repeat;
+               background-position: center;
             }
         }
     
