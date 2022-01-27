@@ -1,0 +1,56 @@
+ .makao-header {
+    width: 100%;
+    position: relative;
+    background-color: #c0c0c0;
+
+    .header-menu-wrap {
+        width: 100%;
+
+        &.pc-header {
+            display: none;
+        }
+
+        &.mobile-header {
+            display: flex;
+            align-items: center;
+            
+            .mobile-logo-box {
+                flex: 1;
+                text-align: center;
+            }
+        }
+    }
+
+    .menu-list {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .menu-item {
+        text-align: center;
+
+    }
+ }
+
+
+@media screen and (min-width:992px) {
+    .makao-header  {
+        .header-menu-wrap {
+            
+    
+            &.pc-header {
+                display: flex;
+            }
+    
+            &.mobile-header {
+                display: none;
+                
+                
+                
+            }
+        }
+    }
+}
