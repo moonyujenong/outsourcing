@@ -38,7 +38,7 @@
 }
 
 .makao-header .header-menu-wrap.mobile-header .mobile-logo-box img {
-  width: 60px;
+  width: 75px;
   height: auto;
 }
 
@@ -83,7 +83,7 @@
   -webkit-box-flex: inherit;
       -ms-flex: inherit;
           flex: inherit;
-  width: 100%;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +94,16 @@
       justify-content: space-around;
   padding: 15px 0;
   border-top: 1px solid #ad93ef;
-  margin-top: 15px;
+  margin: 15px -4px 0;
+}
+
+.makao-header .mobile-user-box a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  margin: 0 4px;
+  font-size: 14px;
 }
 
 .makao-header .user-name-text {
@@ -259,7 +268,9 @@
 
 .user-login-mobile {
   color: #fff;
-  background-color: #ad93ef;
+  /* background-color:  #ad93ef; */
+  background: -webkit-gradient(linear, left bottom, left top, from(#0C161C), to(#343434));
+  background: linear-gradient(to top, #0C161C, #343434);
   font-weight: 400;
   font-size: 12px;
   padding: 10px;
@@ -277,8 +288,11 @@
   font-weight: 400;
   font-size: 12px;
   display: inline-block;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   color: #ad93ef;
+  background-color: #ad93ef;
+  padding: 10px;
+  color: #fff;
 }
 
 .user-mypage:hover {
@@ -287,7 +301,9 @@
 
 .user-logout {
   color: #fff;
-  background-color: #ad93ef;
+  /* background-color: #ad93ef; */
+  background: -webkit-gradient(linear, left bottom, left top, from(#480a56), to(#ab31c2));
+  background: linear-gradient(to top, #480a56, #ab31c2);
   font-weight: 400;
   font-size: 12px;
   padding: 10px;
@@ -301,9 +317,11 @@
   color: #fff;
 }
 
-.user-mypage {
+.user-mypage-mobile {
   color: #fff;
-  background-color: #ad93ef;
+  /* background-color:  #ad93ef; */
+  background: -webkit-gradient(linear, left bottom, left top, from(#0C161C), to(#343434));
+  background: linear-gradient(to top, #0C161C, #343434);
   font-weight: 400;
   font-size: 12px;
   padding: 10px;
@@ -312,7 +330,30 @@
   width: -moz-fit-content;
   width: fit-content;
   vertical-align: middle;
-  margin-left: 10px;
+  /*  margin-left: 10px; */
+}
+
+.user-mypage-mobile:hover {
+  color: #fff;
+}
+
+.user-registe-mobile {
+  color: #fff;
+  /* background-color:  #ad93ef; */
+  background: -webkit-gradient(linear, left bottom, left top, from(#480a56), to(#ab31c2));
+  background: linear-gradient(to top, #480a56, #ab31c2);
+  font-weight: 400;
+  font-size: 12px;
+  padding: 10px;
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  vertical-align: middle;
+}
+
+.user-registe-mobile:hover {
+  color: #fff;
 }
 
 @media screen and (min-width: 992px) {

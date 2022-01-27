@@ -92,14 +92,14 @@
                         </li>
 
                         <!-- todo : 로그인 한 경우 -->
-                        <li class="menu-item" style="flex:inherit; display: none;" >
+                        <li class="menu-item" style="flex:inherit; " >
                             
                                 <span class="user-name">
                                     <span class="user-name-text"> MAKAO</span>
                                     <span style="font-size: 12px; color: #aeaeae;">님</span>
                                 </span>
                                 
-                                <a href="#" class="user-mypage" data-toggle="modal"  data-target="#mypageModal">
+                                <a href="#" class="user-mypage-mobile" style="margin-left: 10px;" data-toggle="modal"  data-target="#mypageModal">
                                     마이페이지
                                 </a>
                             
@@ -123,9 +123,11 @@
                     <div class="mobile-user-box">
                         <a href="#" class="user-login-mobile">로그인</a>
 
-                        <a href="#" class="user-mypage">마이페이지</a>
+                        <!-- <a href="#" class="user-mypage-mobile">마이페이지</a>
 
-                        <a href="#" class="user-logout">로그아웃</a>
+                        <a href="#" class="user-logout">로그아웃</a> -->
+
+                        <a href="#" class="user-registe-mobile">회원가입</a>
                     </div>
                 </div>
             </div>
@@ -457,6 +459,30 @@
             
             </div>
         </footer>
+    </div>
+
+    <div class="modal fade  main-popup" tabindex="-1" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog main-popup-dialog">
+          <div class="modal-content">
+              <form action="">
+                    <div class="modal-header">
+                        <i class="xi-close" data-dismiss="modal"></i>
+                        <div class="modal-logo">
+                            <img src="./assets/img/logo.png" alt="마카오 로고">
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+                      
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="submit-btn modal-bottom-btn">확인</button>
+                        <button type="button" class="cancel-btn modal-bottom-btn" data-dismiss="modal">취소</button>
+                    </div>
+                </form>
+          </div>
+        </div>
     </div>
 
 
@@ -922,7 +948,12 @@
 
     <script>
         var swiper = new Swiper(".visual-banner-slide", {
-            lidesPerView: 3,
+            slidesPerView: 1,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop : true,
             autoHeight: true,
             pagination: {
                 el: ".swiper-pagination.main-visual-paging",

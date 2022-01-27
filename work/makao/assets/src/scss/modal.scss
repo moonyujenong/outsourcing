@@ -9,9 +9,18 @@
         
     }
 
+    &.main-popup {
+        /* display: block; */
+    }
+
     .modal-dialog {
         width: 100%;
         max-width: 970px;
+
+        &.main-popup-dialog {
+            width: 100%;
+            max-width: 500px;
+        }
     }
 
     .modal-header {

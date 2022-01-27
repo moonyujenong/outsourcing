@@ -33,7 +33,7 @@
                 text-align: center;
                 
                 img {
-                    width: 60px;
+                    width: 75px;
                     height: auto;
                 }
             }
@@ -70,13 +70,21 @@
 
     .mobile-user-box {
         flex: inherit;
-        width: 100%;
+        width: auto;
         display: flex;
         align-items: center;
         justify-content: space-around;
         padding: 15px 0;
         border-top: 1px solid #ad93ef;
-        margin-top: 15px;
+       
+        margin:15px -4px 0 ;
+
+        a {
+            flex: 1;
+            text-align: center;
+            margin: 0 4px;
+            font-size: 14px;
+        }
     }
 
     .user-name-text {
@@ -267,7 +275,8 @@
 .user-login-mobile {
     
     color: #fff;
-    background-color:  #ad93ef;
+    /* background-color:  #ad93ef; */
+    background: linear-gradient(to top,#0C161C,#343434);
     font-weight: 400;
     font-size: 12px;
     padding:10px;
@@ -283,8 +292,11 @@
     font-weight: 400;
     font-size: 12px;
     display: inline-block;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     color: #ad93ef;
+    background-color: #ad93ef;
+    padding: 10px;
+    color: #fff;
 
     &:hover {
         color: #fff;
@@ -294,7 +306,8 @@
 .user-logout {
     
     color: #fff;
-    background-color: #ad93ef;
+    /* background-color: #ad93ef; */
+    background: linear-gradient(to top,#480a56,#ab31c2);
     font-weight: 400;
     font-size: 12px;
     padding: 10px;
@@ -307,17 +320,38 @@
     }
 }
 
-.user-mypage {
+.user-mypage-mobile {
     
     color: #fff;
-    background-color:  #ad93ef;
+    /* background-color:  #ad93ef; */
+    background: linear-gradient(to top,#0C161C,#343434);
     font-weight: 400;
     font-size: 12px;
     padding:10px;
     display: inline-block;
     width: fit-content;
     vertical-align: middle;
-    margin-left: 10px;
+   /*  margin-left: 10px; */
+
+   &:hover {
+       color: #fff;
+   }
+}
+
+.user-registe-mobile {
+    color: #fff;
+    /* background-color:  #ad93ef; */
+    background: linear-gradient(to top,#480a56,#ab31c2);
+    font-weight: 400;
+    font-size: 12px;
+    padding:10px;
+    display: inline-block;
+    width: fit-content;
+    vertical-align: middle;
+
+    &:hover {
+        color: #fff;
+    }
 }
 
 @media screen and (min-width:992px) {
