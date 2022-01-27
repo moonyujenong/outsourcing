@@ -1,5 +1,6 @@
 .makao-header {
   width: 100%;
+  position: relative;
   background-color: #000;
   top: 0;
   left: 0;
@@ -316,10 +317,10 @@
 
 @media screen and (min-width: 992px) {
   .makao-header {
-    background-color: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    top: 0;
-    left: 0;
+    /* background-color: rgba(0,0,0,0.6); */
+    /* position: ;
+        top: 0;
+        left: 0; */
   }
   .makao-header .header-menu-wrap.pc-header {
     display: -webkit-box;
