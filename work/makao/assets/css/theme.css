@@ -405,7 +405,9 @@ button:focus, button:active {
 @media screen and (min-width: 992px) {
   .makao-header {
     background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
   .makao-header .header-menu-wrap.pc-header {
     display: -webkit-box;
@@ -519,7 +521,7 @@ button:focus, button:active {
 
 .makao-main .main-visual-banner-wrap .slide-banner-img-box .slide-banner-img {
   width: 100%;
-  padding-top: 28%;
+  padding-top: 34%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -323,7 +323,10 @@
 @media screen and (min-width:992px) {
     .makao-header  {
         background-color: rgba(0,0,0,0.6);
-        position: absolute;
+        position: fixed;
+        top: 0;
+        left: 0;
+        
         .header-menu-wrap {
             
     
