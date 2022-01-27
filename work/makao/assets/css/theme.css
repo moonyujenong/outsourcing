@@ -1005,7 +1005,7 @@ button:focus, button:active {
 }
 
 .modal.main-popup {
-  display: block;
+  /* display: block; */
 }
 
 .modal .modal-dialog {
@@ -1050,6 +1050,8 @@ button:focus, button:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .modal .group-box:last-child {
@@ -1063,7 +1065,7 @@ button:focus, button:active {
 }
 
 .modal .group-box.flex-group-box .registe-left {
-  width: 25%;
+  /* width: 25%; */
   min-width: 25%;
   word-wrap: break-word;
 }
@@ -1107,8 +1109,8 @@ button:focus, button:active {
 
 .modal .registe-left {
   display: block;
-  width: 100%;
-  max-width: 140px;
+  /* width: 100%;
+        max-width: 140px; */
 }
 
 .modal .inner-body {
@@ -1164,6 +1166,13 @@ button:focus, button:active {
   border-radius: 100px;
   background-color: #ebe034;
   padding: 9px 7px 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal .group-box {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */

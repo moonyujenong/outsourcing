@@ -10,7 +10,7 @@
     }
 
     &.main-popup {
-        display: block;
+        /* display: block; */
     }
 
     .modal-dialog {
@@ -55,6 +55,7 @@
     .group-box {
         margin-bottom: 20px;
         display: flex;
+        flex-wrap: wrap;
 
         &:last-child {
             margin-bottom: 0;
@@ -64,7 +65,7 @@
             align-items: center;
 
             .registe-left {
-                width: 25%;
+                /* width: 25%; */
                 min-width: 25%;
                 word-wrap: break-word;
             }
@@ -97,8 +98,8 @@
     }
     .registe-left {
         display: block;
-        width: 100%;
-        max-width: 140px;
+        /* width: 100%;
+        max-width: 140px; */
        
     }
 
@@ -149,6 +150,14 @@
             border-radius: 100px;
             background-color: #ebe034;
             padding: 9px 7px 6px;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .modal {
+        .group-box {
+            flex-wrap: nowrap;
         }
     }
 }
