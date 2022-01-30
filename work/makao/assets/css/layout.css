@@ -409,8 +409,8 @@
 
 @media screen and (min-width: 992px) {
   .makao-main .main-visual-banner-wrap .slide-banner-img-box .slide-banner-img {
-    padding-top: 20%;
-    background-position: center bottom -100px;
+    padding-top: 21%;
+    background-position: center bottom -120px;
   }
   .makao-main .main-visual-banner-wrap .slide-banner-img-box::before {
     display: none;
