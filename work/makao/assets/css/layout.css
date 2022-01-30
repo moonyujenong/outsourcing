@@ -26,7 +26,7 @@
 
 .makao-main .main-visual-banner-wrap .slide-banner-img-box .slide-banner-img {
   width: 100%;
-  padding-top: 20%;
+  padding-top: 30%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -409,7 +409,7 @@
 
 @media screen and (min-width: 992px) {
   .makao-main .main-visual-banner-wrap .slide-banner-img-box .slide-banner-img {
-    padding-top: 25%;
+    padding-top: 20%;
     background-position: center bottom -100px;
   }
   .makao-main .main-visual-banner-wrap .slide-banner-img-box::before {
