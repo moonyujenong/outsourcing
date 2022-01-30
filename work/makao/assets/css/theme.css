@@ -564,7 +564,7 @@ button:focus, button:active {
 
 .makao-main .main-visual-banner-wrap .slide-banner-img-box .slide-banner-img {
   width: 100%;
-  padding-top: 28%;
+  padding-top: 20%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -946,6 +946,10 @@ button:focus, button:active {
 }
 
 @media screen and (min-width: 992px) {
+  .makao-main .main-visual-banner-wrap .slide-banner-img-box .slide-banner-img {
+    padding-top: 25%;
+    background-position: center bottom -100px;
+  }
   .makao-main .main-visual-banner-wrap .slide-banner-img-box::before {
     display: none;
   }
