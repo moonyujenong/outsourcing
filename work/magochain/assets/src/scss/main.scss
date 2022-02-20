@@ -1,0 +1,299 @@
+.magochain-main {
+    .section-bg {
+        width: 100vw;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+       
+
+        &.intro-bg {
+            background-image: url(../img/sectoin1-bg.png);
+            padding: 200px 0 160px;
+        }
+
+        &.vision-bg {
+            background-image: url(../img/section2-bg.png);
+            padding: 80px 0 130px;
+        }
+
+        &.number-bg {
+            background-image: url(../img/section4-bg.png);
+            padding: 80px 0 ;
+        }
+
+        .inner-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            padding: 0 30px;
+        }
+    }   
+
+    .vertical-slide-content {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+
+
+    }
+    
+    .vertical-slide-view {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-paging-custom {
+        position: absolute;
+        z-index: 100;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 90px;
+    }
+
+    .custom-paging-wrap {
+        display: flex;
+        align-items: flex-start;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+       
+        overflow-x: auto;
+        width: 100%;
+
+        .custom-paging-content {
+            padding: 20px 0 28px;
+            flex: auto 1;
+            text-align: center;
+
+            img {
+                width: 30px;
+
+            }
+
+            .custom-pading-text {
+                color: #fff;
+                margin-top: 12px;
+                display: block;
+                font-size: 13px;
+                line-height: 20px;
+                font-weight: 500;
+
+            }
+        }
+        
+    }
+
+    .vertical-slide-content-item {
+        height: 100%;
+
+        .content-item-bg {
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+
+    .section-naming {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: block;
+        font-size: 12px;
+        color: #aaa;
+        line-height: 14px;
+        font-weight: 600;
+
+        &.pcblock {
+            display: none;
+        }
+
+        &.mblock {
+            display: block;
+        }
+    }
+
+    .intro-title {
+        font-size: 23px;
+        color: #fff;
+        font-weight: 600;
+        text-shadow: 0px 0px 10px #000000;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .intro-child-title {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 30px;
+        color: #fff;
+        text-shadow: 0px 0px 6px #000000;
+        display: block;
+        margin-bottom: 70px;
+    }
+
+    .consulting-sns-link {
+        display: block;
+        padding: 10px 5px;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
+        color: #fff;
+        max-width: 140px;
+    }
+
+    .arrow-bottom-img {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .arrow-bottom-img-item {
+        width: 18px;
+        height: 18px;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../img/arrow-bottom.svg);
+    }
+
+    .vision-content-box {
+        margin-top: 60px;
+
+        .vision-mago-logo-box {
+            img {
+                width: 50px; 
+            }
+
+        }
+
+        .vision-right-content {
+            margin-top: 60px;
+
+        }
+
+        .vision-explan-title {
+            display: block;
+            margin: 0;
+            font-size: 23px;
+            font-weight: 600;
+            color: #fff;
+            line-height: 40px;
+        }
+
+        .vision-explan-child-title {
+            font-size: 20px;
+            line-height: 40px;
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+
+    .detail-vision-explan {
+        display: block;
+        margin-top: 50px;
+        font-size: 15px;
+        line-height: 27px;
+        color: #fff;
+        text-shadow: 0px 0px 6px #000000;
+        font-weight: 400;
+    }
+
+    .number-wrap {
+        margin-top: 60px;
+
+        .number-content-title {
+            text-shadow: 0px 0px 10px #000000;
+            color: #fff;
+            margin-bottom: 0;
+            font-size: 23px;
+            line-height: 40px;
+            font-weight: 600;
+
+        }   
+
+        .number-content-explan {
+            margin-top: 50px;
+            display: block;
+            font-size: 15px;
+            line-height: 27px;
+            color: #fff;
+            text-shadow: 0px 0px 6px #000000;
+            font-weight: 400;
+
+        }
+
+        .number-length-wrap {
+            margin-top: 20px;
+
+        }
+
+        .number-length-box {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -6px;
+            /* align-items: stretch; */
+            justify-content: space-between;
+
+        }
+
+        .number-length-item {
+            width: 49%;
+            /* padding: 10px 6px ; */
+            border:  3px solid #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 145px;
+            background: rgba(255, 255, 255, 0.8);
+            box-sizing: border-box;
+            margin: 10px 0;
+        }
+
+        .counting-number-box {
+            display: flex;
+            flex-wrap: nowrap;
+
+            .counting-number {
+                font-size: 50px;
+                font-weight: 600;
+                color: #141414;
+                line-height: 40px;
+            }
+
+            i  {
+                color: #B11E2C;
+                font-size: 50px;
+                line-height: 40px;
+                font-weight: 600;
+
+            }
+
+            
+        }
+       
+    }
+
+    .number-explan {
+        display: block;
+        margin-top: 20px;
+        color: #141414;
+        font-size: 13px;
+        line-height: 20px;
+    } 
+}
+
