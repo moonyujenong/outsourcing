@@ -63,15 +63,15 @@
             </div>
     
             <!-- 서비스 섹션 -->
-            <div class="section" id="section2">
-                <h3 class="section-naming">
-                    SERVICES
-                </h3>
+            <!-- <div class="section services_section" id="section2">
+               
                 
                 <div class="vertical-slide-content">
-    
+                    <h3 class="section-naming services-section-naming">
+                        SERVICES
+                    </h3>
                     <div class="swiper vertical-slide-view">
-                        <div class="swiper-wrapper">
+                        <div class="swiper-wrapper vertical-slide-wrapper">
                             <div class="swiper-slide">
                                 <div class="vertical-slide-content-item">
                                     <div class="content-item-bg" style="background-image: url(./assets/img/verticalSlide-bg1.png);" alt="코인기획 배경"></div>
@@ -113,43 +113,45 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="swiper-pagination swiper-paging-custom">
+                             <ul class="custom-paging-wrap">
+                                 <li class="custom-paging-content">
+                                     <img src="./assets/img/horizontal-slide1.png" alt="코인기획">
+                                     <span class="custom-pading-text">코인기획</span>
+                                 </li>
+         
+                                 <li class="custom-paging-content">
+                                     <img src="./assets/img/horizontal-slide2.png" alt="벡서작성">
+                                     <span class="custom-pading-text">백서작성</span>
+                                 </li>
+         
+                                 <li class="custom-paging-content">
+                                     <img src="./assets/img/horizontal-slide3.png" alt="블록체인 개발">
+                                     <span class="custom-pading-text">블록체인 개발</span>
+                                 </li>
+         
+                                 <li class="custom-paging-content">
+                                     <img src="./assets/img/horizontal-slide4.png" alt="마케팅 및 상장">
+                                     <span class="custom-pading-text">마케팅 및 상장</span>
+                                 </li>
+         
+                                 <li class="custom-paging-content">
+                                     <img src="./assets/img/horizontal-slide5.png" alt="컨설팅">
+                                     <span class="custom-pading-text">컨설팅</span>
+                                 </li>
+         
+                                 <li class="custom-paging-content">
+                                     <img src="./assets/img/horizontal-slide6.png" alt="기타서비스">
+                                     <span class="custom-pading-text">기타 서비스</span>
+                                 </li>
+                             </ul>
+                         </div>
                     </div>
     
-                    <div class="swiper-paging-custom">
-                        <ul class="custom-paging-wrap">
-                            <li class="custom-paging-content">
-                                <img src="./assets/img/horizontal-slide1.png" alt="코인기획">
-                                <span class="custom-pading-text">코인기획</span>
-                            </li>
-    
-                            <li class="custom-paging-content">
-                                <img src="./assets/img/horizontal-slide2.png" alt="벡서작성">
-                                <span class="custom-pading-text">백서작성</span>
-                            </li>
-    
-                            <li class="custom-paging-content">
-                                <img src="./assets/img/horizontal-slide3.png" alt="블록체인 개발">
-                                <span class="custom-pading-text">블록체인 개발</span>
-                            </li>
-    
-                            <li class="custom-paging-content">
-                                <img src="./assets/img/horizontal-slide4.png" alt="마케팅 및 상장">
-                                <span class="custom-pading-text">마케팅 및 상장</span>
-                            </li>
-    
-                            <li class="custom-paging-content">
-                                <img src="./assets/img/horizontal-slide5.png" alt="컨설팅">
-                                <span class="custom-pading-text">컨설팅</span>
-                            </li>
-    
-                            <li class="custom-paging-content">
-                                <img src="./assets/img/horizontal-slide6.png" alt="기타서비스">
-                                <span class="custom-pading-text">기타 서비스</span>
-                            </li>
-                        </ul>
-                    </div>
+                   
                 </div>
-            </div>
+            </div> -->
             <!-- //서비스 섹션 -->
     
             <div class="section" id="section3">
@@ -222,13 +224,17 @@
 	});
 
     $(function(){
+        var menu = ['<div class="custom-paging-content"><img src="./assets/img/horizontal-slide1.png" alt="코인기획"><span class="custom-pading-text">코인기획</span></div>', '<div class="custom-paging-content"><img src="./assets/img/horizontal-slide2.png" alt="백서작성"><span class="custom-pading-text">백서작성</span></div>', '<div class="custom-paging-content"><img src="./assets/img/horizontal-slide3.png" alt="블록체인 개발"><span class="custom-pading-text">블록체인 개발</span></div>', '<div class="custom-paging-content"><img src="./assets/img/horizontal-slide4.png" alt="마케팅 및 성장"><span class="custom-pading-text">마케팅 및 성장</span></div>', '<div class="custom-paging-content"><img src="./assets/img/horizontal-slide5.png" alt="컨설팅"><span class="custom-pading-text">컨설팅</span></div>', '<div class="custom-paging-content"><img src="./assets/img/horizontal-slide6.png" alt="기타 서비스"><span class="custom-pading-text">기타 서비스</span></div>']
         var swiper = new Swiper(".vertical-slide-view", {
         
         effect: "fade",
         
         pagination: {
-          el: ".swiper-paging-custom",
+          el: '.swiper-pagination',
           clickable: true,
+            renderBullet: function (index, className) {
+            return '<div class="' + className + '">' + (menu[index]) + '</div>';
+            },
         },
       });
     });

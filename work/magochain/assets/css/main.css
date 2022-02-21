@@ -52,12 +52,48 @@
 }
 
 .magochain-main .swiper-paging-custom {
+  /*  position: absolute;
+        z-index: 100;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 90px; */
+  bottom: 90px !important;
   position: absolute;
+  width: 100%;
   z-index: 100;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: 90px;
+}
+
+.magochain-main .swiper-paging-custom .swiper-pagination-bullet {
+  width: auto;
+  height: auto;
+  border-radius: inherit;
+  background: none !important;
+}
+
+.magochain-main .swiper-paging-custom .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: red;
+}
+
+.magochain-main .custom-paging-content {
+  position: relative;
+  bottom: 0;
+}
+
+.magochain-main .custom-paging-content img {
+  width: 30px;
+}
+
+.magochain-main .custom-paging-content .custom-pading-text {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #fff;
+  display: block;
+  margin-top: 12px;
+}
+
+.magochain-main .vertical-slide-wrapper {
+  position: absolute;
 }
 
 .magochain-main .custom-paging-wrap {
@@ -304,6 +340,11 @@
   color: #141414;
   font-size: 13px;
   line-height: 20px;
+}
+
+.magochain-main .services_section {
+  position: relative;
+  padding: 80px 0 90px;
 }
 
 /*# sourceMappingURL=main.css.map */
