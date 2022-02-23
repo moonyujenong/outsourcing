@@ -26,7 +26,7 @@
     .content-section2 {
         position: relative ;
         z-index: 10;
-        padding: 80px 0 90px;
+        padding: 80px 0 74px;
 
         &::before {
             display: block;
@@ -391,6 +391,7 @@
         color: #0d0d0d;
         line-height: 1.25;
         letter-spacing: normal;
+        white-space: nowrap;
     }
 
     .payment-text {
@@ -448,6 +449,14 @@
 
     }
 
+    .tab-content-item {
+        display: none;
+        
+        &.on {
+            display: block;
+        }
+    }
+
     .tab-content-item-list {
         display: flex;
         align-items: flex-start;
@@ -467,6 +476,7 @@
             width: 50%;
             
             padding: 0 4px;
+            margin-bottom: 16px;
         }
     }
 
@@ -576,5 +586,42 @@
         letter-spacing: normal;
     }
     
+
+    .tab-box {
+        margin-bottom: 32px;
+
+        .tab-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 -12px;
+
+            .tab-item {
+                flex: auto;
+                padding: 0 12px;
+
+                .tab-link {
+                    background-color: #fff;
+                    border-radius: 100px;
+                    border: 1px solid #dadada;
+                    box-sizing: border-box;
+                    text-align: center;
+                    padding: 12px;
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: #dadada;
+                    line-height: 1.38;
+                    letter-spacing: normal;
+                    display: block;
+
+                    &.on {
+                        border-color: #c6483e;
+                        color: #b75044;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
 }
 
