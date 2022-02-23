@@ -1,1 +1,298 @@
-     
+.allId-main {
+    .content-section1 {
+        position: relative;
+        z-index: 10;
+        padding: 20px 0 6px;
+    
+        &::before {
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            width: 100vw;
+            left: 50%;
+            transform: translateX(-50vw);
+            background-color: rgba(239, 239, 239, 0.4);
+    
+        }
+    }
+
+    .statistics-left-box, .statistics-right-box  {
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        background-color: #fff;
+        border-radius: 3px;
+        z-index: 10;
+
+    }
+
+    .statistics-left-box {
+        margin-bottom: 8px;
+    }
+
+    .user-statistics-list {
+        display: flex;
+        align-items: center;
+        padding: 8px 0;
+
+        .user-statistics-item {
+            position: relative;
+            flex: auto;
+            text-align: center;
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 1px;
+                height: 100%;
+                background-color: #f1f2f6;
+            }
+
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .user-statistics-icon {
+        display: block;
+        width: 32px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto;
+
+        &.all-user-icon {
+            background-image: url(../img/all-user-icon.svg);
+        }
+
+        &.today-user-icon {
+            background-image: url(../img/today-user-icon.png);
+        }
+
+        &.yesterday-user-icon {
+            background-image: url(../img/yesterday-user-icon.png);
+        }
+
+        &.moment-user-icon {
+            background-image: url(../img/moment-user-icon.png);
+        }
+    }
+
+    .user-statistics-title {
+        margin: 0;
+        display: block;
+        font-size: 8px;
+        font-weight: 400;
+        color: #525252;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+
+    .user-statistics-text {
+        display: block;
+        margin-top: 8px;
+        margin-bottom: 0;
+        font-size: 15px;
+        font-weight: 500;
+        color: #343434;
+        line-height: 1.31;
+        letter-spacing: normal;
+    }
+
+    .visual-banner-wrap {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: 24px;
+
+        .visual-banner-item {
+            width: 100%;
+            padding-top: 22%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+
+        .swiper-button-next, .swiper-button-prev {
+            color: #707070;
+
+            &.swiper-button-disabled {
+                opacity: 1;
+            }
+
+            &::after {
+                font-size: 40px;
+            }
+        }
+
+        .visual-banner-paging {
+            bottom: 8px !important;
+        }
+
+        .swiper-pagination-bullet {
+            width: 4px;
+            height: 4px;
+            margin: 0 2px !important;
+            background-color: #666;
+            opacity: 0.6;
+           
+
+            
+
+            &.swiper-pagination-bullet-active {
+                opacity: 1;
+            }
+        }
+    }
+
+
+
+    .content-three-list-wrap {
+        margin-top: 17px;
+
+        .col-md-4 {
+            margin-bottom: 8px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .content-head {
+            padding: 13px 20px ;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
+        }
+    }
+
+    .content-inner-outline {
+        background-color: #fff;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    }
+
+    .dash-border {
+        width: 100%;
+        border: 1px dashed #9d9d9d;
+        margin-bottom: 9px;
+    }
+
+    .head-title-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+
+        .head-inner-icon {
+            width: 32px;
+            height: 25px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: block;
+
+            &.live-icon {
+                background-image: url(../img/live-icon.png);
+            }
+
+            &.pay-history-icon {
+                background-image: url(../img/pay-history-icon.png);
+            }
+        }
+
+        .head-title {
+            margin-bottom: 0;
+            margin-left: 2px;
+            font-size: 15px;
+            font-weight: 700;
+            color: #2c2c2c;
+            line-height: 1.33;
+            letter-spacing: normal;
+        }
+    }
+
+    .content-body {
+        height: 212px;
+        max-height: 212px;
+        overflow: hidden;
+        overflow-y: auto;
+
+        background-color: rgba(170, 170, 170, 0.08);
+
+        &::-webkit-scrollbar {
+            width: 15px;
+            border-radius: 100%;
+            
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+            box-shadow: inset 0px 0px 5px rgba(170, 170, 170, 0.16);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #c7c7c7;
+            border-radius: 10px;
+            background-clip: padding-box;
+            border: 3px solid transparent;
+        }
+    }
+
+    .scroll-list-item {
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    .scroll-list-box {
+        padding: 24px 24px 8px;
+        
+
+        .scroll-list-link {
+            background-color: rgba(100, 100, 100, 0.08);
+            position: relative;
+            padding: 9px 16px;
+            font-size: 11px;
+            font-weight: 500;
+            color: #030303;
+            line-height: 1.36;
+            letter-spacing: normal;
+            text-align: left;
+            display: block;
+            width: 100%;
+
+
+            .scroll-item-date {
+                position: absolute;
+                display: block;
+                right: 0;
+                font-size: 8px;
+                font-weight: 500;
+                color: #9d9d9d;
+                line-height: 1.25;
+                letter-spacing: normal;
+                top: -12px;
+
+            }
+        }
+
+    }
+
+    .content-footer  {
+        height: 24px;
+        width: 100%;
+        
+    }
+}
+
