@@ -408,7 +408,7 @@
   overflow: hidden;
   -webkit-line-clamp: 1;
   text-overflow: ellipsis;
-  width: 100%;
+  width: 80%;
 }
 
 .allId-main .order-payment {
