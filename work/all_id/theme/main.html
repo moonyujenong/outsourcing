@@ -676,6 +676,30 @@
             $('.tab-content-item').removeClass('on');
             $('#' + target).addClass('on');
         });
+
+
+
+        $('.side-menu-close').click(function(){
+                
+            $('.side-menu-wrap').animate({
+                'left' : '-100%'
+            }, 200);
+            });
+
+
+           
+               
+          
+                    var all_h = $(window).height();
+                    /* var theme_head = $('.allId-head').outerHeight(); */
+                    /* var total_h = all_h - theme_head ;  */
+
+                    $('.side-menu-wrap').css('min-height', all_h);
+                
+          
+
+           
+            
     }); 
 </script>
 
