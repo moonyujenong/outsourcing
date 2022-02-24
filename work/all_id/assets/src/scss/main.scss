@@ -797,10 +797,80 @@
         .content-section1 {
             margin-bottom: 0;
             padding: 32px 0 55px;
+            
+            &::before {
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .content-section2 {
+            &::before {
+                opacity: 0.18;
+                background-image: linear-gradient(to bottom, rgba(193, 73, 65, 0.37), rgba(255, 255, 255, 0.06));
+            }
         }
 
         .notice-content-text {
             font-size: 12px;
+        }
+
+
+        .tab-content-item-list {
+            margin: 0 -8px;
+
+            .tab-content-item-item {
+                width: 25%;
+                padding: 0 8px;
+            }
+        }
+
+        .user-account-name {
+            margin-top: 9px;
+            justify-content: flex-start;
+            padding-left: 5px;
+            margin-bottom: 16px;
+
+            &::before {
+                height: 16px;
+            }
+            .user-account-name-text {
+                font-size: 17px;
+                font-weight: 500;
+                color: #000;
+
+            }
+        }
+
+        .account-lv {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .more-show-btn {
+            padding: 11px 16px;
+            font-size: 14px;
+
+            i {
+                font-size: 12px;
+            }
+
+            &.pay-go-btn {
+                margin-top: 23px;
+                padding: 15px;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+        }
+
+        .list-item-date {
+            font-size: 12px;
+
+        }
+
+
+        .item-content-box {
+            padding: 4px 16px 8px;
         }
     }
     
