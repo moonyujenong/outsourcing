@@ -582,7 +582,7 @@
                 <li class="menu-content-list ">
                     <div class="menu-content-flex-box">
                     <!-- 활성화 시 클래스 on 추가 -->
-                    <span class="menu-left-icon pay-icon"></span>
+                    <span class="menu-left-icon market-icon"></span>
                     <span class="side-menu-text">구매상점</span>
                     </div>
                     
@@ -702,6 +702,29 @@
 
             $('.side-menu-inner-menu').stop().slideUp(200);
             $(this).children('.side-menu-inner-menu').stop().slideDown(200);
+        });
+
+        $('.side-menu-inner-menu-list li').click(function(){
+            $('.side-menu-inner-menu-link').removeClass('active');
+            $(this).children('a.side-menu-inner-menu-link').addClass('active');
+        });
+
+        $('.menu-btn-box').click(function(){
+            $(this).toggleClass('on');
+
+
+            if ($(this).hasClass("on")) {
+                $('.side-menu-wrap').animate({
+                    'left' : '0'
+                },200);
+            }
+            else {
+                
+
+                $('.side-menu-wrap').animate({
+                    'left' : '-100%'
+                },200);
+            }
         });
 
            

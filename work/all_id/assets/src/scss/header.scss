@@ -28,6 +28,7 @@
         display: flex;
         align-items: center;
         top: 15px;
+       
 
     }
 
@@ -649,6 +650,11 @@
     left: -100%;
 }
 
+.side-menu-inner-menu-item {
+    &.active {
+
+    }
+}
 
 @media screen and (min-width:992px) {
     .side-menu-wrap 
@@ -738,6 +744,13 @@
         .menu-btn-box {
             top: inherit;
             bottom: 0px;
+            padding: 10px 16px;
+
+            border-radius: 9px;
+
+            &.on {
+                background-color: rgba(129, 129, 129, 0.08);
+            }
         }
         
         .inner-user-popup-wrap {
@@ -778,6 +791,7 @@
         display: block;
         text-align: center;
         bottom: initial;
+        margin-top: 104px;
         
 
         img {
@@ -793,6 +807,72 @@
 
     }
 
+    .side-menu-content {
+        padding: 32px 0 0 ;
+    }
 
-    
+    .menu-content-list {
+        .menu-left-icon {
+            width: 48px;
+            height: 48px;
+        }
+
+        .menu-content-flex-box {
+            background-color: transparent;
+            border: none;
+            border-bottom:1px solid rgba(0, 0, 0, 0.5);
+            padding: 16px 70px;
+        }
+
+        &.active {
+            .menu-content-flex-box {
+                background-color: transparent;
+            }
+           
+            .side-menu-text  {
+                color: #e55132;
+            }
+
+            .menu-left-icon{
+                &.market-icon {
+                    background-image: url(../img/market.png);
+                }
+
+                &.down-icon {
+                    background-image: url(../img/down.png);
+                }
+
+                &.pay-icon {
+                    background-image: url(../img/pay.png);
+                }
+
+                &.logout-icon {
+                    background-image: url(../img/logout.png);
+                }
+            }
+            
+        }
+    }
+
+    .side-menu-text {
+        font-size: 19px;
+        font-weight: 500;
+        color: #626262;
+        line-height: 1.32;
+        letter-spacing: normal;
+
+    }
+
+    .side-menu-inner-menu {
+        margin-top: 16px;
+    }
+
+    .side-menu-inner-menu-list {
+        .side-menu-inner-menu-link {
+            font-size: 17px;
+            font-weight: 500;
+            padding: 16px 72px;
+
+        }
+    }
 }

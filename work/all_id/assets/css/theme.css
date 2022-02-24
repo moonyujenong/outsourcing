@@ -708,6 +708,11 @@
   .allId-head .menu-btn-box {
     top: inherit;
     bottom: 0px;
+    padding: 10px 16px;
+    border-radius: 9px;
+  }
+  .allId-head .menu-btn-box.on {
+    background-color: rgba(129, 129, 129, 0.08);
   }
   .allId-head .inner-user-popup-wrap {
     max-width: 385px;
@@ -739,6 +744,7 @@
     display: block;
     text-align: center;
     bottom: initial;
+    margin-top: 104px;
   }
   .side-menu-inner-banner-wrap img {
     margin: 0;
@@ -746,6 +752,52 @@
   }
   .side-menu-inner-banner-wrap img:first-child {
     margin-bottom: 24px;
+  }
+  .side-menu-content {
+    padding: 32px 0 0;
+  }
+  .menu-content-list .menu-left-icon {
+    width: 48px;
+    height: 48px;
+  }
+  .menu-content-list .menu-content-flex-box {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 16px 70px;
+  }
+  .menu-content-list.active .menu-content-flex-box {
+    background-color: transparent;
+  }
+  .menu-content-list.active .side-menu-text {
+    color: #e55132;
+  }
+  .menu-content-list.active .menu-left-icon.market-icon {
+    background-image: url(../img/market.png);
+  }
+  .menu-content-list.active .menu-left-icon.down-icon {
+    background-image: url(../img/down.png);
+  }
+  .menu-content-list.active .menu-left-icon.pay-icon {
+    background-image: url(../img/pay.png);
+  }
+  .menu-content-list.active .menu-left-icon.logout-icon {
+    background-image: url(../img/logout.png);
+  }
+  .side-menu-text {
+    font-size: 19px;
+    font-weight: 500;
+    color: #626262;
+    line-height: 1.32;
+    letter-spacing: normal;
+  }
+  .side-menu-inner-menu {
+    margin-top: 16px;
+  }
+  .side-menu-inner-menu-list .side-menu-inner-menu-link {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 16px 72px;
   }
 }
 
