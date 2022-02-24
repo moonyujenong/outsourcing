@@ -277,9 +277,37 @@
 
     .scroll-list-item {
         margin-bottom: 16px;
+        position: relative;
 
         &.payhistory-scroll-list-item {
             margin-bottom: 18px;
+
+            &.deal-ing {
+                &::before {
+                    content: '거래중';
+                    display: block;
+                    position: absolute;
+                    top: -16px;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 10;
+                    /* background-color: #b1b1b1 ; */
+                    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ;  
+                    backdrop-filter: blur(2.5px) ;
+                    
+                    
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 17px;
+                    font-weight: 700;
+                    line-height: 1.35;
+                    letter-spacing: normal;
+                                     
+                }
+            }
         }
 
         &.winning-list-item {
@@ -625,3 +653,155 @@
     }
 }
 
+
+@media screen and (min-width:992px) {
+    .allId-main {
+        .statistics-box {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            border-radius: 6px;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        }  
+
+        .statistics-left-box, .statistics-right-box {
+            flex: 1;
+            box-shadow: none;
+            border-radius: initial;
+
+        }
+
+        .statistics-left-box {
+            margin: 0;
+
+            .user-statistics-list {
+                .user-statistics-item {
+                    &:last-child {
+                        &::after {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        .user-statistics-list {
+            padding: 24px 0 ;
+        }
+
+        .user-statistics-icon {
+            width: 40px;
+            height: 40px;
+
+            
+        }
+
+        .user-statistics-title {
+            font-size: 12px;
+            margin-top: 2px;
+        }
+
+        .user-statistics-text {
+            margin-top: 5px;
+            font-size: 25px;
+            line-height: 1.32;
+        }
+
+        .visual-banner-wrap  {
+            margin-top: 16px;
+
+            .visual-banner-item {
+                padding-top: 14%;
+            }
+
+            .swiper-pagination-bullet {
+                width: 8px;
+                height: 8px;
+                margin: 0 4px !important;
+            }
+
+        }
+
+        .content-three-list-wrap {
+            margin-top: 24px;
+
+            .content-head {
+                padding: 16px  23px;
+
+            }
+
+            .col-md-4 {
+                margin-bottom: 0;
+            }
+        }
+
+        .dash-border {
+            margin-bottom: 16px;
+        }
+
+        .head-title-item {
+            .head-inner-icon {
+                width: 24px;
+                height: 24px;
+
+                &.pay-history-icon {
+                    margin-top: -5px;
+                }
+
+                &.winning-icon {
+                    margin-top: -5px;
+                }
+            }
+
+            .head-title {
+                font-size: 17px;
+                margin: 0 !important;
+                margin-left: 5px !important;
+            }
+        }
+
+
+        .content-body {
+            background-color: #ededed;
+            height: 310px;
+            max-height: 310px;
+        }
+
+        .scroll-list-box {
+            .scroll-list-link {
+                background-color: #d1d1d1;
+            }
+        }
+
+        .scroll-list-item {
+            margin-bottom: 32px;
+
+            .scroll-list-link {
+                font-size: 13px;
+
+                .scroll-item-date {
+                    font-size: 10px;
+
+                }
+            }
+
+            &.payhistory-scroll-list-item {
+                margin-bottom: 32px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .content-section1 {
+            margin-bottom: 0;
+            padding: 32px 0 55px;
+        }
+
+        .notice-content-text {
+            font-size: 12px;
+        }
+    }
+    
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .allId-main .content-section1 {
   position: relative;
   z-index: 10;
@@ -280,10 +281,41 @@
 
 .allId-main .scroll-list-item {
   margin-bottom: 16px;
+  position: relative;
 }
 
 .allId-main .scroll-list-item.payhistory-scroll-list-item {
   margin-bottom: 18px;
+}
+
+.allId-main .scroll-list-item.payhistory-scroll-list-item.deal-ing::before {
+  content: '거래중';
+  display: block;
+  position: absolute;
+  top: -16px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  /* background-color: #b1b1b1 ; */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: normal;
 }
 
 .allId-main .scroll-list-item.winning-list-item {
@@ -646,6 +678,120 @@
   border-color: #c6483e;
   color: #b75044;
   font-weight: 700;
+}
+
+@media screen and (min-width: 992px) {
+  .allId-main .statistics-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  }
+  .allId-main .statistics-left-box, .allId-main .statistics-right-box {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: initial;
+  }
+  .allId-main .statistics-left-box {
+    margin: 0;
+  }
+  .allId-main .statistics-left-box .user-statistics-list .user-statistics-item:last-child::after {
+    display: block;
+  }
+  .allId-main .user-statistics-list {
+    padding: 24px 0;
+  }
+  .allId-main .user-statistics-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .allId-main .user-statistics-title {
+    font-size: 12px;
+    margin-top: 2px;
+  }
+  .allId-main .user-statistics-text {
+    margin-top: 5px;
+    font-size: 25px;
+    line-height: 1.32;
+  }
+  .allId-main .visual-banner-wrap {
+    margin-top: 16px;
+  }
+  .allId-main .visual-banner-wrap .visual-banner-item {
+    padding-top: 14%;
+  }
+  .allId-main .visual-banner-wrap .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    margin: 0 4px !important;
+  }
+  .allId-main .content-three-list-wrap {
+    margin-top: 24px;
+  }
+  .allId-main .content-three-list-wrap .content-head {
+    padding: 16px  23px;
+  }
+  .allId-main .content-three-list-wrap .col-md-4 {
+    margin-bottom: 0;
+  }
+  .allId-main .dash-border {
+    margin-bottom: 16px;
+  }
+  .allId-main .head-title-item .head-inner-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .allId-main .head-title-item .head-inner-icon.pay-history-icon {
+    margin-top: -5px;
+  }
+  .allId-main .head-title-item .head-inner-icon.winning-icon {
+    margin-top: -5px;
+  }
+  .allId-main .head-title-item .head-title {
+    font-size: 17px;
+    margin: 0 !important;
+    margin-left: 5px !important;
+  }
+  .allId-main .content-body {
+    background-color: #ededed;
+    height: 310px;
+    max-height: 310px;
+  }
+  .allId-main .scroll-list-box .scroll-list-link {
+    background-color: #d1d1d1;
+  }
+  .allId-main .scroll-list-item {
+    margin-bottom: 32px;
+  }
+  .allId-main .scroll-list-item .scroll-list-link {
+    font-size: 13px;
+  }
+  .allId-main .scroll-list-item .scroll-list-link .scroll-item-date {
+    font-size: 10px;
+  }
+  .allId-main .scroll-list-item.payhistory-scroll-list-item {
+    margin-bottom: 32px;
+  }
+  .allId-main .scroll-list-item.payhistory-scroll-list-item:last-child {
+    margin-bottom: 0;
+  }
+  .allId-main .content-section1 {
+    margin-bottom: 0;
+    padding: 32px 0 55px;
+  }
+  .allId-main .notice-content-text {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

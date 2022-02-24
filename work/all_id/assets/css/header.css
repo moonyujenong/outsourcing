@@ -140,4 +140,60 @@
   background-image: url(../img/user-name.svg);
 }
 
+@media screen and (min-width: 992px) {
+  .allId-head {
+    position: relative;
+  }
+  .allId-head .inner-head-outline.m-head {
+    padding: 24px 0;
+  }
+  .allId-head .site-logo img {
+    height: 80px;
+  }
+  .allId-head .head-top-box {
+    border-bottom: 0;
+    padding: 0;
+  }
+  .allId-head .head-bottom-box {
+    position: absolute;
+    top: 24px;
+    right: 33px;
+  }
+  .allId-head .user-menu-list-box {
+    padding: 0;
+  }
+  .allId-head .user-menu-list {
+    margin: 0 -11px;
+  }
+  .allId-head .user-menu-list .user-menu-link {
+    border: 0;
+    padding: 0;
+  }
+  .allId-head .user-menu-list .user-menu-link .user-menu-text {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: normal;
+  }
+  .allId-head .user-menu-list .user-menu-item {
+    padding: 0 11px;
+  }
+  .allId-head .user-menu-list .user-menu-item:nth-child(2) {
+    border-right: 1px solid #dddddd;
+    padding-right: 21px;
+  }
+  .allId-head .user-menu-list .user-menu-item:nth-child(3) {
+    padding-left: 21px;
+  }
+  .allId-head .user-menu-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  .allId-head .menu-btn-box {
+    top: inherit;
+    bottom: 0px;
+  }
+}
+
 /*# sourceMappingURL=header.css.map */

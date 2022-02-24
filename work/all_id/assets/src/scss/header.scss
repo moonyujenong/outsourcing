@@ -127,3 +127,82 @@
         }
     }
 }
+
+
+@media screen and (min-width:992px) {
+    .allId-head {
+        position: relative;
+
+        .inner-head-outline {
+            &.m-head {
+                padding: 24px 0;
+            }
+        }
+
+        .site-logo {
+            img {
+                height: 80px; 
+            }
+        } 
+
+        .head-top-box {
+            border-bottom: 0;
+            padding: 0;
+
+        }
+
+        .head-bottom-box {
+            position: absolute;
+            top: 24px;
+            right: 33px;
+
+        }
+
+        .user-menu-list-box {
+            padding: 0;
+        }
+
+        .user-menu-list {
+           margin: 0 -11px;
+
+            .user-menu-link {
+                border: 0;
+                padding: 0;
+
+                .user-menu-text {
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 1.75;
+                    letter-spacing: normal;
+                    
+                }
+
+            }
+
+            .user-menu-item {
+                padding: 0 11px;
+               &:nth-child(2) {
+                   border-right: 1px solid #dddddd;
+                   padding-right: 21px
+               } 
+
+               &:nth-child(3) {
+                padding-left: 21px;
+            } 
+            }
+        }
+
+        .user-menu-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+
+        .menu-btn-box {
+            top: inherit;
+            bottom: 0px;
+        }
+        
+        
+    }
+}
