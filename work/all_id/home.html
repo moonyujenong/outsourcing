@@ -45,6 +45,32 @@
     </div>    
 
     <script type="text/javascript">
+        $(function(){
+            $('.side-menu-close').click(function(e){
+           e.preventDefault();
+            $('.side-menu').animate({
+                'left' : '-100%'
+            }, 200); 
+        });
+
+      $('.side-menu').click(function(e){
+        e.stopPropagation();
+      });
+
+      
+        function side_menu_h () {
+                var all_h = $(window).outerHeight();
+                var theme_head = $('.allId-head').outerHeight();
+                var total_h = all_h - theme_head ; 
+
+                $('.side-menu-wrap').css('height', total_h);
+            }side_menu_h();
+
+           
+      
+
+            
+        });
        
        
     </script>

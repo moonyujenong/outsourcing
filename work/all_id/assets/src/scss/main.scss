@@ -656,6 +656,13 @@
 
 @media screen and (min-width:992px) {
     .allId-main {
+        display: flex;
+        align-items: stretch;
+        
+
+
+        
+        
         .statistics-box {
             display: flex;
             align-items: center;

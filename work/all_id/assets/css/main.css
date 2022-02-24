@@ -681,6 +681,14 @@
 }
 
 @media screen and (min-width: 992px) {
+  .allId-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
   .allId-main .statistics-box {
     display: -webkit-box;
     display: -ms-flexbox;
