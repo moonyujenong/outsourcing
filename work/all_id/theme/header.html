@@ -54,5 +54,149 @@
             </ul>
          </div>
       </div>
+
+      <!-- 사이드 메뉴 -->
+      <nav class="side-menu">
+         <div class="side-menu-inner">
+            <div class="side-menu-inner-head">
+               <a href="#" class="">
+                  <h1 class="site-logo">
+                     <img src="./assets/img/allId_logo.png" alt="올 아이디 홈페이지 로고">
+                  </h1>
+               </a>
+
+               <!-- 사이드 메뉴 닫기 버튼 -->
+               <span class="side-menu-close"></span>
+            </div>
+
+
+            <div class="side-menu-inner-body">
+               <ul class="side-menu-content">
+                  <!-- todo : 활성화 시 클래스 active 추가 -->
+                  <li class="menu-content-list active">
+                     <div class="menu-content-flex-box">
+                        <!-- 활성화 시 클래스 on 추가 -->
+                        <span class="menu-left-icon down-icon"></span>
+                        <span class="side-menu-text">파일다운</span>
+                     </div>
+
+                     <div class="side-menu-inner-menu">
+                        <ul class="side-menu-inner-menu-list">
+                           <li class="side-menu-inner-menu-item">
+                              <!-- todo : 활성화 시 , 클래스 active 추가 -->
+                              <a href="#" class="side-menu-inner-menu-link active">
+                                 오버워치
+                              </a>
+                           </li>
+                           <li class="side-menu-inner-menu-item">
+                              <a href="#" class="side-menu-inner-menu-link">
+                                 서든어택
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+
+                  <li class="menu-content-list ">
+                     <div class="menu-content-flex-box">
+                        <!-- 활성화 시 클래스 on 추가 -->
+                        <span class="menu-left-icon pay-icon"></span>
+                        <span class="side-menu-text">구매상점</span>
+                     </div>
+                     
+                     <div class="side-menu-inner-menu">
+                        <ul class="side-menu-inner-menu-list">
+                           <li class="side-menu-inner-menu-item">
+                              <!-- todo : 활성화 시 , 클래스 active 추가 -->
+                              <a href="#" class="side-menu-inner-menu-link active">
+                                 오버워치
+                              </a>
+                           </li>
+                           <li class="side-menu-inner-menu-item">
+                              <a href="#" class="side-menu-inner-menu-link">
+                                 서든어택
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+
+                  <li class="menu-content-list ">
+                     <div class="menu-content-flex-box">
+                        <!-- 활성화 시 클래스 on 추가 -->
+                        <span class="menu-left-icon pay-icon"></span>
+                        <span class="side-menu-text">충전신청</span>
+                     </div>
+                     
+                     <div class="side-menu-inner-menu">
+                        <ul class="side-menu-inner-menu-list">
+                           <li class="side-menu-inner-menu-item">
+                              <!-- todo : 활성화 시 , 클래스 active 추가 -->
+                              <a href="#" class="side-menu-inner-menu-link active">
+                                 오버워치
+                              </a>
+                           </li>
+                           <li class="side-menu-inner-menu-item">
+                              <a href="#" class="side-menu-inner-menu-link">
+                                 서든어택
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+
+                  <li class="menu-content-list ">
+                     <div class="menu-content-flex-box">
+                        <!-- 활성화 시 클래스 on 추가 -->
+                        <span class="menu-left-icon logout-icon"></span>
+                        <span class="side-menu-text">로그아웃</span>
+                     </div>
+                     
+                     
+                  </li>
+
+               </ul>
+            </div>
+
+
+            <div class="side-menu-inner-footer">
+               <div class="side-menu-inner-banner-wrap">
+                  <img src="./assets/img/side-menu-sample.png" alt="예시배너1">
+                  <img src="./assets/img/side-menu-sample.png" alt="예시배너2">
+               </div>
+            </div>
+         </div>
+      </nav>
    </div>
 </header>
+
+
+<script type="text/javascript">
+   $(function(){
+      $('.side-menu-content li .menu-content-flex-box').click(function(){
+         $('.side-menu-content li').removeClass('active');
+         $(this).parent('li').addClass('active');
+
+         $('.side-menu-inner-menu').stop().slideUp(300);
+         $(this).siblings().stop().slideDown(300);
+      });
+
+
+      $('.side-menu-inner-menu-list li').click(function(){
+         $('.side-menu-inner-menu-link').removeClass('active');
+         $(this).children('a').addClass('active');
+      });
+
+      $('.side-menu-close').click(function(){
+         $('.side-menu').animate({
+            'left' : '-100%'
+         }, 200);
+      });
+
+      $('.menu-btn-box').click(function(){
+         $('.side-menu').animate({
+            'left' : '0'
+         }, 200);
+      });
+   });   
+</script>

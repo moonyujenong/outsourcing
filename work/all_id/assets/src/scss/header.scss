@@ -126,6 +126,209 @@
             background-image: url(../img/user-name.svg);
         }
     }
+
+
+
+    /* 사이드 메뉴 */
+    .side-menu {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        background-color: #fff;
+        z-index: 50;
+        top: 0;
+       
+
+        .side-menu-inner {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .side-menu-inner-head {
+            padding: 12px;
+            border-bottom: 1px solid #c6483e;
+            width: 100%;
+            position: relative;
+
+        }
+
+        .side-menu-inner-body {
+            width: 100%;
+            background-color: rgba(242, 242, 242,0.4);
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+            overflow-y: auto;
+            flex: 1;
+
+        }
+    }
+
+    .side-menu-close {
+        display: block;
+        position: absolute;
+        right: 22px;
+        bottom: 12px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../img/close-btn.svg);
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+    }
+
+    .side-menu-content {
+        padding: 20px 24px;
+    }
+
+    .menu-content-flex-box {
+        display: flex;
+        align-items: center;
+        padding: 8px 16px;
+        background-color: #fff;
+        border: 1px solid #c6483e;
+       
+        border-radius: 3px;
+    }
+
+    .menu-content-list {
+        
+       
+        margin-bottom: 8px;
+        cursor: pointer;
+        
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.active {
+            .menu-content-flex-box  {
+                background-color: #c6483e;
+
+            }
+
+            .menu-left-icon {
+                &.down-icon {
+                    background-image: url(../img/down-on.png);
+                }
+    
+                &.market-icon {
+                    background-image: url(../img/market-on.png);
+                }
+    
+                &.pay-icon {
+                    background-image: url(../img/pay-on.png);
+                }
+    
+                &.logout-icon {
+                    background-image: url(../img/logout-on.png);
+                }
+            }
+            
+
+            .side-menu-text {
+                color: #fff;
+                font-weight: 700;
+            }
+        }
+
+        .menu-left-icon {
+            width: 32px;
+            height: 32px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: block;
+            margin-right: 16px;
+
+
+            &.down-icon {
+                background-image: url(../img/down.png);
+            }
+
+            &.market-icon {
+                background-image: url(../img/market.png);
+            }
+
+            &.pay-icon {
+                background-image: url(../img/pay.png);
+            }
+
+            &.logout-icon {
+                background-image: url(../img/logout.png);
+            }
+        }
+
+    }
+
+    .side-menu-text {
+        font-size: 15px;
+        color: #626262;
+        font-weight: 500;
+       
+        letter-spacing: normal;
+    }
+
+    .side-menu-inner-menu {
+        background-color: rgba(231, 235, 239, 0.16);
+        position: relative;
+        margin-top: 8px;
+        flex: initial;
+        width: 100%;
+        display: none;
+
+    }
+
+    .side-menu-inner-menu-list {
+        
+
+        .side-menu-inner-menu-link {
+            padding: 8px 60px;
+            display: block;
+            width: 100%;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.28;
+            letter-spacing: normal;
+            color: #626262;
+
+            &.active {
+                background-color: rgba(229, 81, 50, 0.08);
+                color: #e55132;
+
+            }
+
+        }
+
+
+    }
+
+    .side-menu-inner-footer {
+        background-color: rgba(242, 242, 242, 0.4);
+    }
+
+    .side-menu-inner-banner-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: 116px ;
+
+        img {
+            margin-right: 16px;
+            height: 72px;
+            background-color: #ccc;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
 }
 
 
