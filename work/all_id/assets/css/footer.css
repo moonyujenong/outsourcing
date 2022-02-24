@@ -91,6 +91,9 @@
 }
 
 @media screen and (min-width: 992px) {
+  .allId-footer {
+    padding: 54px 0;
+  }
   .allId-footer .inner-footer-content {
     display: -webkit-box;
     display: -ms-flexbox;
