@@ -73,21 +73,24 @@
     }
 
     .popup-content-wrap {
-        padding: 16px 48px 72px;
+        padding: 16px 15px 72px;
 
         &.pay-charge-content-wrap {
-            padding: 0 48px 89px;
+            padding: 0 15px 89px;
         }
     }
 
     .pay-ment-bg {
         padding: 56px 40px;
-        margin-bottom: 56px;
+       
         position: relative;
         background-repeat: no-repeat;
         background-position: bottom center;
         background-image: url(../img/bottom-special.png);
         background-size: cover;
+        width: 100%;
+        max-width: 704px;
+        margin: 0 auto 56px ;
 
         /* &::before {
             content: '';
@@ -176,6 +179,9 @@
         padding: 16px 0;
         margin-bottom: 8px;
         position: relative;
+        width: 100%;
+        max-width: 624px;
+        margin: 0 auto;
 
     }
 
@@ -300,6 +306,7 @@
         color: #e45131;
         padding-right: 32px;
         align-items: center;
+        white-space: nowrap;
 
     }
 
@@ -348,7 +355,10 @@
 }
 
 .pay-input-box {
-    padding: 0 42px;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
 
 }
 
@@ -495,7 +505,7 @@
     justify-content: flex-end;
     border-radius: 5px;
     background-color: #f4f4f4;
-    padding: 13px 50px;
+    padding: 13px 15px;
     margin: -5px 5px 0;
     display: none;
 
@@ -509,7 +519,7 @@
 .detail-content-inner {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-evenly;
 }
 
 .order-check-radio[type="radio"]:checked + .custom-radio-fake-box {
@@ -519,7 +529,7 @@
 .order-chekc-itme-inner {
     display: flex;
     align-items: center;
-    padding: 8px 0px;
+    padding: 8px;
     justify-content: center;
     margin: 0;
 

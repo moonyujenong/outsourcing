@@ -159,7 +159,7 @@
             <form action="">
                 <div class="popup-content-wrap pay-charge-content-wrap">
                     <div class="pay-ment-bg">
-                        <h3 class="popup-content-title" style="margin-bottom:8px;">
+                        <h3 class="popup-content-title" style="margin-bottom:8px; text-align: left;">
                             <span class="check-circle-icon"></span>
                             충전신청
                         </h3>
@@ -193,7 +193,7 @@
 
 
                     <div class="pay-input-box">
-                        <h3 class="popup-content-title" style="margin-bottom:8px;">
+                        <h3 class="popup-content-title" style="margin-bottom:8px; text-align: left;">
                             <span class="check-circle-icon"></span>
                             입금금액
                         </h3>
@@ -251,7 +251,7 @@
 
                 
 
-                <span class="popup-notice-text" style="width: 100%; max-width: 480px; margin: 0 auto 24px;">
+                <span class="popup-notice-text" style="width: 100%; max-width: 480px; ">
                     공지사항을 적는 곳 공시사항은 이러합니다. 이러한 점을 명시해주세요. 이러한 점은 이렇게 명시하고 기억하십시오. 
                     <span class="warning-text" style="color: #ff0000;">이건 꼭 명시해야할 주의사항 텍스트입니다.</span>
                 </span>
@@ -264,7 +264,7 @@
                     <li class="order-check-item">
                         <div class="order-check-item-inner">
                             <label for="order_check" class="order-chekc-itme-inner">
-                                <input type="radio" class="order-check-radio custom-radio-check-box" id="order_check">
+                                <input type="radio" name="order-check-radio"  class="order-check-radio custom-radio-check-box" id="order_check">
                                 <div class="custom-radio-fake-box"></div>
                                 <span class="order-content-text">금장 계정 황무 4개</span>
                                 <div class="order-content-payment">
@@ -278,7 +278,6 @@
                         <div class="order-detail-content-box">
 
                             <div class="detail-content-inner">
-                                <input type="radio" class="order-check-radio custom-radio-check-box" id="order_check">
                                 
                                 <span class="order-content-text-detail">
                                     수량 선택 [제고 2개]
@@ -295,8 +294,8 @@
 
                     <li class="order-check-item">
                         <div class="order-check-item-inner">
-                            <label for="order_check" class="order-chekc-itme-inner">
-                                <input type="radio" class="order-check-radio custom-radio-check-box" id="order_check">
+                            <label for="order_check2" class="order-chekc-itme-inner">
+                                <input type="radio"  name="order-check-radio"  class="order-check-radio custom-radio-check-box" id="order_check2">
                                 <div class="custom-radio-fake-box"></div>
                                 <span class="order-content-text">금장 계정 황무 4개</span>
                                 <div class="order-content-payment">
@@ -310,7 +309,6 @@
                         <div class="order-detail-content-box">
 
                             <div class="detail-content-inner">
-                                <input type="radio" class="order-check-radio custom-radio-check-box" id="order_check">
                                 
                                 <span class="order-content-text-detail">
                                     수량 선택 [제고 2개]
@@ -327,8 +325,8 @@
 
                     <li class="order-check-item">
                         <div class="order-check-item-inner">
-                            <label for="order_check" class="order-chekc-itme-inner">
-                                <input type="radio" class="order-check-radio custom-radio-check-box" id="order_check">
+                            <label for="order_check3" class="order-chekc-itme-inner">
+                                <input type="radio" name="order-check-radio"  class="order-check-radio custom-radio-check-box" id="order_check3">
                                 <div class="custom-radio-fake-box"></div>
                                 <span class="order-content-text">금장 계정 황무 4개</span>
                                 <div class="order-content-payment">
@@ -342,7 +340,6 @@
                         <div class="order-detail-content-box">
 
                             <div class="detail-content-inner">
-                                <input type="radio" class="order-check-radio custom-radio-check-box" id="order_check">
                                 
                                 <span class="order-content-text-detail">
                                     수량 선택 [제고 2개]
@@ -374,15 +371,14 @@
 
     <script type="text/javascript">
         $(function(){
-            $('.order-check-list li .custom-radio-fake-box').click(function(){
-                $('.order-check-item-inner').removeClass("active");
-                $(this).parents('div.order-check-item-inner').addClass('active');
+            $('.order-check-list li .order-check-item-inner').click(function(){
+               $('.order-check-item-inner').removeClass('active');
+               $(this).addClass('active');
 
-                $('.order-detail-content-box').stop().slideUp(200);
-                $(this).parents('div.order-check-item-inner').siblings('div.order-detail-content-box').stop().slideDown(200);
+               $('.order-detail-content-box').stop().slideUp(200);
+               $(this).siblings().stop().slideDown(200);
             });
 
-            
         }); 
        
 
