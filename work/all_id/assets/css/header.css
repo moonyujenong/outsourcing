@@ -186,13 +186,11 @@
 
 .allId-head .inner-user-popup-wrap {
   border-radius: 14px;
-  /*         background-color: #fcfcfc;
- */
+  background-color: #fcfcfc;
   -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
   border: solid 1px #f2f2f2;
-  /*         padding: 25px 0;
- */
+  padding: 25px 0;
   position: absolute;
   width: 100%;
   left: 0;
@@ -200,6 +198,7 @@
   overflow: hidden;
   overflow-y: auto;
   display: none;
+  max-height: 727px;
   z-index: 40;
 }
 
@@ -225,8 +224,14 @@
   left: initial;
 }
 
+.allId-head .message-inner-wrap {
+  /*  height: 100%;
+        overflow: hidden;
+        overflow-y: auto; */
+}
+
 .allId-head .user-pop-menu-list {
-  padding: 25px 0;
+  /* padding: 25px 0; */
   background-color: #fcfcfc;
 }
 
@@ -715,10 +720,29 @@
   }
   .allId-head .inner-user-popup-wrap {
     max-width: 385px;
+    /* padding-top: 60px; */
   }
   .allId-head .message-length {
     top: -5px;
     right: -9px;
+  }
+  .allId-head .user-pop-menu-item .mini-mypage-text {
+    font-size: 17px;
+    line-height: 1.35;
+    letter-spacing: 0.85px;
+  }
+  .allId-head .user-pop-menu-item .mini-mypage-popup-icon {
+    width: 32px;
+    height: 24px;
+  }
+  .allId-head .message-content {
+    font-size: 13px;
+  }
+  .allId-head .inner-user-popup-wrap.mini-mypage-popup {
+    max-width: 280px;
+  }
+  .allId-head .message-category-head .message-category-title {
+    font-size: 13px;
   }
   .side-menu {
     max-width: 320px;

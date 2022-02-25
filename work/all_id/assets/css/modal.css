@@ -1,7 +1,3 @@
-.allId-custom-modal {
-  padding: 0 10px !important;
-}
-
 .allId-custom-modal .modal-content {
   border-radius: 0 !important;
   position: relative;
@@ -71,7 +67,7 @@
 }
 
 .allId-custom-modal .pay-ment-bg {
-  padding: 56px 40px;
+  padding: 56px 15px;
   position: relative;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -106,9 +102,9 @@
   bottom: 0;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   background-image: url(../img/charge-bg.png);
-  padding-top: 68%;
+  padding-top: 71%;
   width: 100%;
   z-index: -1;
   left: 50%;
@@ -198,7 +194,7 @@
           justify-content: center;
   border: 0;
   border-radius: 0;
-  padding: 0 40px 32px;
+  padding: 0 15px 32px;
 }
 
 .allId-custom-modal .custom-red-defalut-btn {
@@ -223,12 +219,13 @@
   background-color: #fff;
   border: solid 1px #f0eff1;
   text-align: center;
-  padding: 20px;
+  padding: 12px;
   width: 100%;
   display: block;
-  font-size: 23px;
+  font-size: 15px;
   font-weight: 700;
   color: #8b8b8b;
+  margin: 0;
 }
 
 .allId-custom-modal .modal-footer {
@@ -334,7 +331,12 @@
 
 .paycharge-footer {
   display: block;
-  padding: 0 88px 47px;
+  padding: 0 15px 47px;
+}
+
+.footer-btn-box {
+  max-width: 624px;
+  margin: 0 auto;
 }
 
 .order-category-box {
@@ -558,6 +560,9 @@
 }
 
 @media screen and (min-width: 992px) {
+  .allId-custom-modal .pay-ment-bg {
+    padding: 56px 40px;
+  }
   .allId-custom-modal .modal-header {
     padding: 10px 49px;
   }
@@ -566,6 +571,9 @@
   }
   .allId-custom-modal .modal-title img {
     width: 104px;
+  }
+  .allId-custom-modal .show-pay-charge-bg::before {
+    background-size: contain;
   }
   .allId-custom-modal .popup-content-wrap {
     padding: 59px 90px 136px;
@@ -612,6 +620,10 @@
     line-height: 1.04;
     letter-spacing: 1.38px;
     margin: 0;
+  }
+  .allId-custom-modal .custom-red-defalut-btn.custom-white-btn {
+    font-size: 23px;
+    padding: 20px;
   }
   .allId-custom-modal .content-scroll-date-text {
     font-size: 10px;

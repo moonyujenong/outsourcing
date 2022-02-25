@@ -179,17 +179,18 @@
     /* 미니 팝업 */
     .inner-user-popup-wrap {
         border-radius: 14px;
-/*         background-color: #fcfcfc;
- */        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
-        border: solid 1px #f2f2f2;
-/*         padding: 25px 0;
- */        position: absolute;
+        background-color: #fcfcfc;
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
+        border: solid 1px #f2f2f2;           padding: 25px 0;
+       position: absolute;
         width: 100%;
         left: 0;
         margin-top: 8px;
-        overflow: hidden;
-        overflow-y: auto;
+       overflow: hidden;
+       overflow-y: auto;
         display: none;
+        max-height: 727px;
+
 
         &.on {
             display: block;
@@ -220,9 +221,16 @@
         }
     }
 
+    .message-inner-wrap {
+       /*  height: 100%;
+        overflow: hidden;
+        overflow-y: auto; */
+    }
+
     .user-pop-menu-list {
-        padding: 25px 0;
+        /* padding: 25px 0; */
         background-color: #fcfcfc;
+
     }
 
     .user-pop-menu-item {
@@ -382,6 +390,7 @@
     .user-pop-menu-item {
         /* padding: 8px 16px; */
 
+        
         &.mini-mypage-popup-item {
             padding: 8px 16px;
 
@@ -755,6 +764,7 @@
         
         .inner-user-popup-wrap {
             max-width: 385px;
+            /* padding-top: 60px; */
         }
 
 
@@ -762,6 +772,36 @@
         .message-length {
             top: -5px;
             right: -9px;
+        }
+
+        .user-pop-menu-item {
+            .mini-mypage-text {
+                font-size: 17px;
+                line-height: 1.35;
+                letter-spacing: 0.85px;
+        
+            }
+
+            .mini-mypage-popup-icon {
+                width: 32px;
+                height: 24px;
+            }
+        }
+
+        .message-content {
+            font-size: 13px;
+        }
+
+        .inner-user-popup-wrap{
+            &.mini-mypage-popup {
+                max-width: 280px;
+            }
+        }
+
+        .message-category-head  {
+            .message-category-title {
+                font-size: 13px;
+            }
         }
     }
 
@@ -806,6 +846,8 @@
 
 
     }
+    
+     
 
     .side-menu-content {
         padding: 32px 0 0 ;
