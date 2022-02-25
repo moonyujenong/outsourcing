@@ -2,24 +2,30 @@
     <!-- pc 사이드 메뉴 -->
     
 
-    <div class="inner-container">
-        <div class="content-section-wrap">
+    <div class="inner-container" >
+        <div class="content-section-wrap" >
             <div class="content-section1">
                 <!-- 접속자 통계 박스 -->
-                <div class="statistics-box">
+                <div class="statistics-box"  data-aos="fade-up" data-aos-delay = 50>
                     <div class="statistics-left-box">
                         <ul class="user-statistics-list">
                             <li class="user-statistics-item">
                                 <span class="user-statistics-icon all-user-icon"></span>
                                 <p class="user-statistics-title">전체 접속자 수</p>
                                 <!-- todo : 접속자 수 표기 -->
-                                <h3 class="user-statistics-text">4,555명</h3>
+                                <span class="user-statistics-text">
+                                    <span class="count">4555</span>
+                                    명
+                                </span>
                             </li>
 
                             <li class="user-statistics-item">
                                 <span class="user-statistics-icon today-user-icon"></span>
                                 <p class="user-statistics-title">오늘 접속자 수</p>
-                                <h3 class="user-statistics-text">4,555명</h3>
+                                <span class="user-statistics-text">
+                                    <span class="count">4555</span>
+                                    명
+                                </span>
                             </li>
                         </ul>
                     </div>
@@ -28,13 +34,19 @@
                             <li class="user-statistics-item">
                                 <span class="user-statistics-icon yesterday-user-icon"></span>
                                 <p class="user-statistics-title">어제 접속자 수</p>
-                                <h3 class="user-statistics-text">4,555명</h3>
+                                <span class="user-statistics-text">
+                                    <span class="count">4555</span>
+                                    명
+                                </span>
                             </li>
 
                             <li class="user-statistics-item">
                                 <span class="user-statistics-icon moment-user-icon"></span>
                                 <p class="user-statistics-title">현재 접속자 수</p>
-                                <h3 class="user-statistics-text">4,555명</h3>
+                                <span class="user-statistics-text">
+                                    <span class="count">4555</span>
+                                    명
+                                </span>
                             </li>
                         </ul>
                     </div>
@@ -43,7 +55,7 @@
 
 
                 <!-- todo : 배너 -->
-                <div class="visual-banner-wrap">
+                <div class="visual-banner-wrap" data-aos="fade-up" data-aos-delay = 150>
                     <div class="swiper visual-banner-slide">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -65,7 +77,7 @@
 
 
                 <!-- todo : 실시간 리뷰  & 구매내역 & 당첨 현황 -->
-                <div class="content-three-list-wrap">
+                <div class="content-three-list-wrap" data-aos="fade-up" data-aos-delay = 250>
                     <div class="row">
 
                         <!-- todo : 실시간 리뷰 -->
@@ -301,8 +313,8 @@
             </div>
 
 
-            <div class="content-section2">
-                <div class="inner-tab-wrap">
+            <div class="content-section2" >
+                <div class="inner-tab-wrap" >
                     <div class="tab-box">
                         <ul class="tab-list">
                             <li class="tab-item" data-tab="over_watch">
@@ -315,9 +327,9 @@
                     </div>
 
 
-                    <div class="tab-content-wrap">
+                    <div class="tab-content-wrap" >
                         <div class="tab-content-item on" id="over_watch">
-                            <ul class="tab-content-item-list">
+                            <ul class="tab-content-item-list" >
                                 <li class="tab-content-item-item">
                                     <div class="tab-content-outline">
                                         <!-- todo : 게임 이미지  -->
@@ -735,8 +747,26 @@
             }
         });
 
-           
+        
             
     }); 
+
+    $(function(){
+        $('.count').each(function () {
+            $(this).prop('Counter',0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 900,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    })
 </script>
+
+<script type="text/javascript">
+    AOS.init();
+  </script>
 
