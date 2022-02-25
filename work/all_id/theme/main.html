@@ -347,7 +347,7 @@
                                             </a>
 
                                             <!-- todo : 구매하기 버튼/링크이동 -->
-                                            <a href="#" class="more-show-btn pay-go-btn">
+                                            <a href="#modal_order" data-toggle="modal" data-target="#modal_order" class="more-show-btn pay-go-btn">
                                                 구매하기
                                             </a>
 
@@ -493,6 +493,12 @@
     $(function(){
         var swiper = new Swiper(".visual-banner-slide", {
             slidesPerView: 1,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop:true,
+            autoHeight: true,
             pagination: {
             el: ".swiper-pagination.visual-banner-paging",
             },

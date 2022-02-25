@@ -526,19 +526,6 @@
   background-repeat: no-repeat;
 }
 
-.allId-main .item-box-banner .safe-label-icon {
-  position: absolute;
-  right: 8px;
-  bottom: 5px;
-  display: block;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 56px;
-  height: 15px;
-  background-image: url(../img/safe-label-icon.png);
-}
-
 .allId-main .item-content-box {
   padding: 4px 8px 7px;
   position: relative;
@@ -678,6 +665,19 @@
   border-color: #c6483e;
   color: #b75044;
   font-weight: 700;
+}
+
+.safe-label-icon {
+  position: absolute;
+  right: 8px;
+  bottom: 5px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 56px;
+  height: 15px;
+  background-image: url(../img/safe-label-icon.png);
 }
 
 @media screen and (min-width: 992px) {
@@ -887,7 +887,7 @@
     background-color: #c6483e;
     border-radius: 100px;
   }
-  .allId-main .item-box-banner .safe-label-icon {
+  .safe-label-icon {
     width: 88px;
     height: 24px;
     right: 16px;

@@ -78,6 +78,13 @@ html, body {
     padding: 0 15px;
   }
 
+  
+
+
+  input[type="checkbox"], input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+  }
 
 
   @media screen and (min-width:1280px) {

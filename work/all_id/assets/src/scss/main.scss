@@ -516,19 +516,7 @@
         background-position: center;
         background-repeat: no-repeat;
 
-        .safe-label-icon {
-            position: absolute;
-            right: 8px;
-            bottom: 5px;
-            display: block;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            width: 56px;
-            height: 15px;
-            background-image: url(../img/safe-label-icon.png);
-
-        }
+       
 
     }
     .item-content-box {
@@ -651,6 +639,20 @@
             }
         }
     }
+}
+
+.safe-label-icon {
+    position: absolute;
+    right: 8px;
+    bottom: 5px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 56px;
+    height: 15px;
+    background-image: url(../img/safe-label-icon.png);
+
 }
 
 
@@ -920,13 +922,17 @@
         }
 
         .item-box-banner {
-            .safe-label-icon {
-                width: 88px;
-                height: 24px;
-                right: 16px;
-                bottom: 16px;
-            }
+            
         }
+
+
+    }
+
+    .safe-label-icon {
+        width: 88px;
+        height: 24px;
+        right: 16px;
+        bottom: 16px;
     }
     
 }
