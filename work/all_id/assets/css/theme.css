@@ -95,6 +95,21 @@
   padding: 4px;
 }
 
+.allId-head .user-menu-list .user-menu-item.on .user-menu-link {
+  -webkit-box-shadow: 0 0 0 1px #c6483e;
+          box-shadow: 0 0 0 1px #c6483e;
+  background-color: rgba(129, 129, 129, 0.08);
+}
+
+.allId-head .user-menu-list .user-menu-item.on .user-menu-link .user-menu-text {
+  color: #c6483e;
+  font-weight: 500;
+}
+
+.allId-head .user-menu-list .user-menu-item.on .inner-user-popup-wrap {
+  display: block;
+}
+
 .allId-head .user-menu-list .user-menu-link {
   display: block;
   border: 1px solid #efefef;
@@ -110,17 +125,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-}
-
-.allId-head .user-menu-list .user-menu-link.on {
-  -webkit-box-shadow: 0 0 0 1px #c6483e;
-          box-shadow: 0 0 0 1px #c6483e;
-  background-color: rgba(129, 129, 129, 0.08);
-}
-
-.allId-head .user-menu-list .user-menu-link.on .user-menu-text {
-  color: #c6483e;
-  font-weight: 500;
 }
 
 .allId-head .user-menu-list .user-menu-link .user-menu-text {
@@ -201,10 +205,6 @@
   display: none;
   max-height: 727px;
   z-index: 40;
-}
-
-.allId-head .inner-user-popup-wrap.on {
-  display: block;
 }
 
 .allId-head .inner-user-popup-wrap .mini-popup-dimmed {
@@ -2292,7 +2292,7 @@
   background-position: center;
   background-size: cover;
   background-image: url(../img/check-box.png);
-  margin-right: 40px;
+  margin-right: 15px;
   cursor: pointer;
 }
 
@@ -2301,7 +2301,7 @@
   font-weight: 400;
   color: #000;
   display: block;
-  margin-right: 30px;
+  margin-right: 15px;
   line-height: 1.04;
 }
 
@@ -2419,7 +2419,6 @@
   line-height: 1.18;
   letter-spacing: normal;
   display: block;
-  margin-right: 30px;
 }
 
 .order-content-coin-icon {
@@ -2443,6 +2442,12 @@
 }
 
 @media screen and (min-width: 992px) {
+  .order-content-text {
+    margin-right: 30px;
+  }
+  .custom-radio-fake-box {
+    margin-right: 40px;
+  }
   .order-detail-content-box .order-content-text-detail br {
     display: none;
   }

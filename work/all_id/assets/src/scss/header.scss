@@ -80,6 +80,22 @@
         .user-menu-item {
             flex: auto;
             padding: 4px;
+
+            &.on {
+                .user-menu-link {
+                    box-shadow: 0 0 0 1px #c6483e;
+                    background-color: rgba(129, 129, 129, 0.08);
+
+                    .user-menu-text {
+                        color: #c6483e;
+                        font-weight: 500;
+                    }
+                }
+
+                .inner-user-popup-wrap {
+                    display: block;
+                }
+            }
             
         }
 
@@ -93,15 +109,7 @@
             justify-content: center;
             position: relative;
 
-            &.on {
-                box-shadow: 0 0 0 1px #c6483e;
-                background-color: rgba(129, 129, 129, 0.08);
-
-                .user-menu-text {
-                    color: #c6483e;
-                    font-weight: 500;
-                }
-            }
+            
 
             .user-menu-text {
                 font-size: 10px;
@@ -192,9 +200,7 @@
         max-height: 727px;
 
 
-        &.on {
-            display: block;
-        }
+       
 
         .mini-popup-dimmed {
             position: fixed;

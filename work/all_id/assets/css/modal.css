@@ -412,7 +412,7 @@
   background-position: center;
   background-size: cover;
   background-image: url(../img/check-box.png);
-  margin-right: 40px;
+  margin-right: 15px;
   cursor: pointer;
 }
 
@@ -421,7 +421,7 @@
   font-weight: 400;
   color: #000;
   display: block;
-  margin-right: 30px;
+  margin-right: 15px;
   line-height: 1.04;
 }
 
@@ -539,7 +539,6 @@
   line-height: 1.18;
   letter-spacing: normal;
   display: block;
-  margin-right: 30px;
 }
 
 .order-content-coin-icon {
@@ -563,6 +562,12 @@
 }
 
 @media screen and (min-width: 992px) {
+  .order-content-text {
+    margin-right: 30px;
+  }
+  .custom-radio-fake-box {
+    margin-right: 40px;
+  }
   .order-detail-content-box .order-content-text-detail br {
     display: none;
   }
