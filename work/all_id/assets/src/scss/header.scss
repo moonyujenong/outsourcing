@@ -74,12 +74,12 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        margin: 0 -4px;
+        margin:  -4px;
         position: relative;
 
         .user-menu-item {
             flex: auto;
-            padding: 0 4px;
+            padding: 4px;
             
         }
 
@@ -123,7 +123,7 @@
 
     .user-menu-icon {
         width: 16px;
-        height: 16px;
+        height: 13px;
         display: block;
         background-position: center;
         background-repeat: no-repeat;

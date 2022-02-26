@@ -493,7 +493,7 @@
 
 .length-text {
     display: block;
-    padding: 8px 22px;
+    padding: 8px;
     margin: 0 10px;
     border-radius: 100px;
     background-color: #fff;
@@ -505,6 +505,7 @@
     line-height: 1.22;
     letter-spacing: 0.45px;
     white-space: nowrap;
+    width: 64px;
 }
 
 .order-detail-content-box {
@@ -578,6 +579,13 @@
 }
 
 @media screen and (min-width:992px) {
+    .order-detail-content-box {
+        .order-content-text-detail  {
+            br {
+                display: none ;
+            }
+        }
+    }
     .allId-custom-modal {
         .pay-ment-bg {
             padding: 56px 40px;

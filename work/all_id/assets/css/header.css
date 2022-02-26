@@ -83,7 +83,7 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 -4px;
+  margin: -4px;
   position: relative;
 }
 
@@ -91,7 +91,7 @@
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
-  padding: 0 4px;
+  padding: 4px;
 }
 
 .allId-head .user-menu-list .user-menu-link {
@@ -136,7 +136,7 @@
 
 .allId-head .user-menu-icon {
   width: 16px;
-  height: 16px;
+  height: 13px;
   display: block;
   background-position: center;
   background-repeat: no-repeat;
