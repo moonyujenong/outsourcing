@@ -241,7 +241,9 @@
 
     .user-pop-menu-item {
         border-bottom: 1px solid #e8e8e8;
-        background-color: #fff;
+        
+
+        
 
         &:first-child {
            border-top: 1px solid #e8e8e8;
@@ -264,6 +266,19 @@
             justify-content: space-between;
             position: relative;
             padding: 16px 23px 15px 32px;
+            background-color: #fff;
+         
+
+            &:hover {
+                background-color: rgba(229, 81, 50, 0.08);
+
+                .user-pay-content, .user-payment-date, .message-content, .message-category-title {
+                    color: #e55132;
+                }
+
+
+
+            }
 
             &.message-pop-menu-link {
                 display: block;
@@ -396,8 +411,12 @@
     .user-pop-menu-item {
         /* padding: 8px 16px; */
 
-        
+        a {
+            display: block ;
+        }
+
         &.mini-mypage-popup-item {
+            
             padding: 8px 16px;
 
         }

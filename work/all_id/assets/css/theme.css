@@ -238,7 +238,6 @@
 
 .allId-head .user-pop-menu-item {
   border-bottom: 1px solid #e8e8e8;
-  background-color: #fff;
 }
 
 .allId-head .user-pop-menu-item:first-child {
@@ -265,6 +264,15 @@
           justify-content: space-between;
   position: relative;
   padding: 16px 23px 15px 32px;
+  background-color: #fff;
+}
+
+.allId-head .user-pop-menu-item .user-pop-menu-link:hover {
+  background-color: rgba(229, 81, 50, 0.08);
+}
+
+.allId-head .user-pop-menu-item .user-pop-menu-link:hover .user-pay-content, .allId-head .user-pop-menu-item .user-pop-menu-link:hover .user-payment-date, .allId-head .user-pop-menu-item .user-pop-menu-link:hover .message-content, .allId-head .user-pop-menu-item .user-pop-menu-link:hover .message-category-title {
+  color: #e55132;
 }
 
 .allId-head .user-pop-menu-item .user-pop-menu-link.message-pop-menu-link {
@@ -387,6 +395,10 @@
 
 .allId-head .user-pop-menu-item {
   /* padding: 8px 16px; */
+}
+
+.allId-head .user-pop-menu-item a {
+  display: block;
 }
 
 .allId-head .user-pop-menu-item.mini-mypage-popup-item {
