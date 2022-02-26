@@ -194,10 +194,13 @@
         width: 100%;
         left: 0;
         margin-top: 8px;
-       overflow: hidden;
-       overflow-y: auto;
+       /* overflow: hidden;
+       overflow-y: auto; */
         display: none;
-        max-height: 727px;
+       /*  max-height: 727px; */
+
+        
+
 
 
        
@@ -227,10 +230,31 @@
         }
     }
 
-    .message-inner-wrap {
-       /*  height: 100%;
+    
+
+    .message-inner-wrap, .user-pop-scroll-inner {
+        height: auto;
         overflow: hidden;
-        overflow-y: auto; */
+        overflow-y: auto;
+        max-height: 727px;
+
+        &::-webkit-scrollbar {
+            width: 15px;
+            border-radius: 100%;
+            
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+            box-shadow: inset 0px 0px 5px rgba(170, 170, 170, 0.16);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #c7c7c7;
+            border-radius: 10px;
+            background-clip: padding-box;
+            border: 3px solid transparent;
+        }
     }
 
     .user-pop-menu-list {
