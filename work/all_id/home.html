@@ -373,12 +373,15 @@
 
     <script type="text/javascript">
         $(function(){
-            $('.order-check-list li .order-check-item-inner').click(function(){
+            $('.order-check-list li .order-check-item-inner').off('click').on('click',function(){
                $('.order-check-item-inner').removeClass('active');
                $(this).addClass('active');
 
-               $('.order-detail-content-box').stop().slideUp(200);
-               $(this).siblings().stop().slideDown(200);
+               $(this).parents('li').siblings().children('.order-detail-content-box').stop().slideUp(200);
+               $(this).siblings().slideDown(200);
+
+
+               
             });
 
         }); 

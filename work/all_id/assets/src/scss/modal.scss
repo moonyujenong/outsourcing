@@ -5,11 +5,13 @@
         border-radius: 0 !important;
         position: relative;
         overflow: hidden;
+        min-height: 100%;
     }
 
     .modal-dialog {
         /* width: 100%; */
         max-width: 800px;
+        height: 90%;
         
     }
 
@@ -73,10 +75,10 @@
     }
 
     .popup-content-wrap {
-        padding: 16px 15px 72px;
+        padding: 16px 15px 0px;
 
         &.pay-charge-content-wrap {
-            padding: 0 15px 89px;
+            padding: 0 15px 15px;
         }
     }
 
@@ -542,13 +544,13 @@
 }
 
 .order-check-wrap {
-    padding: 0 15px 137px;
+    padding: 24px 15px 15px;
 }
 
 .order-content-text {
     font-size: 17px;
     font-weight: 500;
-    color: #4b4a4a;
+    color: #4b4a4a;   
     line-height: 1.18;
     letter-spacing: normal;
     display: block;
