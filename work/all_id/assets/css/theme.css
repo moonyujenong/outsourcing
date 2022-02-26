@@ -1311,6 +1311,8 @@
 
 .allId-main .tab-content-item {
   display: none;
+  opacity: 1;
+  position: relative;
 }
 
 .allId-main .tab-content-item.on {
@@ -1339,8 +1341,17 @@
 
 .allId-main .tab-content-item-list .tab-content-item-item {
   width: 50%;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
   padding: 0 4px;
   margin-bottom: 16px;
+  position: relative;
+}
+
+.allId-main .tab-content-item-list .tab-content-item-item:hover {
+  margin-top: -12px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .allId-main .item-box-banner {

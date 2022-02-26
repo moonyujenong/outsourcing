@@ -479,6 +479,8 @@
 
     .tab-content-item {
         display: none;
+        opacity: 1;
+        position: relative;
         
         &.on {
             display: block;
@@ -502,9 +504,17 @@
 
         .tab-content-item-item {
             width: 50%;
-            
+            transition: all .2s ease-in-out;
             padding: 0 4px;
             margin-bottom: 16px;
+            position: relative;
+
+            &:hover {
+                margin-top: -12px;
+                transition: all .2s ease-in-out;
+
+                
+            }
         }
     }
 
