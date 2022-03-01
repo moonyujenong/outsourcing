@@ -2725,6 +2725,26 @@
   line-height: 1.36;
 }
 
+.logon-input::-webkit-input-placeholder {
+  color: #292929;
+}
+
+.logon-input::-moz-placeholder {
+  color: #292929;
+}
+
+.logon-input:-ms-input-placeholder {
+  color: #292929;
+}
+
+.logon-input::-ms-input-placeholder {
+  color: #292929;
+}
+
+.logon-input::placeholder {
+  color: #292929;
+}
+
 .logon-input-name {
   font-size: 11px;
   color: #939393;

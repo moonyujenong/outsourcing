@@ -134,6 +134,10 @@
     font-size: 11px;
     line-height: 1.36;
 
+    &::placeholder {
+        color: #292929;
+    }
+
 }
 
 .logon-input-name {
