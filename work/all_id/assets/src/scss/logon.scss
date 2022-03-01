@@ -201,16 +201,16 @@
 
     }
 
-    /* .register-text {
+    .register-text {
         position: absolute;
-        top: 30px;
+        top: 33px;
         left: 50%;
         transform: translateX(-50%);
         font-size: 10px;
         color: #e2e2e2;
         line-height: 1.4;
         letter-spacing: 0.4px;
-    } */
+    }
 }
 
 
@@ -890,9 +890,10 @@ $shadows-big:    multiple-box-shadow(100);
             font-size: 18px;
         }
 
-   /*      .register-text {
+        .register-text {
             font-size: 14px;
-        } */
+            top: 51px;
+        }
 
 
         .register-logo {
