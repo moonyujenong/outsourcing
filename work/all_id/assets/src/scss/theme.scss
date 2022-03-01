@@ -92,8 +92,13 @@ html, body {
     &:focus, &:active {
       outline: none;
     }
-  }
 
+    font-family: 'Roboto', sans-serif  !important;
+  }
+  
+  button {  
+    font-family: 'Roboto', sans-serif  !important;
+  }
 
   @media screen and (min-width:1280px) {
     .inner-container {

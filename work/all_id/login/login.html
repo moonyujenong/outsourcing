@@ -56,11 +56,11 @@
                    <!-- 효과 8 - 대각 선 배경 -->
                    <div class="diagonal-effect">
                         <svg version="1.1" id="home-anim" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 1820 1080" style="enable-background:new 0 0 1820 1080;" xml:space="preserve">
+                        viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
                 
                 <g id="home">
                     <defs>
-                        <rect id="masque" y="0.4" width="1820" height="1080"/>
+                        <rect id="masque" y="0.4" width="1920" height="1080"/>
                     </defs>
                     <clipPath id="cache">
                         <use xlink:href="#masque"  style="overflow:visible;"/>
@@ -398,8 +398,8 @@
             for( var i = 0; i < initialLines; ++i )
                 lines.push( new Line( starter ) );
             
-            ctx.fillStyle = '#222';
-            ctx.fillRect( 0, 0, w, h );
+            ctx.globalAlpha = 0.2;
+            ctx.fillRect( 0, 0, 0, 0 );
             
             // if you want a cookie ;)
             // ctx.lineCap = 'round';
