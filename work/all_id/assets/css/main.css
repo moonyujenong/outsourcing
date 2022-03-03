@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.allId-main {
+  height: 100%;
+}
+
 .allId-main .content-section1 {
   position: relative;
   z-index: 10;
