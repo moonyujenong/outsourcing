@@ -541,10 +541,10 @@ $shadows-big:    multiple-box-shadow(100);
     top: 0;
     bottom: 0;
     height: 100%;
-    width: 100%;
+    width: auto;
     overflow: hidden;
     left: 50%;
-    transform: translateX(-35%);
+    transform: translateX(-50%);
     right: 0;
 }
 
