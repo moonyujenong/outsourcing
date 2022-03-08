@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&amp;display=swap');
+
+*, .k-font{margin:0; padding:0; box-sizing:border-box; font-family: 'Noto Sans KR', sans-serif;}
+html{font-size:13px;}
+body{line-height:1; color:#333;}
+a{color:#333; text-decoration:none; cursor:pointer;}
+a:focus{outline: none;} 
+div:focus{outline: none;} 
+input{vertical-align:top;}
+??‹input[type=text]::-ms-clear{display: none;}
+input[type=text]::-ms-clear{width:0; height:0;}??? 
+
+body{margin:0; padding:0; font-size:1.000em;}
+img{border:0; margin:0; padding:0; vertical-align:top;}
+ul{list-style:none; padding:0; margin:0;}
+ul:after{content:""; display:block; clear:both;}
+li{list-style:none; padding:0; margin:0;}
+p{margin:0; padding:0;}
+???
+a{margin:0; padding:0; list-style:none;}
+a:link {text-decoration: none; }
+a:visited {text-decoration: none; }
+
+button{cursor:pointer;}
+
+.pc{display:block;}
+.mobile{display:none;}
