@@ -44,7 +44,7 @@ header nav > a:nth-child(9):hover{background:url(../img/menu05_on.png) no-repeat
 header nav > a:nth-child(10):hover{background:url(../img/menu06_on.png) no-repeat top center;}
 header nav > a:nth-child(11):hover{background:url(../img/menu07_on.png) no-repeat top center;}
 
-.trade_wrap{width:100%; height: 100%; padding-left:94px; display: flex; flex-direction: column; }
+.trade_wrap{width:100%; height: 100%;  display: flex; flex-direction: column; }
 .trade_wrap .top{background:#36363f; width: 100%;}
 .trade_wrap .top:after{content:""; display:block; clear:both;}
 .trade_wrap .top .deals{float:left; margin:21.5px 0 0 20px; width:50%;}
