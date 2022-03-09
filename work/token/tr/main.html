@@ -294,21 +294,34 @@
             </div>
             <div class='bot'>
                <div class='m-balance'>
-                  <p style='color: white; position: absolute; left: 2px; top: 20px; font-size:12px'>남은시간: <span id='m_nextLeftTime'><span></p>
-                  <p style='color: white; position: absolute; left: 2px; font-size:13px'>보유금액: <span style='color:#308dea; font-weight:700;'>4,999,990,000</span></p>
+                  <div class="m-blance-top-box" style='color: white; margin-bottom:7px;  display:flex; align-items: center; justify-content:space-between; left: 2px;  font-size:12px'>
+                     <span> 남은시간: <span id='m_nextLeftTime'></span></span>
 
-
-                  <!-- 모바일 거래종목/다음거래 -->
-               <div class="mobile-top-deal-box ">
-                  <div class="deal-category">
-                     <p class="f-item">거래종목</p>
-                     <span class='f-item' style="display:block;">
-                        <img class='f-item' src='../img/deals_img.png'>
-                        <font>
-                           <div id='symbol' class='f-item'>BTCUSDT</div>
-                        </font>
+                      <span class="right-box " style="display:flex; margin-right:15px; align-items:center;">
+                        <span style="color:#fff; margin-right:5px;">다음거래</span>
+                        <span style="display:block; display:flex; align-items:center;">
+                           <img src='../img/next_img.png' style="margin-right:5px;">
+                           <font>
+                              <div id='nextStartTime'>21시53분</div>
+                           </font>
+                        </span>
                      </span>
                   </div>
+                  <div class="m-blance-top-box" style='color: white; display:flex; width:100%; align-items:center; justify-content:space-between;  left: 2px; font-size:13px'>
+                     <span> 보유금액: <span style='color:#308dea; font-weight:700;'>4,999,990,000</span></span>
+
+                     <span class="right-box " style="display:flex; margin-right:15px; align-items:center;">
+                        <span style="color:#fff; margin-right:5px;">거래종목</span>
+                        <span class='f-item' style="display:flex; align-items:center;">
+                           <img class='f-item' src='../img/deals_img.png'>
+                           <font style="color: #8f8f9d; margin-left:5px">
+                              <div id='symbol' class='f-item'>BTCUSDT</div>
+                              
+                           </font>
+                        </span>
+                     </span>
+                  </div>
+
                </div>
                </div>
 
@@ -505,7 +518,7 @@
                      <font>초</font>
                   </span>
                </div>
-               <div class='row sum st2' style='flex:initial; width: auto;'>
+               <div class='row sum st2' style='flex:auto; width: min-content;'>
                   <p id='' class="money-inline">신청금액</p>
                   <span class="money-inline">
                      <img src='../img/sum_img.png'>
