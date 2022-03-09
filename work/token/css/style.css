@@ -9,6 +9,9 @@
 .mobile{display:none;}
 .pc{display:block;}
 
+html, body {
+	overflow-x: hidden;
+}
 
 header{position:fixed; top:0; left:0; height:100%; background:#308dea; width: 94px; overflow-y: auto;}
 header h1{text-indent:-100000px; width:100%; height:110px; background:url(../img/logo_mini.png) no-repeat center center; border-bottom:1px solid #287fd5;}
@@ -830,19 +833,20 @@ header nav > a:nth-child(11):hover{background:url(../img/menu07_on.png) no-repea
 	.trade_wrap .right .row.buttons button {flex: 1 !important; margin: 0 5px;}
 
 	
-	.trade_wrap .right .row.buttons2 {
-		margin-left: 15px;
+	.trade_wrap .right .row.buttons2, .trade_wrap .right .row.buttons {
+		
 		/* width: 30%; */
 		width: 100%;
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
+		margin-top: 10px !important;
 
 	}
 
 	.trade_wrap .right .row.buttons2 button:nth-child(3) {margin: 0;}
 
-	.trade_wrap .right .row.buttons2 button {flex: 1 !important; height: 100px; margin: 0 5px;}
+	.trade_wrap .right .row.buttons2 button {flex: 1 !important; height: 68px; margin: 0 5px;}
 
 	.trade_wrap .right .row.buttons button:nth-child(2) {margin-left: 5px;}
 	.trade_wrap .right .row.buttons2 button:nth-child(2) {margin-left: 5px;}
@@ -858,7 +862,7 @@ header nav > a:nth-child(11):hover{background:url(../img/menu07_on.png) no-repea
 		flex: initial;
 	}
 
-	.trade_wrap .right {flex-wrap: wrap;}
+	.trade_wrap .right {flex-wrap: wrap; display: block;}
 
 	
 	.message_popup{left:5%; width:90%; bottom:57px;}
