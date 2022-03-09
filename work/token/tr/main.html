@@ -226,9 +226,9 @@
                   <p style='color: white; position: absolute; left: 2px; font-size:13px'>보유금액: <span style='color:#308dea; font-weight:700;'>4,999,990,000</span></p>
                </div>
 
-               <ul class='deals slick-initialized slick-slider'>
+               <ul class='deals slick-initialized slick-slider' >
                   <div class='slick-list draggable'>
-                     <div class='slick-track' style='opacity: 1;  transform: translate3d(0px, 0px, 0px);'>
+                     <div class='slick-track' style='opacity: 1; display:none; transform: translate3d(0px, 0px, 0px);'>
                         <div class='slick-slide slick-current slick-active' data-slick-index='0' aria-hidden='false' style='width: 75px;'>
                            <div>
                                  <li class='on' onclick='gourl(`btc.php`)' style='width: 100%; display: inline-block;'><a tabindex='0'>
@@ -456,7 +456,7 @@
                <div class='row buttons paying-btns'>
                   <button onclick='ordersendBuy()' id='buyingBtn'><img src='../img/button_img01.png'><span id='btnBuy'>매수</span></button>
    <button onclick='ordersendSell()' id='sellingBtn'><img src='../img/button_img02.png'><span id='btnSell'>매도</span></button>
-   <button onclick='listPopup()' id='transaction-history'><img src='../img/button_img03.png' style='height: 28px'><span id='t-history'>거래내역</span></button>
+   <button onclick='listPopup()' id='transaction-history' class="m-disable"><img src='../img/button_img03.png' style='height: 28px'><span id='t-history'>거래내역</span></button>
 
                </div>
 
