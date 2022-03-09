@@ -713,7 +713,8 @@ header nav > a:nth-child(11):hover{background:url(../img/menu07_on.png) no-repea
 .profit {width: 10%}
 
 
-.timeout-slide-parent {position: relative; display: block;}
+.timeout-slide-parent {border-right: 0; position: relative; display: block;}
+.timeout-slide-parent:hover {border-right: 0;}
 .deal-timeout-slide {position: absolute; z-index: -1; box-shadow: 0 7px 10px rgba(0,0,0,0.25); border-radius: 0 5px 5px 0 ; left: 0px; background-color: #fff;  top: 0; width: 100%;}
 .time-out-list {width: 100%; position: relative; }
 .time-out-itme {border-bottom: 1px solid #ececec;}
