@@ -13,9 +13,9 @@ html, body {
 	overflow-x: hidden;
 }
 
-header{position:fixed; top:0; left:0; height:100%; background:#308dea; width: 94px; overflow-y: auto;}
+header{position:fixed; top:0; left:0; height:100%; background:#308dea; width: 100%; overflow-y: auto;}
 header h1{text-indent:-100000px; width:100%; height:110px; background:url(../img/logo_mini.png) no-repeat center center; border-bottom:1px solid #287fd5;}
-header nav{display:block;  background:#308dea; max-width: 94px; border-top:1px solid #449aef; padding-top:30px;}
+header nav{display:block;  width: 94px; background:#308dea; max-width: 94px; border-top:1px solid #449aef; padding-top:30px;}
 header nav > a{color:#e8f4ff; display:block; border-right:4px solid #449aef; text-align:center; margin-bottom:35px; line-height:1; padding-top:52px; font-size:14px;}
 header nav > a:nth-child(4){background:url(../img/menu01_off.png) no-repeat top center;}
 header nav > a:nth-child(5){background:url(../img/menu02_off.png) no-repeat top center;}
@@ -764,7 +764,7 @@ header nav > a:nth-child(11):hover{background:url(../img/menu07_on.png) no-repea
 	.trade_wrap .right .row p.money-inline {display: inline-block; vertical-align: middle; margin-right: 5px;}
 	body{width:100%;}
 	
-	header{z-index:1; top:100px; background-color: transparent; /* width: 100%; */ height:calc(100% - 100.05px); left:-94px; overflow-y: scroll;}
+	header{z-index:1; top:100px; background-color: transparent;  height:calc(100% - 100.05px); left:-100%; overflow-y: scroll;}
 	header h1{display:none; }
 	header nav{padding:10px 0; border:0;  }
 	
