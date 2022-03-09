@@ -203,18 +203,7 @@
                <h1>BITON</h1>
             </a>
             <nav>
-               <a step='in03'>예치</a>
-               <a step='in04'>환급</a>
-               <a step='in11'>예치/환급</a>
-               <a step='in05'>결과내역</a>
-               <a step='in06'>거래내역</a>
-               <a step='in08'>고객센터</a>
-               <a step='in07'>메세지</a>
-               <!-- <a step='in09'>R-API</a> -->
-               <a step='in10'>Trading</a>
-
-               <!-- token category -->
-               <a step='in12' class=" pc-disable timeout-slide-parent">
+               <a  class=" pc-disable timeout-slide-parent">
                   비트코인
                   <div class=" deal-timeout-slide">
                      <ul class="time-out-list">
@@ -231,8 +220,72 @@
                      </ul>
                   </div>
                </a>
+               <a  class=" pc-disable timeout-slide-parent">
+                  이더리움
+                  <div class=" deal-timeout-slide">
+                     <ul class="time-out-list">
+                        <li class="time-out-itme">
+                           <button type="button" class="time-out-itme-link">1분거래</button>
+                        </li>
+                        <li class="time-out-itme">
+                           <button type="button" class="time-out-itme-link">2분거래</button>
+                           
+                        </li>
+                        <li class="time-out-itme">
+                           <button type="button" class="time-out-itme-link">5분거래</button>
+                        </li>
+                     </ul>
+                  </div>
+               </a>
+               <a  class=" pc-disable timeout-slide-parent">
+                  골드
+                  <div class=" deal-timeout-slide">
+                     <ul class="time-out-list">
+                        <li class="time-out-itme">
+                           <button type="button" class="time-out-itme-link">1분거래</button>
+                        </li>
+                        <li class="time-out-itme">
+                           <button type="button" class="time-out-itme-link">2분거래</button>
+                           
+                        </li>
+                        <li class="time-out-itme">
+                           <button type="button" class="time-out-itme-link">5분거래</button>
+                        </li>
+                     </ul>
+                  </div>
+               </a>
+               <a step='in03' class="popa">예치</a>
+               <a step='in04' class="popa">환급</a>
+               <a step='in11' class="popa">예치/환급</a>
+               <a step='in05' class="popa">결과내역</a>
+               <a step='in06' class="popa">거래내역</a>
+               <a step='in08' class="popa">고객센터</a>
+               <a step='in07' class="popa">메세지</a>
+               <!-- <a step='in09'>R-API</a> -->
+               <a step='in10' class="popa">Trading</a>
+
+               <!-- token category -->
+              
             </nav>
          </header>
+
+         <script>
+            $(function(){
+               $('nav a.timeout-slide-parent').click(function(e){
+                  e.stopPropagation();
+                  
+                  $(this).parents('header').siblings('.popup').hide();
+                  $(".deal-timeout-slide").stop().animate({
+                     "left" : '-100%'
+                  },200);
+
+                  $(this).children('.deal-timeout-slide').stop().animate({
+                     "left" : "94px"
+                  },200);
+               });
+            });
+         </script>
+         
          <div class='header mobile'>
             <div class='top'>
                <a class='menu'><img src='../img/top_bnt04.png'></a>
@@ -4236,14 +4289,14 @@
 
 
                 //예치 환급 메뉴
-                $('.trade_wrap .top .assets .btns a').click(function(){
+                $('.trade_wrap .top .assets .btns a.popa').click(function(){
 
                 var asClass = $(this).attr('class');
                     //alert(asClass)
                     if(asClass=='type01'){
                         navClass = 'in03'
 
-                    $('header nav a').removeClass('on');
+                    $('header nav a.popa').removeClass('on');
                         $(this).addClass('on');
                         $('.popup').show();
                         $('.popup .popupin').hide();
@@ -4252,7 +4305,7 @@
                     if(asClass=='type02'){
                         navClass = 'in04'
 
-                    $('header nav a').removeClass('on');
+                    $('header nav a.popa').removeClass('on');
                         $(this).addClass('on');
                         $('.popup').show();
                         $('.popup .popupin').hide();
@@ -4263,7 +4316,7 @@
 
 
                 //레프트 메뉴
-                $('header nav a').click(function(){
+                $('header nav a.popa').click(function(){
 
                     var navClass = $(this).attr('step');
                     //alert(navClass);
@@ -4271,7 +4324,7 @@
                     if(navClass=='in09'){
                         location.href='/autotrade.asp'
                     }else{
-                        $('header nav a').removeClass('on');
+                        $('header nav a.popa').removeClass('on');
                         $(this).addClass('on');
                         $('.popup').show();
                         $('.popup .popupin').hide();
@@ -4742,6 +4795,9 @@
                   $('header').animate({
                         left:0
                   });
+                  $('.deal-timeout-slide').stop().animate({
+                     "left" : '-100%'
+                  },200);
                };
 
             });
@@ -5563,6 +5619,8 @@
 
             });
          </script>
+         
+
          <div style='position:absolute;z-index:-9999;left:-1000px;display:none'>
             <iframe name='pChk' id='pChk' width='0' height='0'></iframe>
             <iframe name='top' id='top' width='0' height='0'></iframe>
