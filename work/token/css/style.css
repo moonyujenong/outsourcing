@@ -10,9 +10,9 @@
 .pc{display:block;}
 
 
-header{position:fixed; top:0; left:0; height:100%; width:94px; background:#308dea; }
+header{position:fixed; top:0; left:0; height:100%; background:#308dea; width: 94px; overflow-y: auto;}
 header h1{text-indent:-100000px; width:100%; height:110px; background:url(../img/logo_mini.png) no-repeat center center; border-bottom:1px solid #287fd5;}
-header nav{display:block; border-top:1px solid #449aef; padding-top:30px;}
+header nav{display:block;  background:#308dea; max-width: 94px; border-top:1px solid #449aef; padding-top:30px;}
 header nav > a{color:#e8f4ff; display:block; border-right:4px solid #449aef; text-align:center; margin-bottom:35px; line-height:1; padding-top:52px; font-size:14px;}
 header nav > a:nth-child(1){background:url(../img/menu01_off.png) no-repeat top center;}
 header nav > a:nth-child(2){background:url(../img/menu02_off.png) no-repeat top center;}
@@ -712,6 +712,16 @@ header nav > a:nth-child(8):hover{background:url(../img/menu07_on.png) no-repeat
 
 .profit {width: 10%}
 
+
+.timeout-slide-parent {position: relative; display: block;}
+.deal-timeout-slide {position: absolute; z-index: 100; box-shadow: 0 7px 10px rgba(0,0,0,0.25); border-radius: 0 5px 5px 0 ; left: 94px; background-color: #fff;  top: 0; width: 100%;}
+.time-out-list {width: 100%; position: relative; }
+.time-out-itme {border-bottom: 1px solid #ececec;}
+.time-out-itme:last-child {border-bottom: 0;}
+
+.time-out-itme-link {position: relative; border: 0;   background-color: transparent; font-size: 15px; font-weight: 500; width: 100%; display: block; padding:7px ; color: #004098; }
+
+
 @media screen and (max-width: 1900px) {
 	.trade_wrap .right .row.sum.st2 .btns button{width:80px; height: 50px; margin: 2px;}
 }
@@ -731,7 +741,7 @@ header nav > a:nth-child(8):hover{background:url(../img/menu07_on.png) no-repeat
 	
 }
 
-
+.pc-disable {display: none !important;}
 
 @media screen and (max-width: 820px) {
 	.trade_wrap .right .row.sum.st2 .btns {margin-top: 6px;}
@@ -741,7 +751,7 @@ header nav > a:nth-child(8):hover{background:url(../img/menu07_on.png) no-repeat
 	
 	body{width:100%;}
 	
-	header{z-index:1; top:100px; height:calc(100% - 100.05px); left:-94px; overflow-y: scroll;}
+	header{z-index:1; top:100px; background-color: transparent; width: 100%; height:calc(100% - 100.05px); left:-94px; overflow-y: scroll;}
 	header h1{display:none; }
 	header nav{padding:10px 0; border:0;  }
 	
@@ -751,6 +761,11 @@ header nav > a:nth-child(8):hover{background:url(../img/menu07_on.png) no-repeat
 	.m-disable { 
 		display: none!important;
 	}
+
+	
+	.pc-disable {display: block!important;}
+
+	
 
 /* 	.trade_wrap .right .row.buttons button:nth-child(1){width: 40%;}
 	.trade_wrap .right .row.buttons button:nth-child(2){width: 40%;} */

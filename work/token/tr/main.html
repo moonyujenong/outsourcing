@@ -212,6 +212,25 @@
                <a step='in07'>메세지</a>
                <!-- <a step='in09'>R-API</a> -->
                <a step='in10'>Trading</a>
+
+               <!-- token category -->
+               <a step='in12' class=" pc-disable timeout-slide-parent">
+                  비트코인
+                  <div class=" deal-timeout-slide">
+                     <ul class="time-out-list">
+                        <li class="time-out-itme">
+                           <button type="button" class="time-out-itme-link">1분거래</button>
+                        </li>
+                        <li class="time-out-itme">
+                           <button type="button" class="time-out-itme-link">2분거래</button>
+                           
+                        </li>
+                        <li class="time-out-itme">
+                           <button type="button" class="time-out-itme-link">5분거래</button>
+                        </li>
+                     </ul>
+                  </div>
+               </a>
             </nav>
          </header>
          <div class='header mobile'>
@@ -4716,7 +4735,7 @@
                if(menuClass=='menu on'){
                   $(this).removeClass('on');
                   $('header').animate({
-                        left:-94
+                        "left": "-100%"
                   });
                }else{
                   $(this).addClass('on');
@@ -5534,6 +5553,15 @@
 
 
             }
+         </script>
+         <script>
+            $(function(){
+               $('header').click(function(e){
+                  e.preventDefault();
+               });
+
+
+            });
          </script>
          <div style='position:absolute;z-index:-9999;left:-1000px;display:none'>
             <iframe name='pChk' id='pChk' width='0' height='0'></iframe>
