@@ -114,7 +114,7 @@ header nav > a:nth-child(11):hover{background:url(../img/menu07_on.png) no-repea
 .trade_wrap .reset span{background:url(../img/reset_bg.png); width:351px; height:43px; line-height:43px; display:inline-block; padding-left:40px; color:#fff; font-size:15px; margin-top:17.5px;}
 
 .trade_wrap .right{height: auto !important; width: calc(100% - 94.05px); background:#393b4c; padding:10px 8px; position:absolute; bottom:0px;  left:94px; height:calc(100% - 103.05px); display: flex; align-items: stretch; justify-content: space-around;}
-.trade_wrap .right .row{display: inline-block; background:#3b3d4e; width: auto; flex: 1;  border:1px solid #434454; padding:10px; margin-bottom:10px; box-shadow:3px 3px 10px #343645; overflow:hidden; border-radius:7px; margin-right: 10px;}
+.trade_wrap .right .row{display: inline-block; background:#3b3d4e; width: auto; /* flex: 1; */  border:1px solid #434454; padding:10px; margin-bottom:10px; box-shadow:3px 3px 10px #343645; overflow:hidden; border-radius:7px; margin-right: 10px;}
 .trade_wrap .right .row:nth-child(5) {margin: 0 !important;}
 .trade_wrap .right .row p{color:#fff; font-size:14px;}
 .trade_wrap .right .row span{display:block; margin-top:10px;}
@@ -713,7 +713,10 @@ header nav > a:nth-child(11):hover{background:url(../img/menu07_on.png) no-repea
 .profit {width: 10%}
 
 
-.timeout-slide-parent {border-right: 0; position: relative; display: block;}
+.timeout-slide-parent {background-repeat: no-repeat; background-position: top 2px center; border-right: 0; position: relative; display: block;}
+.timeout-slide-parent.beatcoin {background-image: url("../img/deal_cion01.png");}
+.timeout-slide-parent.ethereum {background-image: url("../img/deal_cion03.png");}
+.timeout-slide-parent.gold {background-image: url("../img/gold_trade.png");}
 .timeout-slide-parent:hover {border-right: 0;}
 .deal-timeout-slide {position: absolute; z-index: -1; box-shadow: 0 7px 10px rgba(0,0,0,0.25); border-radius: 0 5px 5px 0 ; left: 0px; background-color: #fff;  top: 0; width: 100%;}
 .time-out-list {width: 100%; position: relative; }
