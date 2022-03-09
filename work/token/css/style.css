@@ -60,11 +60,11 @@ header nav > a:nth-child(11):hover{background:url(../img/menu07_on.png) no-repea
 .trade_wrap .top > .btns:after{content:""; display:block; clear:both;}
 .trade_wrap .top > .btns a{float:left; display:block; width:100px; height:50px; border:2px solid white; border-radius:7px;}
 .onemingame a {background:#3b3d4e url(../img/1min.png) no-repeat center center; margin-left:10px;}
-.onemingame a .on{background:#2766bc url(../img/1min.png) no-repeat center center;}
+.onemingame a.on{background:#2766bc url(../img/1min.png) no-repeat center center;}
 .twomingame a {background:#3b3d4e url(../img/2min.png) no-repeat center center; margin-left:10px;}
-.twomingame a .on{background:#2766bc url(../img/2min.png) no-repeat center center;}
+.twomingame a.on{background:#2766bc url(../img/2min.png) no-repeat center center;}
 .fivemingame a {background:#3b3d4e url(../img/5min.png) no-repeat center center; margin-left:10px;}
-.fivemingame a .on{background:#2766bc url(../img/5min.png) no-repeat center center;}
+.fivemingame a.on{background:#2766bc url(../img/5min.png) no-repeat center center;}
 .trade_wrap .top .assets{float:right; margin:13px 15px 13px 20px;}
 .trade_wrap .top .assets:after{content:""; display:block; clear:both;}
 .trade_wrap .top .assets > div{float:left;}
@@ -730,7 +730,7 @@ header nav > a:nth-child(11):hover{background:url(../img/menu07_on.png) no-repea
 .time-out-itme:last-child {border-bottom: 0;}
 
 .time-out-itme-link {position: relative; border: 0;   background-color: transparent; font-size: 15px; font-weight: 500; width: 100%; display: block; padding:7px ; color: #004098; }
-
+.time-out-itme-link:hover {background-color: #cbcbcb;}
 
 @media screen and (max-width: 1900px) {
 	.trade_wrap .right .row.sum.st2 .btns button{width:80px; height: 50px; margin: 2px;}
