@@ -1,4 +1,4 @@
-<html lang='ko' xml:lang='ko' style='overflow-y: hidden'>
+<html lang='ko' xml:lang='ko' style='overflow-y: auto; overflow-x:hidden;'>
    <head>
       <meta content='text/html' charset='utf-8'>
       <meta property='og:type' content='website'>
@@ -5648,6 +5648,20 @@
                $('.time-out-list .time-out-itme .time-out-itme-link').click(function(){
                   
                   $(this).addClass('on');
+               });
+
+
+               function left_h (){
+                  var window_all = $(window).height();
+                  var top_h = $('.top').outerHeight();
+                  var right_h = $('.right').outerHeight();
+                  var total_h = window_all - top_h - right_h;
+
+                  $('.left').css('min-height', total_h);
+               }left_h();
+
+               $(window).resize(function(){
+                  left_h();
                });
             });
          </script>

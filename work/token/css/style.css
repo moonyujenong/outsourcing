@@ -44,7 +44,7 @@ header nav > a:nth-child(9):hover{background:url(../img/menu05_on.png) no-repeat
 header nav > a:nth-child(10):hover{background:url(../img/menu06_on.png) no-repeat top center;}
 header nav > a:nth-child(11):hover{background:url(../img/menu07_on.png) no-repeat top center;}
 
-.trade_wrap{width:100%; padding-left:94px;}
+.trade_wrap{width:100%; height: 100%; padding-left:94px; display: flex; flex-direction: column; }
 .trade_wrap .top{background:#36363f; width: 100%;}
 .trade_wrap .top:after{content:""; display:block; clear:both;}
 .trade_wrap .top .deals{float:left; margin:21.5px 0 0 20px; width:50%;}
@@ -82,7 +82,7 @@ header nav > a:nth-child(11):hover{background:url(../img/menu07_on.png) no-repea
 .trade_wrap .top .assets > div:nth-child(2){margin-left:10px; padding-left:10px; border-left:2px solid #41414d;}
 .trade_wrap .top .assets > div:nth-child(2) .btns a:nth-child(3){background:#666666; color:#fff;}
 
-.trade_wrap .left{float:left; position:absolute; top:103px; left:94px; height:calc(80% - 103.05px); width: calc(100% - 94.05px); background:#1e2535; overflow: hidden;}
+.trade_wrap .left{flex: 1; position:relative; /* height:calc(80% - 103.05px); */ width: 100%; background:#1e2535; overflow: hidden;}
 .trade_wrap .left .graph{height:100%;}
 .trade_wrap .left .graph:after{content:""; display:block; clear:both;}
 .trade_wrap .left .graph > div{width:100%; height:100%; float:left;}
@@ -116,7 +116,7 @@ header nav > a:nth-child(11):hover{background:url(../img/menu07_on.png) no-repea
 .trade_wrap .reset{position:absolute; left:35px; bottom:45px;}
 .trade_wrap .reset span{background:url(../img/reset_bg.png); width:351px; height:43px; line-height:43px; display:inline-block; padding-left:40px; color:#fff; font-size:15px; margin-top:17.5px;}
 
-.trade_wrap .right{height: auto !important; width: calc(100% - 94.05px); background:#393b4c; padding:10px 8px; position:absolute; bottom:0px;  left:94px; height:calc(100% - 103.05px); display: flex; align-items: stretch; justify-content: space-around;}
+.trade_wrap .right{height: auto !important; width: 100% ; background:#393b4c; padding:10px 8px; position:relative; bottom:0px;   height:calc(100% - 103.05px); display: flex; align-items: stretch; justify-content: space-around;}
 .trade_wrap .right .row{display: inline-block; background:#3b3d4e; width: auto; flex: 1;  border:1px solid #434454; padding:10px; /* margin-bottom:10px; */ box-shadow:3px 3px 10px #343645; overflow:hidden; border-radius:7px; margin-right: 10px;}
 .trade_wrap .right .row:nth-child(5) {margin: 0 !important;}
 .trade_wrap .right .row p{color:#fff; font-size:14px;}
