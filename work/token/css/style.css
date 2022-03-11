@@ -765,7 +765,7 @@ header nav > a:nth-child(11):hover{background:url(../img/menu07_on.png) no-repea
 	.trade_wrap .right .row p.money-inline {display: inline-block; vertical-align: middle; margin-right: 5px;}
 	body{width:100%;}
 	
-	header{z-index:1; top:104px; background-color: transparent; width: 100%; height:calc(100% - 100.05px); left:-100%; overflow-y: scroll;}
+	header{z-index:1; top:112px; background-color: transparent; width: 100%; height: 100%; left:-100%; position: absolute; overflow-y: scroll;}
 	header h1{display:none; }
 	header nav{padding:10px 0; border:0;  }
 	
