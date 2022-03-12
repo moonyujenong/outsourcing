@@ -1,0 +1,59 @@
+.macaron-header {
+    background-color: #fff;
+
+    .header-inner-content-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .theme-logo {
+        img {
+            width: 160px;
+            height: auto;
+        }
+    }
+
+    .user-info-list {
+        display: flex;
+        align-items: center;
+        margin: 0 -12px;
+
+        .user-info-item {
+            padding: 0 12px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .pc-user-name {
+        font-size: 16px;
+        font-weight: 300;
+        color: #787c84;
+        letter-spacing: -0.32px;
+        line-height: normal;
+        display: none;
+    }
+}
+
+.user-info-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+
+    &.mypage {
+        background-image: url(../img/icon-my-page.svg);
+    }
+
+    &.collect {
+        background-image: url(../img/icon-collect.svg);
+    }
+
+    &.logout {
+        background-image: url(../img/icon-log-out.svg);
+    }
+}

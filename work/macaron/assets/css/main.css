@@ -1,2 +1,132 @@
+.macaron-main .visual-banner-wrap {
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.macaron-main .visual-banner-wrap .visual-banner-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding-top: 44%;
+}
+
+.macaron-main .list-tab-box {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 24px;
+}
+
+.macaron-main .list-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -7px;
+}
+
+.macaron-main .list-tab .list-tab-item {
+  padding: 0 7px;
+}
+
+.macaron-main .list-tab .list-tab-item .list-tab-link {
+  padding: 14px;
+  border-radius: 8px;
+  display: block;
+  background-color: transparent;
+  text-align: center;
+  font-size: 19px;
+  color: #a5aab5;
+  font-size: 500;
+  letter-spacing: -0.38px;
+  line-height: normal;
+}
+
+.macaron-main .list-tab .list-tab-item.active .list-tab-link {
+  background-color: #a5aab5;
+  color: #fff;
+  font-weight: 600;
+}
+
+.macaron-main .list-array-search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.macaron-main .search-input-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid #e7e7e9;
+  background-color: #fff;
+}
+
+.macaron-main .search-input-box .search-input {
+  border: 0;
+  font-size: 20px;
+  font-weight: 300;
+  color: #787c84;
+  letter-spacing: -0.4px;
+  line-height: normal;
+  height: 56px;
+  padding: 0 45px 0px 20px;
+}
+
+.macaron-main .search-input-box .search-input:focus, .macaron-main .search-input-box .search-input:active {
+  outline: none;
+}
+
+.macaron-main .search-input-box .search-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/);
+}
+
+.macaron-main .array-select-box {
+  position: relative;
+  border: 1px solid #e7e7e9;
+  border-radius: 8px;
+  width: 160px;
+  margin-right: 20px;
+}
+
+.macaron-main .array-select-box::after {
+  content: "\e943";
+  display: block;
+  font-size: 16px;
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  font-family: 'xeicon';
+  color: #787c84;
+}
 
 /*# sourceMappingURL=main.css.map */

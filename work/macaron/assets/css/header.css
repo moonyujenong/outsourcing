@@ -1,2 +1,73 @@
+.macaron-header {
+  background-color: #fff;
+}
+
+.macaron-header .header-inner-content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.macaron-header .theme-logo img {
+  width: 160px;
+  height: auto;
+}
+
+.macaron-header .user-info-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -12px;
+}
+
+.macaron-header .user-info-list .user-info-item {
+  padding: 0 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.macaron-header .pc-user-name {
+  font-size: 16px;
+  font-weight: 300;
+  color: #787c84;
+  letter-spacing: -0.32px;
+  line-height: normal;
+  display: none;
+}
+
+.user-info-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.user-info-icon.mypage {
+  background-image: url(../img/icon-my-page.svg);
+}
+
+.user-info-icon.collect {
+  background-image: url(../img/icon-collect.svg);
+}
+
+.user-info-icon.logout {
+  background-image: url(../img/icon-log-out.svg);
+}
 
 /*# sourceMappingURL=header.css.map */
