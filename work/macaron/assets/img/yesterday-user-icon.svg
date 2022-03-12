@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 32 24">
+    <defs>
+        <clipPath id="bid8crqewa">
+            <path data-name="사각형 3475" transform="translate(85 208)" style="fill:#fff;stroke:#707070" d="M0 0h32v24H0z"/>
+        </clipPath>
+        <filter id="hbjtr8egjb" x="-3.393" y="-6" width="39.393" height="39.268" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g style="clip-path:url(#bid8crqewa)">
+        <g style="filter:url(#hbjtr8egjb)" data-name="마스크 그룹 4753" transform="translate(-85 -208)">
+            <path data-name="ic_face_24px" d="M9.487 12.368a1.329 1.329 0 1 0 1.338 1.332 1.334 1.334 0 0 0-1.338-1.332zm6.418 0a1.329 1.329 0 1 0 1.337 1.332 1.334 1.334 0 0 0-1.337-1.332zM12.7 2a10.634 10.634 0 1 0 10.7 10.634A10.669 10.669 0 0 0 12.7 2zm0 19.142a8.471 8.471 0 0 1-8.5-9.422 10.729 10.729 0 0 0 5.566-5.711 10.687 10.687 0 0 0 8.728 4.5 10.5 10.5 0 0 0 2.407-.276 8.426 8.426 0 0 1 .353 2.4 8.544 8.544 0 0 1-8.554 8.509z" transform="translate(88.61 206)" style="fill:#c6483e"/>
+        </g>
+    </g>
+</svg>
