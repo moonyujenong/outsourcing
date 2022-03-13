@@ -70,4 +70,18 @@
   background-image: url(../img/icon-log-out.svg);
 }
 
+@media screen and (min-width: 992px) {
+  .macaron-header .theme-logo img {
+    width: 106px;
+  }
+  .macaron-header .pc-user-name {
+    display: block;
+    margin-left: 7px;
+  }
+  .user-info-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
 /*# sourceMappingURL=header.css.map */
