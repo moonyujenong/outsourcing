@@ -31,9 +31,9 @@
     }
 
     .logon-page-title {
-        font-size: 44px;
+        font-size: 24px;
         margin: 0;
-        margin-bottom: 41px;
+        margin-bottom: 20px;
         font-weight: 600;
         letter-spacing: -0.88px;
         line-height: normal;
@@ -42,11 +42,11 @@
         
 
         img {
-            width: 186px;
+            width: 106px;
             height: auto;
             display: block;
             
-            margin: 0 auto 41px;
+            margin: 0 auto 10px;
         }
 
         span {
@@ -69,12 +69,12 @@
      background-color: #f6f7f8;
      border-radius: 8px;
     display: block;
-    font-size: 24px;
+    font-size: 12px;
     font-weight: 500;
     letter-spacing: -0.48px;
     border :0;
-    height: 80px;
-    padding: 0 40px;
+    height: 42px;
+    padding: 0 10px;
 
    margin: 0 auto 12px;
 
@@ -91,7 +91,7 @@
  }
 
  .logon-setting-box {
-     margin-top: 40px;
+     margin-top: 15px;
      display: flex;
      align-items: center;
     justify-content: space-between;
@@ -99,7 +99,7 @@
  }
 
  .password-change-link {
-     font-size: 20px;
+     font-size: 10px;
      font-weight: 300;
      color: #787c84;
      letter-spacing: -0.4px;
@@ -126,19 +126,19 @@
     border: solid 1px #e7e7e9;
     border-radius: 4px;
     background-color: #fff;
-    width: 35px;
-    height: 35px;
+    width: 18px;
+    height: 18px;
     display: inline-block;
     vertical-align: middle;
     position: relative;
-    padding: 7px;
+    padding: 4px;
  }
 
  .logon-keep-check-title {
      display: inline-block;
      vertical-align: middle;
      margin-left: 14px;
-     font-size: 20px;
+     font-size: 10px;
      font-weight: 300;
      color: #787c84;
      letter-spacing: -0.4px;
@@ -146,14 +146,14 @@
  }
 
  .logon-submit-btn {
-     margin-top: 55px;
+     margin-top: 22px;
      width: 100%;
      max-width: 496px;
-     border-radius: 16px;
+     border-radius: 8px;
      background-color: #5843be;
-     padding: 30px;
+     padding: 14px;
      text-align: center;
-     font-size: 32px;
+     font-size: 16px;
      font-weight: 500;
      color: #fff;
      letter-spacing: -0.64px;
@@ -164,7 +164,7 @@
  @media screen and (min-width:992px) {
     .logon-page-container {
         padding: 0;
-        
+
         .logon-page-left-bg {
             display: block;
         }
@@ -183,6 +183,8 @@
     .logon-input {
         max-width: 280px;
         padding: 0 20px;
+        height: 56px;
+        font-size: 16px;
     }
 
     .logon-keep-check-title {
@@ -204,5 +206,6 @@
         padding: 16px;
         font-size: 20px;
         border-radius: 8px;
+        margin-top: 35px;
     }
  }
