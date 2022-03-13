@@ -80,6 +80,9 @@
   border-radius: 8px;
   border: 1px solid #e7e7e9;
   background-color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
 }
 
 .macaron-main .search-input-box .search-input {
@@ -92,6 +95,7 @@
   height: 56px;
   padding: 0 45px 0px 20px;
   border-radius: 8px;
+  max-width: 200px;
 }
 
 .macaron-main .search-input-box .search-input:focus, .macaron-main .search-input-box .search-input:active {
@@ -168,6 +172,10 @@
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 17px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
 }
 
 .list-array-item-box .list-array-item-image-box .list-array-item-image {

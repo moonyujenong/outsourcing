@@ -69,6 +69,7 @@
         border-radius: 8px;
         border: 1px solid #e7e7e9;
         background-color: #fff;
+        flex: auto;
 
         .search-input {
             border: 0;
@@ -80,6 +81,8 @@
             height: 56px;
             padding: 0 45px 0px 20px;
             border-radius: 8px;
+            
+            max-width: 200px;
 
             &:focus, &:active {
                 outline: none;
@@ -161,6 +164,10 @@
         border-radius: 8px;
         overflow: hidden;
         margin-bottom: 17px;
+        -webkit-backface-visibility: hidden;
+ -moz-backface-visibility: hidden;
+ -webkit-transform: translate3d(0, 0, 0);
+ -moz-transform: translate3d(0, 0, 0);
 
         .list-array-item-image {
             background-repeat: no-repeat;
@@ -173,6 +180,7 @@
             &:hover {
                 transition: all .2s ease-in-out;
                 transform: scale(1.1);
+                
             }
         }
     }
