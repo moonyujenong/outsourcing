@@ -1,10 +1,11 @@
  .logon-page-container {
      position: relative;
      height: 100%;
-
+    padding: 0 15px;
      display: flex;
      flex-wrap: wrap;
      align-items: stretch;
+     
 
 
      .logon-page-left-bg {
@@ -37,6 +38,7 @@
         letter-spacing: -0.88px;
         line-height: normal;
         color: #222224;
+        text-align: center;
         
 
         img {
@@ -93,7 +95,7 @@
      display: flex;
      align-items: center;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
  }
 
  .password-change-link {
@@ -161,6 +163,8 @@
 
  @media screen and (min-width:992px) {
     .logon-page-container {
+        padding: 0;
+        
         .logon-page-left-bg {
             display: block;
         }

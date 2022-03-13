@@ -1,6 +1,7 @@
 .logon-page-container {
   position: relative;
   height: 100%;
+  padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,6 +53,7 @@
   letter-spacing: -0.88px;
   line-height: normal;
   color: #222224;
+  text-align: center;
 }
 
 .logon-page-container .logon-page-title img {
@@ -119,6 +121,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .password-change-link {
@@ -183,6 +187,9 @@
 }
 
 @media screen and (min-width: 992px) {
+  .logon-page-container {
+    padding: 0;
+  }
   .logon-page-container .logon-page-left-bg {
     display: block;
   }
