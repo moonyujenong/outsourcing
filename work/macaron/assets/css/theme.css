@@ -85,6 +85,10 @@
   }
 }
 
+.macaron-main .list-array-top {
+  margin-top: 20px;
+}
+
 .macaron-main .visual-banner-wrap {
   width: 100%;
   border-radius: 12px;
@@ -100,7 +104,6 @@
 }
 
 .macaron-main .list-tab-box {
-  /* margin-top: 20px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,9 +346,6 @@
 }
 
 @media screen and (min-width: 992px) {
-  .macaron-main .list-array-top {
-    margin-top: 20px;
-  }
   .macaron-main .visual-banner-wrap .visual-banner-item {
     padding-top: 17%;
   }
