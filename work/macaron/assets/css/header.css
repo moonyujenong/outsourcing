@@ -15,7 +15,7 @@
 }
 
 .macaron-header .theme-logo img {
-  width: 160px;
+  width: 80px;
   height: auto;
 }
 
@@ -26,11 +26,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 -12px;
+  margin: 0 -6px;
 }
 
 .macaron-header .user-info-list .user-info-item {
-  padding: 0 12px;
+  padding: 0 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,8 +49,8 @@
 }
 
 .user-info-icon {
-  width: 24px;
-  height: 24px;
+  width: 12px;
+  height: 12px;
   display: block;
   background-position: center;
   background-repeat: no-repeat;

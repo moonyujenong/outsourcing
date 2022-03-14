@@ -16,7 +16,7 @@
 }
 
 .macaron-header .theme-logo img {
-  width: 160px;
+  width: 80px;
   height: auto;
 }
 
@@ -27,11 +27,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 -12px;
+  margin: 0 -6px;
 }
 
 .macaron-header .user-info-list .user-info-item {
-  padding: 0 12px;
+  padding: 0 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,8 +50,8 @@
 }
 
 .user-info-icon {
-  width: 24px;
-  height: 24px;
+  width: 12px;
+  height: 12px;
   display: block;
   background-position: center;
   background-repeat: no-repeat;
@@ -87,7 +87,7 @@
 
 .macaron-main .visual-banner-wrap {
   width: 100%;
-  border-radius: 24px;
+  border-radius: 12px;
   overflow: hidden;
 }
 
@@ -96,11 +96,11 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  padding-top: 44%;
+  padding-top: 26%;
 }
 
 .macaron-main .list-tab-box {
-  margin-top: 32px;
+  /* margin-top: 20px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,7 +108,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 }
 
 .macaron-main .list-tab {
@@ -126,12 +126,12 @@
 }
 
 .macaron-main .list-tab .list-tab-item .list-tab-link {
-  padding: 14px;
-  border-radius: 8px;
+  padding: 8px;
+  border-radius: 4px;
   display: block;
   background-color: transparent;
   text-align: center;
-  font-size: 19px;
+  font-size: 10px;
   color: #a5aab5;
   font-size: 500;
   letter-spacing: -0.38px;
@@ -164,7 +164,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  border-radius: 8px;
+  border-radius: 4px;
   border: 1px solid #e7e7e9;
   background-color: #fff;
   -webkit-box-flex: 1;
@@ -174,14 +174,14 @@
 
 .macaron-main .search-input-box .search-input {
   border: 0;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 300;
   color: #787c84;
   letter-spacing: -0.4px;
   line-height: normal;
-  height: 56px;
-  padding: 0 45px 0px 20px;
-  border-radius: 8px;
+  height: 28px;
+  padding: 0 25px 0px  10px;
+  border-radius: 4px;
   max-width: 200px;
 }
 
@@ -191,11 +191,11 @@
 
 .macaron-main .search-input-box .search-icon {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   position: absolute;
-  top: 20px;
-  right: 18px;
+  top: 10px;
+  right: 10px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -206,40 +206,45 @@
 .macaron-main .array-select-box {
   position: relative;
   border: 1px solid #e7e7e9;
-  border-radius: 8px;
-  width: 160px;
-  margin-right: 20px;
+  border-radius: 4px;
+  width: 86px;
+  margin-right: 8px;
 }
 
 .macaron-main .array-select-box::after {
   content: "\e943";
   display: block;
-  font-size: 16px;
+  font-size: 11px;
   position: absolute;
-  top: 14px;
-  right: 20px;
+  top: 7px;
+  right: 10px;
   font-family: 'xeicon';
   color: #787c84;
 }
 
+.macaron-main .theme-select {
+  font-size: 10px;
+  height: 28px;
+}
+
 .list-array-item-wrap {
-  margin-top: 38px;
+  margin-top: 26px;
 }
 
 .list-array-item-wrap .list-array-category-box {
-  margin-bottom: 65px;
+  margin-bottom: 35px;
 }
 
 .list-array-item-wrap .list-array-category-title {
   display: block;
   text-align: center;
-  font-size: 52px;
+  font-size: 28px;
   font-weight: 600;
   color: #222224;
   letter-spacing: -1.04px;
   line-height: normal;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 17px;
 }
 
 .list-array-item-box {
@@ -247,7 +252,7 @@
 }
 
 .list-array-item-box .list-array-item {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -258,7 +263,7 @@
 .list-array-item-box .list-array-item-image-box {
   border-radius: 8px;
   overflow: hidden;
-  margin-bottom: 17px;
+  margin-bottom: 6px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
@@ -272,7 +277,7 @@
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   width: 100%;
-  padding-top: 67%;
+  padding-top: 59%;
 }
 
 .list-array-item-box .list-array-item-image-box .list-array-item-image:hover {
@@ -288,7 +293,7 @@
 
 .list-array-item-info .list-array-item-title {
   font-weight: 300;
-  font-size: 24px;
+  font-size: 12px;
   color: #787c84;
   letter-spacing: -0.48px;
   line-height: normal;
@@ -305,7 +310,7 @@
 
 .list-array-item-info .list-array-item-date {
   display: block;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 300;
   color: #a5aab5;
   letter-spacing: -0.4px;
@@ -315,14 +320,14 @@
 .list-array-item-info .list-array-book-mark {
   position: absolute;
   right: 0;
-  top: 9px;
+  top: 4px;
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: url(../img/icon-book-mark-off.svg);
-  width: 36px;
-  height: 36px;
+  width: 18px;
+  height: 18px;
 }
 
 .list-array-item-info .list-array-book-mark.on {
@@ -338,6 +343,9 @@
 }
 
 @media screen and (min-width: 992px) {
+  .macaron-main .list-array-top {
+    margin-top: 20px;
+  }
   .macaron-main .visual-banner-wrap .visual-banner-item {
     padding-top: 17%;
   }
@@ -362,29 +370,39 @@
   }
   .macaron-main .list-tab .list-tab-item .list-tab-link {
     font-size: 16px;
+    padding: 10px;
   }
   .macaron-main .theme-select {
     font-size: 12px;
     height: 40px;
+    border-radius: 8px;
+    padding-left: 16px;
+  }
+  .macaron-main .search-input-box {
+    border-radius: 8px;
+  }
+  .macaron-main .array-select-box {
+    width: 115px;
+    margin-right: 16px;
+    border-radius: 8px;
   }
   .macaron-main .array-select-box::after {
-    top: 9px;
+    top: 13px;
   }
   .macaron-main .search-input-box .search-input {
     font-size: 12px;
     height: 40px;
+    border-radius: 8px;
   }
   .macaron-main .search-input-box .search-icon {
     width: 12px;
     height: 12px;
     top: 15px;
   }
-  .macaron-main .list-tab-box {
-    margin: 20px 0 0 0;
-  }
   .list-array-item-wrap .list-array-category-title {
     text-align: left;
     margin-bottom: 17px;
+    font-size: 52px;
   }
   .list-array-item-wrap .list-array-category-box {
     margin-bottom: 23px;
@@ -399,6 +417,7 @@
     margin: 0 -12px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: auto;
   }
   .list-array-item-box .list-array-item {
     padding: 0 12px;
@@ -412,7 +431,7 @@
     margin-bottom: 8px;
   }
   .list-array-item-box .list-array-item-image-box .list-array-item-image {
-    padding-top: 100%;
+    padding-top: 71%;
   }
   .list-array-item-info .list-array-item-title {
     font-size: 16px;
@@ -759,7 +778,7 @@ button:focus, button:active {
 }
 
 .theme-select {
-  padding: 14px 20px;
+  padding: 7px 10px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -768,9 +787,9 @@ button:focus, button:active {
   font-weight: 300;
   color: #787c84;
   line-height: normal;
-  padding-right: 40px;
+  padding-right: 20px;
   border: 0;
-  height: 56px;
+  height: 28px;
   cursor: pointer;
   width: 100%;
   border-radius: 8px;
