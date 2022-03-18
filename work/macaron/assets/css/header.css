@@ -12,6 +12,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 -15px;
 }
 
 .macaron-header .theme-logo img {
@@ -71,6 +72,9 @@
 }
 
 @media screen and (min-width: 992px) {
+  .macaron-header .header-inner-content-wrap {
+    margin: 0;
+  }
   .macaron-header .theme-logo img {
     width: 106px;
   }

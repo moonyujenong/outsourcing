@@ -5,6 +5,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin: 0 -15px;
     }
 
     .theme-logo {
@@ -60,6 +61,11 @@
 
 @media screen and (min-width:992px) {
     .macaron-header {
+
+        .header-inner-content-wrap {
+            margin: 0;
+        }
+        
         .theme-logo { 
             
             
