@@ -12,6 +12,10 @@
           align-items: center;
 }
 
+.sub-inner-content-wrap {
+  padding-top: 55px;
+}
+
 .subpage-top-link {
   font-size: 16px;
   color: #787c84;
@@ -19,6 +23,7 @@
   line-height: normal;
   margin-right: 9px;
   display: block;
+  border: 0;
 }
 
 .top-right-icon {
@@ -160,6 +165,7 @@
   background-color: #fff;
   padding: 15px;
   text-align: center;
+  z-index: 99;
   border-bottom: 1px solid #e7e7e9;
 }
 
@@ -224,6 +230,9 @@
   }
   .sub-page-top-pagination {
     display: none;
+  }
+  .sub-inner-content-wrap {
+    padding-top: 0;
   }
 }
 
