@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MACARON - 서브 페이지</title>
+
+    <script src="../assets/js/jquery.js" type="text/javascript"></script>
+    <script src="../assets/js/includeHTML.js"></script> <!-- html include script -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> <!-- swiper script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- parallax script -->
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/subPage.css"> <!-- 서브페이지 스타일 -->
+</head>
+<body>
+    <div id="wrap">
+        <div class="">
+            <main class="theme-main macaron-main">
+                <div class="inner-container">
+                    <div class="sub-inner-content-wrap">
+
+                        <!-- todo :  서브 페이지 상단 우측 -->
+                        <div class="subpage-top-right-box">
+                            <a href="#" class="subpage-top-link">macaron.co.kr/subpage</a>
+                            <span class="top-right-icon icon-edit"></span>
+                            <span class="top-right-icon icon-clip"></span>
+                        </div>
+
+                        <div class="subpage-head-box">
+                            <img src="./assets/img/subpage-img-logo.svg" alt="서브 페이지 탑 로고" class="subpage-head-logo">
+
+                            <div class="subpage-search-box">
+                                <input type="text" class="subpage-search-input" placeholder="제목을 입력하세요">
+                                <span class="icon-edit"></span>
+                            </div>
+
+                        </div>
+        
+        
+                        <!-- todo : 카테고리별 리스트 / 메인과 동일 -->
+                        <div class="main-list-array-wrap">
+                            <div class="list-array-top">
+                                <div class="list-tab-box">
+                                    <ul class="list-tab">
+                                        <!-- todo : 탭 활성화 시 클래스 active 추가 -->
+                                        <li class="list-tab-item active" data-target="sa">
+                                            <a href="#" class="list-tab-link">SA</a>
+                                        </li>
+            
+                                        <li class="list-tab-item" data-target="da">
+                                            <a href="#" class="list-tab-link">DA</a>
+                                        </li>
+            
+                                        <li class="list-tab-item" data-target="sns">
+                                            <a href="#" class="list-tab-link">SNS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+        
+        
+        
+                            <div class="list-array-item-wrap">
+                                <div class="tab-content-container on" id="sa">
+                                    <div class="list-array-category-box">
+                                        <!-- todo : 게시물 카테고리 제목 -->
+                                        <h3 class="list-array-category-title">SA</h3>
+                                        <ul class="list-array-item-box">
+                                            <li class="list-array-item">
+                                                <a href="#" class="list-array-item-link">
+                                                    <div class="list-array-item-image-box">
+                                                        <!-- todo : 게시물 썸네일 -->
+                                                        <div class="list-array-item-image" style="background-image: url(./assets/img/list-item-thumb.png);"></div>
+                                                    </div>
+        
+                                                    <div class="list-array-item-info">
+                                                        <!-- todo : 게시물 제목 노출 -->
+                                                        <h3 class="list-array-item-title">현대해상 12주년</h3>
+                                                        <!-- todo : 게시물 작성 일자 -->
+                                                        <span class="list-array-item-date">2022.01.20</span>
+                                                        <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
+                                                        <span class="list-array-book-mark"></span>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="list-array-item">
+                                                <a href="#" class="list-array-item-link">
+                                                    <div class="list-array-item-image-box">
+                                                        <!-- todo : 게시물 썸네일 -->
+                                                        <div class="list-array-item-image" style="background-image: url(./assets/img/list-item-thumb.png);"></div>
+                                                    </div>
+        
+                                                    <div class="list-array-item-info">
+                                                        <!-- todo : 게시물 제목 노출 -->
+                                                        <h3 class="list-array-item-title">현대해상 12주년</h3>
+                                                        <!-- todo : 게시물 작성 일자 -->
+                                                        <span class="list-array-item-date">2022.01.20</span>
+                                                        <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
+                                                        <span class="list-array-book-mark"></span>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="list-array-item">
+                                                <a href="#" class="list-array-item-link">
+                                                    <div class="list-array-item-image-box">
+                                                        <!-- todo : 게시물 썸네일 -->
+                                                        <div class="list-array-item-image" style="background-image: url(./assets/img/list-item-thumb.png);"></div>
+                                                    </div>
+        
+                                                    <div class="list-array-item-info">
+                                                        <!-- todo : 게시물 제목 노출 -->
+                                                        <h3 class="list-array-item-title">현대해상 12주년</h3>
+                                                        <!-- todo : 게시물 작성 일자 -->
+                                                        <span class="list-array-item-date">2022.01.20</span>
+                                                        <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
+                                                        <span class="list-array-book-mark"></span>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="list-array-item">
+                                                <a href="#" class="list-array-item-link">
+                                                    <div class="list-array-item-image-box">
+                                                        <!-- todo : 게시물 썸네일 -->
+                                                        <div class="list-array-item-image" style="background-image: url(./assets/img/list-item-thumb.png);"></div>
+                                                    </div>
+        
+                                                    <div class="list-array-item-info">
+                                                        <!-- todo : 게시물 제목 노출 -->
+                                                        <h3 class="list-array-item-title">현대해상 12주년</h3>
+                                                        <!-- todo : 게시물 작성 일자 -->
+                                                        <span class="list-array-item-date">2022.01.20</span>
+                                                        <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
+                                                        <span class="list-array-book-mark"></span>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="list-array-item">
+                                                <a href="#" class="list-array-item-link">
+                                                    <div class="list-array-item-image-box">
+                                                        <!-- todo : 게시물 썸네일 -->
+                                                        <div class="list-array-item-image" style="background-image: url(./assets/img/list-item-thumb.png);"></div>
+                                                    </div>
+        
+                                                    <div class="list-array-item-info">
+                                                        <!-- todo : 게시물 제목 노출 -->
+                                                        <h3 class="list-array-item-title">현대해상 12주년</h3>
+                                                        <!-- todo : 게시물 작성 일자 -->
+                                                        <span class="list-array-item-date">2022.01.20</span>
+                                                        <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
+                                                        <span class="list-array-book-mark"></span>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="list-array-item">
+                                                <a href="#" class="list-array-item-link">
+                                                    <div class="list-array-item-image-box">
+                                                        <!-- todo : 게시물 썸네일 -->
+                                                        <div class="list-array-item-image" style="background-image: url(./assets/img/list-item-thumb.png);"></div>
+                                                    </div>
+        
+                                                    <div class="list-array-item-info">
+                                                        <!-- todo : 게시물 제목 노출 -->
+                                                        <h3 class="list-array-item-title">현대해상 12주년</h3>
+                                                        <!-- todo : 게시물 작성 일자 -->
+                                                        <span class="list-array-item-date">2022.01.20</span>
+                                                        <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
+                                                        <span class="list-array-book-mark"></span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+        
+                                    
+                                </div>
+        
+                                <div class="tab-content-container on" id="da">
+                                    <div class="list-array-category-box">
+                                        <!-- todo : 게시물 카테고리 제목 -->
+                                        <h3 class="list-array-category-title">DA</h3>
+                                        <ul class="list-array-item-box">
+                                            <li class="list-array-item">
+                                                <a href="#" class="list-array-item-link">
+                                                    <div class="list-array-item-image-box">
+                                                        <!-- todo : 게시물 썸네일 -->
+                                                        <div class="list-array-item-image" style="background-image: url(./assets/img/list-item-thumb.png);"></div>
+                                                    </div>
+        
+                                                    <div class="list-array-item-info">
+                                                        <!-- todo : 게시물 제목 노출 -->
+                                                        <h3 class="list-array-item-title">현대해상 12주년</h3>
+                                                        <!-- todo : 게시물 작성 일자 -->
+                                                        <span class="list-array-item-date">2022.01.20</span>
+                                                        <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
+                                                        <span class="list-array-book-mark"></span>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="list-array-item">
+                                                <a href="#" class="list-array-item-link">
+                                                    <div class="list-array-item-image-box">
+                                                        <!-- todo : 게시물 썸네일 -->
+                                                        <div class="list-array-item-image" style="background-image: url(./assets/img/list-item-thumb.png);"></div>
+                                                    </div>
+        
+                                                    <div class="list-array-item-info">
+                                                        <!-- todo : 게시물 제목 노출 -->
+                                                        <h3 class="list-array-item-title">현대해상 12주년</h3>
+                                                        <!-- todo : 게시물 작성 일자 -->
+                                                        <span class="list-array-item-date">2022.01.20</span>
+                                                        <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
+                                                        <span class="list-array-book-mark"></span>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="list-array-item">
+                                                <a href="#" class="list-array-item-link">
+                                                    <div class="list-array-item-image-box">
+                                                        <!-- todo : 게시물 썸네일 -->
+                                                        <div class="list-array-item-image" style="background-image: url(./assets/img/list-item-thumb.png);"></div>
+                                                    </div>
+        
+                                                    <div class="list-array-item-info">
+                                                        <!-- todo : 게시물 제목 노출 -->
+                                                        <h3 class="list-array-item-title">현대해상 12주년</h3>
+                                                        <!-- todo : 게시물 작성 일자 -->
+                                                        <span class="list-array-item-date">2022.01.20</span>
+                                                        <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
+                                                        <span class="list-array-book-mark"></span>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="list-array-item">
+                                                <a href="#" class="list-array-item-link">
+                                                    <div class="list-array-item-image-box">
+                                                        <!-- todo : 게시물 썸네일 -->
+                                                        <div class="list-array-item-image" style="background-image: url(./assets/img/list-item-thumb.png);"></div>
+                                                    </div>
+        
+                                                    <div class="list-array-item-info">
+                                                        <!-- todo : 게시물 제목 노출 -->
+                                                        <h3 class="list-array-item-title">현대해상 12주년</h3>
+                                                        <!-- todo : 게시물 작성 일자 -->
+                                                        <span class="list-array-item-date">2022.01.20</span>
+                                                        <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
+                                                        <span class="list-array-book-mark"></span>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="list-array-item">
+                                                <a href="#" class="list-array-item-link">
+                                                    <div class="list-array-item-image-box">
+                                                        <!-- todo : 게시물 썸네일 -->
+                                                        <div class="list-array-item-image" style="background-image: url(./assets/img/list-item-thumb.png);"></div>
+                                                    </div>
+        
+                                                    <div class="list-array-item-info">
+                                                        <!-- todo : 게시물 제목 노출 -->
+                                                        <h3 class="list-array-item-title">현대해상 12주년</h3>
+                                                        <!-- todo : 게시물 작성 일자 -->
+                                                        <span class="list-array-item-date">2022.01.20</span>
+                                                        <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
+                                                        <span class="list-array-book-mark"></span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+        
+                                   
+                                </div>
+        
+                                <div class="tab-content-container on" id="sns">
+                                    sns
+                                   
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+
+
+                        <!-- todo : 취소/저쟝/삭제 버튼 / 하단 고정  -->
+                        <div class="post-change-btns">
+                            <button class="post-change-btn cancel">취소하기</button>
+                            <button class="post-change-btn save">저장하기</button>
+                            <button class="post-change-btn delete">삭제버튼</button>
+                        </div>
+                    </div>
+                </div>
+        
+            </main>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function(){
+            $('.list-tab li').click(function(){
+                var this_target = $(this).attr('data-target');
+    
+                $('.list-tab-item').removeClass('active');
+                $(this).addClass('active');
+    
+                $('.tab-content-container').removeClass('on');
+                $("#" + this_target).addClass('on');
+    
+            });
+    
+            $('.list-array-book-mark').click(function(){
+                $(this).toggleClass("on");
+            });
+        });
+    </script>
+
+</body>
+</html>
