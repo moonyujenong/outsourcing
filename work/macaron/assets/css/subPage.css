@@ -22,8 +22,13 @@
   letter-spacing: -0.32px;
   line-height: normal;
   margin-right: 9px;
-  display: block;
+  display: inline-block;
   border: 0;
+}
+
+.subpage-link-fix {
+  color: #787c84;
+  display: inline-block;
 }
 
 .top-right-icon {
