@@ -90,7 +90,8 @@
 }
 
 .macaron-main .visual-banner-wrap {
-  width: 100%;
+  width: auto;
+  margin: 0 -10px;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -346,6 +347,9 @@
 }
 
 @media screen and (min-width: 992px) {
+  .macaron-main .visual-banner-wrap {
+    margin: 0;
+  }
   .macaron-main .visual-banner-wrap .visual-banner-item {
     padding-top: 17%;
   }

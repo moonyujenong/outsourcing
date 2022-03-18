@@ -4,7 +4,8 @@
          margin-top: 20px;
      }
     .visual-banner-wrap {
-        width: 100%;
+        width: auto;
+        margin: 0 -10px;
         border-radius: 12px;
         overflow: hidden;
         
@@ -260,7 +261,7 @@
         
         
         .visual-banner-wrap {
-           
+            margin: 0;
 
             .visual-banner-item {
                 padding-top: 17%;
