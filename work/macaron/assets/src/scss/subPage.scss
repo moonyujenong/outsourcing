@@ -122,6 +122,37 @@
     }
 }
 
+.sub-page-top-pagination {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #e7e7e9;
+
+    i {
+        font-size: 24px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-weight: 500;
+    }
+
+    .top-pagination-title {
+        font-size: 16px;
+        font-weight: 300;
+        color: #222224;
+        letter-spacing: -0.32px;
+        line-height: normal;
+    }
+
+}
+
 @media screen and (min-width:992px) {
     .subpage-top-right-box {
         margin: 17px 0 0;
@@ -174,5 +205,9 @@
             margin: 0 12px;
             border-radius: 12px;
         }
+    }
+
+    .sub-page-top-pagination {
+        display: none;
     }
 }

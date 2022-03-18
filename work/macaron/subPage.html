@@ -29,7 +29,11 @@
             <main class="theme-main macaron-main">
                 <div class="inner-container">
                     <div class="sub-inner-content-wrap">
-
+                        <!-- todo :서브 페이지 탑 페이지네이션 -->
+                        <div class="sub-page-top-pagination">
+                            <i class="xi-angle-left-thin"></i>
+                            <span class="top-pagination-title">컬렉션 생성</span>
+                        </div>
                         <!-- todo :  서브 페이지 상단 우측 -->
                         <div class="subpage-top-right-box">
                             <a href="#" class="subpage-top-link">macaron.co.kr/subpage</a>
@@ -315,6 +319,7 @@
 
     <script type="text/javascript">
         $(function(){
+            //메인 탭과 동일
             $('.list-tab li').click(function(){
                 var this_target = $(this).attr('data-target');
     
