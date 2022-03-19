@@ -342,6 +342,72 @@
   background-image: url(../img/icon-book-mark-on.svg);
 }
 
+.add-collection-btn-box {
+  position: fixed;
+  right: 18px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 50;
+}
+
+.add-collection-btn {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.add-collection-btn {
+  border-radius: 8px;
+  background-color: #5843be;
+  padding: 20px;
+}
+
+.collection-number {
+  display: block;
+  position: absolute;
+  top: -13px;
+  left: 18px;
+  background-color: #fff;
+  padding: 5px 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #5843be;
+  letter-spacing: -0.32px;
+  line-height: normal;
+  border-radius: 7px;
+}
+
+.collection-number::after {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
+  bottom: -3px;
+}
+
+.scroll-top-btn {
+  width: 24px;
+  height: 24px;
+  bottom: 35px;
+  position: absolute;
+  top: -50px;
+  right: 0;
+  cursor: pointer;
+}
+
+.scroll-top-btn img {
+  width: 100%;
+}
+
 .tab-content-container {
   display: none;
 }
@@ -452,6 +518,23 @@
     width: 24px;
     height: 24px;
     top: 5px;
+  }
+  .add-collection-btn-box {
+    right: 46px;
+  }
+  .add-collection-btn {
+    padding: 33px;
+    font-size: 20px;
+  }
+  .collection-number {
+    font-size: 16px;
+    padding: 6px 9px;
+    left: 35px;
+  }
+  .scroll-top-btn {
+    width: 48px;
+    height: 48px;
+    top: -90px;
   }
 }
 
