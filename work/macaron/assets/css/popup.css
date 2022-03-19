@@ -1,6 +1,7 @@
 .collection-modal .modal-dialog {
   /* border-radius: 8px; */
   max-width: 338px;
+  margin: auto;
 }
 
 .collection-modal .modal-content {
@@ -21,11 +22,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .collection-modal .close {
   opacity: 1;
-  padding: 0;
+  /* padding: 0; */
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 .collection-modal .close img {
@@ -39,6 +44,10 @@
 
 .collection-modal .modal-content-custom {
   background-color: #f6f7f8;
+}
+
+.collection-modal .modal-content-custom.cancel-body {
+  background-color: #fff;
 }
 
 .collection-modal .modal-footer {
@@ -115,6 +124,15 @@
   margin-top: 8px;
 }
 
+.collection-modal .cancel-popup-content-custom {
+  font-size: 12px;
+  font-weight: 300;
+  color: #222224;
+  letter-spacing: -0.24px;
+  line-height: 1.5;
+  text-align: center;
+}
+
 @media screen and (min-width: 992px) {
   .collection-modal .modal-dialog {
     max-width: 640px;
@@ -149,6 +167,17 @@
     font-size: 20px;
     border-radius: 12px;
     margin: 0 12px;
+  }
+  .collection-modal .close {
+    top: 20px;
+    right: 20px;
+  }
+  .collection-modal .close img {
+    width: 48px;
+    height: 48px;
+  }
+  .collection-modal .cancel-popup-content-custom {
+    font-size: 24px;
   }
 }
 

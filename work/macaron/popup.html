@@ -32,6 +32,7 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
+                        <!-- todo : 취소 팝업 일 시 타이틀 문구만 삭제 -->
                         <h5 class="modal-title" id="exampleModalLongTitle">컬렉션 모달 생성</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <img src="./assets/img/popup-btn-close.svg" alt="팝업 닫기 버튼">
@@ -39,14 +40,25 @@
                     </div>
 
                     <div class="modal-body">
-                        <div class="modal-content-custom">
-                            <div class="name-input-box">
-                                <input type="text" class="name-input" placeholder="이름을 등록해주세요">
+                        <!-- todo: 취소 팝업 일 시 클래스 cancel-body 추가 -->
+                        <div class="modal-content-custom cancel-body">
+                            <div>
+                                <div class="name-input-box">
+                                    <input type="text" class="name-input" placeholder="이름을 등록해주세요">
+                                </div>
+
+                                <!-- todo : 이미 등록된 이름일 경우 표기 -->
+                                <span class="rename-label">이미 등록된 이름입니다.</span>
                             </div>
 
-                            <!-- todo : 이미 등록된 이름일 경우 표기 -->
-                            <span class="rename-label">이미 등록된 이름입니다.</span>
+                             <!-- todo : 취소 팝업일 시 해당 div 노출 -->
+                            <div class="cancel-popup-content-custom">
+                                취소하시겠습니까? <br>
+                                변경 사항은 저장되지 않습니다.
+                            </div>
                         </div>
+
+                       
                     </div>
 
                     <div class="modal-footer">

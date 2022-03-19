@@ -2,6 +2,7 @@
     .modal-dialog {
         /* border-radius: 8px; */
         max-width: 338px;
+        margin: auto;
     }
 
     .modal-content {
@@ -20,11 +21,15 @@
         border-bottom: 0;
         padding: 13px 10px;
         align-items: center;
+        position: relative;
     }
 
     .close {
         opacity: 1;
-        padding: 0;
+        /* padding: 0; */
+        position: absolute;
+        right: 10px;
+        top: 10px;
 
         img {
             width: 24px;
@@ -38,6 +43,10 @@
 
     .modal-content-custom {
         background-color: #f6f7f8;
+
+        &.cancel-body {
+            background-color: #fff;
+        }
     }
 
     .modal-footer {
@@ -102,6 +111,15 @@
         display: block;
         margin-top: 8px;
     }
+
+    .cancel-popup-content-custom {
+        font-size: 12px;
+        font-weight: 300;
+        color: #222224;
+        letter-spacing: -0.24px;
+        line-height: 1.5;
+        text-align: center;
+    }
 }
 
 
@@ -149,6 +167,20 @@
                 border-radius: 12px;
                 margin: 0 12px;
             }
+        }
+
+        .close {
+            top: 20px;
+            right: 20px;
+
+            img {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        .cancel-popup-content-custom  {
+            font-size: 24px;
         }
     }
 }
