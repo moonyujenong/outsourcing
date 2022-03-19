@@ -16,6 +16,19 @@
   padding-top: 55px;
 }
 
+.sub-inner-content-wrap .list-array-close-mark {
+  background-image: url(../img/close-btn-gray.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+
 .subpage-top-link {
   font-size: 16px;
   color: #787c84;
