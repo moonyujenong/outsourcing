@@ -43,14 +43,14 @@
 }
 
 .macaron-main .list-tab .list-tab-item .list-tab-link {
-  padding: 8px;
+  padding: 10px;
   border-radius: 4px;
   display: block;
   background-color: transparent;
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
   color: #a5aab5;
-  font-size: 500;
+  font-weight: 500;
   letter-spacing: -0.38px;
   line-height: normal;
 }
@@ -91,7 +91,7 @@
 
 .macaron-main .search-input-box .search-input {
   border: 0;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 300;
   color: #787c84;
   letter-spacing: -0.4px;
@@ -140,7 +140,7 @@
 }
 
 .macaron-main .theme-select {
-  font-size: 10px;
+  font-size: 12px;
   height: 28px;
 }
 
@@ -210,7 +210,7 @@
 
 .list-array-item-info .list-array-item-title {
   font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
   color: #787c84;
   letter-spacing: -0.48px;
   line-height: normal;
@@ -227,7 +227,7 @@
 
 .list-array-item-info .list-array-item-date {
   display: block;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 300;
   color: #a5aab5;
   letter-spacing: -0.4px;
@@ -243,8 +243,8 @@
   background-size: cover;
   background-position: center;
   background-image: url(../img/icon-book-mark-off.svg);
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
 }
 
 .list-array-item-info .list-array-book-mark.on {
@@ -304,8 +304,8 @@
 }
 
 .scroll-top-btn {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   bottom: 35px;
   position: absolute;
   top: -50px;
@@ -376,6 +376,7 @@
     font-size: 12px;
     height: 40px;
     border-radius: 8px;
+    width: 200px;
   }
   .macaron-main .search-input-box .search-icon {
     width: 12px;
