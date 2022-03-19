@@ -684,6 +684,160 @@
   }
 }
 
+.collection-modal .modal-dialog {
+  /* border-radius: 8px; */
+  max-width: 338px;
+}
+
+.collection-modal .modal-content {
+  border-radius: 8px;
+}
+
+.collection-modal .modal-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222224;
+  letter-spacing: -0.28px;
+  line-height: normal;
+}
+
+.collection-modal .modal-header {
+  border-bottom: 0;
+  padding: 13px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.collection-modal .close {
+  opacity: 1;
+  padding: 0;
+}
+
+.collection-modal .close img {
+  width: 24px;
+  height: 24px;
+}
+
+.collection-modal .modal-body {
+  padding: 0;
+}
+
+.collection-modal .modal-content-custom {
+  background-color: #f6f7f8;
+}
+
+.collection-modal .modal-footer {
+  border-top: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 29px;
+}
+
+.collection-modal .modal-footer .btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: -0.4px;
+  line-height: normal;
+  padding: 11px;
+  border-radius: 4px;
+  border: 0;
+}
+
+.collection-modal .modal-footer .btn.popup-cancel {
+  background-color: #a5aab5;
+}
+
+.collection-modal .modal-footer .btn.popup-save {
+  background-color: #5843be;
+}
+
+.collection-modal .modal-content-custom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 38px 15px;
+}
+
+.collection-modal .name-input-box {
+  width: 100%;
+  max-width: 224px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #787c84;
+}
+
+.collection-modal .name-input {
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: -0.24px;
+  line-height: normal;
+  color: #787c84;
+}
+
+.collection-modal .rename-label {
+  font-size: 12px;
+  font-weight: 300;
+  color: #a5aab5;
+  letter-spacing: -0.24px;
+  line-height: normal;
+  display: block;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 992px) {
+  .collection-modal .modal-dialog {
+    max-width: 640px;
+    border-radius: 12px;
+  }
+  .collection-modal .modal-header {
+    padding: 28px 40px;
+  }
+  .collection-modal .modal-title {
+    font-size: 24px;
+    letter-spacing: -0.48px;
+  }
+  .collection-modal .modal-content-custom {
+    padding: 75px 15px;
+  }
+  .collection-modal .name-input {
+    font-size: 20px;
+  }
+  .collection-modal .name-input-box {
+    max-width: 374px;
+    padding-bottom: 15px;
+  }
+  .collection-modal .rename-label {
+    font-size: 20px;
+    margin-top: 16px;
+  }
+  .collection-modal .modal-footer {
+    padding: 39px 48px;
+  }
+  .collection-modal .modal-footer .btn {
+    padding: 22px;
+    font-size: 20px;
+    border-radius: 12px;
+    margin: 0 12px;
+  }
+}
+
 @font-face {
   font-family: 'S-CoreDream';
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff") format("woff");
