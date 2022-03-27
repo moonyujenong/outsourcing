@@ -1,7 +1,7 @@
 @charset "UTF-8";
  
 @import 'header'; //헤더
-@import 'main'; //메인
+@import 'main'; //메인 
 @import 'footer'; //푸터
 
 
@@ -10,6 +10,308 @@
 @import 'logon'; //로그인/회원가입 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+  font-family:'경기천년바탕' ;
+  src: url(../../font/경기천년바탕_Regular.ttf) format('ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family:'경기천년바탕' ;
+  src: url(../../font/경기천년바탕_Bold.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'경기천년제목' ;
+  src: url(../../font/경기천년제목_Light.ttf) format('ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family:'경기천년제목' ;
+  src: url(../../font/경기천년제목_Medium.ttf) format('ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family:'경기천년제목' ;
+  src: url(../../font/경기천년제목_Bold.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'경기천년제목' ;
+  src: url(../../font/경기천년제목V_Bold.ttf) format('ttf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family:'충북대학교' ;
+  src: url(../../font/충북대학교_Bold.ttf) format('ttf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family:'a뉴굴림' ;
+  src: url(../../font/a뉴굴림1.ttf) format('ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family:'a뉴굴림' ;
+  src: url(../../font/a뉴굴림2.ttf) format('ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family:'a뉴굴림' ;
+  src: url(../../font/a뉴굴림3.ttf) format('ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family:'a뉴굴림' ;
+  src: url(../../font/a뉴굴림4.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'a로케트' ;
+  src: url(../../font/a로케트.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'a몬스터' ;
+  src: url(../../font/a몬스터.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'a시월구일' ;
+  src: url(../../font/a시월구일1.ttf) format('ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family:'a시월구일' ;
+  src: url(../../font/a시월구일2.ttf) format('ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family:'a시월구일' ;
+  src: url(../../font/a시월구일3.ttf) format('ttf');
+  font-weight:600;
+}
+
+@font-face {
+  font-family:'a시월구일' ;
+  src: url(../../font/a시월구일4.ttf) format('ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family:'a우주소년' ;
+  src: url(../../font/a우주소년.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'a타임머신' ;
+  src: url(../../font/a타임머신.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'a하얀구름' ;
+  src: url(../../font/a하얀구름.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'Binggrae' ;
+  src: url(../../font/Binggrae-Bold.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'BinggraeⅡ' ;
+  src: url(../../font/BinggraeⅡ-Bold.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'BinggraeMelona' ;
+  src: url(../../font/BinggraeMelona-Bold.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'BackHanSans' ;
+  src: url(../../font/BlackHanSans.ttf) format('ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family:'BMDOHYEON' ;
+  src: url(../../font/BMDOHYEON_ttf.ttf) format('ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family:'BME10' ;
+  src: url(../../font/BMEuljiro10yearslater.ttf) format('ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family:'BME10' ;
+  src: url(../../font/BMEuljirooraeorae.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'BMEULJIRO' ;
+  src: url(../../font/BMEULJIROTTF.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'BMH' ;
+  src: url(../../font/BMHANNAAir_ttf.ttf) format('ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family:'BMH' ;
+  src: url(../../font/BMHANNA_11yrs_ttf.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'BMH' ;
+  src: url(../../font/BMHANNAPro.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'BMJ' ;
+  src: url(../../font/BMJUA_ttf.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'BMK' ;
+  src: url(../../font/BMKIRANGHAERANG-TTF.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'BMY' ;
+  src: url(../../font/BMYEONSUNG_ttf.ttf) format('ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family:'CookeRun' ;
+  src: url(../../font/CookieRun_Regular.ttf) format('ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family:'CookeRun' ;
+  src: url(../../font/CookieRun_Bold.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'CookeRun' ;
+  src: url(../../font/CookieRun_Black.ttf) format('ttf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family:'godo' ;
+  src: url(../../font/godoRounded_L.ttf) format('ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family:'godo' ;
+  src: url(../../font/godoRounded_R.ttf) format('ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family:'godoMaum' ;
+  src: url(../../font/godoMaum.ttf) format('ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family:'KOTRA' ;
+  src: url(../../font/KOTRA_BOLD.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'Maplestory' ;
+  src: url(../../font/Maplestory_Light.ttf) format('ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family:'Maplestory' ;
+  src: url(../../font/Maplestory_Bold.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'NEXON' ;
+  src: url(../../font/NEXONLv1GothicLight.ttf) format('ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family:'NEXON' ;
+  src: url(../../font/NEXONLv1GothicRegular.ttf) format('ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family:'NEXON' ;
+  src: url(../../font/NEXONLv1GothicBold.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'TmonTium' ;
+  src: url(../../font/TmonTium.ttf) format('ttf'); 
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'TmonMonsori' ;
+  src: url(../../font/TmonMonsori.otf.otf) format('otf');
+  src: url(../../font/TmonMonsori.ttf.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'SsangmunDong' ;
+  src: url(../../font/Typo_SsangmunDongB.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:'ygJalnan' ;
+  src: url(../../font/yg-jalnan.ttf) format('ttf');
+  font-weight: 600;
+}
+
 
 
 
@@ -22,7 +324,7 @@ html, body {
     word-break: keep-all;
     background-color: #fff;
     font-weight: 400;
-    font-family: 'Roboto', sans-serif  !important;
+   
     height: 100%;
     scroll-behavior: smooth;
     word-break: break-all;
