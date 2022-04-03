@@ -427,6 +427,27 @@
         width: 100%;
     }
 }
+.post-category-label {
+    display: block;
+    padding: 1px 17px;
+    color: #fff;
+    border-radius: 100px;
+    margin: 0 0 5px;
+    width: fit-content;
+    text-align: center;
+
+    &.normal {
+        background-color: #f2b83d;
+    }
+
+    &.green {
+        background-color: #62cb47;
+    }
+
+    &.blue {
+        background-color: #3d98f2;
+    }
+}
 
 @media screen and (min-width:992px) {
     .select-portfolio-list-box {
@@ -597,7 +618,7 @@
 
     .list-array-item-box {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         margin: 0 -12px;
         flex-wrap: wrap;
         width: auto;

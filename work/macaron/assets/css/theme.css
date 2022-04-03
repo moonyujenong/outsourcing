@@ -530,6 +530,30 @@
   width: 100%;
 }
 
+.post-category-label {
+  display: block;
+  padding: 1px 17px;
+  color: #fff;
+  border-radius: 100px;
+  margin: 0 0 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+.post-category-label.normal {
+  background-color: #f2b83d;
+}
+
+.post-category-label.green {
+  background-color: #62cb47;
+}
+
+.post-category-label.blue {
+  background-color: #3d98f2;
+}
+
 @media screen and (min-width: 992px) {
   .select-portfolio-list-box {
     margin: 48px 0;
@@ -656,9 +680,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin: 0 -12px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
