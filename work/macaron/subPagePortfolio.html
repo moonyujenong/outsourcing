@@ -25,49 +25,31 @@
 </head>
 <body>
     <div id="wrap">
-        <div class="">
+        <div id="container">
             <main class="theme-main macaron-main">
                 <div class="inner-container">
-                    <div class="sub-inner-content-wrap">
-                        <!-- todo :서브 페이지 탑 페이지네이션 -->
-                        <div class="sub-page-top-pagination">
-                            <i class="xi-angle-left-thin"></i>
-                            <span class="top-pagination-title">컬렉션 생성</span>
-                        </div>
-
-                        <!-- todo : 컬렉션 공유 페이지 시,HOMEPAGE, PDF 아이콘 -->
-                        <div class="share-page-top-icon-box">
-                            <a href="#" class="link-home">
-                                HOME PAGE
-                                <img src="./assets/img/icon-home.svg" alt="홈페이지 바로가기">
-                            </a>
-                            <button class="file-pdf" type="button">
-                                PDF
-                                <img src="./assets/img/icon-down.svg" alt="PDF 파일 다운로드">
-                            </button>
-                        </div>
-                        <!-- todo :  서브 페이지 상단 우측 -->
-                        <div class="subpage-top-right-box">
-                            <div class="" style="">
-                                <span class="subpage-link-fix">macaron.co.kr/</span>
-                                <input type="text" class="subpage-top-link" value="subpage">
-                            </div>
-                            <span class="top-right-icon icon-edit"></span>
-                            <span class="top-right-icon icon-clip"></span>
-                        </div>
-
-                        <div class="subpage-head-box">
-                            <img src="./assets/img/subpage-img-logo.svg" alt="서브 페이지 탑 로고" class="subpage-head-logo">
-
-                            <div class="subpage-search-box">
-                                <input type="text" class="subpage-search-input" placeholder="제목을 입력하세요">
-                                <span class="icon-edit"></span>
-                            </div>
-
+        
+                    <!-- todo : 컬렉션 만들기 버튼 -->
+                    <div class="add-collection-btn-box">
+                        <button class="scroll-top-btn">
+                            <img src="./assets/img/scroll-top-btn.svg" alt="스크롤 탑 버튼">
+                        </button>
+        
+                        <!-- todo : 콜렉션 생성 넘버 -->
+                        <span class="collection-number">645</span>
+        
+                        <button class="add-collection-btn">
+                            컬렉션 <br> 만들기 <br>
+                            <i class="xi-plus"></i>
+                        </button>
+                    </div>
+        
+                    <div class="main-inner-content-wrap">
+                        <div class="visual-banner-wrap">
+                            <div class="visual-banner-item" style="background-image: url(./assets/img/visual-banner.png);"></div>
                         </div>
         
         
-                        <!-- todo : 카테고리별 리스트 / 메인과 동일 -->
                         <div class="main-list-array-wrap">
                             <div class="list-array-top">
                                 <div class="list-tab-box">
@@ -86,6 +68,25 @@
                                         </li>
                                     </ul>
                                 </div>
+        
+                                <div class="list-array-search-box">
+                                    <!-- todo : 나열 순서 선택 박스 -->
+                                    <div class="array-select-box">
+                                        <select name="" id="" class="theme-select">
+                                            <option value="" selected>등록순</option>
+                                            <option value="">인기순</option>
+                                        </select>
+                                    </div>
+        
+                                    <form action="">
+                                        <!-- todo : 검색 부분 -->
+                                        <div class="search-input-box">
+                                            <input type="text" class="search-input" placeholder="검색어를 입력하세요.">
+                                            <button type="submit" class="search-icon"></button>
+                                        </div>
+                                    </form>
+                                </div>
+        
                             </div>
         
         
@@ -109,7 +110,7 @@
                                                         <!-- todo : 게시물 작성 일자 -->
                                                         <span class="list-array-item-date">2022.01.20</span>
                                                         <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
-                                                        <span class="list-array-close-mark"></span>
+                                                        <span class="list-array-book-mark"></span>
                                                     </div>
                                                 </a>
                                             </li>
@@ -127,7 +128,7 @@
                                                         <!-- todo : 게시물 작성 일자 -->
                                                         <span class="list-array-item-date">2022.01.20</span>
                                                         <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
-                                                        <span class="list-array-close-mark"></span>
+                                                        <span class="list-array-book-mark"></span>
                                                     </div>
                                                 </a>
                                             </li>
@@ -145,7 +146,7 @@
                                                         <!-- todo : 게시물 작성 일자 -->
                                                         <span class="list-array-item-date">2022.01.20</span>
                                                         <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
-                                                        <span class="list-array-close-mark"></span>
+                                                        <span class="list-array-book-mark"></span>
                                                     </div>
                                                 </a>
                                             </li>
@@ -163,7 +164,7 @@
                                                         <!-- todo : 게시물 작성 일자 -->
                                                         <span class="list-array-item-date">2022.01.20</span>
                                                         <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
-                                                        <span class="list-array-close-mark"></span>
+                                                        <span class="list-array-book-mark"></span>
                                                     </div>
                                                 </a>
                                             </li>
@@ -181,7 +182,7 @@
                                                         <!-- todo : 게시물 작성 일자 -->
                                                         <span class="list-array-item-date">2022.01.20</span>
                                                         <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
-                                                        <span class="list-array-close-mark"></span>
+                                                        <span class="list-array-book-mark"></span>
                                                     </div>
                                                 </a>
                                             </li>
@@ -199,7 +200,7 @@
                                                         <!-- todo : 게시물 작성 일자 -->
                                                         <span class="list-array-item-date">2022.01.20</span>
                                                         <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
-                                                        <span class="list-array-close-mark"></span>
+                                                        <span class="list-array-book-mark"></span>
                                                     </div>
                                                 </a>
                                             </li>
@@ -227,7 +228,7 @@
                                                         <!-- todo : 게시물 작성 일자 -->
                                                         <span class="list-array-item-date">2022.01.20</span>
                                                         <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
-                                                        <span class="list-array-close-mark"></span>
+                                                        <span class="list-array-book-mark"></span>
                                                     </div>
                                                 </a>
                                             </li>
@@ -245,7 +246,7 @@
                                                         <!-- todo : 게시물 작성 일자 -->
                                                         <span class="list-array-item-date">2022.01.20</span>
                                                         <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
-                                                        <span class="list-array-close-mark"></span>
+                                                        <span class="list-array-book-mark"></span>
                                                     </div>
                                                 </a>
                                             </li>
@@ -263,7 +264,7 @@
                                                         <!-- todo : 게시물 작성 일자 -->
                                                         <span class="list-array-item-date">2022.01.20</span>
                                                         <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
-                                                        <span class="list-array-close-mark"></span>
+                                                        <span class="list-array-book-mark"></span>
                                                     </div>
                                                 </a>
                                             </li>
@@ -281,7 +282,7 @@
                                                         <!-- todo : 게시물 작성 일자 -->
                                                         <span class="list-array-item-date">2022.01.20</span>
                                                         <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
-                                                        <span class="list-array-close-mark"></span>
+                                                        <span class="list-array-book-mark"></span>
                                                     </div>
                                                 </a>
                                             </li>
@@ -299,7 +300,7 @@
                                                         <!-- todo : 게시물 작성 일자 -->
                                                         <span class="list-array-item-date">2022.01.20</span>
                                                         <!-- todo : 게시물 북마크 아이콘 / 활성화 시 클래스 on 추가 -->
-                                                        <span class="list-array-close-mark"></span>
+                                                        <span class="list-array-book-mark"></span>
                                                     </div>
                                                 </a>
                                             </li>
@@ -317,19 +318,40 @@
                             </div>
                             
                         </div>
-
-
-                        <!-- todo : 취소/저쟝/삭제 버튼 / 하단 고정  -->
-                        <div class="post-change-btns">
-                            <button class="post-change-btn cancel">취소하기</button>
-                            <button class="post-change-btn save">저장하기</button>
-                            <button class="post-change-btn delete">삭제버튼</button>
-                        </div>
+                    </div>
+        
+                    <!-- todo : 공유 버튼 목록 -->
+                    <div class="share-list-box">
+                        <ul class="share-list">
+                            <li class="share-item">
+                                <button class="share-btn">
+                                    <img src="./assets/img/icon-insta.png" alt="인스타 공유">
+                                </button>
+                            </li>
+        
+                            <li class="share-item">
+                                <button class="share-btn">
+                                    <img src="./assets/img/icon-blog.png" alt="블로그 공유">
+                                </button>
+                            </li>
+        
+                            <li class="share-item">
+                                <button class="share-btn">
+                                    <img src="./assets/img/icon-you-tube.png" alt="유튜브 공유">
+                                </button>
+                            </li>
+        
+                            <li class="share-item">
+                                <button class="share-btn">
+                                    <img src="./assets/img/icon-face-book.png" alt="페이스북 공유">
+                                </button>
+                            </li>
+                        </ul>
                     </div>
                 </div>
         
             </main>
-        </div>
+        </div>  
     </div>
 
     <script type="text/javascript">

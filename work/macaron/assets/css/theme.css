@@ -416,7 +416,177 @@
   display: block;
 }
 
+.share-list-box {
+  margin: 30px 0 33px;
+}
+
+.share-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.share-item {
+  padding: 0 10px;
+}
+
+.share-btn {
+  /* width: 70px;
+    height: 70px; */
+  cursor: pointer;
+}
+
+.share-btn img {
+  width: 100%;
+}
+
+.select-portfolio-list-box {
+  margin: 26px 0;
+}
+
+.portfolio-item {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.portfolio-item:last-child {
+  margin-bottom: 0;
+}
+
+.portflio-content {
+  width: 100%;
+  display: block;
+  background-color: #f6f7f8;
+  border-radius: 4px;
+  position: relative;
+  padding: 27px;
+  text-align: center;
+}
+
+.portflio-content label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.portfolio-title {
+  font-size: 14px;
+  font-weight: 300;
+  color: #787c84;
+  letter-spacing: -0.28px;
+  display: block;
+  margin: 0 0 4px;
+}
+
+.portfolio-date {
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+  color: #a5aab5;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+}
+
+.portfolio-view-btn {
+  border-radius: 100px;
+  padding: 5px 17px 4px;
+  background-color: #a5aab5;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: -0.24px;
+}
+
+.all-select-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 13px;
+}
+
+.all-select-box label .logon-keep-check-title {
+  margin-left: 0;
+  font-size: 12px;
+}
+
+.trash-btn {
+  margin-left: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+.trash-btn img {
+  width: 100%;
+}
+
 @media screen and (min-width: 992px) {
+  .select-portfolio-list-box {
+    margin: 48px 0;
+  }
+  .portfolio-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0 -12px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .portfolio-item {
+    padding: 0 12px;
+    margin-bottom: 20px;
+    width: 20%;
+  }
+  .portflio-content {
+    padding: 54px 15px 50px;
+    border-radius: 8px;
+  }
+  .portflio-content label {
+    top: 20px;
+    left: 20px;
+  }
+  .portfolio-title {
+    font-size: 16px;
+  }
+  .portfolio-date {
+    font-size: 12px;
+    margin: 0 0 9px;
+  }
+  .all-select-box {
+    margin: 0;
+  }
+  .all-select-box label .logon-keep-check-title {
+    margin-left: 4px;
+  }
+  .trash-btn {
+    margin-left: 6px;
+  }
+  .share-list-box {
+    margin: 100px 0 69px;
+  }
+  .share-list {
+    margin: 0 -16px;
+  }
+  .share-item {
+    padding: 0 16px;
+  }
+  .share-btn {
+    width: 116px;
+    height: 116px;
+  }
   .macaron-main .visual-banner-wrap {
     margin: 0;
   }

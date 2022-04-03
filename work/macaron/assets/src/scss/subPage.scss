@@ -176,7 +176,48 @@
 
 }
 
+.share-page-top-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0;
+
+    img {
+        margin-left: 6px;
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -3px;
+    }
+
+    .link-home {
+        margin-right: 16px;
+    }
+
+    a, button {
+        font-size: 12px;
+        color: #787c84;
+        letter-spacing: -0.24px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
 @media screen and (min-width:992px) {
+    .share-page-top-icon-box {
+        justify-content: flex-end;
+
+        .link-home {
+            margin-right: 24px;
+        }
+
+        a, button {
+            font-size: 16px;
+        }
+    }
+
     .subpage-top-right-box {
         margin: 17px 0 0;
         margin-left: auto;

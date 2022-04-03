@@ -17,6 +17,7 @@
                 </button>
             </div>
 
+            <!-- todo : 탭 목록 -->
             <div class="main-inner-content-wrap">
                 <div class="visual-banner-wrap">
                     <div class="visual-banner-item" style="background-image: url(./assets/img/visual-banner.png);"></div>
@@ -25,6 +26,7 @@
 
                 <div class="main-list-array-wrap">
                     <div class="list-array-top">
+                        <!-- todo : 메인 탭 카테고리 선택 목록 -->
                         <div class="list-tab-box">
                             <ul class="list-tab">
                                 <!-- todo : 탭 활성화 시 클래스 active 추가 -->
@@ -40,6 +42,18 @@
                                     <a href="#" class="list-tab-link">SNS</a>
                                 </li>
                             </ul>
+                        </div>
+
+                        <!-- todo : 포트폴리오 상단 전체 선택  -->
+                        <div class="all-select-box">
+                            <label for="logon_check" style="margin: 0; cursor: pointer;" >
+                                <input type="checkbox" name="logon_check" id="logon_check" class="logon-keep-check">
+                                <div class="logon-keep-check-custom"></div>
+                                <span class="logon-keep-check-title">전체 선택</span>
+                            </label>
+                            <button class="trash-btn">
+                                <img src="./assets/img/btn-trash.png" alt="전체선택 버튼">
+                            </button>
                         </div>
 
                         <div class="list-array-search-box">
@@ -61,7 +75,6 @@
                         </div>
 
                     </div>
-
 
 
                     <div class="list-array-item-wrap">
@@ -291,6 +304,79 @@
                     </div>
                     
                 </div>
+            </div>
+
+            <!-- todo : 공유 버튼 목록 -->
+            <div class="share-list-box">
+                <ul class="share-list">
+                    <li class="share-item">
+                        <button class="share-btn">
+                            <img src="./assets/img/icon-insta.png" alt="인스타 공유">
+                        </button>
+                    </li>
+
+                    <li class="share-item">
+                        <button class="share-btn">
+                            <img src="./assets/img/icon-blog.png" alt="블로그 공유">
+                        </button>
+                    </li>
+
+                    <li class="share-item">
+                        <button class="share-btn">
+                            <img src="./assets/img/icon-you-tube.png" alt="유튜브 공유">
+                        </button>
+                    </li>
+
+                    <li class="share-item">
+                        <button class="share-btn">
+                            <img src="./assets/img/icon-face-book.png" alt="페이스북 공유">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- todo : 포트폴리오 목록 -->
+            <div class="select-portfolio-list-box">
+                <ul class="portfolio-list">
+                    <li class="portfolio-item">
+                        <div class="portflio-content">
+                            <label for="logon_check" style="margin: 0; cursor: pointer;" >
+                                <input type="checkbox" name="logon_check" id="logon_check" class="logon-keep-check">
+                                <div class="logon-keep-check-custom"></div>
+                            </label>
+
+                            <h3 class="portfolio-title">현대해상 우리카드 포트폴리오</h3>
+                            <span class="portfolio-date">2022.01.20</span>
+                            <button class="portfolio-view-btn">미리보기</button>
+                        </div>
+                    </li>
+
+                    <li class="portfolio-item">
+                        <div class="portflio-content">
+                            <label for="logon_check" style="margin: 0; cursor: pointer;" >
+                                <input type="checkbox" name="logon_check" id="logon_check" class="logon-keep-check">
+                                <div class="logon-keep-check-custom"></div>
+                            </label>
+
+                            <h3 class="portfolio-title">현대해상 우리카드 포트폴리오</h3>
+                            <span class="portfolio-date">2022.01.20</span>
+                            <button class="portfolio-view-btn">미리보기</button>
+                        </div>
+                    </li>
+
+                    <li class="portfolio-item">
+                        <div class="portflio-content">
+                            <label for="logon_check" style="margin: 0; cursor: pointer;" >
+                                <input type="checkbox" name="logon_check" id="logon_check" class="logon-keep-check">
+                                <div class="logon-keep-check-custom"></div>
+                            </label>
+
+                            <h3 class="portfolio-title">현대해상 우리카드 포트폴리오</h3>
+                            <span class="portfolio-date">2022.01.20</span>
+                            <button class="portfolio-view-btn">미리보기</button>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
 
