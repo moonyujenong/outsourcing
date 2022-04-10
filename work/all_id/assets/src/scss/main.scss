@@ -668,16 +668,90 @@
 
 }
 
+.user-info-box {
+    background-color: #e85549;
+    position: relative;
+    padding: 20px 24px 18px;
+}
+
+.slide-icon {
+    position: absolute;
+    right: 24px;
+    top: 20px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.user-info-nick-name {
+    display: block;
+    margin: 0 0 12px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.user-level {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #d8453a;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.user-state-point {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 12px;
+
+    img {
+        width: 14px;
+        height: 14px;
+        margin-right: 4px;
+    }
+
+}
+
+.user-state-money {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.user-state-money-info {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.user-state-money-text {
+    padding-right: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    border-right: 1px solid #e5776e;
+
+    img {
+        margin-right: 4px;
+        width: 14px;
+        height: 14px;
+    }
+}
+
+.user-message-payment-box {
+   
+}
+
 
 @media screen and (min-width:992px) {
     .allId-main {
-        display: flex;
-        align-items: stretch;
-        
 
-
-        
-        
         .statistics-box {
             display: flex;
             align-items: center;

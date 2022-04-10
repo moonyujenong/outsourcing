@@ -703,15 +703,91 @@
   background-image: url(../img/safe-label-icon.png);
 }
 
+.user-info-box {
+  background-color: #e85549;
+  position: relative;
+  padding: 20px 24px 18px;
+}
+
+.slide-icon {
+  position: absolute;
+  right: 24px;
+  top: 20px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.user-info-nick-name {
+  display: block;
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.user-level {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #d8453a;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.user-state-point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.user-state-point img {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+}
+
+.user-state-money {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.user-state-money-info {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.user-state-money-text {
+  padding-right: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  border-right: 1px solid #e5776e;
+}
+
+.user-state-money-text img {
+  margin-right: 4px;
+  width: 14px;
+  height: 14px;
+}
+
 @media screen and (min-width: 992px) {
-  .allId-main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-  }
   .allId-main .statistics-box {
     display: -webkit-box;
     display: -ms-flexbox;

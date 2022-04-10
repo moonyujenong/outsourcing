@@ -1,338 +1,129 @@
 <main id="container" class="theme-main allId-main">
     <!-- todo 모바일 마이 정보 -->
-    <div class="user-info-box">
-        <img src="" alt="상하 슬라이드 아이콘" class="slide-icon">
-        <h3 class="user-info-nick-name">
-            User 님
-            <span class="user-level">VVIP</span>
-        </h3>
-        <div class="user-state-point">
-            <img src="" alt="포인트 아이콘">
-            10,000 포인트
-        </div>
-        <div class="user-state-money">
-            <div class="user-state-money-info">
-                <span class="user-state-money-text">
-                    <img src="" alt="잔액 아이콘">
-                    잔액
-                </span>
-                10,000원
+    <div class="user-info-wrap">
+        <div class="user-info-box">
+            <button type="button" class="slide-icon">
+                <img src="./assets/img/my-info-down.svg" alt="상하 슬라이드 아이콘">
+            </button>
+            <h3 class="user-info-nick-name">
+                User 님
+                <span class="user-level">VVIP</span>
+            </h3>
+            <div class="user-state-point">
+                <img src="./assets/img/point-icon.png" alt="포인트 아이콘">
+                10,000 포인트
             </div>
+            <div class="user-state-money">
+                <div class="user-state-money-info">
+                    <span class="user-state-money-text">
+                        <img src="./assets/img/doller-icon.png" alt="잔액 아이콘">
+                        잔액
+                    </span>
+                    10,000원
+                </div>
 
-            <div class="user-state-money-info">
-                <span class="user-state-money-text">
-                    <img src="" alt="카드 아이콘">
-                    총 결제금액
-                </span>
-                10,000,000,000원
+                <div class="user-state-money-info">
+                    <span class="user-state-money-text">
+                        <img src="./assets/img/credit-card-icon.png" alt="카드 아이콘">
+                        총 결제금액
+                    </span>
+                    10,000,000,000원
+                </div>
             </div>
         </div>
-
         <!-- todo : 메시지, 구매기록 -->
         <div class="user-message-payment-box">
             <div class="head-bottom-box">
                 <!-- 모바일 유저 메뉴 버튼 -->
                 <div class="user-menu-list-box">
-                   <ul class="user-menu-list">
-                      <li class="user-menu-item">
-                         <!-- todo : 활성화 시 클래스 on 추가 -->
-                         <a href="#" class="user-menu-link">
-                            <span class="user-menu-icon half-icon"></span>
-                            <span class="user-menu-text">구매이력</span>
-                         </a>
-       
-                         <!-- inner 팝업창 -->
-                         <div class="inner-user-popup-wrap">
-                            <div class="user-pop-scroll-inner">
-                               <ul class="user-pop-menu-list">
-                                  <li class="user-pop-menu-item">
-                                     <!-- todo : 새로운 알림이거나 읽지 않은 알림일 시, 클래스 new 추가 -->
-                                     <a href="#" class="user-pop-menu-link new">
-                                        <!-- todo : 구매이력 내용 -->
-                                        <div class="user-popup-menu-left">
-                                           <span class="user-pay-content">오버워치 계정, 3개</span>
-                                           <span class="user-pay-content">아이디1234, 비밀번호 12345, 한줄 제한입니다.</span>
-                                           <!-- todo : 구매이력 날짜 -->
-                                           <span class="user-payment-date">2022-02-10 17:44</span>
-                                        </div>
-       
-                                        <div class="user-popup-menu-right">
-                                           <!-- todo : 구매이력 이미지 -->
-                                           <div class="user-pay-list-img" style="background-image: url(./assets/img/mini-pop-sample.png);"></div>
-                                        </div>
-                                     </a>
-                                  </li>
-       
-                                  <li class="user-pop-menu-item">
-                                     <!-- todo : 새로운 알림이거나 읽지 않은 알림일 시, 클래스 new 추가 -->
-                                     <a href="#" class="user-pop-menu-link new">
-                                        <!-- todo : 구매이력 내용 -->
-                                        <div class="user-popup-menu-left">
-                                           <span class="user-pay-content">오버워치 계정, 3개</span>
-                                           <span class="user-pay-content">아이디1234, 비밀번호 12345, 한줄 제한입니다.</span>
-                                           <!-- todo : 구매이력 날짜 -->
-                                           <span class="user-payment-date">2022-02-10 17:44</span>
-                                        </div>
-       
-                                        <div class="user-popup-menu-right">
-                                           <!-- todo : 구매이력 이미지 -->
-                                           <div class="user-pay-list-img" style="background-image: url(./assets/img/mini-pop-sample.png);"></div>
-                                        </div>
-                                     </a>
-                                  </li>
-       
-                                  <li class="user-pop-menu-item">
-                                     <a href="#" class="user-pop-menu-link">
-                                        <!-- todo : 구매이력 내용 -->
-                                        <div class="user-popup-menu-left">
-                                           <span class="user-pay-content">오버워치 계정, 3개</span>
-                                           <span class="user-pay-content">아이디1234, 비밀번호 12345, 한줄 제한입니다.</span>
-                                           <!-- todo : 구매이력 날짜 -->
-                                           <span class="user-payment-date">2022-02-10 17:44</span>
-                                        </div>
-       
-                                        <div class="user-popup-menu-right">
-                                           <!-- todo : 구매이력 이미지 -->
-                                           <div class="user-pay-list-img" style="background-image: url(./assets/img/mini-pop-sample.png);"></div>
-                                        </div>
-                                     </a>
-                                  </li>
-       
-                                  <li class="user-pop-menu-item">
-                                     <a href="#" class="user-pop-menu-link new">
-                                        <!-- todo : 구매이력 내용 -->
-                                        <div class="user-popup-menu-left">
-                                           <span class="user-pay-content">오버워치 계정, 3개</span>
-                                           <span class="user-pay-content">아이디1234, 비밀번호 12345, 한줄 제한입니다.</span>
-                                           <!-- todo : 구매이력 날짜 -->
-                                           <span class="user-payment-date">2022-02-10 17:44</span>
-                                        </div>
-       
-                                        <div class="user-popup-menu-right">
-                                           <!-- todo : 구매이력 이미지 -->
-                                           <div class="user-pay-list-img" style="background-image: url(./assets/img/mini-pop-sample.png);"></div>
-                                        </div>
-                                     </a>
-                                  </li>
-       
-                                  <li class="user-pop-menu-item">
-                                     <a href="#" class="user-pop-menu-link">
-                                        <!-- todo : 구매이력 내용 -->
-                                        <div class="user-popup-menu-left">
-                                           <span class="user-pay-content">오버워치 계정, 3개</span>
-                                           <span class="user-pay-content">아이디1234, 비밀번호 12345, 한줄 제한입니다.</span>
-                                           <!-- todo : 구매이력 날짜 -->
-                                           <span class="user-payment-date">2022-02-10 17:44</span>
-                                        </div>
-       
-                                        <div class="user-popup-menu-right">
-                                           <!-- todo : 구매이력 이미지 -->
-                                           <div class="user-pay-list-img" style="background-image: url(./assets/img/mini-pop-sample.png);"></div>
-                                        </div>
-                                     </a>
-                                  </li>
-       
-                                  <li class="user-pop-menu-item">
-                                     <a href="#" class="user-pop-menu-link">
-                                        <!-- todo : 구매이력 내용 -->
-                                        <div class="user-popup-menu-left">
-                                           <span class="user-pay-content">오버워치 계정, 3개</span>
-                                           <span class="user-pay-content">아이디1234, 비밀번호 12345, 한줄 제한입니다.</span>
-                                           <!-- todo : 구매이력 날짜 -->
-                                           <span class="user-payment-date">2022-02-10 17:44</span>
-                                        </div>
-       
-                                        <div class="user-popup-menu-right">
-                                           <!-- todo : 구매이력 이미지 -->
-                                           <div class="user-pay-list-img" style="background-image: url(./assets/img/mini-pop-sample.png);"></div>
-                                        </div>
-                                     </a>
-                                  </li>
-       
-                                  <li class="user-pop-menu-item">
-                                     <a href="#" class="user-pop-menu-link">
-                                        <!-- todo : 구매이력 내용 -->
-                                        <div class="user-popup-menu-left">
-                                           <span class="user-pay-content">오버워치 계정, 3개</span>
-                                           <span class="user-pay-content">아이디1234, 비밀번호 12345, 한줄 제한입니다.</span>
-                                           <!-- todo : 구매이력 날짜 -->
-                                           <span class="user-payment-date">2022-02-10 17:44</span>
-                                        </div>
-       
-                                        <div class="user-popup-menu-right">
-                                           <!-- todo : 구매이력 이미지 -->
-                                           <div class="user-pay-list-img" style="background-image: url(./assets/img/mini-pop-sample.png);"></div>
-                                        </div>
-                                     </a>
-                                  </li>
-       
-                                  <li class="user-pop-menu-item">
-                                     <a href="#" class="user-pop-menu-link">
-                                        <!-- todo : 구매이력 내용 -->
-                                        <div class="user-popup-menu-left">
-                                           <span class="user-pay-content">오버워치 계정, 3개</span>
-                                           <span class="user-pay-content">아이디1234, 비밀번호 12345, 한줄 제한입니다.</span>
-                                           <!-- todo : 구매이력 날짜 -->
-                                           <span class="user-payment-date">2022-02-10 17:44</span>
-                                        </div>
-       
-                                        <div class="user-popup-menu-right">
-                                           <!-- todo : 구매이력 이미지 -->
-                                           <div class="user-pay-list-img" style="background-image: url(./assets/img/mini-pop-sample.png);"></div>
-                                        </div>
-                                     </a>
-                                  </li>
-                               </ul>
-                            </div>
-                         </div>
-                      </li>
-       
-                      <li class="user-menu-item">
-                         <a href="#" class="user-menu-link">
+                <ul class="user-menu-list">
+                    <li class="user-menu-item">
+                        <a href="#" class="user-menu-link">
                             <span class="user-menu-icon message-icon"></span>
                             <span class="user-menu-text">메시지</span>
                             <!-- todo : 메시지 갯수 표기 -->
                             <span class="message-length">1</span>
-                         </a>
-       
-       
-                         <!-- inner 팝업창 -->
-                         <div class="inner-user-popup-wrap" style=" background-color: #fcfcfc; padding-top:55px;" >
+                        </a>
+    
+    
+                        <!-- inner 팝업창 -->
+                        <div class="inner-user-popup-wrap" style=" background-color: #fcfcfc; padding-top:55px;" >
                             <span class="message-warning-text">최근 30일 동안의 알림만 보관되며, 이후 자동 삭제됩니다.</span>
                             <div class="message-inner-wrap">
-                               <ul class="user-pop-menu-list" >
-                                  <li class="user-pop-menu-item">
-                                     <!-- todo : 새로운 알림이거나 읽지 않은 알림일 시, 클래스 new 추가 -->
-                                     <a href="#" class="user-pop-menu-link new message-pop-menu-link">
+                            <ul class="user-pop-menu-list" >
+                                <li class="user-pop-menu-item">
+                                    <!-- todo : 새로운 알림이거나 읽지 않은 알림일 시, 클래스 new 추가 -->
+                                    <a href="#" class="user-pop-menu-link new message-pop-menu-link">
                                         <div class="message-category-head">
-                                           <span class="mini-message-icon notice-icon"></span>
-                                           <h3 class="message-category-title">공지 메시지</h3>
+                                        <span class="mini-message-icon notice-icon"></span>
+                                        <h3 class="message-category-title">공지 메시지</h3>
                                         </div>
-       
+    
                                         <p class="message-content">
-                                           공지 메시지 내용메시지 내용 메시지 내용 메시지 내용 메시지내용 메시지 내용 메시지 내용 메시지   공지 메시지 고잊 공지 메시지 내용메내용 메시지 내용 메시지   공지 메시지 고잊 공지 메시지 입니다.
+                                        공지 메시지 내용메시지 내용 메시지 내용 메시지 내용 메시지내용 메시지 내용 메시지 내용 메시지   공지 메시지 고잊 공지 메시지 내용메내용 메시지 내용 메시지   공지 메시지 고잊 공지 메시지 입니다.
                                         </p>
-       
+    
                                         <span class="user-payment-date" style="text-align: right;">2022-02-10 17:44</span>
-       
-                                     </a>
-                                  </li>
-       
-                                  <li class="user-pop-menu-item">
-                                     <!-- todo : 새로운 알림이거나 읽지 않은 알림일 시, 클래스 new 추가 -->
-                                     <a href="#" class="user-pop-menu-link message-pop-menu-link">
+    
+                                    </a>
+                                </li>
+    
+                                <li class="user-pop-menu-item">
+                                    <!-- todo : 새로운 알림이거나 읽지 않은 알림일 시, 클래스 new 추가 -->
+                                    <a href="#" class="user-pop-menu-link message-pop-menu-link">
                                         <div class="message-category-head">
-                                           <span class="mini-message-icon "></span>
-                                           <h3 class="message-category-title">메시지</h3>
+                                        <span class="mini-message-icon "></span>
+                                        <h3 class="message-category-title">메시지</h3>
                                         </div>
-       
+    
                                         <p class="message-content">
-                                           공지 메시지 내용메시지 내용 메시지 내용 메시지 내용 메시지내용 메시지 내용 메시지 내용 메시지   공지 메시지 고잊 공지 메시지 내용메내용 메시지 내용 메시지   공지 메시지 고잊 공지 메시지 입니다.
+                                        공지 메시지 내용메시지 내용 메시지 내용 메시지 내용 메시지내용 메시지 내용 메시지 내용 메시지   공지 메시지 고잊 공지 메시지 내용메내용 메시지 내용 메시지   공지 메시지 고잊 공지 메시지 입니다.
                                         </p>
-       
+    
                                         <span class="user-payment-date" style="text-align: right;">2022-02-10 17:44</span>
-       
-                                     </a>
-                                  </li>
-       
-                                  <li class="user-pop-menu-item">
-                                     <!-- todo : 새로운 알림이거나 읽지 않은 알림일 시, 클래스 new 추가 -->
-                                     <a href="#" class="user-pop-menu-link new message-pop-menu-link">
-                                        <div class="message-category-head">
-                                           <span class="mini-message-icon "></span>
-                                           <h3 class="message-category-title">메시지</h3>
-                                        </div>
-       
-                                        <p class="message-content">
-                                           공지 메시지 내용메시지 내용 메시지 내용 메시지 내용 메시지내용 메시지 내용 메시지 내용 메시지   공지 메시지 고잊 공지 메시지 내용메내용 메시지 내용 메시지   공지 메시지 고잊 공지 메시지 입니다.
-                                        </p>
-       
-                                        <span class="user-payment-date" style="text-align: right;">2022-02-10 17:44</span>
-       
-                                     </a>
-                                  </li>
-       
-                                  <li class="user-pop-menu-item">
-                                     <!-- todo : 새로운 알림이거나 읽지 않은 알림일 시, 클래스 new 추가 -->
-                                     <a href="#" class="user-pop-menu-link new message-pop-menu-link">
-                                        <div class="message-category-head">
-                                           <span class="mini-message-icon "></span>
-                                           <h3 class="message-category-title">메시지</h3>
-                                        </div>
-       
-                                        <p class="message-content">
-                                           공지 메시지 내용메시지 내용 메시지 내용 메시지 내용 메시지내용 메시지 내용 메시지 내용 메시지   공지 메시지 고잊 공지 메시지 내용메내용 메시지 내용 메시지   공지 메시지 고잊 공지 메시지 입니다.
-                                        </p>
-       
-                                        <span class="user-payment-date" style="text-align: right;">2022-02-10 17:44</span>
-       
-                                     </a>
-                                  </li>
-       
-                                  <li class="user-pop-menu-item">
-                                     <!-- todo : 새로운 알림이거나 읽지 않은 알림일 시, 클래스 new 추가 -->
-                                     <a href="#" class="user-pop-menu-link new message-pop-menu-link">
-                                        <div class="message-category-head">
-                                           <span class="mini-message-icon "></span>
-                                           <h3 class="message-category-title">메시지</h3>
-                                        </div>
-       
-                                        <p class="message-content">
-                                           공지 메시지 내용메시지 내용 메시지 내용 메시지 내용 메시지내용 메시지 내용 메시지 내용 메시지   공지 메시지 고잊 공지 메시지 내용메내용 메시지 내용 메시지   공지 메시지 고잊 공지 메시지 입니다.
-                                        </p>
-       
-                                        <span class="user-payment-date" style="text-align: right;">2022-02-10 17:44</span>
-       
-                                     </a>
-                                  </li>
-       
-                                  <li class="user-pop-menu-item">
-                                     <!-- todo : 새로운 알림이거나 읽지 않은 알림일 시, 클래스 new 추가 -->
-                                     <a href="#" class="user-pop-menu-link new message-pop-menu-link">
-                                        <div class="message-category-head">
-                                           <span class="mini-message-icon "></span>
-                                           <h3 class="message-category-title">메시지</h3>
-                                        </div>
-       
-                                        <p class="message-content">
-                                           공지 메시지 내용메시지 내용 메시지 내용 메시지 내용 메시지내용 메시지 내용 메시지 내용 메시지   공지 메시지 고잊 공지 메시지 내용메내용 메시지 내용 메시지   공지 메시지 고잊 공지 메시지 입니다.
-                                        </p>
-       
-                                        <span class="user-payment-date" style="text-align: right;">2022-02-10 17:44</span>
-       
-                                     </a>
-                                  </li>
-       
-                                  <li class="user-pop-menu-item">
-                                     <!-- todo : 새로운 알림이거나 읽지 않은 알림일 시, 클래스 new 추가 -->
-                                     <a href="#" class="user-pop-menu-link new message-pop-menu-link">
-                                        <div class="message-category-head">
-                                           <span class="mini-message-icon "></span>
-                                           <h3 class="message-category-title">메시지</h3>
-                                        </div>
-       
-                                        <p class="message-content">
-                                           공지 메시지 내용메시지 내용 메시지 내용 메시지 내용 메시지내용 메시지 내용 메시지 내용 메시지   공지 메시지 고잊 공지 메시지 내용메내용 메시지 내용 메시지   공지 메시지 고잊 공지 메시지 입니다.
-                                        </p>
-       
-                                        <span class="user-payment-date" style="text-align: right;">2022-02-10 17:44</span>
-       
-                                     </a>
-                                  </li>
-       
-                                  
-                               </ul>
+    
+                                    </a>
+                                </li>
+                            </ul>
                             </div>
-                         </div>
-                      </li>
-       
-                     
-                     
-       
-                   </ul>
+                        </div>
+                    </li>
+                    <li class="user-menu-item">
+                        <!-- todo : 활성화 시 클래스 on 추가 -->
+                        <a href="#" class="user-menu-link">
+                            <span class="user-menu-icon half-icon"></span>
+                            <span class="user-menu-text">구매이력</span>
+                        </a>
+    
+                        <!-- inner 팝업창 -->
+                        <div class="inner-user-popup-wrap">
+                            <div class="user-pop-scroll-inner">
+                            <ul class="user-pop-menu-list">
+                                <li class="user-pop-menu-item">
+                                    <!-- todo : 새로운 알림이거나 읽지 않은 알림일 시, 클래스 new 추가 -->
+                                    <a href="#" class="user-pop-menu-link new">
+                                        <!-- todo : 구매이력 내용 -->
+                                        <div class="user-popup-menu-left">
+                                        <span class="user-pay-content">오버워치 계정, 3개</span>
+                                        <span class="user-pay-content">아이디1234, 비밀번호 12345, 한줄 제한입니다.</span>
+                                        <!-- todo : 구매이력 날짜 -->
+                                        <span class="user-payment-date">2022-02-10 17:44</span>
+                                        </div>
+    
+                                        <div class="user-popup-menu-right">
+                                        <!-- todo : 구매이력 이미지 -->
+                                        <div class="user-pay-list-img" style="background-image: url(./assets/img/mini-pop-sample.png);"></div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
                 </div>
-             </div>
-       
+            </div>
+    
         </div>
     </div>
     

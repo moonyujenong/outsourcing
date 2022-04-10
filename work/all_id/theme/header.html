@@ -9,9 +9,14 @@
          <!-- 사이트 로고 버튼 -->
          <a href="#" class="">
             <h1 class="site-logo">
-               <img src="./assets/img/allId_logo.png" alt="올 아이디 홈페이지 로고">
+               <img src="./assets/img/new-logo.svg" alt="올 아이디 홈페이지 로고">
             </h1>
          </a>
+
+         <!-- TODO 음악 재생 버튼 -->
+         <button class="play-icon-box" type="button">
+            <img src="./assets/img/play-icon.svg" alt="음악 재생 버튼">
+         </button>
       </div>
    </div>
 </header>
@@ -28,12 +33,16 @@
                 },200);
             }
             else {
-                
-
-                $('.side-menu-wrap').animate({
+                $('.side-menu-wrap').animate({ 
                     'left' : '-100%'
                 },200);
             }
+        });
+
+        $(".slide-icon").click(function(){
+           $(this).toggleClass("on"); 
+
+           $('.user-message-payment-box').slideToggle(200);
         });
 
    });
