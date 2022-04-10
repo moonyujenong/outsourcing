@@ -48,11 +48,7 @@
   opacity: 0.18;
 }
 
-.allId-main .statistics-left-box, .allId-main .statistics-right-box {
-  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  background-color: #fff;
-  border-radius: 3px;
+.allId-main .statistics-left-box {
   z-index: 10;
 }
 
@@ -67,15 +63,27 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 8px 0;
+  margin: 0 -4px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .allId-main .user-statistics-list .user-statistics-item {
   position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 49%;
+          flex: 0 0 49%;
   text-align: center;
+  padding: 20px;
+  margin: 4px 0;
+  background-color: #fff;
+  border-radius: 4.5px;
+  border: solid 0.6px #f2f2f2;
+  -webkit-box-shadow: 1.1px 1.1px 2.3px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 1.1px 1.1px 2.3px 0 rgba(0, 0, 0, 0.12);
 }
 
 .allId-main .user-statistics-list .user-statistics-item::after {
@@ -100,7 +108,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 0 auto;
+  margin: 0 auto 6px;
 }
 
 .allId-main .user-statistics-icon.all-user-icon {
@@ -122,7 +130,7 @@
 .allId-main .user-statistics-title {
   margin: 0;
   display: block;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 400;
   color: #525252;
   letter-spacing: normal;
@@ -131,11 +139,11 @@
 
 .allId-main .user-statistics-text {
   display: block;
-  margin-top: 8px;
+  margin-top: 5px;
   margin-bottom: 0;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
-  color: #343434;
+  color: #e85549;
   line-height: 1.31;
   letter-spacing: normal;
 }
@@ -144,12 +152,11 @@
   width: 100%;
   height: auto;
   position: relative;
-  margin-top: 24px;
 }
 
 .allId-main .visual-banner-wrap .visual-banner-item {
   width: 100%;
-  padding-top: 22%;
+  padding-top: 38%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -157,6 +164,7 @@
 
 .allId-main .visual-banner-wrap .swiper-button-next, .allId-main .visual-banner-wrap .swiper-button-prev {
   color: #707070;
+  display: none;
 }
 
 .allId-main .visual-banner-wrap .swiper-button-next.swiper-button-disabled, .allId-main .visual-banner-wrap .swiper-button-prev.swiper-button-disabled {
@@ -175,12 +183,12 @@
   width: 4px;
   height: 4px;
   margin: 0 2px !important;
-  background-color: #666;
-  opacity: 0.6;
+  background-color: #fff;
+  opacity: 1;
 }
 
 .allId-main .visual-banner-wrap .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  opacity: 1;
+  background-color: #e85549;
 }
 
 .allId-main .content-three-list-wrap {
@@ -749,6 +757,9 @@
   }
   .allId-main .visual-banner-wrap {
     margin-top: 16px;
+  }
+  .allId-main .visual-banner-wrap .swiper-button-next, .allId-main .visual-banner-wrap .swiper-button-prev {
+    display: block;
   }
   .allId-main .visual-banner-wrap .visual-banner-item {
     padding-top: 14%;
