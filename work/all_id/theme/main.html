@@ -201,13 +201,13 @@
                     <div class="row">
 
                         <!-- todo : 실시간 리뷰 -->
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="content-inner-outline">
                                 <div class="content-head">
-                                    <div class="dash-border"></div>
                                     <div class="head-title-item">
                                         <span class="head-inner-icon live-icon "></span>
                                         <h3 class="head-title">실시간 리뷰</h3>
+                                        <span class="head-slide-arrow"></span>
                                     </div>
                                 </div>
                                 <div class="content-body">
@@ -268,19 +268,18 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="content-footer"></div>
                             </div>
                         </div>
                         <!-- //실시간 리뷰 -->
 
                         <!-- todo : 구매내역 -->
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="content-inner-outline">
                                 <div class="content-head">
-                                    <div class="dash-border"></div>
                                     <div class="head-title-item">
                                         <span class="head-inner-icon pay-history-icon"></span>
-                                        <h3 class="head-title" style="margin-top: 5px;">실시간 구매내역</h3>
+                                        <h3 class="head-title">실시간 구매내역</h3>
+                                        <span class="head-slide-arrow"></span>
                                     </div>
                                 </div>
                                 <div class="content-body">
@@ -352,20 +351,19 @@
 
                                     </ul>
                                 </div>
-                                <div class="content-footer"></div>
                             </div>
                         </div>
                         <!-- //구매내역 -->
-
-
+                    </div>
+                    <div class="row">
                         <!-- todo :  당첨현황 -->
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="content-inner-outline">
                                 <div class="content-head">
-                                    <div class="dash-border"></div>
                                     <div class="head-title-item">
                                         <span class="head-inner-icon winning-icon"></span>
-                                        <h3 class="head-title" style="margin-top: 5px;">랜덤 포인트 뽑기 당첨 현황</h3>
+                                        <h3 class="head-title">랜덤 포인트 뽑기 당첨 현황</h3>
+                                        <span class="head-slide-arrow"></span>
                                     </div>
                                 </div>
                                 <div class="content-body">
@@ -419,13 +417,19 @@
                                             </a>
                                         </li>
 
-                                       
+                                    
                                     </ul>
                                 </div>
-                                <div class="content-footer"></div>
                             </div>
                         </div>
                         <!-- //당첨현황 -->
+
+                        <div class="col-md-6">
+                            aaa
+                        </div>
+                    </div>
+
+                        
                     </div>
                 </div>
 
@@ -984,7 +988,25 @@
        });
  
  
- 
+       $('.content-head .head-title-item').off().on('click', function(){
+            if ($(this).hasClass('on')) {
+                $(this).removeClass('on');
+                $(this).parents('div.content-head').siblings('.content-body').slideUp(200);
+                $(this).parents('div.content-head').siblings('.content-body').removeClass('on');
+                
+
+            }
+            else {
+                $('.head-title-item').removeClass('on');
+                $(this).addClass('on');
+                $('.content-body').slideUp(200);
+                $(this).parents('div.content-head').siblings('.content-body').slideDown(200);
+                $(this).parents('div.content-head').siblings('.content-body').addClass('on');
+
+
+             }
+
+       });
  
     });   
  </script>

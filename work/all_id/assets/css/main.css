@@ -22,7 +22,7 @@
   left: 50%;
   -webkit-transform: translateX(-50vw);
           transform: translateX(-50vw);
-  background-color: rgba(239, 239, 239, 0.4);
+  background-color: #fff;
 }
 
 .allId-main .content-section2 {
@@ -84,21 +84,6 @@
   border: solid 0.6px #f2f2f2;
   -webkit-box-shadow: 1.1px 1.1px 2.3px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 1.1px 1.1px 2.3px 0 rgba(0, 0, 0, 0.12);
-}
-
-.allId-main .user-statistics-list .user-statistics-item::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 1px;
-  height: 100%;
-  background-color: #f1f2f6;
-}
-
-.allId-main .user-statistics-list .user-statistics-item:last-child::after {
-  display: none;
 }
 
 .allId-main .user-statistics-icon {
@@ -204,15 +189,17 @@
 }
 
 .allId-main .content-three-list-wrap .content-head {
-  padding: 13px 20px;
-  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
-          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
+  padding: 16px;
+  cursor: pointer;
 }
 
 .allId-main .content-inner-outline {
   background-color: #fff;
-  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border: solid 1px #e0e0e0;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
 
 .allId-main .dash-border {
@@ -229,14 +216,16 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.allId-main .head-title-item.on .head-slide-arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .allId-main .head-title-item .head-inner-icon {
-  width: 32px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -244,21 +233,21 @@
 }
 
 .allId-main .head-title-item .head-inner-icon.live-icon {
-  background-image: url(../img/live-icon.png);
+  background-image: url(../img/icon-review-24.svg);
 }
 
 .allId-main .head-title-item .head-inner-icon.pay-history-icon {
-  background-image: url(../img/pay-history-icon.png);
+  background-image: url(../img/tabler-coin-red.svg);
 }
 
 .allId-main .head-title-item .head-inner-icon.winning-icon {
-  background-image: url(../img/winning-icon.png);
+  background-image: url(../img/icon-gift.svg);
 }
 
 .allId-main .head-title-item .head-title {
   margin-bottom: 0;
-  margin-left: 2px;
-  font-size: 15px;
+  margin-left: 8px;
+  font-size: 16px;
   font-weight: 700;
   color: #2c2c2c;
   line-height: 1.33;
@@ -270,25 +259,38 @@
   max-height: 212px;
   overflow: hidden;
   overflow-y: auto;
-  background-color: rgba(170, 170, 170, 0.08);
+  background-color: #fff;
+  height: 0;
+  position: relative;
+  padding: 0 16px;
+}
+
+.allId-main .content-body.on {
+  height: auto;
+}
+
+.allId-main .content-body.on::before {
+  content: '';
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #f2f2f2;
 }
 
 .allId-main .content-body::-webkit-scrollbar {
-  width: 15px;
+  width: 18px;
   border-radius: 100%;
 }
 
 .allId-main .content-body::-webkit-scrollbar-track {
   background-color: transparent;
-  -webkit-box-shadow: inset 0px 0px 5px rgba(170, 170, 170, 0.16);
-          box-shadow: inset 0px 0px 5px rgba(170, 170, 170, 0.16);
 }
 
 .allId-main .content-body::-webkit-scrollbar-thumb {
-  background-color: #c7c7c7;
-  border-radius: 10px;
+  background-color: #e0e0e0;
   background-clip: padding-box;
-  border: 3px solid transparent;
+  border: 6px solid transparent;
 }
 
 .allId-main .scroll-list-item {
@@ -339,7 +341,7 @@
 }
 
 .allId-main .scroll-list-box {
-  padding: 24px 24px 8px;
+  padding: 24px 0;
 }
 
 .allId-main .scroll-list-box .scroll-list-link {
@@ -785,6 +787,17 @@
   margin-right: 4px;
   width: 14px;
   height: 14px;
+}
+
+.head-slide-arrow {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/slide-down-black.svg);
+  margin-left: auto;
 }
 
 @media screen and (min-width: 992px) {
