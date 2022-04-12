@@ -300,36 +300,32 @@
 
 .allId-main .scroll-list-item.payhistory-scroll-list-item {
   margin-bottom: 18px;
-}
-
-.allId-main .scroll-list-item.payhistory-scroll-list-item.deal-ing::before {
-  content: '거래중';
-  display: block;
-  position: absolute;
-  top: -16px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  /* background-color: #b1b1b1 ; */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  -webkit-backdrop-filter: blur(2.5px);
-          backdrop-filter: blur(2.5px);
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 1.35;
-  letter-spacing: normal;
+  /*  &.deal-ing {
+                &::before {
+                    content: '거래중';
+                    display: block;
+                    position: absolute;
+                    top: -16px;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 10;
+                    background-color: #b1b1b1 ;
+                    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ;  
+                    backdrop-filter: blur(2.5px) ;
+                    
+                    
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 17px;
+                    font-weight: 700;
+                    line-height: 1.35;
+                    letter-spacing: normal;
+                                     
+                }
+            } */
 }
 
 .allId-main .scroll-list-item.winning-list-item {
@@ -344,49 +340,6 @@
   padding: 24px 0;
 }
 
-.allId-main .scroll-list-box .scroll-list-link {
-  background-color: rgba(100, 100, 100, 0.08);
-  position: relative;
-  padding: 9px 16px;
-  font-size: 11px;
-  font-weight: 500;
-  color: #030303;
-  line-height: 1.36;
-  letter-spacing: normal;
-  text-align: left;
-  display: block;
-  width: 100%;
-}
-
-.allId-main .scroll-list-box .scroll-list-link.unread {
-  background-color: rgba(229, 81, 50, 0.08);
-}
-
-.allId-main .scroll-list-box .scroll-list-link.unread .notice-icon {
-  background-image: url(../img/notice-icon-on.svg);
-}
-
-.allId-main .scroll-list-box .scroll-list-link.unread .point-text {
-  color: #ff1f1f;
-}
-
-.allId-main .scroll-list-box .scroll-list-link.payment-list-link {
-  padding: 5px 8px;
-  padding-right: 19px;
-}
-
-.allId-main .scroll-list-box .scroll-list-link .scroll-item-date {
-  position: absolute;
-  display: block;
-  right: 0;
-  font-size: 8px;
-  font-weight: 500;
-  color: #9d9d9d;
-  line-height: 1.25;
-  letter-spacing: normal;
-  top: -12px;
-}
-
 .allId-main .content-footer {
   height: 24px;
   width: 100%;
@@ -394,14 +347,15 @@
 
 .allId-main .pay-user-name {
   display: block;
-  position: absolute;
-  left: 0;
-  top: -12px;
-  font-size: 9px;
+  font-size: 8px;
   font-weight: 500;
-  color: #000;
-  line-height: 1.22;
   letter-spacing: normal;
+  background-color: #ffd7d3;
+  border-radius: 4px;
+  padding: 4px 8px;
+  text-align: center;
+  color: #e85549;
+  white-space: nowrap;
 }
 
 .allId-main .pay-history-content-box {
@@ -446,10 +400,9 @@
       -ms-flex: auto;
           flex: auto;
   padding-left: 5px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
-  color: #030303;
-  line-height: 1.36;
+  color: #333;
   letter-spacing: normal;
   white-space: nowrap;
   overflow: hidden;
@@ -463,19 +416,9 @@
   /*  margin-top: 6px; */
   width: 100%;
   text-align: right;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.33;
+  font-size: 16px;
+  font-weight: 600;
   letter-spacing: normal;
-}
-
-.allId-main .notice-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 .allId-main .notice-icon {
@@ -489,12 +432,10 @@
 }
 
 .allId-main .notice-content-text {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   color: #030303;
-  line-height: 1.36;
   letter-spacing: normal;
-  padding-left: 8px;
 }
 
 .allId-main .tab-content-item {
@@ -798,6 +739,111 @@
   background-size: cover;
   background-image: url(../img/slide-down-black.svg);
   margin-left: auto;
+}
+
+.scroll-list-link {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  position: relative;
+  padding: 15px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #030303;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  display: block;
+  width: 100%;
+}
+
+.scroll-list-link .notice-icon {
+  background-image: url(../img/notice-icon-on.svg);
+}
+
+.scroll-list-link .point-text {
+  color: #ff1f1f;
+  font-weight: 600;
+}
+
+.scroll-list-link.payment-list-link {
+  padding: 15px 20px 16px 8px;
+  border-color: #e85549;
+  padding: 15px 20px 16px 8px;
+}
+
+.scroll-list-link .scroll-item-date {
+  position: absolute;
+  display: block;
+  right: 0;
+  font-size: 10px;
+  font-weight: 500;
+  color: #828282;
+  letter-spacing: normal;
+  top: -18px;
+}
+
+.review-item-head {
+  margin-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review-category {
+  font-size: 12px;
+  font-weight: 600;
+  color: #e85549;
+  display: block;
+  margin-right: 5px;
+}
+
+.review-user {
+  color: #333;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.review-content {
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+  display: block;
+  margin: 0;
+}
+
+.winning-list-link {
+  border-color: #e0e0e0;
+  padding: 15px 12px;
+}
+
+.winning-list-link.winning {
+  border-color: #e85549;
+}
+
+.winning-list-link.winning .winning-label {
+  background-color: #e85549;
+}
+
+.winning-label {
+  color: #fff;
+  border-radius: 4px;
+  background-color: #bdbdbd;
+  text-align: center;
+  padding: 4px 10px;
+  font-size: 9px;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 @media screen and (min-width: 992px) {

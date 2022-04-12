@@ -288,8 +288,9 @@
 
         &.payhistory-scroll-list-item {
             margin-bottom: 18px;
+            
 
-            &.deal-ing {
+           /*  &.deal-ing {
                 &::before {
                     content: '거래중';
                     display: block;
@@ -299,7 +300,7 @@
                     right: 0;
                     bottom: 0;
                     z-index: 10;
-                    /* background-color: #b1b1b1 ; */
+                    background-color: #b1b1b1 ;
                     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ;  
                     backdrop-filter: blur(2.5px) ;
                     
@@ -314,7 +315,7 @@
                     letter-spacing: normal;
                                      
                 }
-            }
+            } */
         }
 
         &.winning-list-item {
@@ -330,51 +331,6 @@
 
     .scroll-list-box {
         padding: 24px 0;
-        
-
-        .scroll-list-link {
-            background-color: rgba(100, 100, 100, 0.08);
-            position: relative;
-            padding: 9px 16px;
-            font-size: 11px;
-            font-weight: 500;
-            color: #030303;
-            line-height: 1.36;
-            letter-spacing: normal;
-            text-align: left;
-            display: block;
-            width: 100%;
-
-            &.unread {
-                background-color: rgba(229, 81, 50, 0.08);
-
-                .notice-icon  {
-                    background-image: url(../img/notice-icon-on.svg);
-                }
-                .point-text {
-                    color: #ff1f1f;
-                }
-            }
-
-            &.payment-list-link {
-                padding: 5px 8px ;
-                padding-right: 19px;
-            }
-
-
-            .scroll-item-date {
-                position: absolute;
-                display: block;
-                right: 0;
-                font-size: 8px;
-                font-weight: 500;
-                color: #9d9d9d;
-                line-height: 1.25;
-                letter-spacing: normal;
-                top: -12px;
-
-            }
-        }
 
     }
 
@@ -386,15 +342,15 @@
 
     .pay-user-name {
         display: block;
-        position: absolute;
-        left: 0;
-        top: -12px;
-        font-size: 9px;
+        font-size: 8px;
         font-weight: 500;
-        color: #000;
-        line-height: 1.22;
         letter-spacing: normal;
-        
+        background-color: #ffd7d3;
+        border-radius: 4px;
+        padding: 4px 8px;
+        text-align: center;
+        color: #e85549;
+        white-space: nowrap;
     }
 
     .pay-history-content-box {
@@ -433,10 +389,9 @@
         display: block;
         flex: auto;
         padding-left: 5px;
-        font-size: 11px;
+        font-size: 12px;
         font-weight: 500;
-        color: #030303;
-        line-height: 1.36;
+        color: #333;
         letter-spacing: normal;
         white-space: nowrap;
         overflow: hidden;
@@ -450,17 +405,12 @@
        /*  margin-top: 6px; */
         width: 100%;
         text-align: right;
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 1.33;
+        font-size: 16px;
+        font-weight: 600;
         letter-spacing: normal;
     }
 
     .notice-box {
-       display:flex;
-       align-items: flex-start;
-
-
 
     }
 
@@ -475,13 +425,10 @@
     }
 
     .notice-content-text {
-        font-size: 11px;
+        font-size: 12px;
         font-weight: 500;
         color: #030303;
-        line-height: 1.36;
         letter-spacing: normal;
-        padding-left: 8px;
-
     }
 
     .tab-content-item {
@@ -692,7 +639,7 @@
     margin: 0 0 12px;
     font-size: 20px;
     font-weight: 600;
-    color: #fff;
+    color: #fff; 
 }
 
 .user-level {
@@ -702,7 +649,7 @@
     border-radius: 4px;
     padding: 2px 6px;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 400;   
     color: #fff;
 }
 
@@ -761,6 +708,106 @@
     background-size: cover;
     background-image: url(../img/slide-down-black.svg);
     margin-left: auto;
+}
+
+.scroll-list-link {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    position: relative;
+    padding: 15px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #030303;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: left;
+    display: block;
+    width: 100%;
+
+    .notice-icon  {
+        background-image: url(../img/notice-icon-on.svg);
+    }
+    .point-text {
+        color: #ff1f1f;
+        font-weight: 600;
+    }
+
+    &.payment-list-link {
+        padding: 15px 20px 16px 8px;
+        border-color: #e85549;
+        padding: 15px 20px 16px 8px;
+    }
+
+
+    .scroll-item-date {
+        position: absolute;
+        display: block;
+        right: 0;
+        font-size: 10px;
+        font-weight: 500;
+        color: #828282;
+        letter-spacing: normal;
+        top: -18px;
+
+    }
+}
+
+.review-item-head {
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.review-category {
+    font-size: 12px;
+    font-weight: 600;
+    color: #e85549;
+    display: block;
+    margin-right: 5px;
+}
+
+.review-user {
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.review-content {
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+    display: block;
+    margin: 0;
+}
+
+.winning-list-link {
+    border-color: #e0e0e0;
+    padding: 15px 12px;
+
+    &.winning {
+        border-color: #e85549;
+
+        .winning-label {
+            background-color: #e85549;
+        }
+    }
+}
+
+.winning-label {
+    color: #fff;
+    border-radius: 4px;
+    background-color: #bdbdbd;
+    text-align: center;
+    padding: 4px 10px;
+    font-size: 9px;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    width: fit-content;
 }
 
 
