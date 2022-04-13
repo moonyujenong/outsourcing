@@ -228,6 +228,10 @@
             &.winning-icon {
                 background-image: url(../img/icon-gift.svg);
             }
+
+            &.notice-icon {
+                background-image: url(../img/icon-megaphone.svg);
+            }
         }
 
         .head-title {
@@ -280,58 +284,6 @@
             background-clip: padding-box;
             border: 6px solid transparent;
         }
-    }
-
-    .scroll-list-item {
-        margin-bottom: 16px;
-        position: relative;
-
-        &.payhistory-scroll-list-item {
-            margin-bottom: 18px;
-            
-
-           /*  &.deal-ing {
-                &::before {
-                    content: '거래중';
-                    display: block;
-                    position: absolute;
-                    top: -16px;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    z-index: 10;
-                    background-color: #b1b1b1 ;
-                    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ;  
-                    backdrop-filter: blur(2.5px) ;
-                    
-                    
-                    color: #fff;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 17px;
-                    font-weight: 700;
-                    line-height: 1.35;
-                    letter-spacing: normal;
-                                     
-                }
-            } */
-        }
-
-        &.winning-list-item {
-            margin-bottom: 24px;
-        }
-
-        &:last-child {
-            margin-bottom: 0px;
-        }
-
-       
-    }
-
-    .scroll-list-box {
-        padding: 24px 0;
-
     }
 
     .content-footer  {
@@ -809,6 +761,106 @@
     margin-bottom: 5px;
     width: fit-content;
 }
+
+.scroll-list-box {
+    padding: 24px 0;
+}
+
+.notice-list-box {
+    padding: 0 0 24px;
+}
+ 
+.notice-list-link {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    border: 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.new-label {
+    border-radius: 4px;
+    background-color: #ffd7d3;
+    padding: 2px 4px;
+    text-align: center;
+    font-size: 9px;
+    font-weight: 400;
+    color: #e85549;
+    width: fit-content;
+    flex: 0 0 10%;
+}
+
+.notice-title {
+    flex: 0 0 65%;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-right: 13px;
+    margin: 0;
+    padding-left: 8px;
+}
+
+.notice-date {
+    flex: 0 0 25%;
+    white-space: nowrap;
+    font-weight: 400;
+    color: #828282;
+}
+
+.scroll-list-item {
+    margin-bottom: 16px;
+    position: relative;
+
+    &.payhistory-scroll-list-item {
+        margin-bottom: 18px;
+        
+
+       /*  &.deal-ing {
+            &::before {
+                content: '거래중';
+                display: block;
+                position: absolute;
+                top: -16px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 10;
+                background-color: #b1b1b1 ;
+                background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ;  
+                backdrop-filter: blur(2.5px) ;
+                
+                
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 17px;
+                font-weight: 700;
+                line-height: 1.35;
+                letter-spacing: normal;
+                                 
+            }
+        } */
+    }
+
+    &.winning-list-item {
+        margin-bottom: 24px;
+    }
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
+   
+}
+
+.notice-list-item {
+    margin-bottom: 0;
+}
+
 
 
 @media screen and (min-width:992px) {
