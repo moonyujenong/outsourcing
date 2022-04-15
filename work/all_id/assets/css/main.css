@@ -660,6 +660,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 24px;
 }
 
 .user-state-money-info {
@@ -928,6 +929,39 @@
   width: 16px;
   display: block;
   margin: 0 auto 6px;
+}
+
+.add-ons-box {
+  margin: 0px -4px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add-ons-btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 4px;
+  background-color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #e85549;
+  cursor: pointer;
+}
+
+.add-ons-btn img {
+  width: 13px;
+  height: 13px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: -2px 2px 0 0;
 }
 
 @media screen and (min-width: 992px) {
