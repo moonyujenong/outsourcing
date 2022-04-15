@@ -60,7 +60,7 @@
 
         .user-statistics-item {
             position: relative;
-            flex: 0 0 49%;
+            flex: 0 0 25%;
             text-align: center;
             padding: 20px;
             margin:  4px 0;
@@ -79,21 +79,21 @@
         background-position: center;
         background-size: cover;
         margin: 0 auto 6px;
-
+ 
         &.all-user-icon {
             background-image: url(../img/all-user-icon.svg);
         }
 
         &.today-user-icon {
-            background-image: url(../img/today-user-icon.png);
+            background-image: url(../img/today-user-icon.svg);
         }
 
         &.yesterday-user-icon {
-            background-image: url(../img/yesterday-user-icon.png);
+            background-image: url(../img/yesterday-user-icon.svg);
         }
 
         &.moment-user-icon {
-            background-image: url(../img/moment-user-icon.png);
+            background-image: url(../img/status-user-icon.svg);
         }
     }
 
@@ -394,7 +394,7 @@
 
     .tab-content-inner-flex {
         display: flex;
-        align-items: center;
+        align-items: stretch;
     }
 
     .tab-content-item-list {
@@ -434,13 +434,12 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-
-       
-
+        flex: 0 0 50%;
     }
     .item-content-box {
         position: relative;
         padding-left: 8px;
+        flex: 0 0 50%;
     }
 
     .user-account-name {
@@ -915,8 +914,6 @@
             display: flex;
             align-items: center;
             flex-wrap: nowrap;
-            border-radius: 6px;
-            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
         }  
 
         .statistics-left-box, .statistics-right-box {
@@ -931,6 +928,7 @@
 
             .user-statistics-list {
                 .user-statistics-item {
+                    margin: 0;
                     &:last-child {
                         &::after {
                             display: block;
@@ -1021,14 +1019,12 @@
 
 
         .content-body {
-            background-color: #ededed;
             height: 310px;
             max-height: 310px;
         }
 
         .scroll-list-box {
             .scroll-list-link {
-                background-color: #d1d1d1;
             }
         }
 
@@ -1056,10 +1052,6 @@
         .content-section1 {
             margin-bottom: 0;
             padding: 32px 0 55px;
-            
-            &::before {
-                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
-            }
         }
 
         .content-section2 {
@@ -1137,7 +1129,7 @@
                 border-bottom: 1px solid #d9dadc;
 
                 .tab-item { 
-                    flex:  0 0 25%;
+                    flex:  0 0 50%;
 
                     .tab-link {
                         border-radius: initial;
@@ -1153,17 +1145,6 @@
 
                         &.on {
                             opacity: 1;
-
-                            &::after {
-                                content: '';
-                                display: block;
-                                position: absolute;
-                                bottom: -1.7px;
-                                width: 100%;
-                                height: 3px;
-                                background-color: #c6483e;
-                                border-radius: 100px;
-                            }
                         }
 
                     }
@@ -1175,14 +1156,11 @@
             
         }
 
+        .tab-content-inner-flex {
+            display: block;
+        }
 
     }
-
-    .safe-label-icon {
-        width: 88px;
-        height: 24px;
-        right: 16px;
-        bottom: 16px;
-    }
+    
     
 }

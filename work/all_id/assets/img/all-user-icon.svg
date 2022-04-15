@@ -1,51 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 32 24">
-    <defs>
-        <filter id="8pz98prn9b" x="-3.695" y="-5.46" width="39.155" height="29.578" filterUnits="userSpaceOnUse">
-            <feOffset dy="3"/>
-            <feGaussianBlur stdDeviation="3" result="blur"/>
-            <feFlood flood-opacity=".161"/>
-            <feComposite operator="in" in2="blur"/>
-            <feComposite in="SourceGraphic"/>
-        </filter>
-        <filter id="dnmtt4pvkc" x="-3.695" y="-5.46" width="39.155" height="29.578" filterUnits="userSpaceOnUse">
-            <feOffset dy="3"/>
-            <feGaussianBlur stdDeviation="3" result="blur-2"/>
-            <feFlood flood-opacity=".161"/>
-            <feComposite operator="in" in2="blur-2"/>
-            <feComposite in="SourceGraphic"/>
-        </filter>
-        <filter id="4a0nl0r2ud" x="-4.037" y="8.564" width="39.839" height="25.13" filterUnits="userSpaceOnUse">
-            <feOffset dy="3"/>
-            <feGaussianBlur stdDeviation="3" result="blur-3"/>
-            <feFlood flood-opacity=".161"/>
-            <feComposite operator="in" in2="blur-3"/>
-            <feComposite in="SourceGraphic"/>
-        </filter>
-        <filter id="2uivjo8qpe" x="-4.037" y="3.776" width="39.839" height="25.13" filterUnits="userSpaceOnUse">
-            <feOffset dy="3"/>
-            <feGaussianBlur stdDeviation="3" result="blur-4"/>
-            <feFlood flood-opacity=".161"/>
-            <feComposite operator="in" in2="blur-4"/>
-            <feComposite in="SourceGraphic"/>
-        </filter>
-        <clipPath id="i6xo74ulfa">
-            <path data-name="사각형 3474" transform="translate(85 208)" style="fill:#fff;stroke:#707070" d="M0 0h32v24H0z"/>
-        </clipPath>
-    </defs>
-    <g data-name="마스크 그룹 4752" transform="translate(-85 -208)" style="clip-path:url(#i6xo74ulfa)">
-        <g data-name="그룹 5557">
-            <g style="filter:url(#8pz98prn9b)" transform="translate(84.995 208)">
-                <path data-name="패스 38131" d="M11.578 2 2 6.789l9.578 4.789 9.578-4.789z" transform="translate(4.31 -.46)" style="stroke:#c6483e;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:#c6483e;opacity:.172"/>
-            </g>
-            <g style="filter:url(#dnmtt4pvkc)" transform="translate(84.995 208)">
-                <path data-name="패스 38132" d="M11.578 2 2 6.789l9.578 4.789 9.578-4.789z" transform="translate(4.31 -.46)" style="fill:none;stroke:#c6483e;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
-            </g>
-            <g style="filter:url(#4a0nl0r2ud)" transform="translate(84.995 208)">
-                <path data-name="패스 38133" d="m2 17 9.578 4.789L21.155 17" transform="translate(4.31 -1.09)" style="fill:none;stroke:#c6483e;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
-            </g>
-            <g style="filter:url(#2uivjo8qpe)" transform="translate(84.995 208)">
-                <path data-name="패스 38134" d="m2 12 9.578 4.789L21.155 12" transform="translate(4.31 -.88)" style="fill:none;stroke:#c6483e;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
-            </g>
-        </g>
-    </g>
+<svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M19.922 43.769C9.065 43.769.23 34.867.23 23.931c0-10.937 8.836-19.838 19.693-19.838v1.202c-10.191 0-18.5 8.37-18.5 18.636s8.309 18.636 18.5 18.636 18.5-8.37 18.5-18.636h1.194c0 10.936-8.837 19.838-19.717 19.838h.023z" fill="#000"/>
+    <path d="M19.923 44C8.93 44 0 34.983 0 23.93 0 12.88 8.952 3.862 19.923 3.862a.23.23 0 0 1 .23.232v1.202a.231.231 0 0 1-.23.231c-10.076 0-18.27 8.254-18.27 18.405 0 10.15 8.194 18.404 18.27 18.404 10.077 0 18.27-8.254 18.27-18.404a.23.23 0 0 1 .23-.232h1.194a.23.23 0 0 1 .23.232C39.846 35.006 30.895 44 19.922 44zm-.23-39.7C9.067 4.417.437 13.18.437 23.93c0 10.752 8.745 19.63 19.487 19.63 10.742 0 19.35-8.67 19.487-19.398h-.757c-.115 10.289-8.47 18.636-18.73 18.636S1.193 34.335 1.193 23.93c0-10.405 8.287-18.752 18.5-18.867V4.3z" fill="#000"/>
+    <path d="M43.772 24.879H19.328V.254h.597c6.38 0 12.371 2.498 16.87 7.03 4.498 4.531 6.977 10.566 6.977 16.993v.602zm-23.25-1.203h22.034c-.161-5.872-2.502-11.352-6.634-15.537-4.131-4.162-9.594-6.52-15.423-6.682v22.196l.023.023z" fill="#000"/>
+    <path d="M20.5 24V.917L25 1.5l3.5 1 4 2 3.5 3 2.5 3L41 15l1.5 4.5 1 4.5h-23z" fill="#FFD7D3" stroke="#000"/>
+    <path d="M43.771 25.087H19.327a.23.23 0 0 1-.23-.232V.232a.23.23 0 0 1 .23-.231h.597c6.427 0 12.486 2.52 17.03 7.098 4.545 4.578 7.047 10.682 7.047 17.156v.601a.23.23 0 0 1-.23.232zm-24.237-.463h24.008v-.37c0-6.358-2.456-12.323-6.932-16.832A23.402 23.402 0 0 0 19.901.462h-.367v24.185-.023zm23.02-.763H20.522a.23.23 0 0 1-.23-.231V1.434s.023-.116.069-.162a.208.208 0 0 1 .16-.07 22.637 22.637 0 0 1 15.562 6.752 23.07 23.07 0 0 1 6.702 15.676c0 .07 0 .116-.069.162a.208.208 0 0 1-.16.07zM20.75 23.4h21.575a22.562 22.562 0 0 0-6.564-15.145c-4.017-4.046-9.365-6.404-15.034-6.59V23.4h.023z" fill="#000"/>
 </svg>

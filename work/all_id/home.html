@@ -54,11 +54,11 @@
 
 <!-- todo : 설명보기 팝업 -->
 <div class="modal fade allId-custom-modal " id="modal_explan" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-show-explan" role="document">
       <div class="modal-content show-explan-bg">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">
-              <img src="./assets/img/pop-logo.png" alt="올아이디 팝업 로고">
+              <img src="./assets/img/new-logo.svg" alt="올아이디 팝업 로고">
 
               <button type="button" class="custom-modal-close-btn" data-dismiss="modal" aria-label="Close">
                   <i class="xi-close-thin"></i>
@@ -71,68 +71,51 @@
             <div class="popup-content-wrap">
                 <h3 class="popup-content-title">
                     <span class="check-circle-icon"></span>
-                    <span style="font-weight:700;">설명보기</span> : 오버워치 금장 계정 (Lv 145)
+                    <span style="font-weight:700;">설명보기</span>
                 </h3>
 
-
-                <img src="./assets/img/document-icon.png" alt="설명보기 문서 아이콘" class="content-start-top-icon">
-
-
-                <div class="content-scroll-box">
-                    <span class="content-scroll-date-text">2022.01.11 17:38</span>
-                    <div class="scroll-content-item">
-                        <ul class="scroll-item-list">
-                            <li class="scroll-list-item">
-                                - 오버워치
-                            </li>
-
-                            <li class="scroll-list-item">
-                                - 오버워치
-                            </li>
-
-                            <li class="scroll-list-item">
-                                - 오버워치
-                            </li>
-
-                            <li class="scroll-list-item">
-                                - 오버워치
-                            </li>
-
-                            <li class="scroll-list-item">
-                                - 오버워치
-                            </li>
-
-                            <li class="scroll-list-item">
-                                - 오버워치
-                            </li>
-
-                            <li class="scroll-list-item">
-                                - 오버워치
-                            </li>
-
-                            <li class="scroll-list-item">
-                                - 오버워치
-                            </li>
-
-                            <li class="scroll-list-item">
-                                - 오버워치
-                            </li>
-
-                            <li class="scroll-list-item">
-                                - 오버워치
-                            </li>
-                        </ul>
+                <div class="explan-content-inner">
+                    <div class="explan-item-thumbnail-box">
+                        <div class="explan-item-thumbnail-outline">
+                            <img src="./assets/img/explan-item-thumbnail.png" class="explan-thumbnail-item" alt="설명보기 아이템 썸네일" />
+                            <img src="./assets/img/safe-label-icon.png" class="explan-safe-label" alt="안전결제">
+                        </div>
+    
+                        <div class="explan-item-info">
+                            <span class="explan-item-category">[오버워치]</span>
+                            <h3 class="explan-item-title">오버워치 금장 계정 <b>(Lv.545)</b></h3>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="content-scroll-box">
+                        <h3 class="content-scroll-title">
+                            <img src="./assets/img/icon-file.svg" alt="문서 아이콘">
+                            설명보기
+                        </h3>
+                        <div class="scroll-content-item">
+                            <p class="scroll-content-text">
+                                이곳은 설명입니다.
+                            </p>
+                        </div>
                     </div>
                 </div>
+                
 
                 <span class="popup-notice-text">
                     공지사항을 적는 곳 공시사항은 이러합니다. 이러한 점을 명시해주세요. 이러한 점은 이렇게 명시하고 기억하십시오. 
-                    <span class="warning-text" style="color: #ff0000;">이건 꼭 명시해야할 주의사항 텍스트입니다.</span>
                 </span>
             </div>
            
         </div>
         <div class="modal-footer explan-popup-footer">
+            <div class="explan-pc-box">
+                <p  class="explan-pc-text">
+                    -신규 유저는 제 3자 사기 방지를 위해 실명 본인 인증을 받고 있습니다. <br>
+                    -3차 사기 방지를 위하여 입금자명은 한번 지정시 변경이 불가능합니다. <br>
+                    -3차 사기 방지를 위하여 입금자명은 한번 지정시 변경이 불가능합니다.
+                </p>
+            </div>
           <button type="button" class="btn btn-secondary custom-red-defalut-btn" data-dismiss="modal">확인</button>
         </div>
       </div>
@@ -223,12 +206,12 @@
 
 
 <!-- todo : 구매하기 팝업 -->
-<div class="modal fade allId-custom-modal " id="gift_card" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal fade allId-custom-modal " id="modal_order" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-show-explan" role="document">
       <div class="modal-content show-order-bg">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">
-              <img src="./assets/img/pop-logo.png" alt="올아이디 팝업 로고">
+              <img src="./assets/img/new-logo.svg" alt="올아이디 팝업 로고">
 
               <button type="button" class="custom-modal-close-btn" data-dismiss="modal" aria-label="Close">
                   <i class="xi-close-thin"></i>
@@ -239,132 +222,142 @@
         <div class="modal-body">
             
             <div class="popup-content-wrap">
-                <h3 class="popup-content-title" style="margin-bottom: 10px;">
+                <h3 class="popup-content-title">
                     <span class="check-circle-icon"></span>
-                    <span style="font-weight:700;">구매하기</span> : 오버워치 금장 계정 (Lv 145)
+                    <span style="font-weight:700;">구매하기</span>
                 </h3>
 
-                <div class="order-category-box">
-                    <div class="order-category-img" style="background-image: url(./assets/img/item-inner-banner.png);">
-                        <span class="safe-label-icon"></span>
+                <div class="flex-inner-box">
+                    <div class="explan-item-thumbnail-box">
+                        <div class="explan-item-thumbnail-outline">
+                            <img src="./assets/img/explan-item-thumbnail.png" class="explan-thumbnail-item" alt="설명보기 아이템 썸네일" />
+                            <img src="./assets/img/safe-label-icon.png" class="explan-safe-label" alt="안전결제">
+                        </div>
+    
+                        <div class="explan-item-info">
+                            <span class="explan-item-category">[오버워치]</span>
+                            <h3 class="explan-item-title">오버워치 금장 계정 <b>(Lv.545)</b></h3>
+                        </div>
+                        
+                    </div>
+    
+                     <!-- 구매하기 활성화 체크 -->
+                    <div class="order-check-wrap">
+                        <ul class="order-check-list">
+                            <li class="order-check-item">
+                                <div class="order-check-item-inner">
+                                    <label for="order_check" class="order-chekc-itme-inner">
+                                        <input type="radio" name="order-check-radio"  class="order-check-radio custom-radio-check-box" id="order_check">
+                                        <div class="custom-radio-fake-box"></div>
+                                        <span class="order-content-text">금장 계정 황무 4개</span>
+                                        <div class="order-content-payment">
+                                            <span class="order-content-coin-icon"></span>
+                                            35,000원
+                                        </div>
+                                    </label>
+    
+                                </div>
+    
+                                <div class="order-detail-content-box">
+    
+                                    <div class="detail-content-inner">
+                                        
+                                        <span class="order-content-text-detail">
+                                            수량 선택 <br> [재고 2개]
+                                        </span>
+                                        
+                                        <div class="order-length-choice-box">
+                                            <img class="length-icon" src="./assets/img/minus-icon.svg" alt="마이너스 아이콘">
+                                            <input type="text" class="length-text" value="01">
+                                            <img class="length-icon" src="./assets/img/plus-icon.svg" alt="플러스 아이콘">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="order-check-item">
+                                <div class="order-check-item-inner">
+                                    <label for="order_check" class="order-chekc-itme-inner">
+                                        <input type="radio" name="order-check-radio2"  class="order-check-radio custom-radio-check-box" id="order_check">
+                                        <div class="custom-radio-fake-box"></div>
+                                        <span class="order-content-text">금장 계정 황무 4개</span>
+                                        <div class="order-content-payment">
+                                            <span class="order-content-coin-icon"></span>
+                                            35,000원
+                                        </div>
+                                    </label>
+    
+                                </div>
+    
+                                <div class="order-detail-content-box">
+    
+                                    <div class="detail-content-inner">
+                                        
+                                        <span class="order-content-text-detail">
+                                            수량 선택 <br> [재고 2개]
+                                        </span>
+                                        
+                                        <div class="order-length-choice-box">
+                                            <img class="length-icon" src="./assets/img/minus-icon.svg" alt="마이너스 아이콘">
+                                            <input type="text" class="length-text" value="01">
+                                            <img class="length-icon" src="./assets/img/plus-icon.svg" alt="플러스 아이콘">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="order-check-item">
+                                <div class="order-check-item-inner">
+                                    <label for="order_check" class="order-chekc-itme-inner">
+                                        <input type="radio" name="order-check-radio3"  class="order-check-radio custom-radio-check-box" id="order_check">
+                                        <div class="custom-radio-fake-box"></div>
+                                        <span class="order-content-text">금장 계정 황무 4개</span>
+                                        <div class="order-content-payment">
+                                            <span class="order-content-coin-icon"></span>
+                                            35,000원
+                                        </div>
+                                    </label>
+    
+                                </div>
+    
+                                <div class="order-detail-content-box">
+    
+                                    <div class="detail-content-inner">
+                                        
+                                        <span class="order-content-text-detail">
+                                            수량 선택 <br> [재고 2개]
+                                        </span>
+                                        
+                                        <div class="order-length-choice-box">
+                                            <img class="length-icon" src="./assets/img/minus-icon.svg" alt="마이너스 아이콘">
+                                            <input type="text" class="length-text" value="01">
+                                            <img class="length-icon" src="./assets/img/plus-icon.svg" alt="플러스 아이콘">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
-
                 
-
-                <span class="popup-notice-text" style="width: 100%; max-width: 480px; ">
+                
+                <span class="popup-notice-text" >
                     공지사항을 적는 곳 공시사항은 이러합니다. 이러한 점을 명시해주세요. 이러한 점은 이렇게 명시하고 기억하십시오. 
-                    <span class="warning-text" style="color: #ff0000;">이건 꼭 명시해야할 주의사항 텍스트입니다.</span>
                 </span>
             </div>
-
-
-            <!-- 구매하기 활성화 체크 -->
-            <div class="order-check-wrap">
-                <ul class="order-check-list">
-                    <li class="order-check-item">
-                        <div class="order-check-item-inner">
-                            <label for="order_check" class="order-chekc-itme-inner">
-                                <input type="radio" name="order-check-radio"  class="order-check-radio custom-radio-check-box" id="order_check">
-                                <div class="custom-radio-fake-box"></div>
-                                <span class="order-content-text">금장 계정 황무 4개</span>
-                                <div class="order-content-payment">
-                                    <span class="order-content-coin-icon"></span>
-                                    35,000원
-                                </div>
-                            </label>
-
-                        </div>
-
-                        <div class="order-detail-content-box">
-
-                            <div class="detail-content-inner">
-                                
-                                <span class="order-content-text-detail">
-                                    수량 선택 <br> [재고 2개]
-                                </span>
-                                
-                                <div class="order-length-choice-box">
-                                    <span class="length-icon length-minus">-</span>
-                                    <input type="text" class="length-text" value="01">
-                                    <span class="length-icon length-plus">+</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="order-check-item">
-                        <div class="order-check-item-inner">
-                            <label for="order_check2" class="order-chekc-itme-inner">
-                                <input type="radio"  name="order-check-radio"  class="order-check-radio custom-radio-check-box" id="order_check2">
-                                <div class="custom-radio-fake-box"></div>
-                                <span class="order-content-text">금장 계정 황무 4개</span>
-                                <div class="order-content-payment">
-                                    <span class="order-content-coin-icon"></span>
-                                    35,000원
-                                </div>
-                            </label>
-
-                        </div>
-
-                        <div class="order-detail-content-box">
-
-                            <div class="detail-content-inner">
-                                
-                                <span class="order-content-text-detail">
-                                    수량 선택 <br> [재고 2개]
-                                </span>
-                                
-                                <div class="order-length-choice-box">
-                                    <span class="length-icon length-minus">-</span>
-                                    <input type="text" class="length-text" value="01">
-                                    <span class="length-icon length-plus">+</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="order-check-item">
-                        <div class="order-check-item-inner">
-                            <label for="order_check3" class="order-chekc-itme-inner">
-                                <input type="radio" name="order-check-radio"  class="order-check-radio custom-radio-check-box" id="order_check3">
-                                <div class="custom-radio-fake-box"></div>
-                                <span class="order-content-text">금장 계정 황무 4개</span>
-                                <div class="order-content-payment">
-                                    <span class="order-content-coin-icon"></span>
-                                    35,000원
-                                </div>
-                            </label>
-
-                        </div>
-
-                        <div class="order-detail-content-box">
-
-                            <div class="detail-content-inner">
-                                
-                                <span class="order-content-text-detail">
-                                    수량 선택 <br> [재고 2개]
-                                </span>
-                                
-                                <div class="order-length-choice-box">
-                                    <span class="length-icon length-minus">-</span>
-                                    <input type="text" class="length-text" value="01">
-                                    <span class="length-icon length-plus">+</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-           
         </div>
         <div class="modal-footer explan-popup-footer">
-          <button type="button" class="btn btn-secondary custom-red-defalut-btn" data-dismiss="modal">
-              총
-              <span>35,000원</span>
-              구매하기
-          </button>
+            <div class="explan-pc-box">
+                <p  class="explan-pc-text">
+                    -신규 유저는 제 3자 사기 방지를 위해 실명 본인 인증을 받고 있습니다. <br>
+                    -3차 사기 방지를 위하여 입금자명은 한번 지정시 변경이 불가능합니다. <br>
+                    -3차 사기 방지를 위하여 입금자명은 한번 지정시 변경이 불가능합니다.
+                </p>
+            </div>
+
+            <button type="button" class="btn btn-secondary custom-red-defalut-btn" style="font-weight: 500;" data-dismiss="modal">
+                총 35,000원 신청하기
+            </button>
         </div>
       </div>
     </div>

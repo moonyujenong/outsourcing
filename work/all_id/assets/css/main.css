@@ -70,8 +70,8 @@
 .allId-main .user-statistics-list .user-statistics-item {
   position: relative;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 49%;
-          flex: 0 0 49%;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
   text-align: center;
   padding: 20px;
   margin: 4px 0;
@@ -97,15 +97,15 @@
 }
 
 .allId-main .user-statistics-icon.today-user-icon {
-  background-image: url(../img/today-user-icon.png);
+  background-image: url(../img/today-user-icon.svg);
 }
 
 .allId-main .user-statistics-icon.yesterday-user-icon {
-  background-image: url(../img/yesterday-user-icon.png);
+  background-image: url(../img/yesterday-user-icon.svg);
 }
 
 .allId-main .user-statistics-icon.moment-user-icon {
-  background-image: url(../img/moment-user-icon.png);
+  background-image: url(../img/status-user-icon.svg);
 }
 
 .allId-main .user-statistics-title {
@@ -405,9 +405,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .allId-main .tab-content-item-list {
@@ -453,11 +453,17 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
 }
 
 .allId-main .item-content-box {
   position: relative;
   padding-left: 8px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
 }
 
 .allId-main .user-account-name {
@@ -974,9 +980,6 @@
             align-items: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    border-radius: 6px;
-    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   }
   .allId-main .statistics-left-box, .allId-main .statistics-right-box {
     -webkit-box-flex: 1;
@@ -987,6 +990,9 @@
     border-radius: initial;
   }
   .allId-main .statistics-left-box {
+    margin: 0;
+  }
+  .allId-main .statistics-left-box .user-statistics-list .user-statistics-item {
     margin: 0;
   }
   .allId-main .statistics-left-box .user-statistics-list .user-statistics-item:last-child::after {
@@ -1050,12 +1056,8 @@
     margin-left: 5px !important;
   }
   .allId-main .content-body {
-    background-color: #ededed;
     height: 310px;
     max-height: 310px;
-  }
-  .allId-main .scroll-list-box .scroll-list-link {
-    background-color: #d1d1d1;
   }
   .allId-main .scroll-list-item {
     margin-bottom: 32px;
@@ -1075,10 +1077,6 @@
   .allId-main .content-section1 {
     margin-bottom: 0;
     padding: 32px 0 55px;
-  }
-  .allId-main .content-section1::before {
-    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
-            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
   }
   .allId-main .content-section2 {
     /* &::before {
@@ -1140,8 +1138,8 @@
   }
   .allId-main .tab-box .tab-list .tab-item {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 25%;
-            flex: 0 0 25%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
   }
   .allId-main .tab-box .tab-list .tab-item .tab-link {
     border-radius: initial;
@@ -1157,21 +1155,8 @@
   .allId-main .tab-box .tab-list .tab-item .tab-link.on {
     opacity: 1;
   }
-  .allId-main .tab-box .tab-list .tab-item .tab-link.on::after {
-    content: '';
+  .allId-main .tab-content-inner-flex {
     display: block;
-    position: absolute;
-    bottom: -1.7px;
-    width: 100%;
-    height: 3px;
-    background-color: #c6483e;
-    border-radius: 100px;
-  }
-  .safe-label-icon {
-    width: 88px;
-    height: 24px;
-    right: 16px;
-    bottom: 16px;
   }
 }
 
