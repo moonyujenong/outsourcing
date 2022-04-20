@@ -2,23 +2,28 @@
     
 
     .modal-content {
-        border-radius: 0 !important;
+        border-radius: 8px;
         position: relative;
         overflow: hidden;
-        min-height: 100%;
+        height: 100%;
+        max-height: 528px;
     }
 
     .modal-dialog {
         /* width: 100%; */
         max-width: 800px;
-        height: 90%;
+        height: 100%;
+        
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 15px;
         
     }
 
     .modal-header {
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
         background-color: #e85549;
-        padding: 18px 33px;
+        padding: 12px 24px;
         position: relative;
         border-radius: 0;
         justify-content: center;
@@ -26,13 +31,13 @@
 
     .modal-title {
         img {
-            width: 114px;
+           height:25px;
         }
 
         .custom-modal-close-btn {
             position: absolute;
-            right: 33px;
-            top: 18px;
+            right: 16px;
+            top: 12px;
             cursor: pointer;
             
             i {
@@ -62,8 +67,8 @@
     }
 
     .check-circle-icon {
-        width: 32px;
-        height: 32px;
+        width: 16px;
+        height: 16px;
         background-repeat: no-repeat;
         background-position: center;
         background-image: url(../img/check-circle.svg);
@@ -75,7 +80,7 @@
     }
 
     .popup-content-wrap {
-        padding: 24px 37px;
+        padding: 24px;
 
         &.pay-charge-content-wrap {
             padding: 0 15px 15px;
@@ -156,12 +161,12 @@
 
 
     .popup-content-title {
-        font-size: 20px;
+        font-size: 12px;
         font-weight: 500;
         color: #292929;
         line-height: 1.3;
         letter-spacing: 1px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         text-align: left;  
     }
 
@@ -180,24 +185,24 @@
         border-radius: 4px;
         position: relative;
         width: 100%;
-        margin: 0 auto 60px;
+        margin: 0 auto 30px;
         box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
         overflow: hidden;
     }
 
     .content-scroll-title {
-        padding: 16px;
+        padding: 10px 15px;
         display: block;
         margin: 0;
         display: flex;
         align-items: center;
-        font-size: 16px;
+        font-size: 10px;
         color: #333;
         font-weight: 600;
 
         img {
-            width: 20px;
-            height: 19px;
+            width: 10px;
+            height: 10px;
             margin-right: 8px;
         }
 
@@ -206,12 +211,12 @@
     }
 
     .scroll-content-item {
-        height: 264px;
-        max-height: 264px;
+        height: 120px;
+        max-height: 120px;
         overflow: hidden;
         overflow-y: auto;
         background-color: #fff;
-        padding: 16px 20px;
+        padding: 10px;
 
         &::-webkit-scrollbar {
             width: 17px;            
@@ -236,8 +241,7 @@
         font-weight: 400;
         letter-spacing: normal;
         display: block;
-        color: #000;
-        margin: 0 0 16px;
+        color: #828282;
     }
 
     .explan-popup-footer {
@@ -460,19 +464,19 @@
 }
 
 .custom-radio-fake-box {
-    width: 32px;
-    min-width: 32px;
-    height: 32px;
+    width: 12px;
+    min-width: 12px;
+    height: 12px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url(../img/check-box-new.svg);
-    margin-right: 15px;
+    margin-right: 8px;
     cursor: pointer;
 }
 
 .order-content-text {
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 400;
     color: #333;
     display: block;
@@ -487,8 +491,8 @@
 }
 
 .length-icon {
-    width: 20px;
-    height: 20px;
+    width: 13px;
+    height: 13px;
     display: block;
     cursor: pointer;
     object-fit: cover;
@@ -502,11 +506,11 @@
     background-color: #fff;
     border: 1px solid #f2f2f2;
     text-align: center;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 400;
     color: #333;
     white-space: nowrap;
-    width: 39px;
+    width: 25px;
 }
 
 .order-detail-content-box {
@@ -522,7 +526,7 @@
     box-sizing: border-box;
 
     .order-content-text-detail {
-        font-size: 14px;
+        font-size: 10px;
         margin-right: 30px;
         text-align: center;
     }
@@ -531,7 +535,7 @@
 .detail-content-inner {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .order-check-radio[type="radio"]:checked + .custom-radio-fake-box {
@@ -542,17 +546,17 @@
     display: flex;
     align-items: center;
     padding: 12px;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0;
 
 }
 
 .order-check-wrap {
-    padding: 24px 0px 30px;
+    padding: 15px 0px ;
 }
 
 .order-content-text {
-    font-size: 17px;
+    font-size: 10px;
     font-weight: 500;
     color: #4b4a4a;   
     line-height: 1.18;
@@ -574,7 +578,7 @@
 }
 
 .order-content-payment {
-    font-size: 17px;
+    font-size: 10px;
     font-weight: 500;
     color: #333;
     line-height: 1.18;
@@ -595,35 +599,35 @@
 
     .explan-thumbnail-item {
         width: 100%;
-        height: 221px;
+        height: 118px;
         object-fit: cover;
-        object-position: center;
+        object-position: center center;
     }
 
     .explan-safe-label {
         position: absolute;
-        width: 88px;
+        width: 56px;
         right: 16px;
-        bottom: 16px;
+        bottom: 10px;
     }
 }
 
 .explan-item-info {
-    padding: 23px 24px;
+    padding: 15px 16px;
     display: flex;
     align-items: center;
 }
 
 .explan-item-category {
     color: #e85549;
-    font-size: 16px;
+    font-size: 10px;
     font-weight: 600;
     display: block;
     margin-right: 8px;
 }
 
 .explan-item-title {
-    font-size: 16px;
+    font-size: 10px;
     font-weight: 500;
     color: #333;
     display: block;
@@ -636,9 +640,11 @@
 
 .scroll-content-text {
     word-break: break-all;
-    font-size: 14px;
+    font-size: 10px;
     color: #4f4f4f;
     font-weight: 400;
+    margin: 0;
+    display: block;
 }
 
 .explan-pc-box {
