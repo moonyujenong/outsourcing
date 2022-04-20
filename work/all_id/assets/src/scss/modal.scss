@@ -651,6 +651,115 @@
     display: none;
 }
 
+.bank-user-info-box {
+    margin-bottom: 18px;
+}
+
+.bank-input-title {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+}
+
+.default-input {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    border: 0.7px solid #e0e0e0;
+    font-size: 10px;
+    padding: 8px 9px;
+
+    &::placeholder {
+        color: #9a9a9a;
+        opacity: 0.56;
+    }
+}
+
+.gift-card-pin-number-box {
+    display: flex;
+    align-items: center;
+    color: #e0e0e0;
+    margin: 0 -3px 8px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.pin-number-input {
+    border-radius: 4px;
+    border: 0.6px solid #e0e0e0;
+    background-color: #fff;
+    width: 100%;
+    margin: 0 3px;
+
+    &:focus, &:active {
+        outline: none;
+    }
+}
+
+.pin-plus-btn {
+    border: 0.6px solid #e85549;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #e85549;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    img {
+        width: 13px;
+        margin-right: 5px;
+    }
+}
+
+.pay-transfar-info {
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+
+.pay-transfar-info-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 13px 20px;
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+}
+
+.pay-transfar-info-left {
+    font-size: 11px;
+    font-weight: 400;
+    color: #333;
+    flex: 0 0 30%;
+    border-right: 1px solid #e0e0e0;
+}
+
+.pay-transfar-info-right {
+    flex: 0 0 70%;
+    font-size: 11px;
+    color: #e85549;
+    font-weight: 500;
+    padding-left: 20px;
+} 
+
+.pay-qr {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+}
+
 @media screen and (min-width:992px) {
     .order-check-wrap {
         padding: 0;
