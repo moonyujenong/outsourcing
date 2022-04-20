@@ -561,6 +561,74 @@
 </div>
 <!-- // 카카오페이 QR -->
 
+<!-- todo : 본인인증 팝업 -->
+<div class="modal fade allId-custom-modal " id="modal_self_security" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-show-explan" role="document">
+      <div class="modal-content show-explan-bg">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">
+              <img src="./assets/img/new-logo.svg" alt="올아이디 팝업 로고">
+
+              <button type="button" class="custom-modal-close-btn" data-dismiss="modal" aria-label="Close">
+                  <i class="xi-close-thin"></i>
+              </button>
+          </h5>
+          
+        </div>
+        <div class="modal-body">
+            
+            <div class="popup-content-wrap">
+                <h3 class="popup-content-title">
+                    <span class="check-circle-icon"></span>
+                    <span style="font-weight:700;">본인인증</span>
+                </h3>
+
+                <div class="self-security-flex-box">
+                    <div class="self-user-info">
+                        <div class="self-user-info-list">
+                            <div class="self-user-info-item">
+                                <span class="self-user-info-category">이름</span>
+                                <input type="text" class="self-user-info-input">
+                            </div>
+                            <div class="self-user-info-item">
+                                <span class="self-user-info-category">생년월일</span>
+                                <input type="text" class="self-user-info-input" placeholder="YYMMDD">
+                            </div>
+                        </div>
+
+                        <div class="self-user-info-list">
+                            <form action="">
+                                <div class="self-user-info-item">
+                                    <span class="self-user-info-category">휴대전화</span>
+                                    <div class="self-user-phone">
+                                        <select name="" class="self-user-phone-front" id="">
+                                            <option value="" checked>+82</option>
+                                            <option value="">+00</option>
+                                        </select>
+                                        <input type="text" class="self-user-phone-middle" >
+                                        <button class="self-user-phone-submit">인증번호 받기</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="self-user-info-item">
+                                <span class="self-user-info-category">인증 번호</span>
+                                <input type="text" class="self-user-info-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="self-warning-box"></div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="modal-footer explan-popup-footer">
+            <button type="button" class="btn btn-secondary custom-red-defalut-btn" data-dismiss="modal">충전 신청하기</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- // 본인인증 팝업 -->
+
 
 
 
