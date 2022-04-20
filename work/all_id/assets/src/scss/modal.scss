@@ -671,6 +671,49 @@
     }
 }
 
+.gift-card-pin-number-box {
+    display: flex;
+    align-items: center;
+    color: #e0e0e0;
+    margin: 0 -3px 8px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.pin-number-input {
+    border-radius: 4px;
+    border: 0.6px solid #e0e0e0;
+    background-color: #fff;
+    width: 100%;
+    margin: 0 3px;
+
+    &:focus, &:active {
+        outline: none;
+    }
+}
+
+.pin-plus-btn {
+    border: 0.6px solid #e85549;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #e85549;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    img {
+        width: 13px;
+        margin-right: 5px;
+    }
+}
+
 @media screen and (min-width:992px) {
     .order-check-wrap {
         padding: 0;
