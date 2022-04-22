@@ -805,6 +805,121 @@
   display: block;
 }
 
+.self-user-info-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.self-user-info-item {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  margin-right: 8px;
+}
+
+.self-user-info-item:last-child {
+  margin-right: 0;
+}
+
+.self-user-info-category {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.self-user-info-input {
+  background-color: #fff;
+  border-radius: 4px;
+  border: solid 0.7px #e0e0e0;
+  font-size: 10px;
+  height: 32px;
+  width: 100%;
+  padding: 8px 10px;
+}
+
+.self-user-info-input::-webkit-input-placeholder {
+  color: #d2d2d2;
+}
+
+.self-user-info-input::-moz-placeholder {
+  color: #d2d2d2;
+}
+
+.self-user-info-input:-ms-input-placeholder {
+  color: #d2d2d2;
+}
+
+.self-user-info-input::-ms-input-placeholder {
+  color: #d2d2d2;
+}
+
+.self-user-info-input::placeholder {
+  color: #d2d2d2;
+}
+
+.self-user-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.self-user-phone-submit {
+  border-radius: 1.8px;
+  background-color: #474f59;
+  text-align: center;
+  font-size: 10px;
+  color: #fff;
+  font-weight: 400;
+  padding: 8px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 29%;
+          flex: 0 0 29%;
+}
+
+.self-user-phone-front {
+  background-color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  color: #333;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 19%;
+          flex: 0 0 19%;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  padding: 8px 10px;
+  margin-right: 5px;
+}
+
+.self-user-phone-middle {
+  height: 32px;
+  border: 0.7px solid #e0e0e0;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 49%;
+          flex: 0 0 49%;
+  width: 100%;
+  margin-right: 5px;
+}
+
+.self-security-flex-box {
+  display: block;
+}
+
 @media screen and (min-width: 992px) {
   .order-check-wrap {
     padding: 0;

@@ -761,6 +761,87 @@
     display: block;
 }
 
+.self-user-info-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.self-user-info-item {
+    flex: auto;
+    margin-right: 8px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.self-user-info-category {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.self-user-info-input {
+    background-color: #fff;
+    border-radius: 4px;
+    border: solid 0.7px #e0e0e0;    
+    font-size: 10px;
+    height: 32px;
+    width: 100%;
+    padding: 8px 10px;
+
+    &::placeholder {
+        color: #d2d2d2;
+    }
+}
+
+.self-user-phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.self-user-phone-submit {
+    border-radius: 1.8px;
+    background-color: #474f59;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 400;
+    padding: 8px;
+    flex: 0 0 29%;
+}
+
+.self-user-phone-front {
+    background-color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+    color: #333;
+    flex: 0 0 19%;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    padding: 8px 10px;
+    margin-right: 5px;
+}
+
+.self-user-phone-middle {
+    height: 32px;
+    border: 0.7px solid #e0e0e0;
+    background-color: #fff;
+    border-radius: 4px;
+    flex: 0 0 49%;
+    width: 100%;
+    margin-right: 5px;
+}
+
+.self-security-flex-box {
+    display: block;
+}
+
 @media screen and (min-width:992px) {
     .order-check-wrap {
         padding: 0;
