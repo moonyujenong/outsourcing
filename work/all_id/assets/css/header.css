@@ -554,19 +554,19 @@
 }
 
 .menu-content-list.active .menu-left-icon.down-icon {
-  background-image: url(../img/down-on.png);
+  background-image: url(../img/down-on.svg);
 }
 
 .menu-content-list.active .menu-left-icon.market-icon {
-  background-image: url(../img/market-on.png);
+  background-image: url(../img/market-on.svg);
 }
 
 .menu-content-list.active .menu-left-icon.pay-icon {
-  background-image: url(../img/pay-on.png);
+  background-image: url(../img/pay-on.svg);
 }
 
 .menu-content-list.active .menu-left-icon.logout-icon {
-  background-image: url(../img/logout-on.png);
+  background-image: url(../img/logout-on.svg);
 }
 
 .menu-content-list.active .side-menu-text {
@@ -585,19 +585,19 @@
 }
 
 .menu-content-list .menu-left-icon.down-icon {
-  background-image: url(../img/down.png);
+  background-image: url(../img/down.svg);
 }
 
 .menu-content-list .menu-left-icon.market-icon {
-  background-image: url(../img/market.png);
+  background-image: url(../img/market.svg);
 }
 
 .menu-content-list .menu-left-icon.pay-icon {
-  background-image: url(../img/pay.png);
+  background-image: url(../img/pay.svg);
 }
 
 .menu-content-list .menu-left-icon.logout-icon {
-  background-image: url(../img/logout.png);
+  background-image: url(../img/logout.svg);
 }
 
 .side-menu-text {
@@ -685,6 +685,54 @@
 
 .play-icon-box {
   cursor: pointer;
+}
+
+.side-advertising-logon-box {
+  padding: 12px 29px;
+}
+
+.side-logon-btn {
+  -webkit-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border: solid 0.7px #f2f2f2;
+  background-color: #fff;
+  border-radius: 5.7px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.side-logon-btn:last-child {
+  margin-bottom: 0;
+}
+
+.side-logon-btn img {
+  width: 85px;
+}
+
+.advertising-item {
+  display: block;
+  margin-bottom: 12px;
+  width: 100%;
+  border-radius: 5.7px;
+  border: solid 0.7px #f2f2f2;
+  overflow: hidden;
+  height: 54px;
+  background-color: #ccc;
+}
+
+.advertising-item img {
+  height: 100%;
+}
+
+.advertising-item:last-child {
+  margin-bottom: 0;
+}
+
+.advertising-box {
+  margin-top: 12px;
 }
 
 @media screen and (min-width: 992px) {
@@ -838,16 +886,16 @@
     color: #e55132;
   }
   .menu-content-list.active .menu-left-icon.market-icon {
-    background-image: url(../img/market.png);
+    background-image: url(../img/market.svg);
   }
   .menu-content-list.active .menu-left-icon.down-icon {
-    background-image: url(../img/down.png);
+    background-image: url(../img/down.svg);
   }
   .menu-content-list.active .menu-left-icon.pay-icon {
-    background-image: url(../img/pay.png);
+    background-image: url(../img/pay.svg);
   }
   .menu-content-list.active .menu-left-icon.logout-icon {
-    background-image: url(../img/logout.png);
+    background-image: url(../img/logout.svg);
   }
   .side-menu-text {
     font-size: 19px;

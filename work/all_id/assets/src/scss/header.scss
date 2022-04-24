@@ -553,20 +553,20 @@
         }
 
         .menu-left-icon {
-            &.down-icon {
-                background-image: url(../img/down-on.png);
+            &.down-icon { 
+                background-image: url(../img/down-on.svg);
             }
 
             &.market-icon {
-                background-image: url(../img/market-on.png);
+                background-image: url(../img/market-on.svg);
             }
 
             &.pay-icon {
-                background-image: url(../img/pay-on.png);
+                background-image: url(../img/pay-on.svg);
             }
 
             &.logout-icon {
-                background-image: url(../img/logout-on.png);
+                background-image: url(../img/logout-on.svg);
             }
         }
         
@@ -588,19 +588,19 @@
 
 
         &.down-icon {
-            background-image: url(../img/down.png);
+            background-image: url(../img/down.svg);
         }
 
         &.market-icon {
-            background-image: url(../img/market.png);
+            background-image: url(../img/market.svg);
         }
 
         &.pay-icon {
-            background-image: url(../img/pay.png);
+            background-image: url(../img/pay.svg);
         }
 
         &.logout-icon {
-            background-image: url(../img/logout.png);
+            background-image: url(../img/logout.svg);
         }
     }
 
@@ -699,6 +699,53 @@
 
 .play-icon-box {
     cursor: pointer;
+}
+
+.side-advertising-logon-box {
+    padding: 12px 29px;
+}
+
+.side-logon-btn {
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+    border: solid 0.7px #f2f2f2;
+    background-color: #fff;
+    border-radius: 5.7px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    img {
+        width: 85px;
+    }
+}
+
+.advertising-item {
+    display: block;
+    margin-bottom: 12px;
+    width: 100%;
+    border-radius: 5.7px;
+    border: solid 0.7px #f2f2f2;
+    overflow: hidden;
+    height: 54px;
+    background-color: #ccc;
+
+    img {
+        height: 100%;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.advertising-box {
+    margin-top: 12px;
 }
 
 @media screen and (min-width:992px) {
@@ -913,19 +960,19 @@
 
             .menu-left-icon{
                 &.market-icon {
-                    background-image: url(../img/market.png);
+                    background-image: url(../img/market.svg);
                 }
 
                 &.down-icon {
-                    background-image: url(../img/down.png);
+                    background-image: url(../img/down.svg);
                 }
 
                 &.pay-icon {
-                    background-image: url(../img/pay.png);
+                    background-image: url(../img/pay.svg);
                 }
 
                 &.logout-icon {
-                    background-image: url(../img/logout.png);
+                    background-image: url(../img/logout.svg);
                 }
             }
             

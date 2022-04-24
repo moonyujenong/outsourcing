@@ -435,11 +435,13 @@
         background-position: center;
         background-repeat: no-repeat;
         flex: 0 0 50%;
+        border-radius: 4px;
     }
     .item-content-box {
         position: relative;
         padding-left: 8px;
         flex: 0 0 50%;
+        overflow: hidden;
     }
 
     .user-account-name {
@@ -453,7 +455,7 @@
         letter-spacing: normal;
         position: relative;
         margin-bottom: 8px;
-        justify-content: center;
+        justify-content: flex-start;
 
         /* &::before {
             content: '';
@@ -631,6 +633,8 @@
     font-size: 12px;
     font-weight: 600;
     color: #fff;
+    display: flex;
+    align-items: center;
 }
 
 .user-state-money-text {
@@ -897,6 +901,7 @@
     font-weight: 500;
     color: #e85549;
     cursor: pointer;
+    white-space: nowrap;
     
     img {
         width: 13px;
