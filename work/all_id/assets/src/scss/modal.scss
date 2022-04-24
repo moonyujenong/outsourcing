@@ -691,10 +691,17 @@
     align-items: center;
     color: #e0e0e0;
     margin: 0 -3px 8px;
+    position: relative;
 
     &:last-child {
         margin-bottom: 0;
     }
+}
+
+.pin-number-delete-btn {
+    position: absolute;
+    right: -14px;
+
 }
 
 .pin-number-input {
@@ -722,6 +729,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin-bottom: 6px;
 
     img {
         width: 13px;

@@ -719,10 +719,16 @@
           align-items: center;
   color: #e0e0e0;
   margin: 0 -3px 8px;
+  position: relative;
 }
 
 .gift-card-pin-number-box:last-child {
   margin-bottom: 0;
+}
+
+.pin-number-delete-btn {
+  position: absolute;
+  right: -14px;
 }
 
 .pin-number-input {
@@ -756,6 +762,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
+  margin-bottom: 6px;
 }
 
 .pin-plus-btn img {
