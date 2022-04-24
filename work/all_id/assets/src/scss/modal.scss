@@ -269,6 +269,14 @@
         cursor: pointer;
         border: 0;
 
+        &.pay-application-pc {
+            display: none;
+        }
+        
+        &.pay-page-mobile {
+            display: block;
+        }
+
 
         &.custom-white-btn {
             border-radius: 3px;
@@ -724,6 +732,7 @@
 .pay-transfar-info {
     border: 1px solid #e0e0e0;
     box-sizing: border-box;
+    margin-bottom: 8px;
 }
 
 .pay-transfar-info-item {
@@ -758,7 +767,7 @@
     height: 140px;
     object-fit: cover;
     margin: 20px auto;
-    display: block;
+    display: none;
 }
 
 .self-user-info-list {
@@ -856,6 +865,10 @@
 }
 
 @media screen and (min-width:992px) {
+    .pay-qr  {
+        display: block;
+    }
+   
     .order-check-wrap {
         padding: 0;
     }
@@ -991,6 +1004,14 @@
             line-height: 1.04;
             letter-spacing: 1.38px;
             margin: 0;
+
+            &.pay-application-pc {
+                display:block;
+            }
+            
+            &.pay-page-mobile {
+                display: none;
+            }
 
             &.custom-white-btn {
                 font-size: 23px;
