@@ -487,6 +487,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+  border-radius: 0 4px 4px 0;
 }
 
 .side-menu .side-menu-inner-head {
