@@ -55,7 +55,6 @@
                파일다운
                <img alt="모바일 gnb 메뉴 펼쳐보기 아이콘" class="mobile-gnb-menu-open-icon" src="./assets/img/icon-menu-scroll-down.svg" />
             </a>
-            <!-- TODO 1차 메뉴 클릭하였을떄 투뎁스 메뉴 존재시 해당 ul 에 클래스 on 추가하여 block 처리 -->
             <ul class="mobile-gnb-inner-menu-list">
                <li class="mobile-gnb-inner-menu-item">
                   <a href="#" class="mobile-gnb-inner-menu-link">오버워치</a>
@@ -68,7 +67,6 @@
                구매상점
                <img alt="모바일 gnb 메뉴 펼쳐보기 아이콘" class="mobile-gnb-menu-open-icon" src="./assets/img/icon-menu-scroll-down.svg" />
             </a>
-            <!-- TODO 1차 메뉴 클릭하였을떄 투뎁스 메뉴 존재시 해당 ul 에 클래스 on 추가하여 block 처리 -->
             <ul class="mobile-gnb-inner-menu-list">
                <li class="mobile-gnb-inner-menu-item">
                   <a href="#" class="mobile-gnb-inner-menu-link">오버워치</a>
@@ -81,7 +79,6 @@
                충전신청
                <img alt="모바일 gnb 메뉴 펼쳐보기 아이콘" class="mobile-gnb-menu-open-icon" src="./assets/img/icon-menu-scroll-down.svg" />
             </a>
-            <!-- TODO 1차 메뉴 클릭하였을떄 투뎁스 메뉴 존재시 해당 ul 에 클래스 on 추가하여 block 처리 -->
             <ul class="mobile-gnb-inner-menu-list">
                <li class="mobile-gnb-inner-menu-item">
                   <a href="#" class="mobile-gnb-inner-menu-link">오버워치</a>
@@ -94,7 +91,6 @@
                튜토리얼 영상
                <img alt="모바일 gnb 메뉴 펼쳐보기 아이콘" class="mobile-gnb-menu-open-icon" src="./assets/img/icon-menu-scroll-down.svg" />
             </a>
-            <!-- TODO 1차 메뉴 클릭하였을떄 투뎁스 메뉴 존재시 해당 ul 에 클래스 on 추가하여 block 처리 -->
             <ul class="mobile-gnb-inner-menu-list">
                <li class="mobile-gnb-inner-menu-item">
                   <a href="#" class="mobile-gnb-inner-menu-link">오버워치</a>
@@ -107,7 +103,6 @@
                자유게시판
                <img alt="모바일 gnb 메뉴 펼쳐보기 아이콘" class="mobile-gnb-menu-open-icon" src="./assets/img/icon-menu-scroll-down.svg" />
             </a>
-            <!-- TODO 1차 메뉴 클릭하였을떄 투뎁스 메뉴 존재시 해당 ul 에 클래스 on 추가하여 block 처리 -->
             <ul class="mobile-gnb-inner-menu-list">
                <li class="mobile-gnb-inner-menu-item">
                   <a href="#" class="mobile-gnb-inner-menu-link">오버워치</a>
@@ -120,7 +115,6 @@
                자주 묻는 질문 영상
                <img alt="모바일 gnb 메뉴 펼쳐보기 아이콘" class="mobile-gnb-menu-open-icon" src="./assets/img/icon-menu-scroll-down.svg" />
             </a>
-            <!-- TODO 1차 메뉴 클릭하였을떄 투뎁스 메뉴 존재시 해당 ul 에 클래스 on 추가하여 block 처리 -->
             <ul class="mobile-gnb-inner-menu-list">
                <li class="mobile-gnb-inner-menu-item">
                   <a href="#" class="mobile-gnb-inner-menu-link">오버워치</a>
@@ -130,4 +124,15 @@
       </ul>
    </div>
 </div>
+
+<script type="text/javascript">
+   $(function(){
+      $(".mobile-gnb-menu-list li .mobile-gnb-menu-link").click(function(){
+         $(".mobile-gnb-menu-link").removeClass('on');
+         $(this).addClass('on');
+         $(".mobile-gnb-inner-menu-list").slideUp(200)
+         $(this).siblings().stop().slideToggle(200);
+      });
+   });
+</script>
 

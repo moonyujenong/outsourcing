@@ -195,6 +195,13 @@
     &:hover {
         color: #0e0e0e;
     }
+
+    &.on {
+        .mobile-gnb-menu-open-icon {
+            transition: all .2s ease-in-out;
+            transform: rotate(0deg);
+        }
+    }
 }
 
 .mobile-gnb-menu-icon {
@@ -211,6 +218,7 @@
     width: 15px;
     object-fit: cover;
     transform: rotate(-90deg);
+    transition: all .2s ease-in-out;
 }
 
 .mobile-gnb-inner-menu-list {

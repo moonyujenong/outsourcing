@@ -222,6 +222,13 @@
   color: #0e0e0e;
 }
 
+.mobile-gnb-menu-link.on .mobile-gnb-menu-open-icon {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 .mobile-gnb-menu-icon {
   width: 16px;
   height: 16px;
@@ -239,6 +246,8 @@
      object-fit: cover;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .mobile-gnb-inner-menu-list {
