@@ -1,3 +1,133 @@
-<header class="theme-main all-id-header">
-   헤더
+<header class="theme-header all-id-header">
+   <!-- TODO 모바일 header -->
+   <div class="header-inner">
+      <div class="inner-left">
+         <!-- 모바일 슬라이드 메뉴 버튼 -->
+         <button class="mobile-snb">
+            <img alt="햄버거 버튼" src="./assets/img/icon-hamberger.svg" />
+         </button> 
+         <!-- 로고 -->
+         <a href="#" class="theme-logo">
+            <img alt="올 아이디 로고" src="./assets/img/logo.svg" />
+         </a>
+      </div>
+
+      <!-- 마이프로필 아이콘 -->
+      <button class="my-info-icon">
+         <img alt="마이 프로파일 아이콘" src="./assets/img/icon-profile.svg" />
+      </button>
+   </div>
+   <div class="header-notification-line">
+      <span class="header-notification-text">포인트 당첨!! 축하해요!       유저아이디 님께서 랜덤포인트 뽑기 3,000 포인트에 당첨되셨습니다!</span>
+   </div>
 </header>
+
+<div class="mobile-gnb-wrap">
+   <div class="mobile-gnb-top">
+      <button type="button" class="mobile-gnb-close">
+         <img alt="닫기 버튼" src="./assets/img/icon-mobile-gnb-close.svg" />
+      </button>
+      <a href="#" class="theme-logo">
+         <img alt="올 아이디 로고" src="./assets/img/logo.svg" />
+      </a>
+   </div>
+   <div class="mobile-gnb-space-box">
+      <span>아이디 거래의 모든 것 <br> 올아이디에 오신 것을 환영합니다.</span>
+   </div>
+
+   <div class="mobile-gnb-user-btns">
+      <a href="#" class="mobile-gnb-user-pay-list">구매기록</a>
+      <!-- TODO 새로운 메세지 알림 시, 클래스 new 추가 -->
+      <a href="#" class="mobile-gnb-user-message new">메세지</a>
+   </div>
+   <div class="mobile-gnb-user-has">
+      <!-- TODO 잔액 표기 -->
+      <span class="mobile-gnb-user-balance">잔액 : 10,000원</span>
+      <!-- TODO 포인트 표기 -->
+      <span class="mobile-gnb-user-point">10,000 포인트</span>
+   </div>
+
+   <div class="mobile-gnb-menu">
+      <ul class="mobile-gnb-menu-list">
+         <li class="mobile-gnb-menu-item">
+            <a href="#" class="mobile-gnb-menu-link">
+               <img alt="파일다운 아이콘" class="mobile-gnb-menu-icon" src="./assets/img/menu-down-icon.svg" />
+               파일다운
+               <img alt="모바일 gnb 메뉴 펼쳐보기 아이콘" class="mobile-gnb-menu-open-icon" src="./assets/img/icon-menu-scroll-down.svg" />
+            </a>
+            <!-- TODO 1차 메뉴 클릭하였을떄 투뎁스 메뉴 존재시 해당 ul 에 클래스 on 추가하여 block 처리 -->
+            <ul class="mobile-gnb-inner-menu-list">
+               <li class="mobile-gnb-inner-menu-item">
+                  <a href="#" class="mobile-gnb-inner-menu-link">오버워치</a>
+               </li>
+            </ul>
+         </li>
+         <li class="mobile-gnb-menu-item">
+            <a href="#" class="mobile-gnb-menu-link">
+               <img alt="구매상점 아이콘" class="mobile-gnb-menu-icon" src="./assets/img/menu-shop-icon.svg" />
+               구매상점
+               <img alt="모바일 gnb 메뉴 펼쳐보기 아이콘" class="mobile-gnb-menu-open-icon" src="./assets/img/icon-menu-scroll-down.svg" />
+            </a>
+            <!-- TODO 1차 메뉴 클릭하였을떄 투뎁스 메뉴 존재시 해당 ul 에 클래스 on 추가하여 block 처리 -->
+            <ul class="mobile-gnb-inner-menu-list">
+               <li class="mobile-gnb-inner-menu-item">
+                  <a href="#" class="mobile-gnb-inner-menu-link">오버워치</a>
+               </li>
+            </ul>
+         </li>
+         <li class="mobile-gnb-menu-item">
+            <a href="#" class="mobile-gnb-menu-link">
+               <img alt="충전신청 아이콘" class="mobile-gnb-menu-icon" src="./assets/img/menu-money-icon.svg" />
+               충전신청
+               <img alt="모바일 gnb 메뉴 펼쳐보기 아이콘" class="mobile-gnb-menu-open-icon" src="./assets/img/icon-menu-scroll-down.svg" />
+            </a>
+            <!-- TODO 1차 메뉴 클릭하였을떄 투뎁스 메뉴 존재시 해당 ul 에 클래스 on 추가하여 block 처리 -->
+            <ul class="mobile-gnb-inner-menu-list">
+               <li class="mobile-gnb-inner-menu-item">
+                  <a href="#" class="mobile-gnb-inner-menu-link">오버워치</a>
+               </li>
+            </ul>
+         </li>
+         <li class="mobile-gnb-menu-item">
+            <a href="#" class="mobile-gnb-menu-link">
+               <img alt="튜토리얼 영상 아이콘" class="mobile-gnb-menu-icon" src="./assets/img/menu-video-icon.svg" />
+               튜토리얼 영상
+               <img alt="모바일 gnb 메뉴 펼쳐보기 아이콘" class="mobile-gnb-menu-open-icon" src="./assets/img/icon-menu-scroll-down.svg" />
+            </a>
+            <!-- TODO 1차 메뉴 클릭하였을떄 투뎁스 메뉴 존재시 해당 ul 에 클래스 on 추가하여 block 처리 -->
+            <ul class="mobile-gnb-inner-menu-list">
+               <li class="mobile-gnb-inner-menu-item">
+                  <a href="#" class="mobile-gnb-inner-menu-link">오버워치</a>
+               </li>
+            </ul>
+         </li>
+         <li class="mobile-gnb-menu-item">
+            <a href="#" class="mobile-gnb-menu-link">
+               <img alt="자유게시판 영상 아이콘" class="mobile-gnb-menu-icon" src="./assets/img/menu-board-icon.svg" />
+               자유게시판
+               <img alt="모바일 gnb 메뉴 펼쳐보기 아이콘" class="mobile-gnb-menu-open-icon" src="./assets/img/icon-menu-scroll-down.svg" />
+            </a>
+            <!-- TODO 1차 메뉴 클릭하였을떄 투뎁스 메뉴 존재시 해당 ul 에 클래스 on 추가하여 block 처리 -->
+            <ul class="mobile-gnb-inner-menu-list">
+               <li class="mobile-gnb-inner-menu-item">
+                  <a href="#" class="mobile-gnb-inner-menu-link">오버워치</a>
+               </li>
+            </ul>
+         </li>
+         <li class="mobile-gnb-menu-item">
+            <a href="#" class="mobile-gnb-menu-link">
+               <img alt="자주 묻는 질문 영상 아이콘" class="mobile-gnb-menu-icon" src="./assets/img/menu-qna-icon.svg" />
+               자주 묻는 질문 영상
+               <img alt="모바일 gnb 메뉴 펼쳐보기 아이콘" class="mobile-gnb-menu-open-icon" src="./assets/img/icon-menu-scroll-down.svg" />
+            </a>
+            <!-- TODO 1차 메뉴 클릭하였을떄 투뎁스 메뉴 존재시 해당 ul 에 클래스 on 추가하여 block 처리 -->
+            <ul class="mobile-gnb-inner-menu-list">
+               <li class="mobile-gnb-inner-menu-item">
+                  <a href="#" class="mobile-gnb-inner-menu-link">오버워치</a>
+               </li>
+            </ul>
+         </li>
+      </ul>
+   </div>
+</div>
+
