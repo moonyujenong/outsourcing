@@ -133,6 +133,18 @@
          $(".mobile-gnb-inner-menu-list").slideUp(200)
          $(this).siblings().stop().slideToggle(200);
       });
+
+      $('.mobile-snb').click(function(){
+         $(".mobile-gnb-wrap").animate({
+            "left" : "0"
+         }, 200)
+      });
+
+      $('.mobile-gnb-close').click(function(){
+         $(".mobile-gnb-wrap").animate({
+            "left" : "-100%"
+         },200);
+      })
    });
 </script>
 

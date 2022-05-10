@@ -8,7 +8,6 @@
 
 .mobile-snb {
     width: 21px;
-    height: 16px;
     margin-right: 12px;
     cursor: pointer;
 }
@@ -53,8 +52,9 @@
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0;
+    width: 100%;
     background-color: #fff;
+    left: -100%;
 
     .theme-logo {
         width: 48px;
@@ -68,7 +68,6 @@
 
 .mobile-gnb-close {
     width: 17px;
-    height: 17px;
     margin-right: 17px;
     cursor: pointer;
 
