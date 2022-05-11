@@ -1,0 +1,26 @@
+.main-visual-banner-wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.visual-slide {
+  height: 603px;
+  overflow: hidden;
+}
+
+.visual-banner-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .swiper-button-next.visual-button-next, .swiper-button-prev.visual-button-prev, .visual-pagination {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

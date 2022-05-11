@@ -1,3 +1,69 @@
 <main class="theme-main all-id-main" id="container">
-    메인
+    <div class="row">
+        <div class="col-md-2">1</div>
+        <div class="col-md-8">
+            <div class="main-inner">
+                <!-- TODO 배너 슬라이드 -->
+                <div class="main-visual-banner-wrap">
+                    <div class="swiper visual-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <!-- TODO 배너 이미지 -->
+                                <div class="visual-banner-img" style="background-image: url(./assets/img/visual-img.png);"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next visual-button-next"></div>
+                        <div class="swiper-button-prev visual-button-prev"></div>
+                        <div class="swiper-pagination visual-pagination"></div>
+                    </div>
+                </div>
+                <!-- // TODO 배너 슬라이드 -->
+
+                <div class="page-enter-user-graphic">
+                    div.page-enter-user-graphic-onne
+                    <ul class="page-enter-user-list">
+                        <li class="page-enter-user-item">
+                            <img alt="전체 접속자 아이콘" src="" />
+                            <span class="page-enter-user-category">전체 접속자수</span>
+                            <p class="page-enter-user-length">2,444명</p>
+                        </li>
+                        <li class="page-enter-user-item">
+                            <img alt="오늘 접속자 아이콘" src="" />
+                            <span class="page-enter-user-category">오늘 접속자수</span>
+                            <p class="page-enter-user-length">2,444명</p>
+                        </li>
+                        <li class="page-enter-user-item">
+                            <img alt="어제 접속자 아이콘" src="" />
+                            <span class="page-enter-user-category">어제 접속자수</span>
+                            <p class="page-enter-user-length">2,444명</p>
+                        </li>
+                        <li class="page-enter-user-item">
+                            <img alt="현재 접속자 아이콘" src="" />
+                            <span class="page-enter-user-category">현재 접속자 수</span>
+                            <p class="page-enter-user-length">2,444명</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-2">3</div>
+    </div>
 </main>
+
+<script type="text/javascript">
+    $(function(){
+        var swiper = new Swiper(".visual-slide", {
+        slidesPerView: 1,
+        autoplay:true,
+        loop:true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    });
+</script>
