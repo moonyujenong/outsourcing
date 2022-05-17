@@ -229,6 +229,97 @@
     min-width: 60px;
 }
 
+.category-sort-list-wrap {
+    background-color: #fff;
+}
+
+.category-slide-wrap {
+    display: block;
+    position: relative;
+
+    .swiper-slide {
+        width: auto;
+    }
+
+    .category-slide-item {
+        border-radius: 100px;
+        border: 1px solid #f1f1f1;
+        background-color: #fff;
+        display: block;
+        padding: 5px 20px;
+        letter-spacing: -0.24px;
+    }
+}
+
+.category-sort-list-outline {
+    max-width: 1170px;
+    padding: 64px 15px 89px;
+    position: relative;
+}
+
+.category-slide-title {
+    display: block;
+    letter-spacing: -0.15px;
+    margin-bottom: 17px;
+}
+
+.category-move-btn-box {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 80px;
+
+    .category-slide-button-next, .category-slide-button-prev {
+        &::after {
+            width: 14px;
+            height: 14px;
+            display: block;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+    }
+
+    .category-slide-button-next {
+        &::after {
+            content: '';
+            background-image: url(../img/category-before-arrow.svg);
+            transform: rotate(180deg);
+        }
+    }
+
+    .category-slide-button-prev {
+        &::after {
+            content: '';
+            background-image: url(../img/category-before-arrow.svg);
+        }
+    }
+}
+
+.category-content-item {
+    padding: 17px 14px 16px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+}
+
+.category-content-item-flex {
+    display: flex;
+    align-items: flex-start;
+}
+
+.category-content-item-img {
+    flex: 0 0 50%;
+    padding-top: 32%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.category-content-info {
+    flex: 0 0 50%;
+    margin-left: 11px;
+}
+
 @media screen and (max-width:992px) {
     .swiper-button-next.visual-button-next, .swiper-button-prev.visual-button-prev, .visual-pagination {
         display: none;
