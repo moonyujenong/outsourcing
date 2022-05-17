@@ -72,8 +72,110 @@
     background-color: #f7f7f7;
 }
 
-.ser-board-contect-inner {
+.user-board-contect-inner {
     padding: 48px 20px;
+}
+
+.user-board-contect-item {
+    padding: 17px 14px;
+    background-color: #fff;
+    margin-bottom: 14px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.user-board-title {
+    padding: 0 13px 15px;
+    margin: 0 8px;
+    border-bottom: 1px solid #f6f6f6;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-board-contect-content-wrap {
+    margin-top: 17px;
+    max-height: 280px;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 0 2px;
+}
+
+.user-board-contect-content-wrap--pay-list {
+    background-color: #f7f7f7;
+    padding: 14px 15px;
+}
+
+.user-board-contect-content-box {
+   padding: 20px 17px;
+   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+   margin-bottom: 14px;
+   background-color: #fff;
+}
+
+.user-board-content-title {
+    font-weight: 600;
+    letter-spacing: -0.12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.user-board-content-upload-time {
+    font-weight: 500;
+    letter-spacing: -0.1px;
+}
+
+.user-board-content-text {
+    font-weight: 200;
+    letter-spacing: -0.12px;
+    line-height: 1.5;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 34px;
+    margin-bottom: 0;
+    display: -webkit-box;
+}
+
+.user-board-content-label {
+    display: block;
+    border-radius: 100px;
+    padding: 3px 10px;
+    background-color: #ffd6d6;
+    text-align: center;
+    margin-right: 6px;
+    font-weight: 600;
+    letter-spacing: normal;
+}
+
+.user-board-content-title--pay-list {
+    justify-content: flex-start;
+}
+
+.user-board-content-text--pay-list {
+    -webkit-line-clamp: 1;
+    height: 16px;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.user-board-pay-length {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-weight: 600;
+    margin: 0;
+}
+
+.user-board-contect-content-box--pay-list {
+    box-shadow: none;
+    padding: 18px 17px 13px;
 }
 
 @media screen and (max-width:992px) {
