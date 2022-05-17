@@ -451,6 +451,12 @@
   margin-right: 6px;
   font-weight: 600;
   letter-spacing: normal;
+  color: #ff7b7b;
+}
+
+.user-board-content-label.loser {
+  background-color: #e9e9e9;
+  color: #949494;
 }
 
 .user-board-content-title--pay-list {
@@ -474,7 +480,7 @@
   margin: 0;
 }
 
-.user-board-contect-content-box--pay-list {
+.user-board-contect-content-box--none-shadow {
   -webkit-box-shadow: none;
           box-shadow: none;
   padding: 18px 17px 13px;
