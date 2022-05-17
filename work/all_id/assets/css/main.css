@@ -210,6 +210,12 @@
   padding: 18px 17px 13px;
 }
 
+.user-borad-winner {
+  display: block;
+  margin: 0;
+  font-weight: 200;
+}
+
 @media screen and (max-width: 992px) {
   .swiper-button-next.visual-button-next, .swiper-button-prev.visual-button-prev, .visual-pagination {
     display: none;
