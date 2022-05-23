@@ -629,6 +629,80 @@
   margin-left: 11px;
 }
 
+.category-content-safe-pay-label {
+  display: block;
+  border-radius: 100px;
+  background-color: #d7ffbf;
+  padding: 3px 10px;
+  margin-bottom: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 600;
+}
+
+.category-content-title {
+  display: block;
+  margin-bottom: 9px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-line-clamp: 1;
+}
+
+.category-content-show-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 -3px;
+}
+
+.show-more-btn {
+  border-radius: 5px;
+  border: 1px solid #f1f1f1;
+  background-color: #fff;
+  margin: 0 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.show-more-btn img {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.category-pay-btn {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  background-color: #f25a4d;
+  text-align: center;
+  padding: 10px;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 992px) {
   .swiper-button-next.visual-button-next, .swiper-button-prev.visual-button-prev, .visual-pagination {
     display: none;
