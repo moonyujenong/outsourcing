@@ -279,6 +279,12 @@
   display: block;
   padding: 5px 20px;
   letter-spacing: -0.24px;
+  font-weight: 500;
+}
+
+.category-slide-wrap .category-slide-item.active {
+  background-color: #1c1c1c;
+  color: #fff !important;
 }
 
 .category-sort-list-outline {
@@ -325,6 +331,11 @@
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   background-color: #fff;
+  margin-bottom: 11px;
+}
+
+.category-content-item:last-child {
+  margin-bottom: 0;
 }
 
 .category-content-item-flex {
@@ -430,6 +441,84 @@
 
 .category-content-item-wrap {
   margin: 23px 0 0;
+}
+
+.popular-board-wrap {
+  background-color: #f7f7f7;
+}
+
+.popular-board-inner {
+  padding: 50px 37px 85px;
+}
+
+.popular-board-title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 38px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.popular-board-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: -0.15px;
+  margin: 0;
+}
+
+.popular-board-hot-label {
+  display: block;
+  margin-left: 3px;
+  padding: 3px 12px;
+  border-radius: 100px;
+  background-color: #f53a31;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+.popular-board-more-view {
+  display: block;
+  letter-spacing: -0.1px;
+  font-weight: 500;
+}
+
+.popular-list-item-wrap {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.popular-list-item-info {
+  padding: 24px 26px;
+}
+
+.popular-list-item-title {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 700;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  white-space: nowrap;
+}
+
+.popular-list-item-content {
+  font-weight: 500;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 992px) {

@@ -255,6 +255,7 @@
                                 <div class="swiper-wrapper">
                                     <!-- TODO 카테고리 아이템 슬라이드 -->
                                     <div class="swiper-slide">
+                                        <!-- TODO 선택 시 클래스 active 추가하여 활성화 -->
                                         <span class="category-slide-item" style="font-size: 12px; color:#0e0e0e;">전체</span>
                                     </div>
                                     <div class="swiper-slide">
@@ -301,6 +302,58 @@
                                 <!-- TODO 결제하기 버튼 -->
                                 <a href="" class="category-pay-btn" style="color: #fff; font-size:11px;">결제하기</a>
                             </div>
+
+                            <div class="category-content-item">
+                                <div class="category-content-item-flex">
+                                    <div class="category-content-item-img" style="background-image: url(./assets/img/visual-img.png);"></div>
+                                    <div class="category-content-info">
+                                        <span class="category-content-safe-pay-label" style="font-size:9px; color:#6dbd43;">안전결제</span>
+                                        <h3 class="category-content-title" style="font-size: 12px; color:#0e0e0e;">오버워치 금장 계정(Lv.545)</h3>
+                                        <div class="category-content-show-more">
+                                            <button type="button" class="show-more-btn explan-show" style="color: #0e0e0e; font-size:10px;">
+                                                <img src="./assets/img/category-list-explain-icon.svg" alt="설명보기 아이콘">
+                                                설명보기
+                                            </button>
+                                            <button type="button" class="show-more-btn video-show" style="color: #0e0e0e; font-size:10px;">
+                                                <img src="./assets/img/category-list-video-icon.svg" alt="영상보기 아이콘">
+                                                영상보기
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- TODO 결제하기 버튼 -->
+                                <a href="" class="category-pay-btn" style="color: #fff; font-size:11px;">결제하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TODO 인기있는 게시판 -->
+                <div class="popular-board-wrap">
+                    <div class="popular-board-inner">
+                        <div class="popular-board-title-box">
+                            <h3 class="popular-board-title" style="color: #0e0e0e; font-size:15px;">
+                                인기있는 상품
+                                <span style=" color: #fff; font-size:10px;" class="popular-board-hot-label">HOT</span>
+                            </h3>
+                            <a href="#" class="popular-board-more-view" style="font-size:10px; color:#0e0e0e;">전체보기</a>
+                        </div>
+                        
+                        <div class="popular-list-wrap">
+                            <div class="swiper popular-list-slide">
+                                <div class="swiper-slide">
+                                    <div class="popular-list-item-wrap" style="background-color: #fff;">
+                                        <img alt="인기 리스트 썸네일" src="" />
+
+                                        <div class="popular-list-item-info">
+                                            <h3 class="popular-list-item-title" style="font-size: 14px; color:#0e0e0e;">제목을 입력해주세요. 한줄이 최대입니다.</h3>
+                                            <p class="popular-list-item-content" style="font-size: 12px; color:#0e0e0e;">이곳은 부제목을 입력하는 곳입니다. 최대 한줄입니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next popular-slide-button-next"></div>
+                            <div class="swiper-button-prev popular-slide-button-prev"></div>
                         </div>
                     </div>
                 </div>
@@ -332,6 +385,13 @@
           nextEl: ".swiper-button-next.category-slide-button-next",
           prevEl: ".swiper-button-prev.category-slide-button-prev",
         }
+      });
+
+      var swiper = new Swiper(".popular-list-slide", {
+        navigation: {
+          nextEl: ".swiper-button-next.popular-slide-button-next",
+          prevEl: ".swiper-button-prev.popular-slide-button-prev",
+        },
       });
     });
 </script>
