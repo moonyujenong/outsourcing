@@ -244,6 +244,11 @@ main {
   display: block;
 }
 
+.live-chatting-link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
 .live-chatting-list-wrap {
   padding: 17px;
   overflow: hidden;
@@ -365,6 +370,10 @@ main {
   cursor: pointer;
 }
 
+.chatting-export-btn:focus, .chatting-export-btn:active {
+  outline: none;
+}
+
 .chatting-input {
   border: 0;
   display: block;
@@ -443,6 +452,8 @@ main {
 .new-board-tab, .news-board-tab {
   display: none;
   padding: 27px 0 0;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 .new-board-tab.on, .news-board-tab.on {
@@ -527,7 +538,6 @@ main {
 }
 
 .telegram-id-text {
-  margin-left: 25px;
   font-size: 15px;
   font-weight: 500;
   color: #fff;
@@ -643,6 +653,26 @@ main {
   padding: 0;
   padding-bottom: 11px;
   margin: 0;
+  height: 130px;
+  overflow: hidden;
+  overflow-y: auto;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+
+.payment-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.payment-list::-webkit-scrollbar-track {
+  background: #707070;
+  border-radius: 100px;
+}
+
+.payment-list::-webkit-scrollbar-thumb {
+  background: #f3f3f3;
+  border-radius: 100px;
 }
 
 .payment-item {
@@ -742,6 +772,10 @@ main {
   background-color: #ffba2e;
 }
 
+.total-payment-btn:active, .total-payment-btn:focus {
+  outline: none;
+}
+
 .live-chatting-text-box {
   margin-top: 18px;
   width: 100%;
@@ -749,6 +783,12 @@ main {
   padding: 17px;
   text-align: center;
   background-color: #1c1c1c;
+  border: 0;
+  cursor: pointer;
+}
+
+.live-chatting-text-box:focus, .live-chatting-text-box:active {
+  outline: none;
 }
 
 .live-chatting-text-item {
