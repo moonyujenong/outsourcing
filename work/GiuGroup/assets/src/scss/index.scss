@@ -224,6 +224,11 @@ main {
   padding: 10px;
   width: 100%;
   display: block;
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
 }
 
 .live-chatting-list-wrap {
