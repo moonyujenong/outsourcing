@@ -264,7 +264,7 @@ main {
 }
 
 .live-chatting-list-wrap::-webkit-scrollbar {
-  width: 7px;
+  width: 3px;
 }
 
 .live-chatting-list-wrap::-webkit-scrollbar-track {
@@ -656,13 +656,24 @@ main {
 
 .payment-list-box {
   padding: 17px 21px;
+  position: relative;
+}
+
+.payment-list-box::after {
+  content: '';
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 20px;
+  height: 1px;
+  background-color: #5a5a5a;
+  position: absolute;
+  bottom: -5px;
 }
 
 .payment-list {
-  border-bottom: 1px solid #5a5a5a;
   list-style: none;
   padding: 0;
-  padding-bottom: 11px;
   margin: 0;
   height: 130px;
   overflow: hidden;
@@ -673,7 +684,7 @@ main {
 }
 
 .payment-list::-webkit-scrollbar {
-  width: 7px;
+  width: 3px;
 }
 
 .payment-list::-webkit-scrollbar-track {
@@ -696,7 +707,7 @@ main {
           align-items: center;
 }
 
-.payment-item img {
+.payment-item > img {
   width: 51px;
   min-width: 51px;
   height: 51px;
@@ -734,7 +745,7 @@ main {
 }
 
 .total-payment-box {
-  padding: 21px 6px 19px;
+  padding: 21px 30px 19px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -829,6 +840,30 @@ main {
 
 .col-center {
   width: 1088px;
+}
+
+.payment-delete-btn {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 17px;
+}
+
+.payment-delete-btn > img {
+  width: 15px;
+  height: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.payment-delete-btn:active, .payment-delete-btn:focus {
+  outline: none;
+}
+
+.total-payment-btn-box {
+  padding: 0 20px 16px;
 }
 
 /*# sourceMappingURL=index.css.map */
