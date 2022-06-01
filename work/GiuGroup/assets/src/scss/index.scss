@@ -20,7 +20,7 @@ main {
 }
 
 .theme-content-inner, .theme-header-inner {
-  width: 100%;
+  /* width: 100%; */
   max-width: 1742px;
   margin: 0 auto;
   position: relative;
@@ -168,7 +168,7 @@ main {
 
 .product-img {
   width: 100%;
-  padding-top: 100%;
+  padding-top:86%;
   object-fit: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -509,7 +509,7 @@ main {
 }
 
 .advertisement-item {
-  margin-bottom: 11px;
+  margin-bottom: 10px;
 
   &:last-child {
     margin-bottom: 0;
@@ -708,4 +708,22 @@ main {
   font-weight: 500;
   color: #fff;
   letter-spacing: -0.16px;
+}
+
+.theme-content-flex-wrap {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 -48px;
+}
+
+.theme-content-col {
+  padding: 0 24px;
+}
+
+.col-side {
+  width: 351px;
+}
+
+.col-center {
+  width: 1088px;
 }

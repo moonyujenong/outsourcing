@@ -24,7 +24,7 @@ main {
 }
 
 .theme-content-inner, .theme-header-inner {
-  width: 100%;
+  /* width: 100%; */
   max-width: 1742px;
   margin: 0 auto;
   position: relative;
@@ -183,7 +183,7 @@ main {
 
 .product-img {
   width: 100%;
-  padding-top: 100%;
+  padding-top: 86%;
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
@@ -545,7 +545,7 @@ main {
 }
 
 .advertisement-item {
-  margin-bottom: 11px;
+  margin-bottom: 10px;
 }
 
 .advertisement-item:last-child {
@@ -756,6 +756,28 @@ main {
   font-weight: 500;
   color: #fff;
   letter-spacing: -0.16px;
+}
+
+.theme-content-flex-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 -48px;
+}
+
+.theme-content-col {
+  padding: 0 24px;
+}
+
+.col-side {
+  width: 351px;
+}
+
+.col-center {
+  width: 1088px;
 }
 
 /*# sourceMappingURL=index.css.map */
