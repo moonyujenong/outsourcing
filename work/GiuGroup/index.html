@@ -225,9 +225,27 @@
         </div>
 
         <div class="theme-content-col col-center">
-          <div class="main-visual-slide-wrap">
+          <div class="main-visual-slide-wrap" style="--swiper-navigation-color: #fff;">
             <!-- TODO 메인 비주얼 배너 슬라이드 -->
             <div class="swiper main-visual-slide">
+              <!-- TODO 메인 비주얼 배너 슬라이드 상단  -->
+              <div class="main-visual-slide-top-inner">
+                <h3 class="main-visual-slide-top-inner-title">
+                  상단 배너 타이틀입니다. 
+                  <span class="main-visual-slide-top-right">
+                    등록 320000301 · 
+                    조회수 158 · 
+                    찜 0
+                  </span>
+                </h3>
+                <div class="main-visual-sub-info-list">
+                  840238m · 19년 01월식 · LPG(일반인 구입) · 중형차 · 1,999cc · 오토 · 쥐색 · 19사 3390
+                </div>
+                <!-- TODO 라벨 -->
+                <span class="main-visual-sub-label">엔카홀 서비스</span>
+              </div>
+              <!-- // 메인 비주얼 배너 슬라이드 상단  -->
+              
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img src="./assets/img/main-banner.png" alt="메인 배너">
@@ -237,41 +255,104 @@
                   <img src="./assets/img/main-banner.png" alt="메인 배너">
                 </div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
 
-              <div class="swiper-pagination"></div>
+              <!-- TODO 하단 띠배너 텍스트 박스 -->
+              <div class="main-visual-slide-bottom-line">
+                <span class="main-visual-slide-bottom-line-text">[엔카상담] 상담, 배송, 7일 책임환불제</span>
+              </div>
+              <!-- // 하단 띠배너 텍스트 박스 -->
+
+              <!-- <div class="swiper-pagination"></div> -->
             </div>
-          </div>
 
-          <!-- TODO 상품명 리스트 / 최대 3개 -->
-          <div class="product-list-wrap">
-            <ul class="product-list">
-              <li class="product-item">
-                <a href="" class="product-link">
-                  <!-- TODO 상품 이미지 -->
-                  <div class="product-img" style="background-image: url(./assets/img/main-banner.png);"></div>
-                  <!-- TODO 상품명 -->
-                  <span class="product-name">상품명을 입력해주세요 최대 한줄입니다.</span>
-                </a>
-              </li>
+            <!-- TODO 메인 비주얼 슬라이드 하단 이미지들 -->
+            <div thumbsSlider="" class="swiper main-visual-banner-bottom">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/img/main-banner.png" alt="메인 배너">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/main-banner.png" alt="메인 배너">
+                </div>
+              </div>
+            </div>
 
-              <li class="product-item">
-                <a href="" class="product-link">
-                  <!-- TODO 상품 이미지 -->
-                  <div class="product-img" style="background-image: url(./assets/img/main-banner.png);"></div>
-                  <!-- TODO 상품명 -->
-                  <span class="product-name">상품명을 입력해주세요 최대 한줄입니다.</span>
-                </a>
-              </li>
+            <div class="main-visual-bottom-information-box">
+              <div class="information-inner-box-top">
+                <div class="information-left">
+                  <ul class="information-left-list">
+                    <li class="information-left-item">
+                      <img src="./assets/img/1.png" alt="성능점검">
+                      <span class="information-left-text">성능점검</span>
+                    </li>
 
-              <li class="product-item">
-                <a href="" class="product-link">
-                  <!-- TODO 상품 이미지 -->
-                  <div class="product-img" style="background-image: url(./assets/img/main-banner.png);"></div>
-                  <!-- TODO 상품명 -->
-                  <span class="product-name">상품명을 입력해주세요 최대 한줄입니다.</span>
-                </a>
-              </li>
-            </ul>
+                    <li class="information-left-item">
+                      <img src="./assets/img/2.png" alt="보험이력">
+                      <span class="information-left-text">보험이력</span>
+                    </li>
+
+                    <li class="information-left-item">
+                      <img src="./assets/img/3.png" alt="시세">
+                      <span class="information-left-text">시세</span>
+                    </li>
+
+                    <li class="information-left-item">
+                      <img src="./assets/img/4.png" alt="판매자 정보">
+                      <span class="information-left-text">판매자정보</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="information-right">
+                  <span class="information-right--text">홈 서비스 예상 견적</span>
+                  <h3 class="total-price-text">1,350만원</h3>
+                  <button class="btn-service-application">홈 서비스 신청</button>
+                </div>
+              </div>
+
+              <div class="information-inner-box-bottom">
+                <ul class="information-btn-list left">
+                  <li class="information-btn-item">
+                    <button class="information-btn">신차가격</button>
+                  </li>
+
+                  <li class="information-btn-item">
+                    <button class="information-btn">팔린매물</button>
+                  </li>
+
+                  <li class="information-btn-item">
+                    <button class="information-btn">등급매물</button>
+                  </li>
+
+                  <li class="information-btn-item">
+                    <button class="information-btn">프린트</button>
+                  </li>
+
+                  <li class="information-btn-item">
+                    <button class="information-btn">신고</button>
+                  </li>
+
+                  <li class="information-btn-item">
+                    <button class="information-btn">공유</button>
+                  </li>
+                </ul>
+                <ul class="information-btn-list right">
+                  <li class="information-btn-item">
+                    <button class="information-btn">대출상품 조회</button>
+                  </li>
+
+                  <li class="information-btn-item">
+                    <button class="information-btn">보험금 조회</button>
+                  </li>
+
+                  <li class="information-btn-item">
+                    <button class="information-btn">리스상품 조회</button>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
           </div>
         </div>
 
@@ -455,11 +536,23 @@
 
     <script>
       $(function(){
-        var swiper = new Swiper(".main-visual-slide", {
-          pagination: {
-            el: ".swiper-pagination",
-          },
-        });
+      var swiper = new Swiper(".main-visual-banner-bottom", {
+        slidesPerView: "auto",
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+
+      var swiper2 = new Swiper(".main-visual-slide", {
+        spaceBetween: 10,
+        loop:true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
 
         /* new board */
         $(".new-board-tab-list li.new-board-tab-item").click(function(){
