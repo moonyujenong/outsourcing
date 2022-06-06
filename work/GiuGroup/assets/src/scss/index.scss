@@ -919,9 +919,6 @@ main {
 }
 
 .information-left-item {
-  padding: 0 5px;
-  display: flex;
-  align-items: center;
 
   img {
     width: 18px;
@@ -1014,6 +1011,19 @@ main {
   cursor: pointer;
 
   &:focus, &:active {
+    outline: none;
+  }
+}
+
+.information-left-item-btn {
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+
+  &:active, &:focus {
     outline: none;
   }
 }
