@@ -536,6 +536,7 @@
 
     <script>
       $(function(){
+<<<<<<< HEAD
       var swiper = new Swiper(".main-visual-banner-bottom", {
         slidesPerView: "auto",
         freeMode: true,
@@ -553,6 +554,14 @@
           swiper: swiper,
         },
       });
+=======
+        var swiper = new Swiper(".main-visual-slide", {
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          loop:true,
+        });
+>>>>>>> cd9cd30318848d919a166cf653a67393fb73d6da
 
         /* new board */
         $(".new-board-tab-list li.new-board-tab-item").click(function(){
