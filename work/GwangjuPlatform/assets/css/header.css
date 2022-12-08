@@ -1,0 +1,229 @@
+.theme-header {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50vw) translateZ(0);
+          transform: translateX(-50vw) translateZ(0);
+  background-color: #bde4fa;
+  position: fixed;
+  will-change: transform;
+  top: 0;
+  z-index: 90;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.theme-header .pc-mode {
+  display: none;
+}
+
+.theme-header .mobile-side-menu-wrap {
+  display: block;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  line-height: normal;
+}
+
+.theme-header .head-logo-box {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.theme-header .head-logo-box .mobile-logo {
+  display: block;
+  width: 70px;
+  height: auto;
+}
+
+.theme-header .head-logo-box .pc-logo {
+  display: none;
+}
+
+.theme-header .inner-header {
+  width: 100%;
+  max-width: 1280px;
+  padding: 17px 15px;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.theme-header .menu-btn {
+  width: 24px;
+  height: 24px;
+}
+
+.theme-header .menu-btn i {
+  color: #0a0a10;
+  font-size: 24px;
+}
+
+.mobile-side-menu.open .mobile-mode {
+  left: 0;
+}
+
+.mobile-side-menu.open .mobile-side-dimmed {
+  opacity: 1;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  visibility: visible;
+}
+
+.mobile-side-menu .mobile-mode .menu-list {
+  margin: 0;
+}
+
+.mobile-side-menu .mobile-mode .menu-list .menu-list-link {
+  color: #0a0a10;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: normal;
+  padding: 8px 15px;
+  display: block;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.mobile-mode {
+  left: -100%;
+  width: 85%;
+  max-width: 320px;
+  background-color: #bde4fa;
+  z-index: 99;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.mobile-mode .menu-list {
+  display: block;
+}
+
+.mobile-mode .menu-list .menu-list-item {
+  padding: 0;
+}
+
+.mobile-side-dimmed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 98;
+  visibility: hidden;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -12px;
+}
+
+.menu-list .menu-list-item {
+  padding: 0 5px;
+}
+
+.menu-list .menu-list-item .menu-list-link {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  padding: 36px 12px;
+  position: relative;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.menu-list .menu-list-item .menu-list-link:hover::before {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  width: 100%;
+  opacity: 0.85;
+}
+
+.mobile-nav-close-btn {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  line-height: normal;
+}
+
+.mobile-nav-close-btn i {
+  color: #fff;
+  font-size: 20px;
+}
+
+@media (min-width: 992px) {
+  .theme-header {
+    height: auto;
+  }
+  .theme-header .head-logo-box {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: relative;
+    -webkit-transform: initial;
+            transform: initial;
+    left: initial;
+  }
+  .theme-header .head-logo-box .mobile-logo {
+    display: none;
+  }
+  .theme-header .head-logo-box .pc-logo {
+    display: block;
+    width: 110px;
+    height: auto;
+  }
+  .theme-header .inner-header {
+    padding: 0 15px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .theme-header .pc-mode {
+    display: block;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .theme-header .mobile-side-menu-wrap {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .menu-list .menu-list-item .menu-list-link {
+    padding: 36px 7px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
