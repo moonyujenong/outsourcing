@@ -974,6 +974,7 @@
   width: calc(100vw * 192 / 375);
   display: block;
   margin: 0 auto 69px;
+  max-width: 332px;
 }
 
 .theme-footer .partner_site {
@@ -985,6 +986,7 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin: 0 0 20px;
 }
 
 .theme-footer .sns_list {
@@ -1048,6 +1050,17 @@
   padding: 0 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.theme-footer .menu_list.pc_show {
+  display: none;
+}
+
+.theme-footer .menu_list.mobile_show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 41px;
 }
 
 .theme-footer .menu_link {
