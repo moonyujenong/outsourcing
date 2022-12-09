@@ -2,7 +2,7 @@
 
 @import 'header'; //헤더
 @import 'main'; //메인
-
+@import 'footer'; //푸터
 
 html, body { 
   width: 100%;
@@ -12,7 +12,7 @@ html, body {
   word-break: keep-all;
   // background-color: #fff;
 
-  font-family: 'Roboto', "THEmpgt",   sans-serif  !important;
+  font-family: "noto-sans-cjk-kr", sans-serif !important;
   // height: 100%;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
@@ -48,9 +48,15 @@ a {
 button { 
   background-color: transparent;
   border: 0;
-
+ 
   &:focus, &:active {            
       outline: none;
+  }
+}
+
+input, button, select, textarea {
+  &:focus, &:active {
+    outline: none;
   }
 }
 
@@ -71,133 +77,12 @@ button {
   padding: 0;
 }
 
-
-@font-face {
-    font-family: 'THEmpgt';
-    src: url('../font/thempgtm_u-webfont.woff2') format('woff2'),
-         url('../font/thempgtm_u-webfont.woff') format('woff'),
-         url('../font/thempgtm_u-webfont.ttf') format('truetype'),
-         url('../font/thempgtm_u-webfont.svg#theluxgom_uregular') format('svg');
-    font-weight: 500;
-    font-style: normal;
-
+.content_layout {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
 
-
-
-@font-face {
-    font-family: 'THEmpgt';
-    src: url('../font/thempgtb_u-webfont.woff2') format('woff2'),
-         url('../font/thempgtb_u-webfont.woff') format('woff'),
-         url('../font/thempgtb_u-webfont.ttf') format('truetype'),
-         url('../font/thempgtb_u-webfont.svg#theluxgob_uregular') format('svg');
-    font-weight: 600;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'THEmpgt';
-    src: url('../font/thempgteb_u-webfont.woff2') format('woff2'),
-         url('../font/thempgteb_u-webfont.woff') format('woff'),
-         url('../font/thempgteb_u-webfont.ttf') format('truetype'),
-         url('../font/thempgteb_u-webfont.svg#theluxgoeb_uregular') format('svg');
-    font-weight: 700;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'THEmpgt';
-    src: url('../font/thempgtl_u-webfont.woff2') format('woff2'),
-         url('../font/thempgtl_u-webfont.woff') format('woff'),
-         url('../font/thempgtl_u-webfont.ttf') format('truetype'),
-         url('../font/thempgtl_u-webfont.svg#theluxgol_uregular') format('svg');
-    font-weight: 300;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'THEmpgt';
-    src: url('../font/thempgtr_u-webfont.woff2') format('woff2'),
-         url('../font/thempgtr_u-webfont.woff') format('woff'),
-         url('../font/thempgtr_u-webfont.ttf') format('truetype'),
-         url('../font/thempgtr_u-webfont.svg#theluxgor_uregular') format('svg');
-    font-weight: 400;
-    font-style: normal;
-
-}
-
-// Roboto Light
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    src:
-      local('Roboto Light'),
-      local('Roboto-Light'),
-      url(//fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2'),
-      url(//fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format('woff');
-  }
-  
-  // Roboto Regular
-  @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src:
-      local('Roboto'),
-      local('Roboto-Regular'),
-      url(//fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2'),
-      url(//fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxM.woff) format('woff');
-  }
-  
-  // Roboto Medium
-  @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    src:
-      local('Roboto Medium'),
-      local('Roboto-Medium'),
-      url(//fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format('woff2'),
-      url(//fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format('woff');
-      
-  }
-  
-  // Roboto Bold
-  @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src:
-      local('Roboto Bold'),
-      local('Roboto-Bold'),
-      url(//fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2'),
-      url(//fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc-.woff) format('woff');
-  }
-  
-  // Roboto Black
-  @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    src:
-      local('Roboto Black'),
-      local('Roboto-Black'),
-      url(//fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmYUtfBBc4.woff2) format('woff2'),
-      url(//fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmYUtfBBc-.woff) format('woff');
-  }
 
     

@@ -1,0 +1,94 @@
+.theme-footer {
+  background-color: #2A3140;
+  width: 100%;
+
+  .content_layout {
+    padding: 58px 47px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .info {
+    order: 2;
+  }
+
+  .logo_info {
+    order: 1;
+    > img {
+      width: calc(100vw * 192 / 375);
+      display: block;
+      margin: 0 auto 69px;
+    }
+  }
+
+  .partner_site {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .sns_list {
+    display: flex;
+    align-items: center;
+    margin: 0 -6px;
+
+    > li {
+      padding: 0 6px;
+
+      img {
+        width: 28px;
+        height: 28px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .connect_site_select {
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 7px 10px;
+    margin-left: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    appearance:none;
+    padding-right: 25px;
+    flex: 1;
+    max-width: 144px;
+    background: url(../img/footer/select_arrow.svg) no-repeat right 9px center;
+  }
+
+  .menu_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -5px;
+    flex-wrap: wrap;
+
+    > li {
+      padding: 0 5px;
+      box-sizing: border-box;
+    }
+  }
+
+  .menu_link {
+    font-size: 10px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .company_info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    border-top: 1px solid #fff;
+
+    > li {
+      color: #fff;
+      font-size: 10px;
+    }
+  }
+}
