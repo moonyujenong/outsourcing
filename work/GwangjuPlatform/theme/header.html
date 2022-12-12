@@ -36,6 +36,7 @@
     </div>
 </header>
 
+
 <div class="mobile-side-menu">
     <!-- <div class="side-dimmed"></div> -->
 
@@ -61,6 +62,42 @@
                 <button class="logout" type="button"></button>
             </div>
         </div>
+
+        <!-- TODO 메뉴 탭 리스트 -->
+        <div class="mobile_nav_wrap">
+            <ul class="nav_list">
+                <li>
+                    <!-- TODO 활성화 시 클래스 active 추가합니다. -->
+                    <a href="#" data-target="menu_1" class="nav_link">
+                        공동교육과정
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav_link">
+                        모집안내
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav_link">
+                        프로그램
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav_link">
+                        커뮤니티
+                    </a>
+                </li>
+            </ul>
+
+            <div class="two_depth_menu on" id="menu_1">
+                <!-- TODO 해당 div mapping 돌리면 됩니다. -->
+                <div class="depth_menu_inner">
+                    <h3 class="menu_title">에너지신산업 융합전공</h3>
+                    <a href="#" class="three_depth_menu">미래 에너지 신산업-IP</a>
+                    <a href="#" class="three_depth_menu">신재생 에너지</a>
+                </div>
+            </div>
+        </div>
     </nav>    
 </div>
 
@@ -76,6 +113,15 @@
             $('.mobile-side-menu').removeClass('open');
         });
         
+        $(".nav_list > li").click(function(){
+            var target = $(this).children("a").attr("data-target");
+
+            $(".nav_link").removeClass("active");
+            $(this).children("a").addClass("active");
+
+            $(".two_depth_menu").removeClass("on");
+            $("#" + target).addClass("on");
+        });
     });
 
 
