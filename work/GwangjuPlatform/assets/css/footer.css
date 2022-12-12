@@ -43,8 +43,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 0 20px;
 }
 
@@ -144,6 +145,76 @@
 .theme-footer .company_info > li {
   color: #fff;
   font-size: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .theme-footer .content_layout {
+    padding: 46px 58px 71px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .theme-footer .logo_info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .theme-footer .logo_info > img {
+    max-width: 192px;
+    margin: 0 0 22px;
+  }
+  .theme-footer .info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .theme-footer .menu_list {
+    margin: 0 -15px 17px;
+  }
+  .theme-footer .menu_list.mobile_show {
+    display: none;
+  }
+  .theme-footer .menu_list.pc_show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .theme-footer .menu_list > li {
+    padding: 0 15px;
+  }
+  .theme-footer .menu_link {
+    font-size: 14px;
+  }
+  .theme-footer .company_info {
+    padding-top: 17px;
+  }
+  .theme-footer .company_info > li {
+    font-size: 14px;
+  }
+  .theme-footer .connect_site_select {
+    margin-left: 18px;
+    width: 144px;
+    border-color: #4E4E4E;
+    color: #696969;
+    background: url(..//img/footer/select_arrow_off.svg) no-repeat right 9px center;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

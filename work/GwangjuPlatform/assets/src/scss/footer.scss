@@ -26,7 +26,7 @@
   .partner_site {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 0 20px;
   }
 
@@ -100,6 +100,67 @@
     > li {
       color: #fff;
       font-size: 10px;
+    }
+  }
+
+  @media screen and (min-width:992px) {
+    .content_layout {
+      padding: 46px 58px 71px;
+      flex-direction: row;
+    }
+
+    .logo_info {
+      order: 2;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-direction: column;
+
+      > img {
+        max-width: 192px;
+        margin: 0 0 22px;
+      }
+    }
+
+    .info  {
+      order: 1;
+    }
+
+    .menu_list  {
+      margin: 0 -15px 17px;
+
+      &.mobile_show {
+        display: none;
+      }
+
+      &.pc_show {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      > li {
+        padding: 0 15px;
+      }
+    }
+
+    .menu_link {
+      font-size: 14px;
+    }
+
+    .company_info {
+      padding-top: 17px;
+
+      > li {
+        font-size: 14px;
+      }
+    }
+
+    .connect_site_select {
+      margin-left: 18px;
+      width: 144px;
+      border-color: #4E4E4E;
+      color: #696969;
+      background: url(..//img/footer/select_arrow_off.svg) no-repeat right 9px center;
     }
   }
 }
