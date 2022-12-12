@@ -7,26 +7,40 @@
 
         
         <nav class="theme-nav pc-mode">
-            <ul class="menu-list">
-                <li class="menu-list-item" data-target="#layout_01">
-                    <a href="#" class="menu-list-link"><span class="menu-list-text">HOME</span></a>
-                </li>
-                <li class="menu-list-item" data-target="#layout_02">
-                    <a href="#" class="menu-list-link"><span class="menu-list-text">ABOUT</span></a>
-                </li>
-                <li class="menu-list-item" data-target="#layout_03">
-                    <a href="#" class="menu-list-link"><span class="menu-list-text">HISTORY</span></a>
-                </li>
-                <li class="menu-list-item" data-target="#layout_04">
-                    <a href="#" class="menu-list-link"><span class="menu-list-text">CLIENTS & BRANDS</span></a>
-                </li>
-                <li class="menu-list-item" data-target="#layout_05">
-                    <a href="#" class="menu-list-link"><span class="menu-list-text">SHOPPING & INFORMATION</span></a>
-                </li>
-                <li class="menu-list-item" data-target="#layout_06">
-                    <a href="#" class="menu-list-link"><span class="menu-list-text">CONTACT</span></a>
-                </li>
-            </ul>
+            <div class="slide_down_wrap">
+                <ul class="pc_menu_list">
+                    <li class="menu_item">
+                        공동교육과정
+                    </li>
+                    <li class="menu_item">
+                        모집안내
+                    </li>
+                    <li class="menu_item">
+                        프로그램
+                    </li>
+                    <li class="menu_item">
+                        커뮤니티
+                    </li>
+                </ul>
+
+                <div class="slide_down">
+                    <ul class="three_depth_menu_list">
+                        <li class="menu_item">
+                            <b>에너지산업 융합전공</b>
+                            <a href="#" class="three_menu_link">미래 에너지 신산업-IP</a>
+                            <a href="#" class="three_menu_link">신재생 에너지</a>
+
+                            <b>에너지산업 융합전공</b>
+                            <a href="#" class="three_menu_link">미래 에너지 신산업-IP</a>
+                            <a href="#" class="three_menu_link">신재생 에너지</a>
+                        </li>
+
+                        <li class="menu_item">
+                            <a href="#" class="three_menu_link">모집요강</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
         <div class="mobile-side-menu-wrap">
@@ -39,7 +53,6 @@
 
 <div class="mobile-side-menu">
     <!-- <div class="side-dimmed"></div> -->
-
     <nav class="theme-nav mobile-mode open">
         <div class="nav_head">
             <img src="./assets/img/header/logo_color.png" alt="로고 이미지" class="header_logo">
@@ -68,12 +81,12 @@
             <ul class="nav_list">
                 <li>
                     <!-- TODO 활성화 시 클래스 active 추가합니다. -->
-                    <a href="#" data-target="menu_1" class="nav_link">
+                    <a href="#" data-target="menu_1" class="nav_link active">
                         공동교육과정
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav_link">
+                    <a href="#"  data-target="menu_2" class="nav_link">
                         모집안내
                     </a>
                 </li>
@@ -89,12 +102,20 @@
                 </li>
             </ul>
 
+            <!-- TODO 탭 활성화 시 클래스 on 추가합니다. -->
             <div class="two_depth_menu on" id="menu_1">
                 <!-- TODO 해당 div mapping 돌리면 됩니다. -->
                 <div class="depth_menu_inner">
                     <h3 class="menu_title">에너지신산업 융합전공</h3>
                     <a href="#" class="three_depth_menu">미래 에너지 신산업-IP</a>
                     <a href="#" class="three_depth_menu">신재생 에너지</a>
+                </div>
+            </div>
+
+            <div class="two_depth_menu" id="menu_2">
+                <!-- TODO 해당 div mapping 돌리면 됩니다. -->
+                <div class="depth_menu_inner">
+                    2
                 </div>
             </div>
         </div>
@@ -105,6 +126,7 @@
 <script type="text/javascript">
     
     $(function(){
+        /* sidePanel slide */
         $('.menu-btn').click(function(){
             $('.mobile-side-menu').toggleClass('open');
         });
@@ -113,6 +135,7 @@
             $('.mobile-side-menu').removeClass('open');
         });
         
+        /* mobile nav tab */
         $(".nav_list > li").click(function(){
             var target = $(this).children("a").attr("data-target");
 
@@ -122,6 +145,11 @@
             $(".two_depth_menu").removeClass("on");
             $("#" + target).addClass("on");
         });
+
+        /* menu hover 시, 3 depth menu slide */
+        $(".menu_item").hover(function(){
+            $(".slide_down").stop().toggleClass("on");
+        })
     });
 
 
