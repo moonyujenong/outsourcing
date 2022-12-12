@@ -2,8 +2,7 @@
 <header class="theme-header" id="ui_header">
     <div class="inner-header">
         <div class="head-logo-box">
-            <img src="./assets/img/logo-mobile.png" alt="로고 이미지" class="mobile-logo">
-            <img src="./assets/img/logo-pc.png" alt="로고 이미지" class="pc-logo">
+            <img src="./assets/img/header/logo_color.png" alt="로고 이미지" class="header_logo">
         </div>
 
         
@@ -32,50 +31,36 @@
 
         <div class="mobile-side-menu-wrap">
             <button class="menu-btn" type="button">
-                <i class="xi-bars"></i>
             </button>
-            
-
-            
         </div>
-        
-       
     </div>
-
-    
 </header>
 
 <div class="mobile-side-menu">
-    <div class="mobile-side-dimmed">
-        <button class="mobile-nav-close-btn"> 
-            <i class="xi-close-thin"></i>
-        </button>
-    </div>
-    
-
+    <!-- <div class="side-dimmed"></div> -->
 
     <nav class="theme-nav mobile-mode open">
+        <div class="nav_head">
+            <img src="./assets/img/header/logo_color.png" alt="로고 이미지" class="header_logo">
+            <img class="mobile-nav-close-btn" src="./assets/img/header/close_btn.svg">
+        </div>
+            
        
-        <ul class="menu-list">
-            <li class="menu-list-item" data-target="#layout_01">
-                <a href="#" class="menu-list-link"><span class="menu-list-text">HOME</span></a>
-            </li>
-            <li class="menu-list-item" data-target="#layout_02">
-                <a href="#" class="menu-list-link"><span class="menu-list-text">ABOUT</span></a>
-            </li>
-            <li class="menu-list-item" data-target="#layout_03">
-                <a href="#" class="menu-list-link"><span class="menu-list-text">HISTORY</span></a>
-            </li>
-            <li class="menu-list-item" data-target="#layout_04">
-                <a href="#" class="menu-list-link"><span class="menu-list-text">CLIENTS & BRANDS</span></a>
-            </li>
-            <li class="menu-list-item" data-target="#layout_05">
-                <a href="#" class="menu-list-link"><span class="menu-list-text">SHOPPING & INFORMATION</span></a>
-            </li>
-            <li class="menu-list-item" data-target="#layout_06">
-                <a href="#" class="menu-list-link"><span class="menu-list-text">CONTACT</span></a>
-            </li>
-        </ul>
+        <!-- TODO 개인 정보 -->
+        <div class="user_info">
+            <div class="left">
+                <h3 class="name">홍길동</h3>
+                <div class="info_list">
+                    <span class="edu">전남대학교</span>
+                    <span class="part">미래 에너지 신산업-IP</span>
+                    <button type="button" class="notice"></button>
+                </div>
+            </div>
+
+            <div class="right">
+                <button class="logout" type="button"></button>
+            </div>
+        </div>
     </nav>    
 </div>
 
@@ -87,7 +72,7 @@
             $('.mobile-side-menu').toggleClass('open');
         });
 
-        $('.mobile-side-dimmed, .mobile-nav-close-btn' ).click(function(){
+        $('.mobile-nav-close-btn' ).click(function(){
             $('.mobile-side-menu').removeClass('open');
         });
         
