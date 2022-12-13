@@ -17,6 +17,10 @@
   display: none;
 }
 
+.theme-header .head-logo-box {
+  cursor: pointer;
+}
+
 .theme-header .head-logo-box > img {
   width: 100%;
   max-width: 127px;
