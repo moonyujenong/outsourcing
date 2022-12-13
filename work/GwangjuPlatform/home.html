@@ -36,28 +36,33 @@
 <body> 
 
     <div id="wrap">
-          <!-- 헤더 -->  
-        <div data-include-path="./theme/header.html">
+          <!-- 서브헤더 -->  
+        <!-- <div data-include-path="./theme/Sub/SubHeader.html">
             
-        </div>
+        </div> -->
 
-        <!-- 메인 -->
-        <div  data-include-path="./theme/main.html"> 
+        <!-- 서브메인 -->
+        <!-- <div  data-include-path="./theme/main.html"> 
             
-        </div>
+        </div> -->
         
 
-        <!-- 푸터 -->
+        <!-- 서브푸터 -->
         <!-- TODO 푸터는 서브 페이지에서만 노출됩니다. -->
-        <div data-include-path="./theme/footer.html">
+        <!-- <div data-include-path="./theme/Sub/SubFooter.html">
             
-        </div>
+        </div> -->
 
-        <!-- TODO 로그인 페이지 -->
+        <!-- TODO 메인 & 로그인 페이지 -->
         <div class="login_wrap">
-          <div data-include-path="./login.html">
-            
-          </div>
+          <!-- TODO 메인 헤더 -->
+          <div data-include-path="./theme/MainHeader.html"></div>
+
+          <!-- TODO 로그인 페이지 -->
+          <div data-include-path="./theme/login.html"></div>
+
+          <!-- TODO 메인 푸터 -->
+          <div data-include-path="./theme/MainFooter.html"></div>
         </div>
     </div>    
 </body>

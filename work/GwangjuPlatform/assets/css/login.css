@@ -1,0 +1,145 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/login/login_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.login .center {
+  position: absolute;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  max-width: calc(100vw * 300 / 480);
+  padding: 40px 35px;
+}
+
+.login .title {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  color: #096FC2;
+  margin: 0 0 13px;
+  position: relative;
+}
+
+.login .title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  width: calc(100% - 70px);
+  height: 1px;
+  background-color: #096FC2;
+}
+
+.login form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login form select, .login form input, .login form button {
+  width: 100%;
+  border: 1px solid #D1DBE3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 11px 14px;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0 0 11px;
+}
+
+.login form select::-webkit-input-placeholder, .login form input::-webkit-input-placeholder, .login form button::-webkit-input-placeholder {
+  color: #9DAFBD;
+}
+
+.login form select::-moz-placeholder, .login form input::-moz-placeholder, .login form button::-moz-placeholder {
+  color: #9DAFBD;
+}
+
+.login form select:-ms-input-placeholder, .login form input:-ms-input-placeholder, .login form button:-ms-input-placeholder {
+  color: #9DAFBD;
+}
+
+.login form select::-ms-input-placeholder, .login form input::-ms-input-placeholder, .login form button::-ms-input-placeholder {
+  color: #9DAFBD;
+}
+
+.login form select::placeholder, .login form input::placeholder, .login form button::placeholder {
+  color: #9DAFBD;
+}
+
+.login form input:nth-child(3) {
+  margin: 0;
+}
+
+.login label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 17px 0;
+}
+
+.login label > input {
+  margin: 0 10px 0 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 0;
+  border-color: #D1DBE3;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0;
+}
+
+.login label > input[type="checkbox"]:checked {
+  background-color: red;
+}
+
+.login label > span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #9DAFBD;
+}
+
+.login select {
+  color: #9DAFBD;
+}
+
+.login button.login_btn {
+  padding: 14px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #026FC2;
+  border: none;
+  margin: 0;
+}
+
+/*# sourceMappingURL=login.css.map */
