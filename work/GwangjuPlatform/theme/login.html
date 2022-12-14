@@ -23,6 +23,57 @@
       </form>
     </div>
 
-    <div class="right pc_block"></div>
+    <div class="right pc_block">
+      <div class="right_head">
+        <h3 class="title">
+          NEWS
+        </h3>
+
+        <ul class="tab_list">
+          <li>
+            <a href="#" class="tab_link on" data-target="content_1">공지사항</a>
+          </li>
+          <li>
+            <a href="#" class="tab_link" data-target="content_2">학사일정</a>
+          </li>
+          <li>
+            <a href="#" class="tab_link" data-target="content_3">프로그램</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="tab_content">
+        <ul class="content_list on" id="content_1">
+          <li>
+            <a href="#" class="content_link">
+              <h3 class="content_title">게시판 제목이 들어가야 합니다. 클릭 시 게시판 상세화면으로 이동합니다.</h3>
+              <span class="date">2022.03.01</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="content_link">
+              <h3 class="content_title">게시판 제목이 들어가야 합니다. 클릭 시 게시판 상세화면으로 이동합니다.</h3>
+              <span class="date">2022.03.01</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  $(function(){
+    $(".tab_list > li > a").click(function(){
+      $(".tab_link").removeClass("on");
+      $(this).addClass("on");
+
+      var target = $(this).attr("data-target");
+      
+      $(".content_list").removeClass("on");
+      $("#" + target).addClass("on");
+    });
+  })
+</script>

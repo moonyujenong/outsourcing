@@ -1508,6 +1508,132 @@
   display: none;
 }
 
+.login .right_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 15px;
+  border-bottom: 1px solid #D6D5D5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.login .right_head .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #096FC2;
+  margin: 0;
+}
+
+.login .tab_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -11px;
+}
+
+.login .tab_list li {
+  padding: 0 11px;
+  position: relative;
+}
+
+.login .tab_list li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #BEBEBE;
+}
+
+.login .tab_list li a::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 13px;
+  background-color: #707070;
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+.login .tab_list li a.on {
+  color: #3B3B3B;
+  font-weight: 700;
+}
+
+.login .tab_list li:last-child a::after {
+  display: none;
+}
+
+.login .tab_content {
+  padding: 19px 0 0;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.login .content_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.login .content_list {
+  display: none;
+}
+
+.login .content_list.on {
+  display: block;
+}
+
+.login .content_list > li {
+  line-height: 30px;
+}
+
+.login .content_title {
+  white-space: nowrap;
+  width: 100%;
+  max-width: 211px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000000;
+  font-size: 12px;
+  margin: 0;
+}
+
+.login .date {
+  font-size: 12px;
+  font-weight: 400;
+  color: #6E6E6E;
+}
+
+.login .left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 35%;
+          flex: 0 0 35%;
+}
+
+.login .right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 65%;
+          flex: 0 0 65%;
+  padding-left: 67px;
+}
+
 @media screen and (min-width: 992px) {
   .login .center {
     max-width: 760px;
@@ -1519,6 +1645,10 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .login .center > div {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .login .pc_block {
     display: block;

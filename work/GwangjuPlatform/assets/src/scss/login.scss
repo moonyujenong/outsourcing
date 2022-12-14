@@ -59,7 +59,6 @@
 
       &::placeholder {
         color: #9DAFBD;
-
       }
     }
 
@@ -115,6 +114,115 @@
     display: none;
   }
 
+  .right_head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 0 15px;
+    border-bottom: 1px solid #D6D5D5;
+    box-sizing: border-box;
+
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #096FC2;
+      margin: 0;
+    }
+  }
+
+  .tab_list {
+    display: flex;
+    align-items: center;
+    margin: 0 -11px;
+
+    li {
+      padding: 0 11px;
+      position: relative;
+      
+      a {
+        font-size: 16px;
+        font-weight: 500;
+        color: #BEBEBE;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 1px;
+          height: 13px;
+          background-color: #707070;
+          position: absolute;
+          top: 6px;
+          right: 0;
+        }
+
+        &.on {
+          color: #3B3B3B;
+          font-weight: 700;
+        }
+      }
+
+      &:last-child {
+        a {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .tab_content {
+    padding: 19px 0 0;
+    max-height: 250px;
+    overflow-y: auto;
+  }
+
+  .content_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .content_list {
+    display: none;
+
+    &.on {
+      display: block;
+    }
+
+    > li {
+      line-height: 30px;
+    }
+  }
+
+  .content_title {
+    white-space: nowrap;
+    width: 100%;
+    max-width: 211px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #000000;
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .date {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6E6E6E;
+  }
+
+  .left {
+    flex: 0 0 35%;
+  }
+
+  .right {
+    flex: 0 0 65%;
+    padding-left: 67px;
+  }
+
   @media screen and (min-width:992px) {
     .center {
       max-width: 760px;
@@ -122,6 +230,10 @@
       margin: 0 -33px;
       display: flex;
       align-items: flex-start;
+      
+      > div {
+        box-sizing: border-box;
+      }
     }
 
     .pc_block {
