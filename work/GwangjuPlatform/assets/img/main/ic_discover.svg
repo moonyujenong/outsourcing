@@ -1,0 +1,10 @@
+<svg id="그룹_12546" data-name="그룹 12546" xmlns="http://www.w3.org/2000/svg" width="20" height="30" viewBox="0 0 20 30">
+  <g id="Icon_20_Grey_Arrow" data-name="Icon / 20 / Grey / Arrow" transform="translate(0 10)">
+    <rect id="Icon_20_Grey_Arrow_background" data-name="Icon / 20 / Grey / Arrow background" width="20" height="20" fill="rgba(0,0,0,0)"/>
+    <path id="Shape" d="M7.712,7.69,1.678,13.708a.981.981,0,0,1-1.39-1.386L5.627,7,.288,1.673A.981.981,0,0,1,1.678.287L7.712,6.3a.978.978,0,0,1,0,1.386Z" transform="translate(16.998 5.998) rotate(90)" fill="#9dafbd"/>
+  </g>
+  <g id="Icon_20_Grey_Arrow-2" data-name="Icon / 20 / Grey / Arrow" opacity="0.5">
+    <rect id="Icon_20_Grey_Arrow_background-2" data-name="Icon / 20 / Grey / Arrow background" width="20" height="20" fill="rgba(0,0,0,0)"/>
+    <path id="Shape-2" data-name="Shape" d="M7.712,7.69,1.678,13.708a.981.981,0,0,1-1.39-1.386L5.627,7,.288,1.673A.981.981,0,0,1,1.678.287L7.712,6.3a.978.978,0,0,1,0,1.386Z" transform="translate(16.998 5.998) rotate(90)" fill="#9dafbd"/>
+  </g>
+</svg>
