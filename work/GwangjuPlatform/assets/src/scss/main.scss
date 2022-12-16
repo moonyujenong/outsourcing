@@ -174,11 +174,19 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-left: 8%;
+            position: relative;
+
+            .inner  {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: max-content;
+            }
         }
         
         .layout_bg.pc {
             flex: 0 0 50%;
+            width: 50%;
         }
 
         .title_box {
@@ -206,7 +214,7 @@
 
             .title_box {
                 top: 40%;
-                left: 45%;
+                left: 50%;
                 transform: translate(-50%, -50%);
                 width: max-content;
             }

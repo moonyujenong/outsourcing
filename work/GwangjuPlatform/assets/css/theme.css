@@ -621,12 +621,22 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 8%;
+    position: relative;
+  }
+  .theme-main .left .inner {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   .theme-main .layout_bg.pc {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
+    width: 50%;
   }
   .theme-main .title_box {
     position: relative;
@@ -650,7 +660,7 @@
   }
   .theme-main .area_2 .title_box {
     top: 40%;
-    left: 45%;
+    left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: -webkit-max-content;
