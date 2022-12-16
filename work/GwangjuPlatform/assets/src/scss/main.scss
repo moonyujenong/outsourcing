@@ -86,9 +86,43 @@
     .area_2 {
       .title_box {
         position: absolute;
-        top: 40%;
+        top: 20%;
         transform: translateY(-50%);
+        height: fit-content;
       }  
+
+      .title {
+        color: #ED6B07;
+      }
+
+      .sub_title {
+        color: #707070;
+      }
+
+      .right {
+        position: absolute;
+        top: 55%;
+        transform: translateY(-50%);
+        right: -75px;
+        display: flex;
+        flex-direction: column;
+
+        > img {
+            order: 1;
+            width: 100%;
+            max-width: 458px;
+            display: block;
+            object-fit: cover;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+      }
+    }
+
+    .sub_explanin {
+        font-size: 18px;
+        font-weight: 400;
+        color: #9DAFBD;
+        margin: 0 0 11px;
     }
 
     .content_left {
@@ -150,6 +184,24 @@
                 font-size: 14px;
                 color: #707070;
             }
+        }
+
+        .area_2  {
+            .right {
+                top: auto;
+                right: initial;
+                transform: initial;
+                position: relative;
+
+                > img {
+                    order: 1;
+                }
+            }
+        }
+
+        .sub_explanin {
+            width: fit-content;
+            margin: 0 auto 11px;
         }
     }
 }
