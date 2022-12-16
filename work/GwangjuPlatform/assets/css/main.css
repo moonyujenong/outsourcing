@@ -1,5 +1,5 @@
 .theme-main {
-  background-color: #fff;
+  background-color: #F9FBFC;
 }
 
 .theme-main .content-layout {
@@ -16,6 +16,7 @@
   margin: 0 auto 30px;
   position: relative;
   height: 100vh;
+  background-color: #fff;
 }
 
 .theme-main .title_box {
@@ -95,7 +96,7 @@
 
 .theme-main .area_2 .right {
   position: absolute;
-  top: 55%;
+  top: 65%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: -75px;
@@ -106,6 +107,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .theme-main .area_2 .right > img {
@@ -119,13 +123,23 @@
      object-fit: cover;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.theme-main .area_2 .discover {
+  padding: 0;
+  position: absolute;
+  bottom: -260%;
 }
 
 .theme-main .sub_explanin {
   font-size: 18px;
   font-weight: 400;
   color: #9DAFBD;
-  margin: 0 0 11px;
+  margin: 30px 0 0;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .theme-main .content_left {
@@ -153,6 +167,9 @@
         -ms-flex-align: center;
             align-items: center;
     overflow: hidden;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .theme-main .sub_img {
     max-width: 373px;
@@ -176,6 +193,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-left: 8%;
   }
   .theme-main .layout_bg.pc {
     -webkit-box-flex: 0;
@@ -197,12 +215,27 @@
     font-size: 14px;
     color: #707070;
   }
+  .theme-main .area_2 > div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+  .theme-main .area_2 .title_box {
+    top: 40%;
+    left: 45%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
   .theme-main .area_2 .right {
     top: auto;
     right: initial;
     -webkit-transform: initial;
             transform: initial;
     position: relative;
+    padding: 0;
   }
   .theme-main .area_2 .right > img {
     -webkit-box-ordinal-group: 2;
@@ -213,7 +246,13 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin: 0 auto 11px;
+    margin: 0 0 11px 94px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .theme-main .content_left {
+    position: relative;
   }
 }
 
