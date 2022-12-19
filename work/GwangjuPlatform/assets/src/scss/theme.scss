@@ -1,10 +1,11 @@
 @charset 'UTF-8';
 
-@import 'header'; //헤더
+@import 'header'; //서브헤더
 @import 'main'; //메인
-@import 'footer'; //푸터
+@import 'footer'; //서브푸터
 
 @import 'login'; //로그인
+@import 'mainFooter'; //메인 푸터
 
 html, body { 
   width: 100%;
