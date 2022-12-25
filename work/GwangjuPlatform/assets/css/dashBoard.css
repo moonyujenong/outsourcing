@@ -1,0 +1,345 @@
+.dash_board {
+  width: 100%;
+}
+
+.dash_board .section_gray {
+  width: 100%;
+  background-color: #F9F9F9;
+  padding: 78px 28px 37px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.dash_board .dash_board_inner {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.dash_board .box {
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.16);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 0 20px;
+  position: relative;
+  padding: 27px 32px;
+}
+
+.dash_board .box:last-child {
+  margin: 0;
+}
+
+.dash_board .box.grades > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.dash_board .title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2B3140;
+  margin: 0 0 20px;
+}
+
+.dash_board .more_link {
+  position: absolute;
+  top: 34px;
+  right: 31px;
+  width: 16px;
+  height: 16px;
+}
+
+.dash_board .more_link img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.dash_board .bar_graph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 23px;
+}
+
+.dash_board .bar_graph:last-child {
+  margin: 0;
+}
+
+.dash_board .bar_graph.slim {
+  margin: 0 0 17px;
+}
+
+.dash_board .bar_graph.slim .bar_bg {
+  height: 5px;
+}
+
+.dash_board .category_title {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333333;
+  margin: 0 0 5px;
+  opacity: 0.6;
+}
+
+.dash_board .bar_bg {
+  position: relative;
+  background-color: #EBEBEB;
+  border-radius: 100px;
+  overflow: hidden;
+  height: 11px;
+  width: calc(100% - 40px);
+}
+
+.dash_board .bar_bg .bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 100px;
+  background-color: #EF2828;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.dash_board .bar_bg .bar.yellow {
+  background-color: #FFB100;
+}
+
+.dash_board .bar_bg .bar.blue {
+  background-color: #3CB9E7;
+}
+
+.dash_board .bar_bg .bar.purple {
+  background-color: #B23CE7;
+}
+
+.dash_board .parcent {
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: 500;
+  color: #A6AAB3;
+}
+
+.dash_board .certificate {
+  overflow-y: auto;
+}
+
+.dash_board .certificate_list {
+  width: 100%;
+}
+
+.dash_board .certificate_list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 17px;
+}
+
+.dash_board .certificate_list li:last-child {
+  margin: 0;
+}
+
+.dash_board .certificate_title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  opacity: 0.6;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.dash_board .hold {
+  width: 16px;
+  height: 16px;
+  border-radius: 100px;
+  background-color: #EEEEEE;
+}
+
+.dash_board .hold.active {
+  background-color: #6142FF;
+}
+
+.dash_board .company_list {
+  margin: 0 -30px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dash_board .company_list a {
+  padding: 0 30px;
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dash_board .company_list a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  height: 40px;
+  width: 1px;
+  background-color: #D6D5D5;
+  right: 0;
+}
+
+.dash_board .company_list a:last-child::after {
+  display: none;
+}
+
+.dash_board .company_list a img {
+  width: 100%;
+  max-width: 147px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.dash_board .content_box {
+  margin: 0 0 46px;
+}
+
+.dash_board .content_box img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.dash_board .content_box:last-child {
+  margin: 0;
+}
+
+.dash_board .content_inner {
+  display: none;
+}
+
+.dash_board .content_inner.on {
+  display: block;
+}
+
+@media screen and (min-width: 992px) {
+  .dash_board .section_gray {
+    padding: 70px 15px 55px;
+  }
+  .dash_board .dash_board_inner {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .dash_board .box {
+    margin: 0;
+    padding: 27px 30px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 32%;
+            flex: 0 0 32%;
+  }
+  .dash_board .box:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 35px 0 0;
+  }
+  .dash_board .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .dash_board .content_inner {
+    padding-left: 14px;
+  }
+  .dash_board .content_inner.on {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .dash_board .company_list {
+    display: block;
+    margin: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 17%;
+            flex: 0 0 17%;
+  }
+  .dash_board .company_list a {
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+    text-align: initial;
+    display: block;
+  }
+  .dash_board .company_list a:after {
+    height: 1px;
+    width: 100%;
+    top: initial;
+    bottom: -22px;
+    position: relative;
+  }
+  .dash_board .content_box {
+    padding: 0 40px;
+    margin: 0;
+    position: relative;
+  }
+  .dash_board .content_box:before {
+    content: "";
+    position: absolute;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #D6D5D5;
+    left: 0;
+  }
+  .dash_board .content_box.language {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
+  .dash_board .content_box.grades_graph {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+  .dash_board .content_box.certificate {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    padding-right: 0;
+  }
+}
+
+/*# sourceMappingURL=dashBoard.css.map */

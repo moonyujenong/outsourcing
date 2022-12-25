@@ -1,0 +1,207 @@
+<div class="theme_main dash_board">
+  <div class="section_gray">
+    <div class="dash_board_inner row">
+
+      <div class="box col-lg-4 grades">
+        <h3 class="title">
+          학점
+          <!-- TODO 더보기 이동 버튼 -->
+          <a href="#" class="more_link">
+            <img alt="" src="./assets/img/dashBoard/icon_plus.svg" />
+          </a>
+        </h3>
+
+        <img alt="grades img" src="./assets/img/dashBoard/grades_graph.png" />
+      </div>
+
+      <div class="box col-lg-4">
+        <h3 class="title">
+          수업(필수)
+          <!-- TODO 더보기 이동 버튼 -->
+          <a href="#" class="more_link">
+            <img alt="" src="./assets/img/dashBoard/icon_plus.svg" />
+          </a>
+        </h3>
+
+        <div class="class_category_wrap">
+          <div class="bar_graph">
+            <span class="category_title">에너지와 지식재산</span>
+            <div class="bar_bg">
+              <span class="bar" style="width: 40%;"></span>
+            </div>
+
+            <span class="parcent">40%</span>
+          </div>
+
+          <div class="bar_graph">
+            <span class="category_title">에너지신산업 창업 실무</span>
+            <div class="bar_bg">
+              <span class="bar" style="width: 80%;"></span>
+            </div>
+
+            <span class="parcent">80%</span>
+          </div>
+
+            <div class="bar_graph">
+            <span class="category_title">미래 에너지-IP 융합캔스톤</span>
+            <div class="bar_bg">
+              <span class="bar" style="width: 30%;"></span>
+            </div>
+
+            <span class="parcent">30%</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="box col-lg-4">
+        <h3 class="title">
+          자격증
+          <!-- TODO 더보기 이동 버튼 -->
+          <a href="#" class="more_link">
+            <img alt="" src="./assets/img/dashBoard/icon_plus.svg" />
+          </a>
+        </h3>
+
+        <div class="certificate">
+          <ul class="certificate_list">
+            <li>
+              <span class="certificate_title">에너지진단사</span>
+              <!-- TODO 해당 자격증이 있을 시, 클래스 active 추가합니다. -->
+              <span class="hold"></span>
+            </li>
+            <li>
+              <span class="certificate_title">에너지진단사</span>
+              <!-- TODO 해당 자격증이 있을 시, 클래스 active 추가합니다. -->
+              <span class="hold active"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box col-lg-12">
+        <h3 class="title">
+          목표기업
+          <!-- TODO 더보기 이동 버튼 -->
+          <a href="#" class="more_link">
+            <img alt="" src="./assets/img/dashBoard/icon_plus.svg" />
+          </a>
+        </h3>
+
+        <div class="content">
+          <div class="company_list">
+            <a href="#" class="company_btn on" data-target="company_1">
+              <img id="electric" src="./assets/img/dashBoard/electric_logo.png" alt="company logo" />
+            </a>
+            <a href="#" class="company_btn" data-target="company_2">
+              <img id="kepri" src="./assets/img/dashBoard/kepri_logo.png" alt="company logo" />
+            </a>
+          </div>
+
+          <div class="content_inner on" id="company_1">
+            <div class="language content_box">
+              <h3 class="title">
+                어학(영어)
+              </h3>
+
+              <div class="bar_graph slim">
+                <span class="category_title">TOELC</span>
+                <div class="bar_bg">
+                  <span class="bar" style="width: 40%;"></span>
+                </div>
+  
+                <span class="parcent">650</span>
+              </div>
+  
+              <div class="bar_graph slim">
+                <span class="category_title">NEW-TEPS</span>
+                <div class="bar_bg">
+                  <span class="bar yellow" style="width: 40%;"></span>
+                </div>
+  
+                <span class="parcent">650</span>
+              </div>
+  
+              <div class="bar_graph slim">
+                <span class="category_title">TOELC-S</span>
+                <div class="bar_bg">
+                  <span class="bar blue" style="width: 40%;"></span>
+                </div>
+  
+                <span class="parcent">650</span>
+              </div>
+  
+              <div class="bar_graph slim">
+                <span class="category_title">OPIc</span>
+                <div class="bar_bg">
+                  <span class="bar purple" style="width: 40%;"></span>
+                </div>
+  
+                <span class="parcent">650</span>
+              </div>
+            </div>
+
+            <div class="grades_graph content_box">
+              <h3 class="title">
+                성적
+              </h3>
+
+              <img alt="grades graph" src="./assets/img/dashBoard/grades_graph_secound.png" />
+            </div>
+
+            <div class="certificate content_box">
+              <h3 class="title">
+                자격증
+              </h3>
+
+              <ul class="certificate_list">
+                <li>
+                  <span class="certificate_title">에너지진단사</span>
+                  <!-- TODO 해당 자격증이 있을 시, 클래스 active 추가합니다. -->
+                  <span class="hold"></span>
+                </li>
+                <li>
+                  <span class="certificate_title">에너지진단사</span>
+                  <!-- TODO 해당 자격증이 있을 시, 클래스 active 추가합니다. -->
+                  <span class="hold active"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="content_inner" id="company_2">2</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(function(){
+    $("#kepri").attr("src", "./assets/img/dashBoard/kepri_logo_off.png");
+
+    $(".company_list a").click(function(){
+      var content = $(this).attr("data-target");
+      var img = $(this).children("img").attr("id");
+      var hadClass = $(this).children("img").hasClass();
+
+
+      $(".company_btn").removeClass("on");
+      $(this).addClass("on");
+      
+      if(img === "electric") {
+        $("#electric").attr("src", "./assets/img/dashBoard/electric_logo.png");
+        $("#kepri").attr("src", "./assets/img/dashBoard/kepri_logo_off.png");
+      } else {
+        $("#kepri").attr("src", "./assets/img/dashBoard/kepri_logo.png");
+        $("#electric").attr("src", "./assets/img/dashBoard/electric_logo_off.png");
+      }
+
+      $(".content_inner").removeClass("on");
+      $("#" + content).addClass("on");
+
+      
+    });
+  })
+</script>

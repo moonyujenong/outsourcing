@@ -1,0 +1,54 @@
+.dash_board {
+  background-color: #F9F9F9;
+}
+
+.my_page_box {
+  position: relative;
+  margin-top: 18px;
+  margin-left: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.my_page_box .menu_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -15px;
+}
+
+.my_page_box .menu_list > li {
+  position: relative;
+  padding: 0 15px;
+}
+
+.my_page_box .menu_list > li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 8px;
+  width: 1px;
+  height: 11px;
+  background-color: #707070;
+}
+
+.my_page_box .menu_list > li:last-child::after {
+  display: none;
+}
+
+.my_page_box .my_page_link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4B4B4B;
+}
+
+.my_page_box .my_page_link > img {
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=subMain.css.map */

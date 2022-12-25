@@ -7,6 +7,11 @@
 @import 'login'; //로그인
 @import 'mainFooter'; //메인 푸터
 
+@import 'subMain'; // 서브 메인
+
+@import 'dashBoard'; //대쉬 보드
+
+
 html, body { 
   width: 100%;
   overflow-x: hidden; 
@@ -80,12 +85,17 @@ input, button, select, textarea {
   padding: 0;
 }
 
-.content_layout {
-  width: 100%;
-  max-width: 1250px;
-  margin: 0 auto;
+main {
+  flex: 1;
+  padding-top:90px;
 }
 
+
+@media screen and (min-width:992px) {
+  main {
+    padding-top: 130px;
+  }
+}
 
 
     
