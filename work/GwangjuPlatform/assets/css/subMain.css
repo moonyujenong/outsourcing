@@ -1,14 +1,16 @@
 .dash_board {
   background-color: #F9F9F9;
+  position: relative;
 }
 
 .my_page_box {
-  position: relative;
-  margin-top: 18px;
-  margin-left: auto;
+  position: absolute;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  top: 108px;
+  right: 36px;
+  z-index: 1;
 }
 
 .my_page_box .menu_list {
@@ -49,6 +51,18 @@
 
 .my_page_box .my_page_link > img {
   margin-left: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .my_page_box {
+    top: 130px;
+    right: 76px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 0 0 10px 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+  }
 }
 
 /*# sourceMappingURL=subMain.css.map */

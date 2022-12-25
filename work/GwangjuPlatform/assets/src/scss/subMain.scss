@@ -1,12 +1,14 @@
 .dash_board {
   background-color: #F9F9F9;
+  position: relative;
 }
 
 .my_page_box {
-  position: relative;
-  margin-top:18px;
-  margin-left: auto;
+  position: absolute;
   width: fit-content;
+  top: 108px;
+  right: 36px;
+  z-index: 1;
   
   .menu_list {
     display: flex;
@@ -44,5 +46,16 @@
     > img {
       margin-left: 10px;
     }
+  }
+}
+
+@media screen and (min-width:992px) {
+  .my_page_box  {
+    top:130px;
+    right:76px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.16);
+    border-radius: 0 0 10px 10px;
+    padding: 10px 20px;
+    background-color: #fff;
   }
 }

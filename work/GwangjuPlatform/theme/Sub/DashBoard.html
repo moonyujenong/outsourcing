@@ -1,4 +1,5 @@
 <div class="theme_main dash_board">
+  <!-- TODO section 1 -->
   <div class="section_gray">
     <div class="dash_board_inner row">
 
@@ -175,6 +176,59 @@
       </div>
     </div>
   </div>
+
+  <!-- TODO section 2 -->
+  <div class="section_white">
+    <div class="dash_board_inner twice_board">
+      <!-- TODO News -->
+      <div class="notice_board">
+        <div class="head">
+          <h3 class="title">NEWS</h3>
+
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- swiper -->
+        <div class="swiper notice_slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="board_content">
+                <span class="category_label">공지사항</span>
+
+                <H3 class="notice_title">게시판 제목이 들어가야 합니다. 제목은 최대 2줄입니다.</H3>
+                <p class="notice_content">게시판 내용이 들어갑니다. 최대 2줄입니다.</p>
+
+                <span class="info">
+                  <p class="date">2022.12.25</p>
+                  <p class="view">34명 읽음</p>
+                </span>
+              </div>
+
+              <div class="board_content">
+                <H3 class="notice_title">게시판 제목이 들어가야 합니다. 제목은 최대 2줄입니다.</H3>
+                <p class="notice_content">게시판 내용이 들어갑니다.</p>
+                
+                <span class="info">
+                  <p class="date">2022.12.25</p>
+                  <p class="view">34명 읽음</p>
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide">학사일정</div>
+            <div class="swiper-slide">프로그램</div>
+          </div>
+
+          <div class="swiper_navi">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TODO Schedule -->
+      <div class="notice_board"></div>
+    </div>
+  </div>
 </div>
 
 <script type="text/javascript">
@@ -200,8 +254,31 @@
 
       $(".content_inner").removeClass("on");
       $("#" + content).addClass("on");
-
-      
     });
+
+
+    // swiper
+    var slideTab = ["공지사항", "학사일정", "프로그램"];
+
+    var noticeSlide = new Swiper (".notice_slide", {
+      touchRatio: 0,
+      breakpoints : {
+        992 : {
+          touchRatio: 1
+        }
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (slideTab[index]) + '</span>';
+          },
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
+
   })
 </script>
