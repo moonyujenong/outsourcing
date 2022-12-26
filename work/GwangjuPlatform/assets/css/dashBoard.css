@@ -395,6 +395,149 @@
   color: #3B3B3B;
 }
 
+.dash_board .student {
+  width: 25px;
+  height: 21px;
+}
+
+.dash_board .student img {
+  width: 100%;
+  height: 100%;
+}
+
+.dash_board .left {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 50px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 20px;
+  position: relative;
+}
+
+.dash_board .left::after {
+  content: "";
+  display: block;
+  background-image: url(../img/dashBoard/icon_bottom.svg);
+  position: absolute;
+  right: 28px;
+  bottom: -1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 7px;
+  z-index: 1;
+}
+
+.dash_board .left > div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.dash_board .data {
+  text-align: center;
+}
+
+.dash_board .data > p {
+  color: #B9B9B9;
+  font-size: 11px;
+  font-weight: 700;
+  display: block;
+}
+
+.dash_board .data > h3 {
+  margin: 11px 0;
+  font-size: 77px;
+  font-weight: 700;
+  color: #2B3140;
+}
+
+.dash_board .right {
+  margin-top: 35px;
+}
+
+.dash_board .schedule_list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 0 22px;
+}
+
+.dash_board .schedule_list li:last-child {
+  margin: 0;
+}
+
+.dash_board .schedule_list li > span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+.dash_board .schedule_list li > span img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.dash_board .schedule_content {
+  padding-left: 46px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #4B4B4B;
+}
+
+.dash_board .data_content_box {
+  margin-bottom: 25px;
+}
+
+.dash_board .data_content_box:last-child {
+  margin-bottom: 0;
+}
+
+.dash_board .data_content_box > p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4B4B4B;
+  margin: 0;
+  max-height: 44px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+}
+
+.dash_board .data_label {
+  padding: 2px 6px;
+  background-color: #2B3140;
+  font-size: 14px;
+  font-weight: 600;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
 @media screen and (min-width: 992px) {
   .dash_board .section_gray {
     padding: 70px 15px 55px;
@@ -524,6 +667,42 @@
   }
   .dash_board .section_white {
     padding: 45px 15px;
+  }
+  .dash_board .schedule_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .dash_board .left {
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 200px;
+            flex: 0 0 200px;
+    padding: 35px 20px 26px;
+  }
+  .dash_board .left > div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+  }
+  .dash_board .right {
+    margin: 0;
+    padding-left: 39px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .dash_board .schedule_content {
+    padding-left: 18px;
+  }
+  .dash_board .schedule_list li > span {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 110px;
+            flex: 0 0 110px;
   }
 }
 
