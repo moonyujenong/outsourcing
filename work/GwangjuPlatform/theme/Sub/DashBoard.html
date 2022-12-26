@@ -289,6 +289,77 @@
       </div>
     </div>
   </div>
+
+  <!-- TODO section 3 -->
+  <div class="section_gray programs">
+    <div class="dash_board_inner">
+      <div class="head">
+        <div class="mobile_head">
+          <h3 class="title">Programs</h3>
+          
+          <ul class="programs_list">
+            <li>
+              <a href="#" class="programs_link on" data-target="all">전체</a>
+            </li>
+            <li>
+              <a href="#" class="programs_link" data-target="subject">교과</a>
+            </li>
+             <li>
+              <a href="#" class="programs_link" data-target="department">비교과</a>
+            </li>
+            <li>
+              <a href="#" class="programs_link" data-target="employment">취창업</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pc_head">
+          <img alt="programs tabs" src="../assets/img/dashBoard/img_programs_head_bg.pngs" />
+        </div>
+      </div>
+
+      <div class="programs_content">
+        <!-- programs swiper -->
+        <div class="swiper programs_slide on" id="all">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <span class="programs_label">접수마감</span>
+              <h3 class="programs_title">신재생 에너지 발전소 건설 프로젝트 최대 두줄입니다.</h3>
+              <p class="programs_content_text">내용이 나와야 합니다. 최대 두줄입니다.</p>
+
+              <div class="info">
+                <p>비교과</p>
+                <p>2022.12.24 ~ 2022.12.25</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">2</div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="swiper programs_slide" id="subject">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <span class="programs_label">접수마감</span>
+              <h3 class="programs_title">신재생 에너지 발전소 건설 프로젝트 최대 두줄입니다.</h3>
+              <p class="programs_content">내용이 나와야 합니다. 최대 두줄입니다.</p>
+
+              <div class="info">
+                <p>비교과</p>
+                <p>2022.12.24 ~ 2022.12.25</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">2</div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script type="text/javascript">
@@ -316,8 +387,16 @@
       $("#" + content).addClass("on");
     });
 
+    $(".programs_list li a").click(function(){
+      const target = $(this).attr("data-target");
+      $(".programs_link").removeClass("on");
+      $(this).addClass("on");
 
-    // swiper
+      $(".programs_slide").removeClass("on");
+      $("#" + target).addClass("on");
+    });
+
+    // news swiper
     var slideTab = ["공지사항", "학사일정", "프로그램"];
 
     var noticeSlide = new Swiper (".notice_slide", {
@@ -340,5 +419,29 @@
       },
     })
 
+    //programs swiper
+    var programsTabs = ["전체", "교과", "비교과", "취창업"]
+
+    var programsSlide = new Swiper(".programs_slide", {
+      slidesPerView: 1.2,
+      loop:true,
+      centeredSlides: true,
+      spaceBetween: 21,
+      breakpoints : {
+        992 : {
+          slidesPerView: 6,
+          grid: {
+            rows: 2,
+          },
+        }
+      },
+      pagination: {
+        el: '.swiper-pagination.programs',
+        clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (programsTabs[index]) + '</span>';
+          },
+      },
+    })
   })
 </script>

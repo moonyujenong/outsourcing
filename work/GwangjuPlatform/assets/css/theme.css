@@ -1448,6 +1448,10 @@
           box-sizing: border-box;
 }
 
+.dash_board .section_gray.programs {
+  padding: 25px 28px 82px;
+}
+
 .dash_board .inner {
   width: 100%;
   max-width: 1250px;
@@ -1974,6 +1978,135 @@
   display: block;
   margin-bottom: 4px;
   color: #fff;
+}
+
+.dash_board .mobile_head .title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2B3140;
+  margin: 0 0 19px;
+}
+
+.dash_board .programs_list {
+  margin: 0 -30px 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2B3140;
+}
+
+.dash_board .programs_list > li {
+  padding: 0 24px;
+  text-align: center;
+}
+
+.dash_board .programs_list > li a {
+  padding: 17px 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  display: block;
+}
+
+.dash_board .programs_list > li a.on {
+  color: #EF9628;
+  font-weight: 700;
+}
+
+.dash_board .programs_slide {
+  overflow: initial;
+}
+
+.dash_board .programs_slide .swiper-wrapper {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.dash_board .programs_slide .swiper-slide {
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  padding: 28px 30px;
+  height: auto;
+}
+
+.dash_board .programs_slide .swiper-slide > h3, .dash_board .programs_slide .swiper-slide p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dash_board .programs_slide .info {
+  margin: 35px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dash_board .programs_slide .info > p {
+  font-size: 14px;
+  color: #4B4B4B;
+  font-weight: 700;
+}
+
+.dash_board .programs_slide .info > p:first-child {
+  font-weight: 500;
+}
+
+.dash_board .programs_label {
+  padding: 2px 13px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #222;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin: 0 0 10px;
+}
+
+.dash_board .programs_title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #2B3140;
+  margin: 0 0 8px;
+  max-height: 65px;
+}
+
+.dash_board .programs_content_text {
+  font-size: 14px;
+  font-weight: 300;
+  color: #6E6E6E;
+  max-height: 38px;
+}
+
+.dash_board .programs_slide {
+  display: none;
+}
+
+.dash_board .programs_slide.on {
+  display: block;
+}
+
+.dash_board .pc_head {
+  display: none;
 }
 
 @media screen and (min-width: 992px) {
