@@ -2004,6 +2004,24 @@
 .dash_board .programs_list > li {
   padding: 0 24px;
   text-align: center;
+  position: relative;
+}
+
+.dash_board .programs_list > li:last-child::after {
+  display: none;
+}
+
+.dash_board .programs_list > li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 15px;
+  background-color: #fff;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .dash_board .programs_list > li a {
@@ -2029,7 +2047,7 @@
           align-items: stretch;
 }
 
-.dash_board .programs_slide .swiper-slide {
+.dash_board .programs_slide .slide_wrap {
   border-radius: 20px;
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
@@ -2038,7 +2056,7 @@
   height: auto;
 }
 
-.dash_board .programs_slide .swiper-slide > h3, .dash_board .programs_slide .swiper-slide p {
+.dash_board .programs_slide .slide_wrap > h3, .dash_board .programs_slide .slide_wrap p {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -2069,6 +2087,31 @@
   font-weight: 500;
 }
 
+.dash_board .programs_slide .swiper-pagination {
+  margin: 0 -7px;
+  position: absolute;
+  bottom: -40px !important;
+  width: 100% !important;
+}
+
+.dash_board .programs_slide .swiper-pagination > span {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: #DBDBDB;
+  opacity: 1;
+  margin: 0 7px !important;
+  padding: 0;
+}
+
+.dash_board .programs_slide .swiper-pagination > span.swiper-pagination-bullet-active {
+  background-color: #2A3140;
+}
+
+.dash_board .programs_slide .swiper-pagination > span::after {
+  display: none;
+}
+
 .dash_board .programs_label {
   padding: 2px 13px;
   color: #fff;
@@ -2095,6 +2138,7 @@
   font-weight: 300;
   color: #6E6E6E;
   max-height: 38px;
+  margin: 0;
 }
 
 .dash_board .programs_slide {
@@ -2274,6 +2318,48 @@
     -webkit-box-flex: 0;
         -ms-flex: 0 0 110px;
             flex: 0 0 110px;
+  }
+  .dash_board .programs_slide .swiper-wrapper {
+    margin: 0;
+    -webkit-box-orient: initial !important;
+    -webkit-box-direction: initial !important;
+        -ms-flex-direction: initial !important;
+            flex-direction: initial !important;
+  }
+  .dash_board .programs_slide .swiper-slide {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: auto;
+    margin: 0 0 30px;
+    padding: 0;
+    margin-top: 0 !important;
+  }
+  .dash_board .programs_slide .slide_wrap {
+    height: 100%;
+  }
+  .dash_board .pc_head {
+    display: block;
+    position: relative;
+  }
+  .dash_board .pc_head img {
+    width: 100%;
+  }
+  .dash_board .pc_head .programs_list {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background-color: transparent;
+  }
+  .dash_board .pc_head .programs_list > li a {
+    padding: 0;
+  }
+  .dash_board .programs_content {
+    margin: 29px 0 0;
+  }
+  .dash_board .mobile_head {
+    display: none;
   }
 }
 

@@ -504,6 +504,25 @@
     > li {
       padding: 0 24px;
       text-align: center;
+      position: relative;
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 15px;
+        background-color: #fff;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
 
       a {
         padding: 17px 0;
@@ -526,8 +545,8 @@
     .swiper-wrapper {
       align-items: stretch;
     }
-    
-    .swiper-slide  {
+
+    .slide_wrap {
       border-radius: 20px;
       box-shadow: 0 0 10px 0 rgba(0,0,0,0.16);
       background-color: #fff;
@@ -559,6 +578,32 @@
         }
       }
     }
+
+    .swiper-pagination {
+      margin: 0 -7px;
+      position: absolute;
+      bottom: -40px !important;
+      width: 100% !important;
+
+      > span {
+        width: 10px;
+        height: 10px;
+        border-radius: 100px;
+        background-color: #DBDBDB;
+        opacity: 1;
+        margin: 0 7px !important;
+        padding: 0;
+
+        &.swiper-pagination-bullet-active {
+          background-color: #2A3140;
+        }
+
+        &::after {
+          display: none;
+        }
+        
+      }
+    }
   }
 
   .programs_label {
@@ -585,6 +630,7 @@
     font-weight: 300;
     color: #6E6E6E;
     max-height: 38px;
+    margin: 0;
   }
 
   .programs_slide {
@@ -752,6 +798,56 @@
           flex: 0 0 110px;
         }
       }
+    }
+
+    .programs_slide  {
+      .swiper-wrapper {
+        margin: 0;
+        flex-direction: initial !important;
+      }
+
+      .swiper-slide { 
+        box-sizing: border-box;
+        height: auto;
+        margin: 0 0 30px;
+        padding: 0;
+        margin-top: 0 !important;
+      }
+      
+      .slide_wrap {
+        height: 100%;
+      }
+    }
+
+    .pc_head {
+      display: block;
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      .programs_list {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+        background-color: transparent;
+
+        > li {
+          a {
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    .programs_content {
+      margin: 29px 0 0 ;
+    }
+
+    .mobile_head {
+      display: none;
     }
   }
 }
