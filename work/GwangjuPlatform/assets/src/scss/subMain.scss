@@ -3,10 +3,17 @@
   position: relative;
 }
 
+.my_page_box_wrap {
+  width: 100%;
+  max-width: 1250px;
+  position: relative;
+  margin:0 auto;
+}
+
 .my_page_box {
   position: absolute;
   width: fit-content;
-  top: 108px;
+  top: 20px;
   right: 36px;
   z-index: 1;
   
@@ -51,8 +58,8 @@
 
 @media screen and (min-width:992px) {
   .my_page_box  {
-    top:130px;
-    right:76px;
+    top:0px;
+    right:0px;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.16);
     border-radius: 0 0 10px 10px;
     padding: 10px 20px;

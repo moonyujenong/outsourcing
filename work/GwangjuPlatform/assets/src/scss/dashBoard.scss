@@ -11,8 +11,10 @@
       padding: 25px 28px 82px; 
     }
   }
+
+
   
-  .inner {
+  .dash_board_inner{
     width: 100%;
     max-width: 1250px;
     margin: 0 auto;
@@ -25,6 +27,7 @@
     margin: 0 0 20px;
     position: relative;
     padding: 27px 32px;
+    background-color: #fff;
 
     &:last-child {
       margin: 0;
@@ -734,7 +737,9 @@
     .twice_board {
       display: flex;
       align-items: flex-start;
-      margin: 0 -25px;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 1300px;
     }
 
     .notice_board {

@@ -14,7 +14,7 @@
   padding: 25px 28px 82px;
 }
 
-.dash_board .inner {
+.dash_board .dash_board_inner {
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
@@ -29,6 +29,7 @@
   margin: 0 0 20px;
   position: relative;
   padding: 27px 32px;
+  background-color: #fff;
 }
 
 .dash_board .box:last-child {
@@ -818,7 +819,11 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin: 0 -25px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    max-width: 1300px;
   }
   .dash_board .notice_board {
     -webkit-box-flex: 0;
