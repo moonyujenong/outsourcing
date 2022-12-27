@@ -1,0 +1,75 @@
+.guide_line {
+  padding: 50px 26px;
+  text-align: center;
+}
+
+.guide_line .title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #FC8400;
+  text-align: center;
+  position: relative;
+  padding-bottom: 28px;
+  margin-bottom: 35px;
+}
+
+.guide_line .title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -27px;
+  right: -27px;
+  height: 1px;
+  bottom: 0;
+  background-color: #dbdbdb;
+}
+
+.guide_line img {
+  width: 100%;
+  max-width: 1030px;
+  margin: 0 auto 36px;
+}
+
+.guide_line .down {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  border-radius: 100px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #FC8400;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 9px 40px;
+}
+
+.guide_line .guid_title {
+  color: #2A3140;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .guide_line {
+    padding: 55px 15px 90px;
+  }
+  .guide_line .title {
+    margin-bottom: 48px;
+  }
+  .guide_line .title::after {
+    left: 0;
+    right: 0;
+  }
+  .guide_line .guid_title {
+    margin-bottom: 27px;
+  }
+  .guide_line img {
+    margin-bottom: 19px;
+  }
+}
+
+/*# sourceMappingURL=guideLine.css.map */
