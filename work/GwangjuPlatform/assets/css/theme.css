@@ -2542,6 +2542,366 @@
   }
 }
 
+.public_edu {
+  position: relative;
+  padding: 50px 39px 11px;
+}
+
+.public_edu .title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #FC8400;
+  padding-bottom: 28px;
+  position: relative;
+  text-align: center;
+  margin: 0;
+}
+
+.public_edu .title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  left: -39px;
+  right: -39px;
+  background-color: #DBDBDB;
+  bottom: 0;
+}
+
+.public_edu .section_1 > p {
+  text-align: center;
+  margin-top: 19px;
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 38px;
+  font-weight: 500;
+}
+
+.public_edu .section_1 img {
+  width: 100vw;
+  left: 50%;
+  position: relative;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0 0 23px;
+}
+
+.public_edu .section_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  margin: 0 0 30px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+}
+
+.public_edu .section_content::before {
+  content: "";
+  display: block;
+  width: 8px;
+  min-width: 8px;
+  margin-right: 17px;
+  margin-top: 9px;
+  height: 8px;
+  border-radius: 100px;
+  background-color: #8E8E8E;
+}
+
+.public_edu .section_content:last-child {
+  margin: 0;
+}
+
+.public_edu .mt_section {
+  margin: 41px 0 0;
+}
+
+.public_edu .mt_section img {
+  width: 100%;
+}
+
+.public_edu .side_border_title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #065AA2;
+  position: relative;
+  margin: 0 0 30px;
+  text-align: center;
+}
+
+.public_edu .side_border_title.section_3_title {
+  color: #2A3140;
+}
+
+.public_edu .side_border_title::before, .public_edu .side_border_title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 1px;
+  width: 30%;
+  background-color: #DBDBDB;
+}
+
+.public_edu .side_border_title::before {
+  left: -40px;
+}
+
+.public_edu .side_border_title::after {
+  right: -40px;
+}
+
+.public_edu .content_wrap {
+  margin: 0 0 22px;
+}
+
+.public_edu .content_wrap p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.public_edu .content_wrap p:last-child {
+  margin: 0;
+}
+
+.public_edu .content_wrap p::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100px;
+  background-color: #8E8E8E;
+  min-width: 8px;
+  margin-right: 17px;
+  margin-top: 10px;
+}
+
+.public_edu .progress_item {
+  margin: 0 0 30px;
+}
+
+.public_edu .progress_item:last-child {
+  margin: 0;
+}
+
+.public_edu .progress_item .inner {
+  padding: 22px 21px;
+  position: relative;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.public_edu .progress_item .label {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2px 9px;
+  background-color: #EF9628;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.public_edu .progress_item .label.navy {
+  background-color: #2B3140;
+}
+
+.public_edu .progress_item .title {
+  margin: 10px 0 41px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #2B3140;
+  padding: 0;
+}
+
+.public_edu .progress_item .title::after {
+  display: none;
+}
+
+.public_edu .term {
+  position: absolute;
+  top: 22px;
+  right: 21px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777;
+}
+
+.public_edu .prograss_content span {
+  display: block;
+  font-size: 14px;
+  color: #000;
+  margin: 0 0 5px;
+}
+
+.public_edu .bottom_text {
+  text-align: center;
+  margin: 20px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #777;
+  text-align: center;
+  display: block;
+}
+
+.public_edu .more {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 30px 0 0;
+  border-bottom: 2px solid #DBDBDB;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font-size: 14px;
+  color: #9DAFBD;
+  font-weight: 700;
+  padding-bottom: 11px;
+  cursor: pointer;
+}
+
+.public_edu .more.last_more {
+  border: 0;
+  padding: 0;
+}
+
+.public_edu .more > img {
+  width: 17px;
+  margin-right: 6px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.public_edu .category {
+  font-size: 14px;
+  font-weight: 400;
+  color: #777;
+  text-align: center;
+  display: block;
+  margin: 0;
+}
+
+.public_edu .teach_name {
+  margin: 0;
+}
+
+.public_edu .edu_content {
+  font-size: 14px;
+  font-weight: 400;
+  color: #777;
+  margin: 11px 0 36px;
+  display: block;
+  text-align: center;
+}
+
+.public_edu .section_4 .inner {
+  padding: 34px 26px;
+}
+
+@media screen and (min-width: 992px) {
+  .public_edu {
+    padding: 55px 15px 50px;
+  }
+  .public_edu .edu_inner {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+  .public_edu .title::after {
+    left: 0;
+    right: 0;
+  }
+  .public_edu .flex_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .public_edu .section_1 img {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+    left: auto;
+    -webkit-transform: initial;
+            transform: initial;
+    margin: 0 60px 0 0;
+  }
+  .public_edu .section_1 .flex_row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .public_edu .side_border_title {
+    margin: 0 0 34px;
+  }
+  .public_edu .side_border_title::before, .public_edu .side_border_title::after {
+    width: 40%;
+  }
+  .public_edu .side_border_title::before {
+    left: 0;
+  }
+  .public_edu .side_border_title::after {
+    right: 0;
+  }
+  .public_edu .section_2 .flex_row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .public_edu .section_2 img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+    width: 60%;
+  }
+  .public_edu .progress_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  .public_edu .progress_item {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 25%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    margin: 0 0 30px;
+    padding: 0 15px;
+  }
+  .public_edu .more {
+    display: none;
+  }
+}
+
 html, body {
   width: 100%;
   overflow-x: hidden;
