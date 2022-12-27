@@ -19,7 +19,69 @@
   </div>
 
   <!-- TODO 대쉬보드 -->
-  <div class="content_layout dash_board">
+  <!-- <div class="content_layout dash_board">
     <div  data-include-path="./theme/Sub/DashBoard.html"></div>
+  </div> -->
+
+  <!-- TODO sub page -->
+  <div class="content_layout">
+    <div class="sub">
+      <div class="sub_banner">
+        <img alt="sub banner img" src="./assets/img/sub/sub_baanner.png" />
+        <h3 class="sub_title">공동교육과정</h3>
+      </div>
+
+      <div class="sub_navigation">
+        <ul class="navigation_list">
+          <!-- TODO 활성화 된 li 에 클래스 active 추가 합니다. -->
+          <li class="icon_box">
+            <img alt="navi icon" src="./assets/img/sub/navi_icon.svg" />
+          </li>
+          <li class="one_depth">
+            <span class="menu_title">
+              1차 메뉴 이름
+              <img alt="dropdown icon" src="./assets/img/sub/icon_navi_dropdown.svg" />
+            </span>
+  
+            <div class="dropdown">
+              <div class="dropdown_item">1차메뉴 드롭다운</div>
+              <div class="dropdown_item">1차메뉴 드롭다운</div>
+            </div>
+          </li>
+          <li class="two_depth">
+            <span class="menu_title">
+              2차 메뉴 이름
+              <img alt="dropdown icon" src="./assets/img/sub/icon_navi_dropdown.svg" />
+            </span>
+  
+            <div class="dropdown">
+              <div class="dropdown_item active">2차메뉴 드롭다운</div>
+              <div class="dropdown_item">2차메뉴 드롭다운</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
   </div>
 </main>
+
+<script type="text/javascript">
+  $(function(){
+    $(".navigation_list li").click(function(){
+      $(".navigation_list li").children("div.dropdown").removeClass("show");
+      $(".navigation_list li").removeClass("active");
+      $(this).children("div.dropdown").addClass("show");
+      $(this).addClass("active");
+
+      if($(this).hasClass("active")) {
+        $(this).children("div.dropdown").removeClass("show");
+      }
+    });
+    
+    $(".dropdown_item").click(function(){
+      $(".dropdown_item").removeClass("active");
+      $(this).addClass("active");
+    });
+  })
+</script>
