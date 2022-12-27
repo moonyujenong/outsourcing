@@ -1439,8 +1439,11 @@
 .sub_banner > img {
   position: relative;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: calc(100vw * 200 / 460);
+  max-height: 200px;
 }
 
 .sub_title {
@@ -1597,6 +1600,13 @@
   .dropdown_item.active {
     background-color: #EF7100;
     color: #fff;
+  }
+  .sub_banner > img {
+    height: calc(100vw * 251 / 1200);
+    max-height: 251px;
+  }
+  .sub_title {
+    font-size: 48px;
   }
 }
 

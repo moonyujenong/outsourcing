@@ -63,8 +63,10 @@
   > img {
     position: relative;
     display: block;
+    object-fit: cover;
     width: 100%;
     height: calc(100vw * 200 / 460);
+    max-height: 200px;
   }
 }
 
@@ -214,5 +216,16 @@
       background-color: #EF7100;
       color: #fff;
     }
+  }
+
+  .sub_banner {
+    > img {
+      height: calc(100vw * 251 / 1200);
+      max-height: 251px;
+    }
+  }
+
+  .sub_title {
+    font-size: 48px;
   }
 }

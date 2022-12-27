@@ -69,14 +69,10 @@
 <script type="text/javascript">
   $(function(){
     $(".navigation_list li").click(function(){
-      $(".navigation_list li").children("div.dropdown").removeClass("show");
+      // $(".navigation_list li").children("div.dropdown").removeClass("show");
       $(".navigation_list li").removeClass("active");
-      $(this).children("div.dropdown").addClass("show");
+      $(this).children("div.dropdown").toggleClass("show");
       $(this).addClass("active");
-
-      if($(this).hasClass("active")) {
-        $(this).children("div.dropdown").removeClass("show");
-      }
     });
     
     $(".dropdown_item").click(function(){
