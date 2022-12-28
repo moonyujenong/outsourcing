@@ -1,0 +1,172 @@
+.my_page {
+  .inner {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 50px 36px 72px;
+  }
+
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FC8400;
+    padding-bottom: 28px;
+    margin-bottom: 41px;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      left: -36px;
+      right: -36px;
+      background-color: #dbdbdb;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+    margin: 0 0 40px;
+
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 100px;
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+
+  .info {
+    padding-left: 41px;
+    text-align: center;
+    flex: 1;
+  }
+
+  .name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4B4B4B;
+    margin: 0 0 1px;
+    display: block;
+  }
+
+  .spec {
+    font-size: 18px;
+    font-weight: 700;
+    color: #808080;
+  }
+
+  .import_spec {
+    margin: 16px auto 0;
+    width: 100%;
+    cursor: pointer;
+    background-color: #FC8400;
+    border-radius: 100px;
+    padding: 11px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .box_grades, .circle_grades {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .user_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  .circle_grades {
+    order: 2;
+    margin: 0 0 35px;
+  }
+
+  .box_grades {
+    order: 3;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 44px;
+
+    img {
+      flex: 0 0 33.33%;
+      width: 33.333%;
+    }
+  }
+
+  @media screen and (min-width:992px) {
+    .inner {
+      padding: 55px 15px;
+    }
+
+    .title {
+      margin: 0 0 49px;
+
+      &::after {
+        left: 0;
+        right: 0;
+      }
+    }
+
+    .profile {
+      flex-direction: column;
+      flex: 0 0 216px;
+      margin: 0;
+
+      img {
+        margin: 0 0 19px;
+      }
+    }
+
+    .user_info {
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: space-between;
+      padding-bottom: 46px;
+    }
+
+    .circle_grades {
+      order: 3;
+      margin: 0;
+      max-width: 334px;
+    }
+
+    .box_grades {
+      order: 2;
+      padding: 0 35px;
+      margin: 0;
+      max-width: 552px;
+
+      img {
+        width: 25%;
+        flex: 0 0 25%;
+      }
+    }
+
+    .info {
+      padding-left: 0;
+    }
+
+    .name {
+      margin: 0 0 11px;
+    }
+
+    .spec {
+      margin: 0 0 15px;
+    }
+  }
+}

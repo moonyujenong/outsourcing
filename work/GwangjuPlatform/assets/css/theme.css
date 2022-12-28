@@ -3823,6 +3823,212 @@
   }
 }
 
+.my_page .inner {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 50px 36px 72px;
+}
+
+.my_page .title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #FC8400;
+  padding-bottom: 28px;
+  margin-bottom: 41px;
+  text-align: center;
+  position: relative;
+}
+
+.my_page .title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  left: -36px;
+  right: -36px;
+  background-color: #dbdbdb;
+  position: absolute;
+  bottom: 0;
+}
+
+.my_page .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin: 0 0 40px;
+}
+
+.my_page .profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.my_page .info {
+  padding-left: 41px;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.my_page .name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4B4B4B;
+  margin: 0 0 1px;
+  display: block;
+}
+
+.my_page .spec {
+  font-size: 18px;
+  font-weight: 700;
+  color: #808080;
+}
+
+.my_page .import_spec {
+  margin: 16px auto 0;
+  width: 100%;
+  cursor: pointer;
+  background-color: #FC8400;
+  border-radius: 100px;
+  padding: 11px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.my_page .box_grades img, .my_page .circle_grades img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.my_page .user_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  border-bottom: 0;
+}
+
+.my_page .circle_grades {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin: 0 0 35px;
+}
+
+.my_page .box_grades {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 44px;
+}
+
+.my_page .box_grades img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+  width: 33.333%;
+}
+
+@media screen and (min-width: 992px) {
+  .my_page .inner {
+    padding: 55px 15px;
+  }
+  .my_page .title {
+    margin: 0 0 49px;
+  }
+  .my_page .title::after {
+    left: 0;
+    right: 0;
+  }
+  .my_page .profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 216px;
+            flex: 0 0 216px;
+    margin: 0;
+  }
+  .my_page .profile img {
+    margin: 0 0 19px;
+  }
+  .my_page .user_info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 46px;
+  }
+  .my_page .circle_grades {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 0;
+    max-width: 334px;
+  }
+  .my_page .box_grades {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 0 35px;
+    margin: 0;
+    max-width: 552px;
+  }
+  .my_page .box_grades img {
+    width: 25%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
+  .my_page .info {
+    padding-left: 0;
+  }
+  .my_page .name {
+    margin: 0 0 11px;
+  }
+  .my_page .spec {
+    margin: 0 0 15px;
+  }
+}
+
 html, body {
   width: 100%;
   overflow-x: hidden;
