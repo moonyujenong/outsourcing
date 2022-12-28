@@ -300,6 +300,7 @@
     padding: 27px 27px 80px;
     border-bottom: 1px solid #dbdbdb;
     position: relative;
+    min-height: 400px;
   }
 
   .scrap {
@@ -512,5 +513,55 @@
       }
     }
   }
+
+  .notice_detail {
+    .detail_head {
+      padding: 18px 25px;
+
+      h3 {
+        font-size: 16px;
+      }
+    }
+
+    .detail_info {
+      padding: 20px 22px;
+      margin: 0;
+
+      span {
+        padding: 0 22px;
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+
+    .scrap {
+      padding: 10px 13px;
+    }
+
+    .file_list {
+      padding: 16px 20px;
+
+      p {
+        font-weight: 700;
+      }
+    }
+
+    .more_btns {
+      padding: 30px 10px;
+      justify-content: flex-end;
+      border-color: #B2B2B2;
+
+      button {
+        margin-bottom: 0;
+        > img {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+
 }
   

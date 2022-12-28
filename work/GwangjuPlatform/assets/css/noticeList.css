@@ -370,6 +370,7 @@
   padding: 27px 27px 80px;
   border-bottom: 1px solid #dbdbdb;
   position: relative;
+  min-height: 400px;
 }
 
 .notice_detail .scrap {
@@ -483,6 +484,7 @@
   padding: 17px 14px;
   overflow: hidden;
   border-bottom: 1px solid #dbdbdb;
+  cursor: pointer;
 }
 
 .notice_detail .next_post > p {
@@ -608,6 +610,44 @@
   .notice_list .list_item span.title {
     margin: 0;
     font-weight: 400;
+  }
+  .notice_detail .detail_head {
+    padding: 18px 25px;
+  }
+  .notice_detail .detail_head h3 {
+    font-size: 16px;
+  }
+  .notice_detail .detail_info {
+    padding: 20px 22px;
+    margin: 0;
+  }
+  .notice_detail .detail_info span {
+    padding: 0 22px;
+  }
+  .notice_detail .detail_info span:last-child {
+    padding-right: 0;
+  }
+  .notice_detail .scrap {
+    padding: 10px 13px;
+  }
+  .notice_detail .file_list {
+    padding: 16px 20px;
+  }
+  .notice_detail .file_list p {
+    font-weight: 700;
+  }
+  .notice_detail .more_btns {
+    padding: 30px 10px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    border-color: #B2B2B2;
+  }
+  .notice_detail .more_btns button {
+    margin-bottom: 0;
+  }
+  .notice_detail .more_btns button > img {
+    margin-right: 10px;
   }
 }
 
