@@ -29,95 +29,403 @@
         </div>
       </div>
      
-  
-      <!-- TODO tab section -->
-      <div class="tab_menu">
-        <ul class="tab_menu_list">
-          <li class="active">
-            <a href="#" class="tab_menu_link active" data-target="">성적</a>
-          </li>
-          <li>
-            <a href="#" class="tab_menu_link" data-target="">신청과목</a>
-          </li>
-          <li>
-            <a href="#" class="tab_menu_link" data-target="">목표기업</a>
-          </li>
-          <li>
-            <a href="#" class="tab_menu_link" data-target="">자격증</a>
-          </li>
-        </ul>
-      </div>
-  
-      <div class="tab_section">
-        <div class="tab_section_content on" id="grades">
-          <div class="search_bar">
-            
-            <select name="" class="category_select subject" id="">
-              <option value="" checked>학년</option>
-              <option value="" checked>1학년</option>
-            </select>
-  
-            <select name="" class="category_select term" id="">
-              <option value="" checked>학기</option>
-              <option value="" checked>1학기</option>
-            </select>
-  
-            <input type="text" placeholder="과목">
+      <div class="gray_bg">
+        <!-- TODO tab section -->
+        <div class="tab_menu">
+          <ul class="tab_menu_list">
+            <li class="active">
+              <a href="#" class="tab_menu_link active" data-target="grades">성적</a>
+            </li>
+            <li>
+              <a href="#" class="tab_menu_link" data-target="subject">신청과목</a>
+            </li>
+            <li>
+              <a href="#" class="tab_menu_link" data-target="goalCompany">목표기업</a>
+            </li>
+            <li>
+              <a href="#" class="tab_menu_link" data-target="">자격증</a>
+            </li>
+          </ul>
+        </div>
 
-            <button class="submit_btn" type="button">
-              <img alt="search" src="./assets/img/sub/icon_search.svg" />
-            </button>
+        <div class="tab_section">
+          <div class="tab_section_content on" id="grades">
+            <div class="search_bar">
+              
+              <select name="" class="category_select subject" id="">
+                <option value="" checked>학년</option>
+                <option value="" checked>1학년</option>
+              </select>
+
+              <select name="" class="category_select term" id="">
+                <option value="" checked>학기</option>
+                <option value="" checked>1학기</option>
+              </select>
+
+              <input type="text" placeholder="과목">
+
+              <button class="submit_btn" type="button">
+                <img alt="search" src="./assets/img/sub/icon_search.svg" />
+              </button>
+            </div>
+
+            <p class="user_subject">3학년 1학기</p>
+
+            <div class="row img_sort">
+              <div class="col-lg-6">
+                <img alt="img 1" src="./assets/img/sub/img_user_subject_1.png" />
+              </div>
+              <div class="col-lg-6">
+                <img alt="img 1" src="./assets/img/sub/img_user_subject_2.png" />
+              </div>
+            </div>
+
+            <div class="table_cell">
+              <table class="table_graph" border="0">
+                <colgroup>
+                  <col width="10%"></col>
+                  <col width="5%"></col>
+                  <col width="10%"></col>
+                  <col width="50%"></col>
+                  <col width="10%"></col>
+                  <col width="5%"></col>
+                  <col width="10%"></col>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>년도</th>
+                    <th>학기</th>
+                    <th>구분</th>
+                    <th>교과명</th>
+                    <th>성적</th>
+                    <th>취득학점</th>
+                    <th>기타</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>2022</td>
+                    <td>1</td>
+                    <td>전필</td>
+                    <td>에너지와 지식재산</td>
+                    <td>A</td>
+                    <td>3</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
 
-          <p class="user_subject">3학년 1학기</p>
+          <div class="tab_section_content" id="subject">
+            <div class="subject_list_wrap">
+              <div class="subject_item_box">
+                <p class="user_subject">3학년 2학기</p>
 
-          <div class="row img_sort">
-            <div class="col-lg-6">
-              <img alt="img 1" src="./assets/img/sub/img_user_subject_1.png" />
-            </div>
-            <div class="col-lg-6">
-              <img alt="img 1" src="./assets/img/sub/img_user_subject_2.png" />
+                <div class="subject_list">
+                  <div class="subject_item">
+                    <span class="label">전필</span>
+                    <h3 class="subject_name">에너지와 지식재산</h3>
+                    <p class="subject_info">담당교수 조성용 / 전남대학교</p>
+
+                    <div class="flex_row grades_info">
+                      <span class="left">진행</span>
+                      <div class="bar">
+                        <div class="bar_thumb">
+                          <div class="bar_content" style="width: 50%;"></div>
+                        </div>
+                        <div class="bar_number">
+                          <span>0</span>
+                          <span>10</span>
+                          <span>20</span>
+                          <span>30</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="flex_row grades_info" style="margin: 0;">
+                      <span class="left get">취득학점</span>
+                      <span class="get_grades">0</span>
+                    </div>
+                  </div>
+
+                  <div class="subject_item">
+                    <span class="label navy">전선</span>
+                    <h3 class="subject_name">에너지와 지식재산</h3>
+                    <p class="subject_info">담당교수 조성용 / 전남대학교</p>
+
+                    <div class="flex_row grades_info">
+                      <span class="left">진행</span>
+                      <div class="bar">
+                        <div class="bar_thumb">
+                          <div class="bar_content" style="width: 50%;"></div>
+                        </div>
+                        <div class="bar_number">
+                          <span>0</span>
+                          <span>10</span>
+                          <span>20</span>
+                          <span>30</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="flex_row grades_info" style="margin: 0;">
+                      <span class="left get">취득학점</span>
+                      <span class="get_grades">0</span>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="subject_item_box">
+                <p class="user_subject">3학년 1학기</p>
+
+                <div class="subject_list">
+                  <div class="subject_item">
+                    <span class="label">전필</span>
+                    <h3 class="subject_name">에너지와 지식재산</h3>
+                    <p class="subject_info">담당교수 조성용 / 전남대학교</p>
+
+                    <div class="flex_row grades_info">
+                      <span class="left">진행</span>
+                      <div class="bar">
+                        <div class="bar_thumb">
+                          <div class="bar_content" style="width: 50%;"></div>
+                        </div>
+                        <div class="bar_number">
+                          <span>0</span>
+                          <span>10</span>
+                          <span>20</span>
+                          <span>30</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="flex_row grades_info" style="margin: 0;">
+                      <span class="left get">취득학점</span>
+                      <span class="get_grades">0</span>
+                    </div>
+                  </div>
+
+                  <div class="subject_item">
+                    <span class="label navy">전선</span>
+                    <h3 class="subject_name">에너지와 지식재산</h3>
+                    <p class="subject_info">담당교수 조성용 / 전남대학교</p>
+
+                    <div class="flex_row grades_info">
+                      <span class="left">진행</span>
+                      <div class="bar">
+                        <div class="bar_thumb">
+                          <div class="bar_content" style="width: 50%;"></div>
+                        </div>
+                        <div class="bar_number">
+                          <span>0</span>
+                          <span>10</span>
+                          <span>20</span>
+                          <span>30</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="flex_row grades_info" style="margin: 0;">
+                      <span class="left get">취득학점</span>
+                      <span class="get_grades">0</span>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
             </div>
           </div>
 
-          <div class="table_cell">
-            <table class="table_graph" border="0">
-              <colgroup>
-                <col width="10%"></col>
-                <col width="5%"></col>
-                <col width="10%"></col>
-                <col width="50%"></col>
-                <col width="10%"></col>
-                <col width="5%"></col>
-                <col width="10%"></col>
-              </colgroup>
-              <thead>
-                <tr>
-                  <th>년도</th>
-                  <th>학기</th>
-                  <th>구분</th>
-                  <th>교과명</th>
-                  <th>성적</th>
-                  <th>취득학점</th>
-                  <th>기타</th>
-                </tr>
-              </thead>
+          <div class="tab_section_content" id="goalCompany">
+            <h3 class="pass_title">합격스펙 분석</h3>
+            <div class="options">
+              <div class="left_option">
+                <ul class="option_btn_list">
+                  <li class="active">
+                    <a href="#" class="option_btn_link" data-target="">LS산전</a>
+                  </li>
+                  <li>
+                    <button class="plus_option" type="button">+</button>
+                  </li>
+                </ul>
+              </div>
 
-              <tbody>
-                <tr>
-                  <td>2022</td>
-                  <td>1</td>
-                  <td>전필</td>
-                  <td>에너지와 지식재산</td>
-                  <td>A</td>
-                  <td>3</td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
+              <div class="right_option">
+                <select name="" class="select" id="">
+                  <option value="" checked>전체</option>
+                </select>
+                <input type="text" class="input" placeholder="기업명">
+                <button type="button" class="company_submit">
+                  <img alt="search icon" src="./assets/img/sub/icon_search.svg" />
+                </button>
+              </div>
+            </div>
+
+            <div class="spec_list">
+              <div class="row">
+                <div class="col-lg-4 left_spec">
+                  <img alt="company logo" src="./assets/img/dashBoard/electric_logo.png" class="company_logo" />
+                  <img alt="circle img" src="./assets/img/sub/img_circle_grades.png" />
+                  <p class="help_text">
+                    합격자 분석결과 스펙지수<br>이기업의 합격자 평균 스펙지수는<br>272, 최소 137 입니다.
+                  </p>
+
+                  <span class="bottom_text">
+                    - <br>
+                    관심기업은 2개까지 입력 가능합니다.
+                    <br> <br>
+                    - <br>
+                    합격자의 빅데이터를 분석한 결과이며, <br>실제 기업의 합격자 정보와는 차이가<br> 발생할 수 있습니다.
+                  </span>
+                </div>
+
+                <div class="col-lg-8 right_spec">
+                  <div class="spec_detail">
+                    <span class="spec_name">학점</span>
+                    <ul class="spen_bar_graph">
+                      <li>
+                        <span class="name">최대</span>
+                        <div class="spec_bar_thumb">
+                          <span class="spec_bar gray" style="width: 40%;"></span>
+                        </div>
+                        <p>4.3</p>
+                      </li>
+                      <li>
+                        <span class="name">평균</span>
+                        <div class="spec_bar_thumb">
+                          <span class="spec_bar blue" style="width: 40%;"></span>
+                        </div>
+                        <p class="text_blue">4.3</p>
+                      </li>
+                      <li>
+                        <span class="name">최소</span>
+                        <div class="spec_bar_thumb">
+                          <span class="spec_bar gray" style="width: 40%;"></span>
+                        </div>
+                        <p>4.3</p>
+                      </li>
+                      <li>
+                        <span class="name my">내 점수</span>
+                        <div class="spec_bar_thumb">
+                          <span class="spec_bar my" style="width: 40%;"></span>
+                        </div>
+                        <p class="my">4.3</p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="spec_detail">
+                    <span class="spec_name">학점</span>
+                    <ul class="spen_bar_graph">
+                      <li>
+                        <span class="name">최대</span>
+                        <div class="spec_bar_thumb">
+                          <span class="spec_bar gray" style="width: 40%;"></span>
+                        </div>
+                        <p>4.3</p>
+                      </li>
+                      <li>
+                        <span class="name">평균</span>
+                        <div class="spec_bar_thumb">
+                          <span class="spec_bar blue" style="width: 40%;"></span>
+                        </div>
+                        <p class="text_blue">4.3</p>
+                      </li>
+                      <li>
+                        <span class="name">최소</span>
+                        <div class="spec_bar_thumb">
+                          <span class="spec_bar gray" style="width: 40%;"></span>
+                        </div>
+                        <p>4.3</p>
+                      </li>
+                      <li>
+                        <span class="name my">내 점수</span>
+                        <div class="spec_bar_thumb">
+                          <span class="spec_bar my" style="width: 40%;"></span>
+                        </div>
+                        <p class="my">4.3</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ing_announcement">
+              <p class="title">
+                '엘에스 전시(주)'
+                진행중인 채용공고
+              </p>
+
+              <div class="adopt_list">
+                <div class="adopt_item">
+                  <span class="left_date">D-10</span>
+                  <button class="scrap" type="button">
+                    <img alt="scrap icon" src="./assets/img/sub/icon_scrap_off.svg" />
+                  </button>
+
+                  <h3 class="adopt_title">
+                    이 곳은 제목이 들어가는 곳입니다. 최대 2줄입니다.
+                  </h3>
+                  <p class="range">기획, 전략, 경영, 사무, 총무, 법무 외</p>
+
+                  <span class="range2">
+                    <span>신입, 경력 |</span>
+                    <span>학력무관 |</span>
+                    <span>서울, 경기 외</span>
+                  </span>
+                </div>
+
+                <div class="adopt_item">
+                  <span class="left_date">D-10</span>
+                  <button class="scrap" type="button">
+                    <img alt="scrap icon" src="./assets/img/sub/icon_scrap_off.svg" />
+                  </button>
+
+                  <h3 class="adopt_title">
+                    이 곳은 제목이 들어가는 곳입니다. 최대 2줄입니다.
+                  </h3>
+                  <p class="range">기획, 전략, 경영, 사무, 총무, 법무 외</p>
+
+                  <span class="range2">
+                    <span>신입, 경력</span>
+                    <span>학력무관</span>
+                    <span>서울, 경기 외</span>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </form>
+
+<script type="text/javascript">
+  $(function(){
+    $(".tab_menu_list li").click(function(){
+      var target  = $(this).children("a").attr("data-target");
+      $(".tab_menu_list li").removeClass("active");
+      $(this).addClass("active");
+
+      $(".tab_section_content").removeClass("on");
+      $("#" + target).addClass("on");
+    });
+
+    $(".scrap").click(function(){
+      if ($(this).hasClass("on")) {
+        $(this).children("img").attr("src", "./assets/img/sub/icon_scrap_off.svg")
+        $(this).removeClass("on");
+      }
+      else {
+        $(this).children("img").attr("src", "./assets/img/sub/icon_scrap_on.svg")
+        $(this).addClass("on");
+      }
+    });
+  })
+</script>
