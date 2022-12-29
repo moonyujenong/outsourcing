@@ -1,32 +1,123 @@
-<div class="my_page">
-  <div class="inner">
-    <h3 class="title">
-      나의 기본 정보
-    </h3>
+<form action="">
+  <div class="my_page">
+    <div class="inner">
+      <h3 class="title">
+        나의 기본 정보
+      </h3>
+      
+      <div class="user_info">
+        <div class="profile">
+          <img alt="user profile" src="./assets/img/sub/img_sample_user.png" />
     
-    <div class="user_info">
-      <div class="profile">
-        <img alt="user profile" src="./assets/img/sub/img_sample_user.png" />
-  
-        <div class="info">
-          <span class="name">홍길동</span>
-          <span class="spec">나의 점수 : 656점</span>
-          <button type="button" class="import_spec">나의 스펙 등록하기</button>
+          <div class="info">
+            <span class="name">홍길동</span>
+            <span class="spec">나의 점수 : 656점</span>
+            <button type="button" class="import_spec">나의 스펙 등록하기</button>
+          </div>
+        </div>
+    
+        <div class="box_grades">
+          <img alt="box grades" src="./assets/img/sub/img_box_grades.png" />
+          <img alt="box grades" src="./assets/img/sub/img_box_grades.png" />
+          <img alt="box grades" src="./assets/img/sub/img_box_grades.png" />
+          <img alt="box grades" src="./assets/img/sub/img_box_grades.png" />
+          <img alt="box grades" src="./assets/img/sub/img_box_grades.png" />
+          <img alt="box grades" src="./assets/img/sub/img_box_grades.png" />
+        </div>
+        <div class="circle_grades">
+          <img alt="circle grades" src="./assets/img/sub/img_circle_grades.png" />
         </div>
       </div>
+     
   
-      <div class="box_grades">
-        <img alt="box grades" src="./assets/img/sub/img_box_grades.png" />
-        <img alt="box grades" src="./assets/img/sub/img_box_grades.png" />
-        <img alt="box grades" src="./assets/img/sub/img_box_grades.png" />
-        <img alt="box grades" src="./assets/img/sub/img_box_grades.png" />
-        <img alt="box grades" src="./assets/img/sub/img_box_grades.png" />
-        <img alt="box grades" src="./assets/img/sub/img_box_grades.png" />
+      <!-- TODO tab section -->
+      <div class="tab_menu">
+        <ul class="tab_menu_list">
+          <li class="active">
+            <a href="#" class="tab_menu_link active" data-target="">성적</a>
+          </li>
+          <li>
+            <a href="#" class="tab_menu_link" data-target="">신청과목</a>
+          </li>
+          <li>
+            <a href="#" class="tab_menu_link" data-target="">목표기업</a>
+          </li>
+          <li>
+            <a href="#" class="tab_menu_link" data-target="">자격증</a>
+          </li>
+        </ul>
       </div>
-      <div class="circle_grades">
-        <img alt="circle grades" src="./assets/img/sub/img_circle_grades.png" />
+  
+      <div class="tab_section">
+        <div class="tab_section_content on" id="grades">
+          <div class="search_bar">
+            
+            <select name="" class="category_select subject" id="">
+              <option value="" checked>학년</option>
+              <option value="" checked>1학년</option>
+            </select>
+  
+            <select name="" class="category_select term" id="">
+              <option value="" checked>학기</option>
+              <option value="" checked>1학기</option>
+            </select>
+  
+            <input type="text" placeholder="과목">
+
+            <button class="submit_btn" type="button">
+              <img alt="search" src="./assets/img/sub/icon_search.svg" />
+            </button>
+          </div>
+
+          <p class="user_subject">3학년 1학기</p>
+
+          <div class="row img_sort">
+            <div class="col-lg-6">
+              <img alt="img 1" src="./assets/img/sub/img_user_subject_1.png" />
+            </div>
+            <div class="col-lg-6">
+              <img alt="img 1" src="./assets/img/sub/img_user_subject_2.png" />
+            </div>
+          </div>
+
+          <div class="table_cell">
+            <table class="table_graph" border="0">
+              <colgroup>
+                <col width="10%"></col>
+                <col width="5%"></col>
+                <col width="10%"></col>
+                <col width="50%"></col>
+                <col width="10%"></col>
+                <col width="5%"></col>
+                <col width="10%"></col>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>년도</th>
+                  <th>학기</th>
+                  <th>구분</th>
+                  <th>교과명</th>
+                  <th>성적</th>
+                  <th>취득학점</th>
+                  <th>기타</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>2022</td>
+                  <td>1</td>
+                  <td>전필</td>
+                  <td>에너지와 지식재산</td>
+                  <td>A</td>
+                  <td>3</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
-   
   </div>
-</div>
+</form>

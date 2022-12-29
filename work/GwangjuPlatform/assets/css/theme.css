@@ -3960,6 +3960,212 @@
   width: 33.333%;
 }
 
+.my_page .tab_menu {
+  overflow-x: auto;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  -webkit-transform: translateX(-50vw);
+          transform: translateX(-50vw);
+  margin: 0 0 24px;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.my_page .tab_menu_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.my_page .tab_menu_list li {
+  border-right: 1px solid #dbdbdb;
+}
+
+.my_page .tab_menu_list li:first-child {
+  border-left: 1px solid #dbdbdb;
+}
+
+.my_page .tab_menu_list li.active a {
+  background-color: #2A3140;
+  color: #fff;
+}
+
+.my_page .tab_menu_link {
+  padding: 22px 39px;
+  display: block;
+  text-align: center;
+  min-width: 145px;
+  color: #2A3140;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #fff;
+}
+
+.my_page .tab_section_content {
+  display: none;
+}
+
+.my_page .tab_section_content.on {
+  display: block;
+}
+
+.my_page .search_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 0 44px;
+}
+
+.my_page .search_bar select:active, .my_page .search_bar select:focus, .my_page .search_bar input:active, .my_page .search_bar input:focus {
+  outline: none;
+}
+
+.my_page .search_bar select {
+  border: 1px solid #BEBEBE;
+  cursor: pointer;
+  padding: 8px 15px;
+  display: block;
+  font-size: 15px;
+  color: #969696;
+  font-weight: 400;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../img/sub/icon_dropdown_color.svg) no-repeat right 10px center;
+  margin-right: 13px;
+  background-size: 11px 11px;
+}
+
+.my_page .search_bar input {
+  background-color: #F2F2F2;
+  padding: 0 15px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 400;
+  margin-right: 13px;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+.my_page .search_bar input::-webkit-input-placeholder {
+  color: #969696;
+}
+
+.my_page .search_bar input::-moz-placeholder {
+  color: #969696;
+}
+
+.my_page .search_bar input:-ms-input-placeholder {
+  color: #969696;
+}
+
+.my_page .search_bar input::-ms-input-placeholder {
+  color: #969696;
+}
+
+.my_page .search_bar input::placeholder {
+  color: #969696;
+}
+
+.my_page .submit_btn {
+  padding: 7px 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #FC8400;
+  cursor: pointer;
+}
+
+.my_page .submit_btn img {
+  width: 25px;
+  height: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.my_page .user_subject {
+  margin: 0 0 36px;
+  font-size: 16px;
+  color: #777777;
+  font-weight: 400;
+}
+
+.my_page .img_sort > div {
+  margin: 0 0 46px;
+}
+
+.my_page .img_sort > div:last-child {
+  margin: 0;
+}
+
+.my_page .img_sort img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.my_page .table_cell {
+  margin: 72px 0 0;
+  border-top: 2px solid #A2A2A2;
+  width: 100vw;
+  left: 50%;
+  -webkit-transform: translateX(-50vw);
+          transform: translateX(-50vw);
+  position: relative;
+  overflow-x: auto;
+}
+
+.my_page .table_graph thead {
+  background-color: #F2F2F2;
+  text-align: center;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.my_page .table_graph thead th {
+  border-right: 1px solid #DBDBDB;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  padding: 16px 34px;
+}
+
+.my_page .table_graph thead th:last-child {
+  border-right: 0;
+}
+
+.my_page .table_graph tbody {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+}
+
+.my_page .table_graph tbody tr {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.my_page .table_graph tbody td {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  padding: 16px 34px;
+  white-space: nowrap;
+  border-right: 1px solid #DBDBDB;
+}
+
 @media screen and (min-width: 992px) {
   .my_page .inner {
     padding: 55px 15px;
@@ -4026,6 +4232,54 @@
   }
   .my_page .spec {
     margin: 0 0 15px;
+  }
+  .my_page .tab_menu {
+    width: 100%;
+    max-width: 1250px;
+    left: auto;
+    -webkit-transform: initial;
+            transform: initial;
+    margin: 39px 0;
+    border-right: 1px solid #dbdbdb;
+  }
+  .my_page .tab_menu_link {
+    padding: 22px 56px;
+  }
+  .my_page .search_bar {
+    margin: 0 0 30px;
+  }
+  .my_page .search_bar select {
+    min-width: 120px;
+    padding: 10px 19px;
+    background-size: 15px 15px;
+    margin-right: 17px;
+  }
+  .my_page .search_bar input {
+    margin-right: 17px;
+    max-width: 305px;
+  }
+  .my_page .user_subject {
+    font-size: 24px;
+    margin: 0 0 17px;
+  }
+  .my_page .img_sort {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .my_page .img_sort > div {
+    margin: 0;
+  }
+  .my_page .img_sort img {
+    max-width: 405px;
+    margin: 0 auto;
+  }
+  .my_page .table_cell {
+    margin: 47px 0 0;
+    width: 100%;
+    left: auto;
+    -webkit-transform: initial;
+            transform: initial;
   }
 }
 

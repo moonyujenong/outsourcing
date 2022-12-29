@@ -108,6 +108,185 @@
     }
   }
 
+  .tab_menu {
+    overflow-x: auto;
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50vw);
+    margin: 0 0 24px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  .tab_menu_list {
+    display: flex;
+    align-items: stretch;
+
+    li {
+      border-right: 1px solid #dbdbdb;
+
+      &:first-child {
+        border-left: 1px solid #dbdbdb;
+      }
+
+      &.active {
+        a {
+          background-color: #2A3140;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .tab_menu_link {
+    padding: 22px 39px;
+    display: block;
+    text-align: center;
+    min-width: 145px;
+    color: #2A3140;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: #fff;
+  }
+
+  .tab_section_content {
+    display: none;
+
+    &.on {
+      display: block;
+    }
+  }
+
+  .search_bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 0 44px;
+
+    select, input {
+      &:active, &:focus {
+        outline: none;
+      }
+    }
+
+    select {
+      border: 1px solid #BEBEBE;
+      cursor: pointer;
+      padding: 8px 15px;
+      display: block;
+      font-size: 15px;
+      color: #969696;
+      font-weight: 400;
+      appearance: none;
+      background: url(../img/sub/icon_dropdown_color.svg) no-repeat right 10px center;
+      margin-right: 13px;
+      background-size: 11px 11px;
+    }
+
+    input {
+      background-color: #F2F2F2;
+      padding: 0 15px;
+      height: 40px;
+      font-size: 15px;
+      font-weight: 400;
+      margin-right: 13px;
+      border: 0;
+      box-sizing: border-box;
+      width: 100%;
+
+      &::placeholder {
+        color: #969696;
+      }
+    }
+  }
+
+  .submit_btn {
+    padding: 7px 14px;
+    box-sizing: border-box;
+    background-color: #FC8400;
+    cursor: pointer;
+
+    img {
+      width: 25px;
+      height: 25px;
+      object-fit: cover;
+      display: block;  
+    }
+  }
+
+  .user_subject {
+    margin: 0 0 36px;
+    font-size: 16px;
+    color: #777777;
+    font-weight: 400;
+  }
+
+  .img_sort {
+    > div {
+      margin: 0 0 46px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .table_cell {
+    margin: 72px 0 0 ;
+    border-top: 2px solid #A2A2A2;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50vw);
+    position: relative;
+    overflow-x: auto;
+  }
+
+  .table_graph {
+    thead {
+      background-color: #F2F2F2;
+      text-align: center;
+      border-bottom: 1px solid #dbdbdb;
+
+      th {
+        border-right: 1px solid #DBDBDB;
+        font-size: 15px;
+        font-weight: 400;
+        color: #000;
+        padding: 16px 34px;
+
+        &:last-child {
+          border-right: 0;
+        }
+      }
+    }
+
+    tbody {
+      text-align: center;
+      font-size: 15px;
+      font-weight: 400;
+      color: #000;
+
+      tr {
+        border-bottom: 1px solid #dbdbdb;
+      }
+
+      td {
+        font-size: 15px;
+        font-weight: 400;
+        color: #000;
+        padding: 16px 34px;
+        white-space: nowrap;
+        border-right: 1px solid #DBDBDB;
+      }
+    }
+  }
+
   @media screen and (min-width:992px) {
     .inner {
       padding: 55px 15px;
@@ -167,6 +346,59 @@
 
     .spec {
       margin: 0 0 15px;
+    }
+
+    .tab_menu {
+      width: 100%;
+      max-width: 1250px;
+      left: auto;
+      transform: initial;
+      margin: 39px 0 ;
+      border-right: 1px solid #dbdbdb;
+    }
+
+    .tab_menu_link {
+      padding: 22px 56px;
+    }
+
+    .search_bar {
+      margin: 0 0 30px;
+      select {
+        min-width: 120px;
+        padding: 10px 19px;
+        background-size: 15px 15px;
+        margin-right: 17px;
+      }
+
+      input {
+        margin-right: 17px;
+        max-width: 305px;
+      }
+    }
+
+    .user_subject {
+      font-size: 24px;
+      margin: 0 0 17px;
+    }
+
+    .img_sort {
+      align-items: center;
+
+      > div {
+        margin: 0;
+      }
+
+      img {
+        max-width: 405px;
+        margin: 0 auto;
+      }
+    }
+
+    .table_cell {
+      margin: 47px 0 0 ;
+      width: 100%;
+      left: auto;
+      transform: initial;
     }
   }
 }
