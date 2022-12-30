@@ -687,7 +687,7 @@
   }
 
   .scrap {
-    width: 20px;
+    width: 22px;
     height: 20px;
     cursor: pointer;
     position: absolute;
@@ -698,6 +698,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      display: block;
     }
   }
 
@@ -746,6 +747,120 @@
       z-index: -1;
       height: 120%;
       top: 0;
+    }
+  }
+
+  .certificate_item {
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.16);
+    box-sizing: border-box;
+    padding: 22px 20px;
+    background-color: #fff;
+    margin: 0 0 23px;
+    position: relative;
+
+    &.plus {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: none;
+      
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+
+    .title {
+      display: block;
+      text-align: center;
+      margin: 0 0 3px;
+      font-weight: 700;
+      font-size: 20px;
+      color: #2B3140;
+      padding: 0;
+      
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .from {
+    font-size: 12px;
+    font-weight: 700;
+    color: #777777;
+    display: block;
+    text-align: center;
+    margin: 0 0 27px;
+  }
+
+  .certificate_title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #777777;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 13px;
+
+    p {
+      display: none;
+      margin: 0;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  .certificate_category_label {
+    width: fit-content;
+    display: block;
+    padding: 1px 10px;
+    background-color: #EF9628;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0 0 15px;
+  }
+
+  .certificate_info {
+    li {
+      display: flex;
+      align-items: center;
+      margin: 0 0 7px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  .info_left {
+    flex: 0 0 60px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    margin-right: 13px;
+    display: block;
+  }
+
+  .info_right {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+
+    &.bold {
+      font-weight: 700;
+    }
+  }
+
+  .certificate_wrap {
+    margin: 0 0 55px;
+
+    &:last-child {
+      margin: 0;
     }
   }
 
@@ -997,6 +1112,33 @@
 
     .gray_bg {
       padding: 39px 0 80px;
+    }
+
+    .certificate_list {
+      display: grid;
+      gap: 35px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .certificate_item {
+      margin: 0;
+
+      &.plus {
+        button {
+          font-size: 40px;
+          font-weight: 700;
+          color: #E0E0E0;
+          width: 100%;
+          height: 100%;
+        }
+        display: flex;
+      }
+    }
+
+    .certificate_title {
+      p {
+        display: block;
+      }
     }
   }
 }
