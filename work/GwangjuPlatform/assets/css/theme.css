@@ -274,6 +274,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 0 10px;
+  text-align: left;
 }
 
 .depth_menu_inner > a {
@@ -440,11 +441,22 @@
 
 .theme-main .content_area {
   width: 100%;
-  max-width: 1440px;
   margin: 0 auto 30px;
   position: relative;
   height: 100vh;
   background-color: #fff;
+}
+
+.theme-main .content_area:last-child {
+  margin: 0;
+}
+
+.theme-main .content_area .sub_title {
+  position: relative;
+  margin: 20px 0 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: auto;
 }
 
 .theme-main .title_box {
@@ -630,7 +642,6 @@
     display: none;
   }
   .theme-main .layout_bg {
-    max-width: 720px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -2265,7 +2276,7 @@
 .dash_board .programs_slide .swiper-pagination {
   margin: 0 -7px;
   position: absolute;
-  bottom: -40px !important;
+  bottom: 0px !important;
   width: 100% !important;
 }
 
@@ -2498,12 +2509,19 @@
         -ms-flex: 0 0 110px;
             flex: 0 0 110px;
   }
+  .dash_board .programs_slide {
+    overflow: hidden;
+    padding: 10px;
+  }
   .dash_board .programs_slide .swiper-wrapper {
-    margin: 0;
+    margin: 0 0 10px;
     -webkit-box-orient: initial !important;
     -webkit-box-direction: initial !important;
         -ms-flex-direction: initial !important;
             flex-direction: initial !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
   }
   .dash_board .programs_slide .swiper-slide {
     -webkit-box-sizing: border-box;
@@ -2551,6 +2569,7 @@
   font-size: 36px;
   font-weight: 700;
   color: #FC8400;
+  padding-top: 50px;
   padding-bottom: 28px;
   position: relative;
   text-align: center;
@@ -2829,6 +2848,9 @@
     max-width: 1250px;
     margin: 0 auto;
   }
+  .public_edu .title {
+    padding-top: 55px;
+  }
   .public_edu .title::after {
     left: 0;
     right: 0;
@@ -2913,8 +2935,10 @@
   color: #FC8400;
   text-align: center;
   position: relative;
+  padding-top: 50px;
   padding-bottom: 28px;
-  margin-bottom: 35px;
+  max-width: 1250px;
+  margin: 0 auto 35px;
 }
 
 .guide_line .title::after {
@@ -2962,6 +2986,7 @@
     padding: 55px 15px 90px;
   }
   .guide_line .title {
+    padding-top: 55px;
     margin-bottom: 48px;
   }
   .guide_line .title::after {
@@ -3645,6 +3670,7 @@
           box-sizing: border-box;
   text-align: center;
   margin: 0 0 125px;
+  padding-top: 50px;
   padding-bottom: 28px;
 }
 
@@ -3721,7 +3747,7 @@
 }
 
 .programs .status_label {
-  padding: 7px 51px;
+  padding: 7px;
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -3731,6 +3757,10 @@
   font-weight: 700;
   font-size: 15px;
   margin: 0 0 9px;
+}
+
+.programs .status_label.done {
+  background-color: #707070;
 }
 
 .programs .status_date {
@@ -3797,6 +3827,7 @@
     padding: 55px 15px 88px;
   }
   .programs .title {
+    padding-top: 55px;
     margin: 0 0 26px;
   }
   .programs .list_item {
@@ -3820,6 +3851,7 @@
   }
   .programs .status_label {
     padding: 7px 55px;
+    width: 152px;
   }
 }
 
@@ -5165,15 +5197,25 @@ input:focus, input:active, button:focus, button:active, select:focus, select:act
   padding: 0;
 }
 
-main {
+.theme_main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding-top: 90px;
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @media screen and (min-width: 992px) {
-  main {
+  .theme_main {
     padding-top: 130px;
   }
 }

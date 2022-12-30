@@ -7,6 +7,7 @@
   font-size: 36px;
   font-weight: 700;
   color: #FC8400;
+  padding-top: 50px;
   padding-bottom: 28px;
   position: relative;
   text-align: center;
@@ -284,6 +285,9 @@
     width: 100%;
     max-width: 1250px;
     margin: 0 auto;
+  }
+  .public_edu .title {
+    padding-top: 55px;
   }
   .public_edu .title::after {
     left: 0;

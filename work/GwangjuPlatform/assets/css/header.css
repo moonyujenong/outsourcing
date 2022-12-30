@@ -274,6 +274,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 0 10px;
+  text-align: left;
 }
 
 .depth_menu_inner > a {

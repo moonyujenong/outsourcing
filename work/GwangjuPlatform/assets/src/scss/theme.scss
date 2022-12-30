@@ -89,14 +89,20 @@ input, button, select, textarea {
   padding: 0;
 }
 
-main {
+.theme_main {
   flex: 1;
   padding-top:90px;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 @media screen and (min-width:992px) {
-  main {
+  .theme_main {
     padding-top: 130px;
   }
 }

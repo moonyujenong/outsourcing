@@ -11,7 +11,6 @@
 
     .content_area {
         width: 100%;
-        max-width: 1440px;
         margin: 0 auto 30px;
         position: relative;
         height: 100vh;
@@ -27,6 +26,17 @@
         //     background-color: #F9FBFC;
         //     box-shadow:inset 0px 3px 3px 0px rgba(0,0,0, 0.15)
         // }
+
+        &:last-child {
+            margin: 0;
+        }
+
+        .sub_title {
+            position: relative;
+            margin: 20px 0 0;
+            transform: translateX(-50%);
+            top: auto;
+        }
     }
 
     .title_box {
@@ -184,7 +194,6 @@
         }
 
         .layout_bg {
-            max-width: 720px;
             order:2;
         }
 

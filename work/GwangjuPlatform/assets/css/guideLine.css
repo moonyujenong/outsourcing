@@ -9,8 +9,10 @@
   color: #FC8400;
   text-align: center;
   position: relative;
+  padding-top: 50px;
   padding-bottom: 28px;
-  margin-bottom: 35px;
+  max-width: 1250px;
+  margin: 0 auto 35px;
 }
 
 .guide_line .title::after {
@@ -58,6 +60,7 @@
     padding: 55px 15px 90px;
   }
   .guide_line .title {
+    padding-top: 55px;
     margin-bottom: 48px;
   }
   .guide_line .title::after {

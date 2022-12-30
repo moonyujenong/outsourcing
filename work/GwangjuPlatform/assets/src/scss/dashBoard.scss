@@ -585,7 +585,7 @@
     .swiper-pagination {
       margin: 0 -7px;
       position: absolute;
-      bottom: -40px !important;
+      bottom: 0px !important;
       width: 100% !important;
 
       > span {
@@ -806,9 +806,14 @@
     }
 
     .programs_slide  {
+      overflow: hidden;
+      padding: 10px;
       .swiper-wrapper {
-        margin: 0;
+        margin: 0 0 10px;
         flex-direction: initial !important;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
       }
 
       .swiper-slide { 

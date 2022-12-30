@@ -12,11 +12,22 @@
 
 .theme-main .content_area {
   width: 100%;
-  max-width: 1440px;
   margin: 0 auto 30px;
   position: relative;
   height: 100vh;
   background-color: #fff;
+}
+
+.theme-main .content_area:last-child {
+  margin: 0;
+}
+
+.theme-main .content_area .sub_title {
+  position: relative;
+  margin: 20px 0 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: auto;
 }
 
 .theme-main .title_box {
@@ -202,7 +213,6 @@
     display: none;
   }
   .theme-main .layout_bg {
-    max-width: 720px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;

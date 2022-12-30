@@ -14,6 +14,7 @@
     box-sizing: border-box;
     text-align: center;
     margin: 0 0 125px;
+    padding-top: 50px;
     padding-bottom: 28px;
   }
 
@@ -81,7 +82,7 @@
   }
 
   .status_label {
-    padding: 7px 51px;
+    padding: 7px ;
     display: block;
     width: fit-content;
     background-color: #FC8400;
@@ -89,6 +90,10 @@
     font-weight: 700;
     font-size: 15px;
     margin: 0 0 9px;
+
+    &.done {
+      background-color: #707070;
+    }
   }
 
   .status_date {
@@ -154,6 +159,7 @@
     }
 
     .title  {
+      padding-top: 55px;
       margin: 0 0 26px;
     }
 
@@ -172,6 +178,7 @@
 
     .status_label {
       padding: 7px 55px;
+      width: 152px;
     }
   }
 }
