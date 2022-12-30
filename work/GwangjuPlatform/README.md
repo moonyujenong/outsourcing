@@ -1,11 +1,8 @@
-광주전남지역 혁신 플랫폼
-- url : https://moonyujenong.github.io/outsourcing/work/GwangjuPlatform/home.html
+광주전남지역 혁신 플랫폼 메인 페이지
+- url : https://moonyujenong.github.io/outsourcing/work/GwangjuPlatform/theme/main.html
 
 * 로그인 페이지
 - url : https://moonyujenong.github.io/outsourcing/work/GwangjuPlatform/theme/login.html
-
-* 메인 페이지
-- url : https://moonyujenong.github.io/outsourcing/work/GwangjuPlatform/theme/main.html
 
 * 대시 보드 페이지
 - url : https://moonyujenong.github.io/outsourcing/work/GwangjuPlatform/theme/Sub/DashBoard.html

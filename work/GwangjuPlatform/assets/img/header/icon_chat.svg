@@ -1,0 +1,5 @@
+<svg id="Icon_20_Grey_Chat" data-name="Icon / 20 / Grey / Chat" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <rect id="Icon_20_Grey_Chat_background" data-name="Icon / 20 / Grey / Chat background" width="20" height="20" fill="#fff" opacity="0"/>
+  <path id="Shape" d="M14.555,0H2.911A2.914,2.914,0,0,0,0,2.911V10.4a2.914,2.914,0,0,0,2.911,2.911h7.313l4.037,4.037a.416.416,0,0,0,.294.121.407.407,0,0,0,.159-.032.416.416,0,0,0,.257-.384V13.277a2.915,2.915,0,0,0,2.5-2.881V2.911A2.914,2.914,0,0,0,14.555,0Z" transform="translate(2.495)" fill="#fff"/>
+  <path id="Shape-2" data-name="Shape" d="M12.375,11.008H5.406A3.747,3.747,0,0,1,1.663,7.265V0H1.247A.417.417,0,0,0,.969.106,2.918,2.918,0,0,0,0,2.275V9.76a2.915,2.915,0,0,0,2.5,2.881v3.773a.416.416,0,0,0,.257.384.407.407,0,0,0,.159.032.419.419,0,0,0,.294-.121l4.036-4.037h5.793a.416.416,0,0,0,.416-.413v-.174Z" transform="translate(0 3.131)" fill="#fff"/>
+</svg>

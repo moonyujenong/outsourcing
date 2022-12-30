@@ -1,0 +1,5 @@
+<svg id="Icon_20_Grey_Notification" data-name="Icon / 20 / Grey / Notification" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <rect id="Icon_20_Grey_Notification_background" data-name="Icon / 20 / Grey / Notification background" width="20" height="20" fill="#fff" opacity="0"/>
+  <path id="Shape" d="M17.437,16.869l-1.5-2.385a6.832,6.832,0,0,1-1.06-3.645V8.75A5.886,5.886,0,0,0,10.5,3.162v-1.5a1.752,1.752,0,0,0-3.5,0v1.5A5.886,5.886,0,0,0,2.624,8.75v2.089a6.836,6.836,0,0,1-1.06,3.644l-1.5,2.385a.4.4,0,0,0-.005.42.44.44,0,0,0,.38.212H17.062a.443.443,0,0,0,.381-.211A.4.4,0,0,0,17.437,16.869Z" transform="translate(1.028)" fill="#fff"/>
+  <path id="Shape-2" data-name="Shape" d="M0,0A3.072,3.072,0,0,0,2.755,1.667,3.072,3.072,0,0,0,5.511,0H0Z" transform="translate(7.022 18.333)" fill="#fff"/>
+</svg>
