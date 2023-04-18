@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="shrink-to-fit=no, minimum-scale:0.25, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Responsive HTML Admin Dashboard Template based on Bootstrap 5"
+    />
+    <meta name="author" content="NobleUI" />
+    <meta
+      name="keywords"
+      content="nobleui, bootstrap, bootstrap 5, bootstrap5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web"
+    />
+
+    <title>전남대학교 - 아르샘</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End fonts -->
+
+    <!-- core:css -->
+    <link rel="stylesheet" href="../../../assets/vendors/core/core.css" />
+    <!-- endinject -->
+
+    <!-- Plugin css for this page -->
+    <link
+      rel="stylesheet"
+      href="../../../assets/vendors/flatpickr/flatpickr.min.css"
+    />
+    <!-- End plugin css for this page -->
+
+    <!-- inject:css -->
+    <link
+      rel="stylesheet"
+      href="../../../assets/fonts/feather-font/css/iconfont.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../assets/vendors/flag-icon-css/css/flag-icon.min.css"
+    />
+    <!-- endinject -->
+
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../../assets/css/demo1/style.css" />
+    <!-- End layout styles -->
+
+    <link rel="shortcut icon" href="../../../assets/images/favicon.png" />
+  </head>
+  <body class="sidebar-dark">
+    <div class="row">
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary w-auto"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModalCenter"
+      >
+        조직코드 조회 모달
+      </button>
+
+      <!-- 조직코드 관리 모달 -->
+      <div
+        class="modal fade"
+        id="exampleModalCenter"
+        tabindex="-1"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered"
+          style="max-width: 780px"
+        >
+          <div
+            class="modal-content"
+            style="box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.3)"
+          >
+            <div class="modal-header">
+              <h5 class="modal-title fw-bolder" style="color: #6e9fec">
+                조직코드 조회
+              </h5>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="btn-close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="row align-items-end">
+                <div class="col-3">
+                  <label class="form-label fs-6 fw-semibold">조직명</label>
+                  <input
+                    type="text"
+                    class="form-control rounded-0"
+                    placeholder=""
+                  />
+                </div>
+                <div class="col-3">
+                  <label class="form-label fs-6 fw-semibold">조직구분</label>
+                  <select class="form-select rounded-0 me-3">
+                    <option selected="">전체선택</option>
+                    <option>Open this select menu</option>
+                  </select>
+                </div>
+                <div class="col-3">
+                  <label class="form-label fs-6 fw-semibold">사용유무</label>
+                  <select class="form-select rounded-0 me-3">
+                    <option selected="">전체선택</option>
+                    <option>Open this select menu</option>
+                  </select>
+                </div>
+                <div class="col-3">
+                  <button
+                    type="button"
+                    class="btn btn-primary rounded-2 py-1.5 fw-bolder w-100"
+                  >
+                    조회
+                  </button>
+                </div>
+              </div>
+
+              <div style="height: 210px; overflow-y: auto" class="border mt-4">
+                <table class="table text-center">
+                  <colgroup>
+                    <col width="16%" />
+                    <col width="16%" />
+                    <col width="16%" />
+                    <col width="16%" />
+                    <col width="16%" />
+                    <col width="16%" />
+                  </colgroup>
+                  <thead class="" style="background-color: #e5e7ea">
+                    <tr>
+                      <th
+                        class="fw-bolder"
+                        style="font-size: 10px; color: #202a46"
+                      >
+                        조직코드
+                      </th>
+                      <th
+                        class="fw-bolder"
+                        style="font-size: 10px; color: #202a46"
+                      >
+                        조직명
+                      </th>
+                      <th
+                        class="fw-bolder"
+                        style="font-size: 10px; color: #202a46"
+                      >
+                        ORG_NM2
+                      </th>
+                      <th
+                        class="fw-bolder"
+                        style="font-size: 10px; color: #202a46"
+                      >
+                        상위부서명
+                      </th>
+                      <th
+                        class="fw-bolder"
+                        style="font-size: 10px; color: #202a46"
+                      >
+                        부서명
+                      </th>
+                      <th
+                        class="fw-bolder"
+                        style="font-size: 10px; color: #202a46"
+                      >
+                        캠퍼스
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="background-color: #f3f4f7">
+                      <td class="text-center" style="font-size: 12px">1</td>
+                      <td class="text-center" style="font-size: 12px">test</td>
+                      <td class="text-center" style="font-size: 12px">test</td>
+                      <td class="text-center" style="font-size: 12px">test</td>
+                      <td class="text-center" style="font-size: 12px">test</td>
+                      <td class="text-center" style="font-size: 12px">test</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 조직코드 관리 모달 -->
+    </div>
+
+    <!-- 우편번호 조회 도움창 모달 -->
+    <div class="row">
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary w-auto"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModalCenter2"
+      >
+        우편번호 조회 도움창
+      </button>
+
+      <!-- 우편번호 조회 도움창 모달 -->
+      <div
+        class="modal fade"
+        id="exampleModalCenter2"
+        tabindex="-1"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered"
+          style="max-width: 780px"
+        >
+          <div
+            class="modal-content"
+            style="box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.3)"
+          >
+            <div class="modal-header">
+              <h5 class="modal-title fw-bolder" style="color: #6e9fec">
+                우편번호 조회 도움창
+              </h5>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="btn-close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="row align-items-end justify-content-between">
+                <div class="col-6">
+                  <label class="form-label fs-6 fw-semibold">읍면동</label>
+                  <input
+                    type="text"
+                    class="form-control rounded-0"
+                    placeholder=""
+                  />
+                </div>
+
+                <div class="col-6">
+                  <button
+                    type="button"
+                    style="width: 90px"
+                    class="btn btn-primary rounded-2 py-1.5 fw-bolder d-block ms-auto"
+                  >
+                    조회
+                  </button>
+                </div>
+              </div>
+
+              <div style="height: 210px; overflow-y: auto" class="border mt-4">
+                <table class="table text-center">
+                  <colgroup>
+                    <col width="30%" />
+                    <col width="30%" />
+                    <col width="20%" />
+                    <col width="20%" />
+                  </colgroup>
+                  <thead class="" style="background-color: #e5e7ea">
+                    <tr>
+                      <th
+                        class="fw-bolder"
+                        style="font-size: 10px; color: #202a46"
+                      >
+                        우편번호
+                      </th>
+                      <th
+                        class="fw-bolder"
+                        style="font-size: 10px; color: #202a46"
+                      >
+                        전체주소
+                      </th>
+                      <th
+                        class="fw-bolder"
+                        style="font-size: 10px; color: #202a46"
+                      >
+                        번지
+                      </th>
+                      <th
+                        class="fw-bolder"
+                        style="font-size: 10px; color: #202a46"
+                      >
+                        기타주소
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="background-color: #f3f4f7">
+                      <td class="text-center" style="font-size: 12px">1</td>
+                      <td class="text-center" style="font-size: 12px">test</td>
+                      <td class="text-center" style="font-size: 12px">test</td>
+                      <td class="text-center" style="font-size: 12px">test</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 우편번호 조회 도움창 모달 -->
+    </div>
+    <!-- 우편번호 조회 도움창 모달 -->
+
+    <!-- 직급조회 모달 -->
+    <div class="row">
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary w-auto"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModalCenter3"
+      >
+        직급 조회
+      </button>
+
+      <!-- 직급 조회 모달 -->
+      <div
+        class="modal fade"
+        id="exampleModalCenter3"
+        tabindex="-1"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered"
+          style="max-width: 780px"
+        >
+          <div
+            class="modal-content"
+            style="box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.3)"
+          >
+            <div class="modal-header">
+              <h5 class="modal-title fw-bolder" style="color: #6e9fec">
+                직급 조회
+              </h5>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="btn-close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="row align-items-end justify-content-between">
+                <div class="col-6">
+                  <label class="form-label fs-6 fw-semibold">직급명</label>
+                  <input
+                    type="text"
+                    class="form-control rounded-0"
+                    placeholder=""
+                  />
+                </div>
+
+                <div class="col-6">
+                  <button
+                    type="button"
+                    style="width: 90px"
+                    class="btn btn-primary rounded-2 py-1.5 fw-bolder d-block ms-auto"
+                  >
+                    조회
+                  </button>
+                </div>
+              </div>
+
+              <div style="height: 210px; overflow-y: auto" class="border mt-4">
+                <table class="table text-center">
+                  <colgroup>
+                    <col width="20%" />
+                    <col width="45%" />
+                    <col width="45%" />
+                  </colgroup>
+                  <thead class="" style="background-color: #e5e7ea">
+                    <tr>
+                      <th
+                        class="fw-bolder"
+                        style="font-size: 10px; color: #202a46"
+                      >
+                        분류
+                      </th>
+                      <th
+                        class="fw-bolder"
+                        style="font-size: 10px; color: #202a46"
+                      >
+                        직급코드
+                      </th>
+                      <th
+                        class="fw-bolder"
+                        style="font-size: 10px; color: #202a46"
+                      >
+                        직급명
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="background-color: #f3f4f7">
+                      <td class="text-center" style="font-size: 12px">test</td>
+                      <td class="text-center" style="font-size: 12px">test</td>
+                      <td class="text-center" style="font-size: 12px">test</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 우편번호 조회 도움창 모달 -->
+    </div>
+    <!-- 직급조회 모달 -->
+
+    <script>
+      var varyingModal = document.getElementById("varyingModal");
+      varyingModal.addEventListener("show.bs.modal", function (event) {
+        // Button that triggered the modal
+        var button = event.relatedTarget;
+        // Extract info from data-bs-* attributes
+        var recipient = button.getAttribute("data-bs-whatever");
+        // If necessary, you could initiate an AJAX request here
+        // and then do the updating in a callback.
+        //
+        // Update the modal's content.
+        var modalTitle = varyingModal.querySelector(".modal-title");
+        var modalBodyInput = varyingModal.querySelector(".modal-body input");
+
+        modalTitle.textContent = "New message to " + recipient;
+        modalBodyInput.value = recipient;
+      });
+    </script>
+    <!-- core:js -->
+    <script src="../../../assets/vendors/core/core.js"></script>
+    <!-- endinject -->
+
+    <!-- Plugin js for this page -->
+    <script src="../../../assets/vendors/flatpickr/flatpickr.min.js"></script>
+    <script src="../../../assets/vendors/apexcharts/apexcharts.min.js"></script>
+    <!-- End plugin js for this page -->
+
+    <!-- inject:js -->
+    <script src="../../../assets/vendors/feather-icons/feather.min.js"></script>
+    <script src="../../../assets/js/template.js"></script>
+    <!-- endinject -->
+
+    <!-- Custom js for this page -->
+    <script src="../../../assets/js/dashboard-light.js"></script>
+    <!-- End custom js for this page -->
+
+    <!-- Click event -->
+    <script src="../../../assets/js/clickEvent.js"></script>
+    <!-- Click event -->
+  </body>
+</html>

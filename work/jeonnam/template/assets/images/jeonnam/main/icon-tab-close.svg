@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <g id="그룹_10040" data-name="그룹 10040" transform="translate(-1324 -83)">
+    <rect id="사각형_2402" data-name="사각형 2402" width="15" height="15" transform="translate(1324 83)" fill="#333856"/>
+    <g id="그룹_9994" data-name="그룹 9994" transform="translate(1327.936 87)">
+      <path id="선_26" data-name="선 26" d="M6.1,6.75a.764.764,0,0,1-.538-.22L-.527.53a.742.742,0,0,1,0-1.061.769.769,0,0,1,1.076,0l6.087,6a.742.742,0,0,1,0,1.061A.764.764,0,0,1,6.1,6.75Z" transform="translate(0.75 0.75)" fill="#fff"/>
+      <path id="선_27" data-name="선 27" d="M.011,6.75a.764.764,0,0,1-.538-.22.742.742,0,0,1,0-1.061l6.087-6a.769.769,0,0,1,1.076,0,.742.742,0,0,1,0,1.061l-6.087,6A.764.764,0,0,1,.011,6.75Z" transform="translate(0.75 0.75)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

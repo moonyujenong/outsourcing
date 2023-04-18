@@ -1,0 +1,70 @@
+
+*** CHANGE LOG ***
+
+v1.0 (11 September 2019)
+- Initial Release
+
+v1.1 (28 September 2019)
+- RTL Support
+- Design improvements
+
+v1.1.1 (06 October 2019)
+- RTL Bug fix
+
+v1.1.2 (15 October 2019)
+- Added minified version of main CSS files
+- Minified all other CSS files
+
+v1.2 (3 November 2019)
+- Added Horizontal-menu layout
+- Bug fixes
+
+v1.3 (10 March 2020)
+- Updated Bootstrap version to 4.4.1
+- Updated jQuery version to 3.4.1
+- Updated all npm outdated plugins
+- Design improvements
+- Bug fixes
+
+v1.4 (10 June 2020)
+- Updated Bootstrap version to 4.5.0
+- Updated jQuery version to 3.5.1
+- Updated all npm outdated plugins
+- Minor bug fixes
+
+v1.4.1 (30 July 2020)
+- Updated outdated npm plugins
+- Minor bug fixes
+
+v1.4.2 (10 January 2021)
+- Updated outdated npm plugins
+- Minor bug fixes
+
+
+
+v2.0 (26 September 2021)
+- Updated Bootstrap version to v5
+- Updated all npm outdated plugins
+- Improved RTL layout
+- Added RTL support for all demos
+- Bug fixes
+- Design improvements
+
+v2.0.1 (10 April 2022)
+- Added SortableJs
+- Updated all npm outdated plugins
+- Minor Bug fixes
+- Design improvements
+
+v2.0.2 (11 August 2022)
+- Updated Bootstrap version to v5.2
+- Updated all npm packages to latest.
+- Replaced Bootstrap-datepicker and Tempus Dominus Bootstrap 4 with Flatpickr.
+- Replaced Bootstrap Colorpicker with Pickr.
+- Replaced SimpleMDE with EasyMDE
+- Minor Bug fixes
+
+v2.0.3 (10 November 2022)
+- Removed morris.js package
+- Updated all npm packages to latest
+- Minor Bug fixes

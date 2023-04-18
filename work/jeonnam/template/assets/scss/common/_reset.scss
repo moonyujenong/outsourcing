@@ -1,0 +1,118 @@
+// Reste styles
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  min-width: 1366px !important;
+  overflow-x: auto;
+}
+
+.btn,
+.btn-group.open .dropdown-toggle,
+.btn:active,
+.btn:focus,
+.btn:hover,
+.btn:visited,
+a,
+a:active,
+a:checked,
+a:focus,
+a:hover,
+a:visited,
+body,
+button,
+button:active,
+button:hover,
+button:visited,
+div,
+input,
+input:active,
+input:hover,
+input:focus,
+input:visited,
+select,
+select:active,
+select:focus,
+select:visited,
+textarea,
+textarea:active,
+textarea:focus,
+textarea:visited {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+select,
+.form-check-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px $input-bg inset;
+  -webkit-text-fill-color: $body-color;
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  border-style: initial;
+}
+
+@page {
+  size: auto;
+  margin: 10mm;
+}
+
+@media print, screen {
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact; // 크롬 배경화면 프린트
+  }
+}
+
+@media print {
+  .navbar,
+  ul.nav,
+  .sidebar,
+  .print {
+    display: none !important;
+  }
+
+  .main-wrapper {
+    .page-wrapper {
+      width: 100% !important;
+      margin: 0 !important;
+    }
+  }
+  .page-content {
+    margin: 0 !important;
+  }
+}
+
+@page {
+  size: auto landscape;
+  margin: 0;
+  a:link:after,
+  #content a:visited:after {
+    content: " (" attr(href) ") ";
+    font-size: 90%;
+  }
+  margin: 0;
+}

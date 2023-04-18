@@ -1,0 +1,46 @@
+.breadcrumb {
+  .breadcrumb-item {
+    font-size: 12px;
+    font-weight: 500;
+    color: #a2a2a2 !important;
+    a {
+      font-size: 12px;
+      font-weight: 500;
+      color: #a2a2a2 !important;
+    }
+
+    + .breadcrumb-item {
+      &::before {
+        color: #a2a2a2;
+      }
+    }
+  }
+
+  &.breadcrumb-line {
+    .breadcrumb-item {
+      + .breadcrumb-item {
+        &::before {
+          content: "-" !important;
+        }
+      }
+    }
+  }
+  &.breadcrumb-dot {
+    .breadcrumb-item {
+      + .breadcrumb-item {
+        &::before {
+          content: "•" !important;
+        }
+      }
+    }
+  }
+  &.breadcrumb-arrow {
+    .breadcrumb-item {
+      + .breadcrumb-item {
+        &::before {
+          content: ">>" !important;
+        }
+      }
+    }
+  }
+}

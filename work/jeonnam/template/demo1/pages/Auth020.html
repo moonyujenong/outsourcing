@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="shrink-to-fit=no, minimum-scale:0.25, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Responsive HTML Admin Dashboard Template based on Bootstrap 5"
+    />
+    <meta name="author" content="NobleUI" />
+    <meta
+      name="keywords"
+      content="nobleui, bootstrap, bootstrap 5, bootstrap5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web"
+    />
+
+    <title>전남대학교 - 아르샘</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End fonts -->
+
+    <!-- core:css -->
+    <link rel="stylesheet" href="../../assets/vendors/core/core.css" />
+    <!-- endinject -->
+
+    <!-- Plugin css for this page -->
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/flatpickr/flatpickr.min.css"
+    />
+    <!-- End plugin css for this page -->
+
+    <!-- inject:css -->
+    <link
+      rel="stylesheet"
+      href="../../assets/fonts/feather-font/css/iconfont.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/flag-icon-css/css/flag-icon.min.css"
+    />
+    <!-- endinject -->
+
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../assets/css/demo1/style.css" />
+    <!-- End layout styles -->
+
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+  </head>
+  <body class="sidebar-dark">
+    <div class="main-wrapper">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar">
+        <div class="sidebar-header">
+          <a href="#" class="sidebar-brand">
+            <img
+              alt="전남 대학교 로고"
+              src="../../assets/images/jeonnam/sideBar/logo.png"
+            />
+          </a>
+        </div>
+        <div class="sidebar-body">
+          <form class="d-flex align-items-center search-form mt-4 mx-3 px-3">
+            <i data-feather="search"></i>
+            <input
+              class="form-control bg-transparent border-0 p-0"
+              type="search"
+              placeholder="메뉴 검색"
+              aria-label="Search"
+            />
+          </form>
+
+          <ul class="nav">
+            <li class="nav-item">
+              <a
+                class="nav-link px-4"
+                data-bs-toggle="collapse"
+                href="#authSettings"
+                role="button"
+                aria-expanded="false"
+                aria-controls="authSettings"
+              >
+                <img
+                  alt=""
+                  src="../../assets/images/jeonnam/sideBar/icon-paper.svg"
+                />
+                부서별권한설정
+                <i class="link-arrow" data-feather="chevron-down"></i>
+              </a>
+              <div class="collapse inner-bg" id="authSettings">
+                <ul class="nav sub-menu">
+                  <li class="nav-item">
+                    <a
+                      href="pages/authSettings/authApplication.html"
+                      class="nav-link nav-link_inner depth-menu"
+                      role="button"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      >권한신청</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <div class="nav-link nav-link_inner">
+                      <span class="depth-menu nav-link">권한승인 및 관리</span>
+
+                      <!-- todo : two-depth 메뉴 클릭 시 해당 태그에 클래스 active 추가 되어야 합니다. 
+                          스크립트는 clickEvent.js 에 작성해두었습니다. -->
+                      <a
+                        class="nav-link active nav-link_inner two-depth depth-menu"
+                        role="button"
+                      >
+                        부서별 권한 승인 처리
+                      </a>
+                      <a
+                        class="nav-link nav-link_inner two-depth depth-menu"
+                        role="button"
+                      >
+                        부서별 권한내역 조회
+                      </a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="pages/authSettings/authHistory.html"
+                      class="nav-link nav-link_inner depth-menu"
+                      role="button"
+                      aria-expanded="false"
+                      >권한이력관리(전산원)</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <div class="pt-3 px-3 user-info">
+            <p>최종접속 IP 192.168.0.24(2023-02-22:20:55)</p>
+            <p>홍길동 / homadlfkjals[s1234]</p>
+            <p>유휴시간 : 00초[1시간10분600초]</p>
+            <p>2023-02-22 오후 1:11</p>
+          </div>
+        </div>
+      </nav>
+
+      <!-- partial -->
+
+      <div class="page-wrapper">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar">
+          <a href="#" class="sidebar-toggler">
+            <i data-feather="menu"></i>
+          </a>
+          <div class="navbar-content">
+            <div class="flex-fill">
+              <ul
+                class="gnb-menu list-group navbar-nav align-items-center text-center fw-bolder list-group-horizontal"
+                style="height: 100%"
+              >
+                <li class="flex-fill">
+                  <a href="#!" class="text-white">학사</a>
+                </li>
+                <li class="flex-fill">
+                  <a href="#!" class="text-white">행정</a>
+                </li>
+                <li class="flex-fill">
+                  <a href="#!" class="text-white">대학원</a>
+                </li>
+                <li class="flex-fill">
+                  <a href="#!" class="text-white">학부입시</a>
+                </li>
+                <li class="flex-fill">
+                  <a href="#!" class="text-white">대학원입시</a>
+                </li>
+                <li class="flex-fill">
+                  <a href="#!" class="text-white">공통</a>
+                </li>
+                <li class="flex-fill">
+                  <a href="#!" class="text-white">도움말</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="navbar-nav border-start">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="notificationDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i data-feather="bell"></i>
+                  <div class="indicator">
+                    <div class="circle"></div>
+                  </div>
+                </a>
+                <div
+                  class="dropdown-menu p-0"
+                  aria-labelledby="notificationDropdown"
+                >
+                  <div
+                    class="px-3 py-2 d-flex align-items-center justify-content-between border-bottom"
+                  >
+                    <p>6 New Notifications</p>
+                    <a href="javascript:;" class="text-muted">Clear all</a>
+                  </div>
+                  <div class="p-1">
+                    <a
+                      href="javascript:;"
+                      class="dropdown-item d-flex align-items-center py-2"
+                    >
+                      <div
+                        class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3"
+                      >
+                        <i class="icon-sm text-white" data-feather="gift"></i>
+                      </div>
+                      <div class="flex-grow-1 me-2">
+                        <p>New Order Recieved</p>
+                        <p class="tx-12 text-muted">30 min ago</p>
+                      </div>
+                    </a>
+                    <a
+                      href="javascript:;"
+                      class="dropdown-item d-flex align-items-center py-2"
+                    >
+                      <div
+                        class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3"
+                      >
+                        <i
+                          class="icon-sm text-white"
+                          data-feather="alert-circle"
+                        ></i>
+                      </div>
+                      <div class="flex-grow-1 me-2">
+                        <p>Server Limit Reached!</p>
+                        <p class="tx-12 text-muted">1 hrs ago</p>
+                      </div>
+                    </a>
+                    <a
+                      href="javascript:;"
+                      class="dropdown-item d-flex align-items-center py-2"
+                    >
+                      <div
+                        class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3"
+                      >
+                        <img
+                          class="wd-30 ht-30 rounded-circle"
+                          src="https://via.placeholder.com/30x30"
+                          alt="userr"
+                        />
+                      </div>
+                      <div class="flex-grow-1 me-2">
+                        <p>New customer registered</p>
+                        <p class="tx-12 text-muted">2 sec ago</p>
+                      </div>
+                    </a>
+                    <a
+                      href="javascript:;"
+                      class="dropdown-item d-flex align-items-center py-2"
+                    >
+                      <div
+                        class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3"
+                      >
+                        <i class="icon-sm text-white" data-feather="layers"></i>
+                      </div>
+                      <div class="flex-grow-1 me-2">
+                        <p>Apps are ready for update</p>
+                        <p class="tx-12 text-muted">5 hrs ago</p>
+                      </div>
+                    </a>
+                    <a
+                      href="javascript:;"
+                      class="dropdown-item d-flex align-items-center py-2"
+                    >
+                      <div
+                        class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3"
+                      >
+                        <i
+                          class="icon-sm text-white"
+                          data-feather="download"
+                        ></i>
+                      </div>
+                      <div class="flex-grow-1 me-2">
+                        <p>Download completed</p>
+                        <p class="tx-12 text-muted">6 hrs ago</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="px-3 py-2 d-flex align-items-center justify-content-center border-top"
+                  >
+                    <a href="javascript:;">View all</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="messageDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i data-feather="mail"></i>
+                </a>
+                <div
+                  class="dropdown-menu p-0"
+                  aria-labelledby="messageDropdown"
+                >
+                  <div
+                    class="px-3 py-2 d-flex align-items-center justify-content-between border-bottom"
+                  >
+                    <p>9 New Messages</p>
+                    <a href="javascript:;" class="text-muted">Clear all</a>
+                  </div>
+                  <div class="p-1">
+                    <a
+                      href="javascript:;"
+                      class="dropdown-item d-flex align-items-center py-2"
+                    >
+                      <div class="me-3">
+                        <img
+                          class="wd-30 ht-30 rounded-circle"
+                          src="https://via.placeholder.com/30x30"
+                          alt="userr"
+                        />
+                      </div>
+                      <div class="d-flex justify-content-between flex-grow-1">
+                        <div class="me-4">
+                          <p>Leonardo Payne</p>
+                          <p class="tx-12 text-muted">Project status</p>
+                        </div>
+                        <p class="tx-12 text-muted">2 min ago</p>
+                      </div>
+                    </a>
+                    <a
+                      href="javascript:;"
+                      class="dropdown-item d-flex align-items-center py-2"
+                    >
+                      <div class="me-3">
+                        <img
+                          class="wd-30 ht-30 rounded-circle"
+                          src="https://via.placeholder.com/30x30"
+                          alt="userr"
+                        />
+                      </div>
+                      <div class="d-flex justify-content-between flex-grow-1">
+                        <div class="me-4">
+                          <p>Carl Henson</p>
+                          <p class="tx-12 text-muted">Client meeting</p>
+                        </div>
+                        <p class="tx-12 text-muted">30 min ago</p>
+                      </div>
+                    </a>
+                    <a
+                      href="javascript:;"
+                      class="dropdown-item d-flex align-items-center py-2"
+                    >
+                      <div class="me-3">
+                        <img
+                          class="wd-30 ht-30 rounded-circle"
+                          src="https://via.placeholder.com/30x30"
+                          alt="userr"
+                        />
+                      </div>
+                      <div class="d-flex justify-content-between flex-grow-1">
+                        <div class="me-4">
+                          <p>Jensen Combs</p>
+                          <p class="tx-12 text-muted">Project updates</p>
+                        </div>
+                        <p class="tx-12 text-muted">1 hrs ago</p>
+                      </div>
+                    </a>
+                    <a
+                      href="javascript:;"
+                      class="dropdown-item d-flex align-items-center py-2"
+                    >
+                      <div class="me-3">
+                        <img
+                          class="wd-30 ht-30 rounded-circle"
+                          src="https://via.placeholder.com/30x30"
+                          alt="userr"
+                        />
+                      </div>
+                      <div class="d-flex justify-content-between flex-grow-1">
+                        <div class="me-4">
+                          <p>Amiah Burton</p>
+                          <p class="tx-12 text-muted">Project deatline</p>
+                        </div>
+                        <p class="tx-12 text-muted">2 hrs ago</p>
+                      </div>
+                    </a>
+                    <a
+                      href="javascript:;"
+                      class="dropdown-item d-flex align-items-center py-2"
+                    >
+                      <div class="me-3">
+                        <img
+                          class="wd-30 ht-30 rounded-circle"
+                          src="https://via.placeholder.com/30x30"
+                          alt="userr"
+                        />
+                      </div>
+                      <div class="d-flex justify-content-between flex-grow-1">
+                        <div class="me-4">
+                          <p>Yaretzi Mayo</p>
+                          <p class="tx-12 text-muted">New record</p>
+                        </div>
+                        <p class="tx-12 text-muted">5 hrs ago</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="px-3 py-2 d-flex align-items-center justify-content-center border-top"
+                  >
+                    <a href="javascript:;">View all</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="notificationDropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i data-feather="printer"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="notificationDropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i data-feather="unlock"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="notificationDropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i data-feather="settings"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- partial -->
+
+        <div class="page-content">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="applicationReturn-tab"
+                data-bs-toggle="tab"
+                href="#applicationReturn"
+                role="tab"
+                aria-controls="applicationReturn"
+                aria-selected="true"
+                >p그룹별 프로그램 등록 <i data-feather="x"></i
+              ></a>
+            </li>
+            <li>
+              <img
+                alt="tab close icon"
+                src="../../assets/images/jeonnam/main/icon-tab-close.svg"
+              />
+            </li>
+          </ul>
+          <div class="tab-content border border-top-0" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="applicationReturn"
+              role="tabpanel"
+              aria-labelledby="applicationReturn-tab"
+              style="height: 100%; display: flex; flex-direction: column"
+            >
+              <div class="title_box">
+                <h3 class="title">p그룹별 프로그램 등록</h3>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb breadcrumb-arrow mb-0">
+                    <li class="breadcrumb-item"><a href="#">공통</a></li>
+                    <li class="breadcrumb-item">
+                      <a href="#">부서별권한설정</a>
+                    </li>
+                    <li class="breadcrumb-item" aria-current="page">
+                      권한승인및관리
+                    </li>
+                    <li class="breadcrumb-item" aria-current="page">
+                      부서별 권한 승인 처리(JNU. CMM. SyS T. Auth, Win. Auth210)
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+
+              <div class="pt-2 px-3 pb-3">
+                <div class="d-flex flex-row-reverse gap-2">
+                  <button
+                    type="button"
+                    style="width: 90px"
+                    class="btn btn-xs btn-primary rounded-2 py-1.5 print fw-bolder"
+                  >
+                    저장
+                  </button>
+                  <button
+                    type="button"
+                    style="width: 90px"
+                    class="btn btn-xs btn-light rounded-2 py-1.5 print fw-bolder text-black-50"
+                  >
+                    화면 인쇄
+                  </button>
+                </div>
+              </div>
+
+              <div class="flex-fill d-flex flex-column">
+                <div
+                  class="m-0 mt-3 d-flex flex-column align-items-stretch pt-0 px-3 pb-3 flex-fill"
+                >
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="mb-4">
+                        <label class="form-label fs-6 fw-semibold">성명</label>
+                        <input
+                          type="text"
+                          class="form-control rounded-0"
+                          placeholder=""
+                        />
+                      </div>
+                    </div>
+                    <!-- Col -->
+                    <div class="col-6">
+                      <div class="mb-4">
+                        <label class="form-label fs-6 fw-semibold">성명</label>
+
+                        <div
+                          class="d-flex align-items-center"
+                          style="gap: 0 20px"
+                        >
+                          <div
+                            class="form-check m-0"
+                            style="white-space: nowrap"
+                          >
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              name="radioDefault"
+                              id="radioDefault"
+                              checked
+                            />
+                            <label class="form-check-label" for="radioDefault">
+                              내부사용자
+                            </label>
+                          </div>
+                          <div
+                            class="form-check m-0"
+                            style="white-space: nowrap"
+                          >
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              name="radioDefault"
+                              id="radioDefault1"
+                            />
+                            <label class="form-check-label" for="radioDefault1">
+                              외부사용자
+                            </label>
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control rounded-0"
+                            style="font-size: 10px; background-color: #f3f4f7"
+                            placeholder="사용자 검색은 성명을 입력한 후 'Enter' 키를 입력하세요."
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style="height: 245px; overflow-y: auto" class="border">
+                    <table class="table text-center">
+                      <colgroup>
+                        <col width="10%" />
+                        <col width="10%" />
+                        <col width="10%" />
+                        <col width="20%" />
+                        <col width="10%" />
+                      </colgroup>
+                      <thead class="" style="background-color: #e5e7ea">
+                        <tr>
+                          <th
+                            class="fw-bolder"
+                            style="font-size: 10px; color: #202a46"
+                          >
+                            대분류명
+                          </th>
+                          <th
+                            class="fw-bolder"
+                            style="font-size: 10px; color: #202a46"
+                          >
+                            중분류명
+                          </th>
+                          <th
+                            class="fw-bolder"
+                            style="font-size: 10px; color: #202a46"
+                          >
+                            소분류명
+                          </th>
+                          <th
+                            class="fw-bolder"
+                            style="font-size: 10px; color: #202a46"
+                          >
+                            프로그램명
+                          </th>
+                          <th
+                            class="fw-bolder"
+                            style="font-size: 10px; color: #202a46"
+                          >
+                            선택
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr style="background-color: #f3f4f7">
+                          <td class="text-center" style="font-size: 12px">1</td>
+                          <td class="text-center" style="font-size: 12px">
+                            test
+                          </td>
+                          <td class="text-center" style="font-size: 12px">
+                            test
+                          </td>
+                          <td class="text-center" style="font-size: 12px">
+                            test
+                          </td>
+                          <td class="text-center" style="font-size: 12px">
+                            <input
+                              type="checkbox"
+                              class="form-check-input"
+                              id="checkDefault"
+                            />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="border mt-3">
+                    <h3
+                      class="border-bottom py-2 px-2 fw-bolder"
+                      style="color: #6e9fec; font-size: 14px"
+                    >
+                      상세권한 설정
+                    </h3>
+
+                    <div class="p-3">
+                      <div class="d-flex" style="gap: 0 20px">
+                        <div class="form-check mb-2">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="checkDefault"
+                            checked
+                          />
+                          <label class="form-check-label" for="checkDefault">
+                            ALL
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="checkDefault2"
+                          />
+                          <label class="form-check-label" for="checkDefault2">
+                            조회
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="checkDefault3"
+                          />
+                          <label class="form-check-label" for="checkDefault3">
+                            신규
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="checkDefault4"
+                          />
+                          <label class="form-check-label" for="checkDefault4">
+                            삭제
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="checkDefault5"
+                          />
+                          <label class="form-check-label" for="checkDefault5">
+                            행추가
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="checkDefault6"
+                          />
+                          <label class="form-check-label" for="checkDefault6">
+                            행삭제
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="checkDefault7"
+                          />
+                          <label class="form-check-label" for="checkDefault7">
+                            취소
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="checkDefault8"
+                          />
+                          <label class="form-check-label" for="checkDefault8">
+                            저장
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="checkDefault9"
+                          />
+                          <label class="form-check-label" for="checkDefault9">
+                            출력
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="checkDefault10"
+                          />
+                          <label class="form-check-label" for="checkDefault10">
+                            엑셀
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="checkDefault11"
+                          />
+                          <label class="form-check-label" for="checkDefault11">
+                            관리자
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal align-items-center" tabindex="-1" style="display: flex">
+      <div class="modal-dialog w-100" style="max-width: 780px">
+        <div
+          class="modal-content"
+          style="box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.3)"
+        >
+          <div class="modal-header">
+            <h5 class="modal-title fw-bolder" style="color: #6e9fec">
+              교직원 조회
+            </h5>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="btn-close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-end">
+              <div class="col-5">
+                <label class="form-label fs-6 fw-semibold">개인번호/성명</label>
+                <input
+                  type="text"
+                  class="form-control rounded-0"
+                  placeholder=""
+                />
+              </div>
+              <div class="col-5">
+                <label class="form-label fs-6 fw-semibold">소속명</label>
+                <input
+                  type="text"
+                  class="form-control rounded-0"
+                  placeholder=""
+                />
+              </div>
+              <div class="col-2">
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-2 py-1.5 fw-bolder w-100"
+                >
+                  조회
+                </button>
+              </div>
+            </div>
+
+            <div style="height: 210px; overflow-y: auto" class="border mt-4">
+              <table class="table text-center">
+                <colgroup>
+                  <col width="16%" />
+                  <col width="16%" />
+                  <col width="16%" />
+                  <col width="16%" />
+                  <col width="16%" />
+                  <col width="16%" />
+                </colgroup>
+                <thead class="" style="background-color: #e5e7ea">
+                  <tr>
+                    <th
+                      class="fw-bolder"
+                      style="font-size: 10px; color: #202a46"
+                    >
+                      개인번호
+                    </th>
+                    <th
+                      class="fw-bolder"
+                      style="font-size: 10px; color: #202a46"
+                    >
+                      성명
+                    </th>
+                    <th
+                      class="fw-bolder"
+                      style="font-size: 10px; color: #202a46"
+                    >
+                      직급명
+                    </th>
+                    <th
+                      class="fw-bolder"
+                      style="font-size: 10px; color: #202a46"
+                    >
+                      소속
+                    </th>
+                    <th
+                      class="fw-bolder"
+                      style="font-size: 10px; color: #202a46"
+                    >
+                      주민번호
+                    </th>
+                    <th
+                      class="fw-bolder"
+                      style="font-size: 10px; color: #202a46"
+                    >
+                      재직구분
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="background-color: #f3f4f7">
+                    <td class="text-center" style="font-size: 12px">1</td>
+                    <td class="text-center" style="font-size: 12px">test</td>
+                    <td class="text-center" style="font-size: 12px">test</td>
+                    <td class="text-center" style="font-size: 12px">test</td>
+                    <td class="text-center" style="font-size: 12px">test</td>
+                    <td class="text-center" style="font-size: 12px">test</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal -->
+
+    <!-- core:js -->
+    <script src="../../assets/vendors/core/core.js"></script>
+    <!-- endinject -->
+
+    <!-- Plugin js for this page -->
+    <script src="../../assets/vendors/flatpickr/flatpickr.min.js"></script>
+    <script src="../../assets/vendors/apexcharts/apexcharts.min.js"></script>
+    <!-- End plugin js for this page -->
+
+    <!-- inject:js -->
+    <script src="../../assets/vendors/feather-icons/feather.min.js"></script>
+    <script src="../../assets/js/template.js"></script>
+    <!-- endinject -->
+
+    <!-- Custom js for this page -->
+    <script src="../../assets/js/dashboard-light.js"></script>
+    <!-- End custom js for this page -->
+
+    <!-- Click event -->
+    <script src="../../assets/js/clickEvent.js"></script>
+    <!-- Click event -->
+  </body>
+</html>
