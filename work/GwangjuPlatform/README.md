@@ -1,4 +1,4 @@
-광주전남지역 혁신 플랫폼 메인 페이지
+*광주전남지역 혁신 플랫폼 메인 페이지
   - url : https://moonyujenong.github.io/outsourcing/work/GwangjuPlatform/theme/main.html
 
 * 로그인 페이지
