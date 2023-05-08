@@ -1,2 +1,70 @@
+.theme-main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.theme-main video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.theme-main .text_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.theme-main .text_box > img {
+  width: 100%;
+  max-width: 180px;
+  margin: 0 auto 17px;
+}
+
+.theme-main .description {
+  font-size: 11px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 19px;
+}
+
+.theme-main .enter_btn {
+  display: block;
+  padding: 10px 24px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 auto;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+  .theme-main video {
+    -o-object-position: center;
+       object-position: center;
+  }
+  .theme-main .text_box > img {
+    max-width: 480px;
+    margin-bottom: 28px;
+  }
+  .theme-main .description {
+    font-size: 22px;
+  }
+  .theme-main .enter_btn {
+    margin-top: 77px;
+    padding: 17px 47px;
+    font-size: 18px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
