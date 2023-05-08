@@ -1,5 +1,5 @@
 <main class="theme-main" id="container">
-  <video class="bg_video" width="100%" preload muted playsinline>
+  <video class="bg_video" id="bg_video" width="100%" preload muted playsinline>
     <source src="./assets/video/movie.mp4" type="video/mp4" />
   </video>
 
@@ -13,3 +13,12 @@
     <button type="button" class="enter_btn">Enterance</button>
   </div>
 </main>
+
+<!-- video controls -->
+<script type="text/javascript">
+  $(function () {
+    $(".enter_btn").click(function () {
+      $("#bg_video").trigger("play");
+    });
+  });
+</script>
