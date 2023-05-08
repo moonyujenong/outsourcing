@@ -3,6 +3,12 @@
   width: 100%;
   height: 100vh;
   overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.theme-main::-webkit-scrollbar {
+  display: none;
 }
 
 .theme-main video {
@@ -53,11 +59,29 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 992px) {
+.theme-main .sound {
+  position: fixed;
+  top: 24px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.theme-main .sound > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
   .theme-main {
     overflow: initial;
   }
   .theme-main video {
+    width: 100%;
     -o-object-position: center;
        object-position: center;
   }
