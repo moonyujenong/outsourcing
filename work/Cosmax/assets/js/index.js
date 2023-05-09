@@ -19,6 +19,9 @@ $(function () {
     $(".drag_img").addClass("none");
   });
 
+  //비디오 자동 재생
+  $(".bg_video").play();
+
   // 비디오 끝났음 감지
   $(".bg_video").on("ended", function () {
     location.href = "http://naver.com";
