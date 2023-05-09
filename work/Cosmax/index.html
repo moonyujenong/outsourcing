@@ -29,6 +29,7 @@
       class="daum_roughmap_loader_script"
       src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
     ></script>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
 
     <link
       rel="stylesheet"
@@ -45,8 +46,43 @@
 
   <body>
     <div id="wrap">
-      <!-- 메인 -->
-      <div data-include-path="./theme/main.html"></div>
+      <!-- 인덱스 페이지 -->
+      <main class="theme-main" id="container">
+        <!-- 사운드 컨트롤 -->
+        <button type="button" class="sound">
+          <img alt="sound controls" src="./assets/img/sound-off.png" />
+        </button>
+
+        <img
+          alt="thumbnail"
+          class="thumbnail"
+          src="assets/img/video_thumbnail.png"
+        />
+
+        <!-- 오디오 -->
+        <audio
+          src="./assets/video/sound.mp3"
+          class="audio"
+          id="audio"
+          loop
+        ></audio>
+
+        <div class="text_box">
+          <img alt="cosmax logo" src="./assets/img/cosmax_logo.svg" />
+          <p class="description">
+            가상공간에서 펼쳐지는 버추얼 메타버스 COSMAXMETA에서<br />
+            정보를 경험하는 새로운 세계로 당신을 초대합니다.
+          </p>
+
+          <button
+            type="button"
+            onclick="location.href='skip.html'"
+            class="enter_btn"
+          >
+            Enterance
+          </button>
+        </div>
+      </main>
     </div>
   </body>
 </html>

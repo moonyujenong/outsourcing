@@ -10,7 +10,8 @@
     display: none;
   }
 
-  video {
+  video,
+  img.thumbnail {
     width: min-content;
     height: 100%;
     object-fit: cover;
@@ -31,6 +32,11 @@
       max-width: 180px;
       margin: 0 auto 17px;
     }
+
+    &.skip_box {
+      top: auto;
+      bottom: 70px;
+    }
   }
 
   .description {
@@ -50,6 +56,8 @@
     margin: 0 auto;
     border-radius: 100px;
     cursor: pointer;
+    width: fit-content;
+    text-decoration: none;
   }
 
   .sound {
@@ -86,6 +94,13 @@
     display: none;
   }
 
+  .logo {
+    position: absolute;
+    width: 180px;
+    top: 20px;
+    left: 20px;
+  }
+
   @media screen and (min-width: 768px) {
     overflow: initial;
 
@@ -93,7 +108,8 @@
       display: none;
     }
 
-    video {
+    video,
+    img.thumbnail {
       width: 100%;
       object-position: center;
     }

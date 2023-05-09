@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <title>COSMAX</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/includeHTML.js"></script>
+    <!-- html include script -->
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
+    ></script>
+    <script
+      charset="UTF-8"
+      class="daum_roughmap_loader_script"
+      src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+    ></script>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+      integrity="sha384-OX60W5no62t3a7IWb/778scS02RmUVFiMWgxiaEMwIlqYjLONUVz9xqTGVWlyiFH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/theme.css" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- 인덱스 페이지 -->
+      <main class="theme-main" id="container">
+        <!-- 로고 -->
+        <img alt="logo" class="logo" src="./assets/img/cosmax_logo.svg" />
+
+        <!-- mobile 전용 : 좌우 드래그 안내 이미지 -->
+        <img
+          alt="right & left drag img"
+          src="./assets/img/mobile-drag.png"
+          class="drag_img"
+        />
+
+        <!-- 사운드 컨트롤 -->
+        <button type="button" class="sound">
+          <img alt="sound controls" src="./assets/img/sound-off.png" />
+        </button>
+
+        <video
+          class="bg_video"
+          id="bg_video"
+          width="100%"
+          muted
+          autoplay
+          playsinline
+          poster="assets/img/video_thumbnail.png"
+        >
+          <source src="./assets/video/movie.mp4" type="video/mp4" />
+        </video>
+
+        <!-- 오디오 -->
+        <audio
+          src="./assets/video/sound.mp3"
+          class="audio"
+          id="audio"
+          loop
+        ></audio>
+
+        <div class="text_box skip_box">
+          <a
+            rel="noopener noreferrer"
+            href="http://naver.com"
+            class="enter_btn link_btn"
+          >
+            Skip
+          </a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
