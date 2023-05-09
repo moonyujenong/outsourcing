@@ -18,4 +18,9 @@ $(function () {
   $(".theme-main").scroll(function () {
     $(".drag_img").addClass("none");
   });
+
+  // 비디오 끝났음 감지
+  $(".bg_video").on("ended", function () {
+    location.href = "http://naver.com";
+  });
 });
