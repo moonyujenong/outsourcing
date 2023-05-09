@@ -68,8 +68,30 @@
     }
   }
 
+  .drag_img {
+    width: 80%;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+
+    &.none {
+      display: none;
+    }
+  }
+
+  audio {
+    display: none;
+  }
+
   @media screen and (min-width: 768px) {
     overflow: initial;
+
+    .drag_img {
+      display: none;
+    }
 
     video {
       width: 100%;

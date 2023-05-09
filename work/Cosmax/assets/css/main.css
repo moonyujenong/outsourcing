@@ -76,9 +76,31 @@
      object-fit: cover;
 }
 
+.theme-main .drag_img {
+  width: 80%;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 15;
+}
+
+.theme-main .drag_img.none {
+  display: none;
+}
+
+.theme-main audio {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .theme-main {
     overflow: initial;
+  }
+  .theme-main .drag_img {
+    display: none;
   }
   .theme-main video {
     width: 100%;

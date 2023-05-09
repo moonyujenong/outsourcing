@@ -1,12 +1,29 @@
 <main class="theme-main" id="container">
+  <!-- mobile 전용 : 좌우 드래그 안내 이미지 -->
+  <img
+    alt="right & left drag img"
+    src="./assets/img/mobile-drag.png"
+    class="drag_img"
+  />
+
   <!-- 사운드 컨트롤 -->
   <button type="button" class="sound">
-    <img alt="sound controls" src="./assets/img/sound-on.png" />
+    <img alt="sound controls" src="./assets/img/sound-off.png" />
   </button>
 
-  <video class="bg_video" id="bg_video" width="100%" preload muted playsinline>
+  <video
+    class="bg_video"
+    id="bg_video"
+    width="100%"
+    muted
+    playsinline
+    poster="assets/img/video_thumbnail.png"
+  >
     <source src="./assets/video/movie.mp4" type="video/mp4" />
   </video>
+
+  <!-- 오디오 -->
+  <audio src="./assets/video/sound.mp3" class="audio" id="audio" loop></audio>
 
   <div class="text_box">
     <img alt="cosmax logo" src="./assets/img/cosmax_logo.svg" />
@@ -30,13 +47,21 @@
     /* sound controls */
     $(".sound").click(function () {
       var control = $(this).children("img");
+      var audio = $("#audio")[0];
       control.toggleClass("off");
 
       if (control.hasClass("off")) {
-        control.attr("src", "./assets/img/sound-off.png");
-      } else {
         control.attr("src", "./assets/img/sound-on.png");
+        audio.play();
+      } else {
+        control.attr("src", "./assets/img/sound-off.png");
+        audio.pause();
       }
+    });
+
+    /* drag img */
+    $(".theme-main").click(function () {
+      $(".drag_img").addClass("none");
     });
   });
 </script>
