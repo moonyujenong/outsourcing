@@ -118,9 +118,9 @@
 
 .theme-main .logo {
   position: absolute;
-  width: 180px;
-  top: 20px;
-  left: 20px;
+  width: 140px;
+  top: 15px;
+  left: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -147,6 +147,11 @@
     margin-top: 77px;
     padding: 17px 47px;
     font-size: 18px;
+  }
+  .theme-main .logo {
+    width: 180px;
+    top: 20px;
+    left: 20px;
   }
 }
 
