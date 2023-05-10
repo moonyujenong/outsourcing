@@ -18,7 +18,7 @@ $(function () {
   });
 
   // scroll 감지 (모바일 전용)
-  $(".theme-main").click(function () {
+  $(".theme-main").scroll(function () {
     $(".drag_img").addClass("none");
   });
 
