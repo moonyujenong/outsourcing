@@ -26,6 +26,8 @@ $(function () {
   $(".bg_video").trigger("play");
 
   // 비디오 끝났음 감지
+  // 영상이 끝나면 자동으로 location.href 에서 정한 주소의 사이트로 이동합니다.
+  // 다른 곳으로 이동하고 싶으시면 아래 주소 변경 하시면 됩니다.
   $(".bg_video").on("ended", function () {
     location.href = "http://naver.com";
   });

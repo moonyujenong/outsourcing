@@ -48,10 +48,12 @@
     <div id="wrap">
       <!-- 인덱스 페이지 -->
       <main class="theme-main" id="container">
-        <!-- 로고 -->
+        <!-- 회사 로고 -->
+        <!-- 로고 변경 시 img src 내 파일 경로만 바꾸어 주시면 됩니다. -->
         <img alt="logo" class="logo" src="./assets/img/cosmax_logo.svg" />
 
         <!-- mobile 전용 : 좌우 드래그 안내 이미지 -->
+        <!-- 이미지 변경 시 src 내 파일 경로만 바꾸어 주시면 됩니다. -->
         <div class="drag_img">
           <img
             alt="right & left drag img"
@@ -60,10 +62,13 @@
         </div>
 
         <!-- 사운드 컨트롤 -->
+        <!-- 사운드 아이콘용 -->
         <button type="button" class="sound">
           <img alt="sound controls" src="./assets/img/sound-off.png" />
         </button>
 
+        <!-- 비디오 -->
+        <!-- poster 는 비디오 썸네일입니다. index 파일에서 썸네일 이미지와 동일한 이미지로 해주실 것을 권장드립니다. -->
         <video
           class="bg_video"
           id="bg_video"
@@ -73,10 +78,13 @@
           playsinline
           poster="assets/img/video_thumbnail.png"
         >
+          <!-- 비디오 영상 변경 시 아래 src 내 파일 경로만 바꾸어 주시면 됩니다. -->
+          <!-- 파일 용량이 너무 크면 재생하는 데 오래 걸립니다. -->
           <source src="./assets/video/movie.mp4" type="video/mp4" />
         </video>
 
         <!-- 오디오 -->
+        <!-- index 파일에서 사용하는 오디오와 같은 파일입니다. 변경 시 src 내 파일 경로만 바꾸어 주시면 됩니다. -->
         <audio
           src="./assets/video/sound.mp3"
           class="audio"
@@ -85,6 +93,8 @@
         ></audio>
 
         <div class="text_box skip_box">
+          <!-- skip 버튼 -->
+          <!-- 버튼 클릭 시 href 에서 지정한 사이트 주소로 이동하게 됩니다. -->
           <a
             rel="noopener noreferrer"
             href="http://naver.com"
