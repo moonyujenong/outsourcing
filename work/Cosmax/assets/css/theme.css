@@ -100,6 +100,13 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 15;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px 30px;
+  border-radius: 20px;
+}
+
+.theme-main .drag_img img {
+  width: 100%;
 }
 
 .theme-main .drag_img.none {
