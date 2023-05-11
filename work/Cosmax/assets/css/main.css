@@ -27,10 +27,6 @@
   display: block;
 }
 
-.theme-main img.thumbnail {
-  width: 100%;
-}
-
 .theme-main .text_box {
   position: fixed;
   top: 50%;
