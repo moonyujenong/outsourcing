@@ -91,39 +91,3 @@ menuTitles.forEach(function (menuTitle) {
     menuTitle.classList.toggle("active");
   });
 });
-
-var prevBtn = document.querySelector(".arrow .prev"); // 이전 버튼
-var nextBtn = document.querySelector(".arrow .next"); // 다음 버튼
-var bannerFrame = document.querySelector(".banner_frame"); // 배너 기차
-var bannerSection = document.querySelectorAll(".banner_frame > section"); // 각 배너 섹션
-var pagination = document.querySelectorAll(".banner_roll li a"); // 페이지네이션
-
-var bannerWidth = bannerSection.offsetWidth;
-var bannerNum = 0;
-var bannerLastNum = bannerSection.length - 1;
-
-//next click
-nextBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-
-  bannerNum++;
-  if (bannerNum > bannerLastNum) {
-    bannerNum = 0;
-  }
-
-  bannerFrame.style.left = `${-bannerNum * bannerWidth}` + "px";
-
-  secWhite(bannerNum, "on");
-});
-
-// prev click
-prevBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  bannerNum--;
-  if (bannerNum < 0) {
-    bannerNum = bannerLastNum;
-  }
-
-  bnnFrame.style.left = `${-bannerNum * bannerWidth}` + "px";
-  secWhite(bannerNum, "on");
-});

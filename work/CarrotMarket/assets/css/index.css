@@ -314,17 +314,18 @@
 }
 
 .banner_frame {
-  width: 100%;
+  width: fit-content;
   height: 100%;
+  display: flex;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   position: relative;
 }
 
 .banner_frame section {
-  width: 100%;
+  width: 1920px;
   height: 100%;
-  position: absolute;
+  position: relative;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   background-position: center;
@@ -473,4 +474,10 @@
 
 .banner_roll.even a {
   background-color: #191919;
+}
+
+.banner_wrap {
+  height: 100%;
+  width: 1920px;
+  overflow: hidden;
 }
