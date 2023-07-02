@@ -70,4 +70,30 @@ categoryBtn.addEventListener("click", function () {
   menuWrap.classList.toggle("on");
 });
 
-var categoryInnerMenu = document.querySelector(".menu_titl");
+var menuTitles = document.querySelectorAll(".menu_title");
+
+menuTitles.forEach(function (menuTitle) {
+  menuTitle.addEventListener("click", function () {
+    var ul = this.parentNode.nextElementSibling;
+
+    // 다른 ul 요소들에게서 클래스를 제거
+    var allULs = document.querySelectorAll(".menu_wrap ul");
+    allULs.forEach(function (ulElement) {
+      if (ulElement !== ul) {
+        ulElement.classList.remove("active");
+      }
+    });
+
+    // 다른 menu_title 요소들에게서 클래스를 제거
+    var allMenuTitles = document.querySelectorAll(".menu_title");
+    allMenuTitles.forEach(function (menuTitleElement) {
+      if (menuTitleElement !== menuTitle) {
+        menuTitleElement.classList.remove("active");
+      }
+    });
+
+    // 클릭한 ul 요소와 menu_title 요소에 클래스를 추가
+    ul.classList.toggle("active");
+    menuTitle.classList.toggle("active");
+  });
+});

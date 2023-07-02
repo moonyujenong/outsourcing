@@ -1,6 +1,8 @@
 #banner {
   width: 100vw;
+  max-width: 1920px;
   position: relative;
+  margin: 0 auto;
   height: calc(100vh - 157px);
 }
 

@@ -28,7 +28,6 @@
   content: "";
   display: block;
   width: 100vw;
-  max-width: 1920px;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -167,12 +166,12 @@
   background-color: #fff;
   height: 0;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
   padding: 0 40px;
 }
 
 .menu_wrap.on {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
   height: 1081px;
   padding: 0 40px 40px;
 }
@@ -186,11 +185,14 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  border-top: 2px solid #d9d9d9;
   border-bottom: 2px solid #d9d9d9;
   padding: 15px 17px 14px;
   font-size: 15px;
   font-weight: 600;
+}
+
+.title_top a {
+  border-top: 4px solid #d9d9d9;
 }
 
 .menu_title a img {
@@ -256,10 +258,22 @@
 .cont_fashion,
 .cont_pet,
 .cont_car {
-  padding: 20px;
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: flex-start;
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+  height: fit-content;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.menu_wrap ul ul.active {
+  transition: all 0.3s ease-in-out;
+  padding: 0 20px;
+  height: 0;
+  overflow: hidden;
+  border: 0;
 }
 
 .menu_p {
@@ -276,4 +290,8 @@
 
 .cont_car {
   border-bottom: 4px solid #d9d9d9;
+}
+
+.menu_title.active a img {
+  object-position: -8px -28px;
 }
