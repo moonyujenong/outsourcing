@@ -167,8 +167,8 @@
 
 .menu_wrap.on {
   transition: all 0.4s ease-in-out;
-  height: 1081px;
-  padding: 0 40px 40px;
+  height: 1000px;
+  padding: 0 40px 20px;
 }
 
 .menu_title {
