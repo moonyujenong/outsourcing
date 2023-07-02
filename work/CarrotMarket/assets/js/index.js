@@ -1,4 +1,4 @@
-var currentSlide = 0;
+/* var currentSlide = 0;
 var slides = document.getElementsByClassName("banner_item");
 var prevBtn = document.querySelector(".arrow .prev");
 var nextBtn = document.querySelector(".arrow .next");
@@ -59,7 +59,8 @@ for (var i = 0; i < pagination.length; i++) {
 }
 
 // 초기 슬라이드 표시
-showSlide(currentSlide);
+showSlide(currentSlide); */
+// 배너
 
 // 카테고리 클릭
 var categoryBtn = document.querySelector(".category_title");
@@ -68,6 +69,7 @@ categoryBtn.addEventListener("click", function () {
   var menuWrap = document.querySelector(".menu_wrap");
 
   menuWrap.classList.toggle("on");
+  categoryBtn.classList.toggle("on");
 });
 
 var menuTitles = document.querySelectorAll(".menu_title");
@@ -88,4 +90,40 @@ menuTitles.forEach(function (menuTitle) {
     ul.classList.toggle("active");
     menuTitle.classList.toggle("active");
   });
+});
+
+var prevBtn = document.querySelector(".arrow .prev"); // 이전 버튼
+var nextBtn = document.querySelector(".arrow .next"); // 다음 버튼
+var bannerFrame = document.querySelector(".banner_frame"); // 배너 기차
+var bannerSection = document.querySelectorAll(".banner_frame > section"); // 각 배너 섹션
+var pagination = document.querySelectorAll(".banner_roll li a"); // 페이지네이션
+
+var bannerWidth = bannerSection.offsetWidth;
+var bannerNum = 0;
+var bannerLastNum = bannerSection.length - 1;
+
+//next click
+nextBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  bannerNum++;
+  if (bannerNum > bannerLastNum) {
+    bannerNum = 0;
+  }
+
+  bannerFrame.style.left = `${-bannerNum * bannerWidth}` + "px";
+
+  secWhite(bannerNum, "on");
+});
+
+// prev click
+prevBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  bannerNum--;
+  if (bannerNum < 0) {
+    bannerNum = bannerLastNum;
+  }
+
+  bnnFrame.style.left = `${-bannerNum * bannerWidth}` + "px";
+  secWhite(bannerNum, "on");
 });
