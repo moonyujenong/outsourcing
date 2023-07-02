@@ -270,18 +270,18 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: flex-start;
-  transition: all 0.3s ease-in-out;
   padding: 20px;
-  height: fit-content;
   border-bottom: 2px solid #d9d9d9;
 }
 
-.menu_wrap ul ul.active {
+.slide_menu {
   transition: all 0.3s ease-in-out;
-  padding: 0 20px;
-  height: 0;
+}
+
+.slide_menu.active {
   overflow: hidden;
-  border: 0;
+  height: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu_p {

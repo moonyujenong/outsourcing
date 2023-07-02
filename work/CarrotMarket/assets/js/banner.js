@@ -4,6 +4,7 @@ var bannerItems = document.querySelectorAll(".banner_item");
 var prevBtn = document.querySelector(".prev");
 var nextBtn = document.querySelector(".next");
 var paginationItems = document.querySelectorAll(".banner_roll li");
+var bannerRollLinks = document.querySelectorAll(".banner_roll a");
 
 var currentIndex = 0;
 var totalItems = bannerItems.length;
@@ -48,6 +49,22 @@ function updatePagination() {
     paginationItems[i].classList.remove("active");
   }
   paginationItems[currentIndex].classList.add("active");
+
+  // 배너 롤 링크에 클래스 추가
+  for (var j = 0; j < bannerRollLinks.length; j++) {
+    if (j === currentIndex) {
+      bannerRollLinks[j].classList.add("active");
+    } else {
+      bannerRollLinks[j].classList.remove("active");
+    }
+  }
+
+  // 배너가 2번째와 4번째일 때만 banner_roll에 클래스 추가
+  if (currentIndex === 1 || currentIndex === 3) {
+    bannerRoll.classList.add("special");
+  } else {
+    bannerRoll.classList.remove("special");
+  }
 }
 
 // 초기 페이지네이션 표시
