@@ -29,8 +29,8 @@ nextBtn.addEventListener("click", function () {
   updateSlide();
 });
 // 페이지네이션 클릭 이벤트 핸들러
-for (var i = 0; i < paginationItems.length; i++) {
-  paginationItems[i].addEventListener("click", function () {
+for (var i = 0; i < bannerRollLinks.length; i++) {
+  bannerRollLinks[i].addEventListener("click", function () {
     currentIndex = parseInt(this.getAttribute("data-slide-index"));
     updateSlide();
   });
