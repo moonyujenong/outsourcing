@@ -1,0 +1,40 @@
+.bg-beautyIcon {
+    width: 10px; height: 24px;
+    background: url('css_sprites.png') -140px -10px;
+}
+
+
+.bg-Feedback_star {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+
+.bg-clothes_crew_neck {
+    width: 22px; height: 22px;
+    background: url('css_sprites.png') -54px -54px;
+}
+
+
+.bg-Home {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -54px -10px;
+}
+
+
+.bg-home2 {
+    width: 22px; height: 21px;
+    background: url('css_sprites.png') -98px -10px;
+}
+
+
+.bg-Laptop {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -54px;
+}
+
+
+.bg-pawIcon {
+    width: 20px; height: 18px;
+    background: url('css_sprites.png') -98px -51px;
+}

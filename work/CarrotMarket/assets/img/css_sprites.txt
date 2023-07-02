@@ -1,0 +1,75 @@
+
+.bg-arrow_left {
+    width: 14px; height: 42px;
+    background: url('css_sprites.png') -98px -10px;
+}
+
+
+
+.bg-arrow_right {
+    width: 14px; height: 42px;
+    background: url('css_sprites.png') -132px -10px;
+}
+
+
+
+.bg-Ellipse_2 {
+    width: 16px; height: 16px;
+    background: url('css_sprites.png') -166px -48px;
+}
+
+
+
+.bg-Group_70 {
+    width: 13px; height: 13px;
+    background: url('css_sprites.png') -166px -84px;
+}
+
+
+
+.bg-Group_71 {
+    width: 17px; height: 18px;
+    background: url('css_sprites.png') -166px -10px;
+}
+
+
+
+.bg-hamburger_icon {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -10px -117px;
+}
+
+
+
+.bg-Q_ {
+    width: 19px; height: 17px;
+    background: url('css_sprites.png') -92px -117px;
+}
+
+
+
+.bg-SEARCH {
+    width: 18px; height: 18px;
+    background: url('css_sprites.png') -54px -117px;
+}
+
+
+
+.bg-Rectangle_31 {
+    width: 68px; height: 15px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+
+
+.bg-Vector_2 {
+    width: 12px; height: 52px;
+    background: url('css_sprites.png') -10px -45px;
+}
+
+
+
+.bg-Vector_3 {
+    width: 12px; height: 52px;
+    background: url('css_sprites.png') -42px -45px;
+}

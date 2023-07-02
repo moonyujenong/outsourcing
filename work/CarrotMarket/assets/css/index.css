@@ -1,0 +1,250 @@
+#skipNavi {
+  display: none;
+}
+
+#wrap {
+  position: relative;
+}
+
+#header {
+  width: 100%;
+  background-color: #fff;
+}
+
+.header_inner1,
+.header_inner2 {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  padding: 20px 15px;
+}
+
+.header_inner1::after {
+  content: "";
+  display: block;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50vw);
+  height: 2px;
+  background-color: #ff8a3d;
+}
+
+.srch_input {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 100px;
+  background-color: #f2f3f6;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.srch_input input {
+  flex: 1;
+  border: 0;
+  background-color: transparent;
+  height: 100%;
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  text-indent: 14px;
+}
+
+.srch_input input:focus,
+.srch_input input:active {
+  outline: none;
+}
+
+.srch_input input::placeholder {
+  color: #777;
+}
+
+.bg-SEARCH {
+  width: 34px;
+  height: 34px;
+  display: block;
+  background-color: #fff;
+  border-radius: 100px;
+  position: relative;
+}
+
+.bg-SEARCH::after {
+  content: "";
+  display: block;
+  background: url("../img/css_sprites.png") -54px -117px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: 18px;
+  height: 18px;
+}
+
+.btn_chat {
+  background-color: #ff8a3d;
+  border-radius: 100px;
+  padding: 17px 24px 16px;
+  display: block;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+#nav ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+#nav ul li a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  display: block;
+}
+
+.topMenu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.topMenu a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #777;
+}
+
+.category_menu {
+  position: relative;
+}
+
+.category_title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #333;
+}
+
+.category_title::before {
+  content: "";
+  display: block;
+  background: url("../img/css_sprites.png") -10px -117px;
+  width: 24px;
+  height: 24px;
+}
+
+.menu_wrap {
+  position: absolute;
+  padding: 0 40px 40px;
+  left: -40px;
+  top: 40px;
+  width: 405px;
+  box-sizing: border-box;
+  z-index: 10;
+  background-color: #fff;
+  display: none;
+}
+
+.menu_title a {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-top: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  padding: 15px 17px 14px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.title_top a::before,
+.title_life a::before,
+.title_digital a::before,
+.title_fathion a::before,
+.title_beauty a::before,
+.title_pet a::before,
+.title_car a::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.title_top a {
+  border-top-width: 4px;
+}
+
+.title_life a,
+.title_pet a {
+  border-top: 0;
+}
+
+.title_top a::before {
+  background: url("../img/css_sprites_accordion.png") -10px -10px;
+}
+
+.title_life a::before {
+  background: url("../img/css_sprites_accordion.png") -54px -10px;
+}
+
+.title_digital a::before {
+  background: url("../img/css_sprites_accordion.png") -10px -54px;
+}
+
+.title_fathion a::before {
+  background: url("../img/css_sprites_accordion.png") -54px -54px;
+}
+
+.title_beauty a::before {
+  background: url("../img/css_sprites_accordion.png") -140px -10px;
+}
+
+.title_pet a::before {
+  background: url("../img/css_sprites_accordion.png") -98px -51px;
+}
+
+.title_car a::before {
+  background: url("../img/css_sprites_accordion.png") -98px -10px;
+}
+
+.cont_life,
+.cont_digital,
+.cont_fashion,
+.cont_pet,
+.cont_car {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+}
+
+.menu_p {
+  display: grid;
+  gap: 18px;
+}
+
+.menu_p a {
+  font-size: 15px;
+  font-weight: 400;
+  color: #191919;
+  display: block;
+}
+
+.cont_car {
+  border-bottom: 4px solid #d9d9d9;
+}

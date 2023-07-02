@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>당근마켓</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/banner.css" />
+  </head>
+  <body>
+    <!-- skipNavi -->
+    <!-- display: none처리 -->
+    <div id="skipNavi">
+      <a href="#">본문 바로가기</a>
+    </div>
+    <!-- // skipNavi -->
+
+    <!-- wrap -->
+    <div id="wrap">
+      <!-- header -->
+      <header id="header">
+        <!-- header_top -->
+        <div class="header_inner1">
+          <!-- logo -->
+          <h1 class="logo">
+            <a href="#"
+              ><img
+                src="assets/img/logo_main.png"
+                width="170"
+                alt="당근마켓 로고"
+            /></a>
+          </h1>
+          <!-- // logo -->
+
+          <!-- 검색창 -->
+          <div class="srch_input">
+            <input type="search" placeholder="물품이나 동네를 검색해보세요" />
+            <a class="bg-SEARCH" href="#"></a>
+          </div>
+          <!-- // 검색창 -->
+
+          <!-- 채팅하기 -->
+          <div class="botton">
+            <a href="#" class="btn_chat">채팅하기</a>
+            <!-- //채팅하기 -->
+          </div>
+        </div>
+        <!-- // header_inner1 -->
+
+        <!-- header_inner2 -->
+        <div class="header_inner2">
+          <!-- 중고거래 카테고리 전체 -->
+          <div class="category_menu">
+            <a href="#" class="category_title">중고거래 카테고리</a>
+            <!-- menu_wrap에 on붙으면 하위메뉴 풀다운-->
+            <div class="menu_wrap">
+              <ul>
+                <li class="menu_title title_top"><a href="#">인기매물</a></li>
+                <!-- // 인기매물 -->
+
+                <div>
+                  <li class="menu_title title_life">
+                    <a href="#">라이프</a>
+                  </li>
+                </div>
+                <ul class="cont_life">
+                  <div class="menu_p">
+                    <li><a href="#">생활가전</a></li>
+                    <li><a href="#">생활/주방</a></li>
+                    <li><a href="#">가구/인테리어</a></li>
+                    <li><a href="#">유아동</a></li>
+                    <li><a href="#">가공식품</a></li>
+                  </div>
+                  <div class="menu_p">
+                    <li><a href="#">스포츠/레저</a></li>
+                    <li><a href="#">티켓/교환권</a></li>
+                    <li><a href="#">도서</a></li>
+                    <li><a href="#">기타 중고물품</a></li>
+                  </div>
+                </ul>
+                <!-- // 라이프 -->
+
+                <div>
+                  <li class="menu_title title_digital">
+                    <a href="#">디지털/핸드폰</a>
+                  </li>
+                </div>
+                <ul class="cont_digital">
+                  <div class="menu_p">
+                    <li><a href="#">디지털 기기</a></li>
+                    <li><a href="#">생활/주방</a></li>
+                    <li><a href="#">기타 중고물품</a></li>
+                  </div>
+                  <div class="menu_p">
+                    <li><a href="#">취미/게임/음반</a></li>
+                    <li><a href="#">유아동</a></li>
+                    <li><a href="#">유아도서</a></li>
+                  </div>
+                </ul>
+                <!-- // 디지털/핸드폰 -->
+
+                <div>
+                  <li class="menu_title title_fathion">
+                    <a href="#">패션</a>
+                  </li>
+                </div>
+                <ul class="cont_fashion">
+                  <div class="menu_p">
+                    <li><a href="#">여성패션</a></li>
+                    <li><a href="#">여성잡화</a></li>
+                    <li><a href="#">기타 중고물품</a></li>
+                  </div>
+                  <div class="menu_p">
+                    <li><a href="#">남성패션/잡화</a></li>
+                    <li><a href="#">유아동</a></li>
+                  </div>
+                </ul>
+                <!-- // 패션 -->
+
+                <li class="menu_title title_beauty">
+                  <a href="#">뷰티/미용</a>
+                </li>
+                <!-- // 뷰티/미용 -->
+
+                <div>
+                  <li class="menu_title title_pet">
+                    <a href="#">반려용품</a>
+                  </li>
+                </div>
+                <ul class="cont_pet">
+                  <div class="menu_p_pet">
+                    <li><a href="#">반려동물용품</a></li>
+                  </div>
+                  <div class="menu_p">
+                    <li><a href="#">식물</a></li>
+                  </div>
+                </ul>
+                <!-- // 반려용품 -->
+
+                <div>
+                  <li class="menu_title title_car">
+                    <a href="#">부동산/자동차</a>
+                  </li>
+                </div>
+                <ul class="cont_car">
+                  <div class="menu_p">
+                    <li><a href="#">삽니다</a></li>
+                    <li><a href="#">부동산</a></li>
+                  </div>
+                  <div class="menu_p">
+                    <li><a href="#">중고차</a></li>
+                  </div>
+                </ul>
+                <!-- // 부동산/자동차 -->
+              </ul>
+              <!-- 하위메뉴 감싼 ul -->
+            </div>
+            <!-- // 중고거래 카테고리 -->
+            <!-- 클릭시 변경될 좌측 화살표 -->
+            <a href="#" class="btn_left_arrow"></a>
+          </div>
+          <!-- // 중고거래 카테고리 전체 -->
+
+          <!-- 네비게이션 -->
+          <nav id="nav">
+            <ul>
+              <li><a href="#">동네가게</a></li>
+              <li><a href="#">알바</a></li>
+              <li><a href="#">동네생활</a></li>
+              <li><a href="#">내 근처</a></li>
+              <li><a href="#">부동산 직거래</a></li>
+              <li><a href="#">중고차 직거래</a></li>
+            </ul>
+          </nav>
+          <!-- // 네비게이션 -->
+
+          <!-- 탑메뉴 -->
+          <ul class="topMenu">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">나의당근</a></li>
+          </ul>
+          <!-- // 탑메뉴 -->
+        </div>
+        <!-- // header_inner2 -->
+      </header>
+      <!-- // header -->
+
+      <!-- 배너 section -->
+      <section id="banner">
+        <h2 class="blind">이미지 슬라이드</h2>
+        <!-- banner_frame (배너 기차) -->
+        <div class="banner_frame">
+          <!-- 1번 슬라이드 -->
+          <section class="banner_item">
+            <!-- 텍스트 감싸는 div -->
+            <div>
+              <h3>
+                당신 근처의<br />
+                당근마켓
+              </h3>
+              <ul>
+                <li>중고 거래부터 동네 정보까지,</li>
+                <li>이웃과 함께해요. 가깝고 따뜻한 당신의 근처를 만들어요.</li>
+              </ul>
+
+              <a href="#" class="download">앱 다운받기</a>
+
+              <ul class="app_store">
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/button_appstore.png"
+                      alt="appstore btn"
+                      class="apple"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/button_googleplay.png"
+                      alt="googleplay btn"
+                      class="google"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- // 1번 슬라이드 -->
+
+          <!-- 2번 슬라이드 -->
+          <section class="banner_item">
+            <!-- 텍스트 감싸는 div -->
+            <div>
+              <h3>
+                이웃과 함께하는<br />
+                동네생활
+              </h3>
+              <ul>
+                <li>중고 거래부터 동네 정보까지,</li>
+                <li>이웃과 함께해요. 가깝고 따뜻한 당신의 근처를 만들어요.</li>
+              </ul>
+              <a href="#" class="download">앱 다운받기</a>
+              <ul class="app_store">
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/button_appstore.png"
+                      alt="appstore btn"
+                      class="apple"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/button_googleplay.png"
+                      alt="googleplay btn"
+                      class="google"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- // 2번 슬라이드 -->
+
+          <!-- 3번 슬라이드 -->
+          <section class="banner_item">
+            <!-- 텍스트 감싸는 div -->
+            <div>
+              <h3>
+                우리 동네중고<br />
+                직거래 마켓
+              </h3>
+              <ul>
+                <li>동네 주민들과 가깝고 따뜻한 거래를 지금 경험해보세요.</li>
+              </ul>
+              <a href="#" class="download">앱 다운받기</a>
+              <ul class="app_store">
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/button_appstore.png"
+                      alt="appstore btn"
+                      class="apple"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/button_googleplay.png"
+                      alt="googleplay btn"
+                      class="google"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- // 3번 슬라이드 -->
+
+          <!-- 4번 슬라이드 -->
+          <section class="banner_item">
+            <!-- 텍스트 감싸는 div -->
+            <div>
+              <h3>
+                내 근처에서<br />
+                찾는 동네 가게
+              </h3>
+              <ul>
+                <li>우리 동네 가게를 찾고 있나요?</li>
+                <li>동네 주민이 남긴 진짜 후기를 함께 확인해보세요!</li>
+              </ul>
+              <a href="#" class="download">앱 다운받기</a>
+              <ul class="app_store">
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/button_appstore.png"
+                      alt="appstore btn"
+                      class="apple"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/button_googleplay.png"
+                      alt="googleplay btn"
+                      class="google"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- // 4번 슬라이드 -->
+        </div>
+        <!-- // banner_frame -->
+
+        <!-- 배너 arrow -->
+        <div class="arrow">
+          <a href="#" class="prev"><!-- 이전 배너 --></a>
+          <a href="#" class="next"><!-- 다음 배너 --></a>
+        </div>
+        <!-- 페이지네이션 -->
+        <div class="rolling">
+          <ul class="banner_roll">
+            <li>
+              <a href="#" data-slide-index="0"><!-- 1 --></a>
+            </li>
+            <li>
+              <a href="#" data-slide-index="1"><!-- 2 --></a>
+            </li>
+            <li>
+              <a href="#" data-slide-index="2"><!-- 3 --></a>
+            </li>
+            <li>
+              <a href="#" data-slide-index="3"><!-- 4 --></a>
+            </li>
+          </ul>
+        </div>
+        <!-- // 배너 arrow -->
+      </section>
+      <!-- // 배너 section -->
+    </div>
+    <!-- // wrap -->
+
+    <!-- js -->
+    <script type="text/javascript" src="./assets/js/index.js"></script>
+  </body>
+</html>
