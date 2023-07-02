@@ -23,6 +23,15 @@ function showSlide(index) {
     pagination[i].classList.remove("active");
   }
   pagination[currentSlide].classList.add("active");
+
+  // 짝수 페이지네이션에 클래스 추가
+  var isEven = (index + 1) % 2 === 0;
+  var bannerRoll = document.querySelector(".banner_roll");
+  if (isEven) {
+    bannerRoll.classList.add("even");
+  } else {
+    bannerRoll.classList.remove("even");
+  }
 }
 
 function prevSlide() {
@@ -51,3 +60,14 @@ for (var i = 0; i < pagination.length; i++) {
 
 // 초기 슬라이드 표시
 showSlide(currentSlide);
+
+// 카테고리 클릭
+var categoryBtn = document.querySelector(".category_title");
+
+categoryBtn.addEventListener("click", function () {
+  var menuWrap = document.querySelector(".menu_wrap");
+
+  menuWrap.classList.toggle("on");
+});
+
+var categoryInnerMenu = document.querySelector(".menu_titl");

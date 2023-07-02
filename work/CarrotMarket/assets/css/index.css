@@ -7,7 +7,7 @@
 }
 
 #header {
-  width: 100%;
+  margin: 0 auto;
   background-color: #fff;
 }
 
@@ -28,6 +28,7 @@
   content: "";
   display: block;
   width: 100vw;
+  max-width: 1920px;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -115,6 +116,10 @@
   display: block;
 }
 
+#nav ul li a:hover {
+  color: #777;
+}
+
 .topMenu {
   display: flex;
   align-items: center;
@@ -125,6 +130,10 @@
   font-size: 15px;
   font-weight: 500;
   color: #777;
+}
+
+.topMenu a:hover {
+  color: #333;
 }
 
 .category_menu {
@@ -150,14 +159,26 @@
 
 .menu_wrap {
   position: absolute;
-  padding: 0 40px 40px;
   left: -40px;
-  top: 40px;
+  top: 44px;
   width: 405px;
   box-sizing: border-box;
   z-index: 10;
   background-color: #fff;
-  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  padding: 0 40px;
+}
+
+.menu_wrap.on {
+  transition: all 0.2s ease-in-out;
+  height: 1081px;
+  padding: 0 40px 40px;
+}
+
+.menu_title {
+  position: relative;
 }
 
 .menu_title a {
@@ -170,6 +191,14 @@
   padding: 15px 17px 14px;
   font-size: 15px;
   font-weight: 600;
+}
+
+.menu_title a img {
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+  object-fit: none;
+  object-position: -8px -8px;
 }
 
 .title_top a::before,
