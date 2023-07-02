@@ -5,6 +5,7 @@ var prevBtn = document.querySelector(".prev");
 var nextBtn = document.querySelector(".next");
 var paginationItems = document.querySelectorAll(".banner_roll li");
 var bannerRollLinks = document.querySelectorAll(".banner_roll a");
+var bannerRoll = document.querySelector(".banner_roll");
 
 var currentIndex = 0;
 var totalItems = bannerItems.length;
@@ -41,6 +42,13 @@ function updateSlide() {
   bannerFrame.style.transform =
     "translateX(" + -bannerWidth * currentIndex + "px)";
   updatePagination();
+
+  // 배너가 2번째와 4번째일 때만 banner_roll에 클래스 추가
+  if (currentIndex === 1 || currentIndex === 3) {
+    bannerRoll.classList.add("even");
+  } else {
+    bannerRoll.classList.remove("even");
+  }
 }
 
 // 페이지네이션 업데이트 함수
