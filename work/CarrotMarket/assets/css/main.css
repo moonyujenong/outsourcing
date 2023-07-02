@@ -207,9 +207,16 @@ hr {
 #header {
   width: 100%;
   max-width: 1920px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }

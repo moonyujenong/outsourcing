@@ -3,7 +3,7 @@
   max-width: 1920px;
   position: relative;
   margin: 0 auto;
-  height: 100vh;
+  height: 1010px;
 }
 
 .banner_frame {
@@ -20,6 +20,7 @@
   position: absolute;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
+  background-position: center;
 }
 
 .banner_frame section:nth-child(1) {

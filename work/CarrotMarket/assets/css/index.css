@@ -6,11 +6,6 @@
   position: relative;
 }
 
-#header {
-  margin: 0 auto;
-  background-color: #fff;
-}
-
 .header_inner1,
 .header_inner2 {
   width: 100%;
@@ -27,13 +22,12 @@
 .header_inner1::after {
   content: "";
   display: block;
-  width: 100vw;
+  width: 1920px;
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50vw);
   height: 2px;
   background-color: #ff8a3d;
+  left: -23%;
 }
 
 .srch_input {
@@ -48,6 +42,7 @@
   height: 50px;
   padding: 8px;
   box-sizing: border-box;
+  left: -57px;
 }
 
 .srch_input input {
