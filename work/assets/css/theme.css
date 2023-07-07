@@ -1,11 +1,12 @@
-html, body {
+html,
+body {
   width: 100%;
   overflow-x: hidden;
   position: relative;
   -webkit-text-size-adjust: 100%;
   word-break: keep-all;
   background-color: #fff;
-  font-family: 'Inter', 'Noto Sans KR', sans-serif !important;
+  font-family: "Inter", "Noto Sans KR", sans-serif !important;
   height: 100%;
   scroll-behavior: smooth;
 }
