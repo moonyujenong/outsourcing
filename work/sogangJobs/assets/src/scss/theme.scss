@@ -2,6 +2,7 @@
 
 @import "header"; //헤더
 @import "footer"; // 푸터
+@import "main"; // 메인
 
 // font
 @font-face {
@@ -92,4 +93,16 @@ button {
 * {
   margin: 0;
   padding: 0;
+}
+
+input,
+button {
+  background-color: transparent;
+  display: block;
+  border: 0;
+
+  &:focus,
+  &:active {
+    outline: 0;
+  }
 }
