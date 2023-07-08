@@ -1,1 +1,49 @@
-<header class="theme-header" id="ui_header">헤더</header>
+<header class="theme-header" id="ui_header">
+  <div class="mobile_head">
+    <h3 class="logo">
+      <img alt="" src="./assets/img/nerd_logo.png" />
+      <button class="menu_btn" type="button">
+        <img alt="" src="./assets/img/icn_hamburger.svg" />
+      </button>
+    </h3>
+
+    <div class="menu">
+      <ul class="menu_list">
+        <li>
+          <a href="#!" class="link">Shop</a>
+        </li>
+        <li>
+          <a href="#!" class="link">Partner</a>
+        </li>
+        <li>
+          <a href="#!" class="link">Education</a>
+        </li>
+        <li>
+          <a href="#!" class="link">Community</a>
+        </li>
+        <li>
+          <a href="#!" class="link">Apply</a>
+        </li>
+        <li>
+          <a href="#!" class="link">
+            <img alt="" src="./assets/img/icn_shopping-bag.svg" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<script type="text/javascript">
+  $(function () {
+    $(".menu_btn").click(function () {
+      $(".menu").toggleClass("on");
+
+      if ($(".menu").hasClass("on")) {
+        $(this).children("img").attr("src", "./assets/img/icn_close.svg");
+      } else {
+        $(this).children("img").attr("src", "./assets/img/icn_hamburger.svg");
+      }
+    });
+  });
+</script>
