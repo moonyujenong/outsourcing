@@ -1,0 +1,148 @@
+.theme-footer {
+  width: 100%;
+  background-color: #f5f5f5;
+
+  .inner {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 17px 10px;
+  }
+
+  .top {
+    border-bottom: 1px solid #b6b6b6;
+    padding-bottom: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    li {
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 14px;
+        background-color: #959595;
+        position: absolute;
+        right: -6px;
+        top: 3px;
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .link {
+    font-size: 12px;
+    font-weight: normal;
+    color: #3d3d3d;
+    display: block;
+  }
+
+  .call {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3e3e3e;
+    line-height: 1;
+    letter-spacing: -0.24px;
+
+    > img {
+      width: 14px;
+      height: 14px;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .bottom {
+    padding-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    > div {
+      display: grid;
+      gap: 10px;
+
+      p {
+        display: block;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1;
+        letter-spacing: -0.18px;
+        color: #8e8e8e;
+        margin: 0;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: -0.18px;
+    color: #8e8e8e;
+    margin: 10px 0 0;
+  }
+
+  .right {
+    text-align: right;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .inner {
+      padding: 25px 22px 21px;
+    }
+
+    .top {
+      padding-bottom: 9px;
+    }
+
+    .bottom {
+      padding-top: 12px;
+
+      > div:nth-child(1) {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .left {
+      gap: 17px;
+
+      > p:nth-child(1) {
+        position: relative;
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          right: -6px;
+          top: 0px;
+          width: 1px;
+          height: 11px;
+          background-color: #959595;
+        }
+      }
+    }
+
+    .copyright {
+      margin: -13px 0 0;
+    }
+  }
+}
