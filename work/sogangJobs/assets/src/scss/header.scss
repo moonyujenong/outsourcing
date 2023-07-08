@@ -14,7 +14,7 @@
     width: 100%;
     margin: 0;
 
-    > img {
+    a > img {
       width: 73px;
       height: 22px;
       object-fit: cover;
@@ -63,5 +63,43 @@
     color: #f5f5f7;
     letter-spacing: -0.2px;
     display: block;
+  }
+
+  .pc_head {
+    display: none;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .mobile_head {
+      display: none;
+    }
+
+    .pc_head {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #262626;
+      background-color: #000;
+    }
+
+    .inner {
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 15px 22px 13px;
+      display: flex;
+      align-items: center;
+      gap: 130px;
+    }
+
+    .logo {
+      width: fit-content;
+    }
+
+    .pc_menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex: 1;
+    }
   }
 }
