@@ -1,0 +1,72 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+  word-break: keep-all;
+  font-family: "Roboto", "THEmpgt", sans-serif !important;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  background-image: url(../img/full-back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html::after, html::before,
+body::after,
+body::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+button:focus, button:active {
+  outline: none;
+}
+
+#wrap {
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#container {
+  -webkit-box-flex: 1;
+      -ms-flex: auto 1;
+          flex: auto 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=theme.css.map */
