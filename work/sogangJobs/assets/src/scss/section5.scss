@@ -1,0 +1,70 @@
+.repair {
+  width: 100vw;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50vw);
+  height: 386px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/repair_bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 10px;
+
+  .text_box {
+    text-align: center;
+
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      color: #fff;
+      letter-spacing: -0.3px;
+      display: block;
+      margin: 0 0 13px;
+    }
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    margin: 0 0 4px;
+  }
+
+  .repair_btn {
+    width: fit-content;
+    margin: 0 auto;
+
+    img {
+      width: 103px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 833px;
+
+    .text_box {
+      p {
+        font-size: 30px;
+        letter-spacing: -0.45px;
+        margin: 0 0 17px;
+      }
+    }
+
+    .title {
+      margin: 0 0 10px;
+      font-size: 60px;
+    }
+
+    .repair_btn {
+      img {
+        width: 136px;
+      }
+    }
+  }
+}
