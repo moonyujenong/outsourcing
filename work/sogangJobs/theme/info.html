@@ -1,0 +1,90 @@
+<div class="info">
+  <div class="inner">
+    <div class="sns_info">
+      <div class="left">
+        <img alt="" src="./assets/img/icn_box-logo.svg" />
+        <p>
+          Nerd is extremely user friendly, <br />
+          easy and well-designed interface <br />
+          platform.
+        </p>
+      </div>
+
+      <div class="right">
+        <ul class="sns_list">
+          <li>
+            <a href="#!" class="facebook">
+              <img alt="facebook" src="./assets/img/icn_facebook.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="instagram">
+              <img alt="instagram" src="./assets/img/icn_instagram.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="git">
+              <img alt="git" src="./assets/img/icn_github.svg" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="detail_menu">
+      <ul class="menu_list">
+        <li>
+          <span class="open_title">
+            PRODUCTS
+            <i class="xi-angle-down-min"></i>
+          </span>
+          <div class="menu_item">
+            <a href="#!" class="menu_link">Shop</a>
+            <a href="#!" class="menu_link">B2B</a>
+            <a href="#!" class="menu_link">Education</a>
+            <a href="#!" class="menu_link">Self-Repair</a>
+          </div>
+        </li>
+        <li>
+          <span class="open_title">
+            COMPANY
+            <i class="xi-angle-down-min"></i>
+          </span>
+          <div class="menu_item">
+            <a href="#!" class="menu_link">About</a>
+            <a href="#!" class="menu_link">Team</a>
+            <a href="#!" class="menu_link">Works</a>
+            <a href="#!" class="menu_link">Partners</a>
+          </div>
+        </li>
+        <li>
+          <span class="open_title">
+            HELP
+            <i class="xi-angle-down-min"></i>
+          </span>
+          <div class="menu_item">
+            <a href="#!" class="menu_link">고객센터</a>
+            <a href="#!" class="menu_link">배송 규칙</a>
+            <a href="#!" class="menu_link">교환, 환불 정책</a>
+            <a href="#!" class="menu_link">불편신고접수</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(function () {
+    $(".menu_list li span").click(function () {
+      var target = $(this).siblings(".menu_item");
+      if (target.hasClass("active")) {
+        $(this).removeClass("active");
+        target.removeClass("active");
+      } else {
+        $(this).addClass("active");
+        target.addClass("active");
+      }
+    });
+  });
+</script>
