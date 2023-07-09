@@ -134,6 +134,43 @@
   margin-right: 5px;
 }
 
+.theme-main .simple_introduce {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.theme-main .simple_introduce p {
+  position: relative;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: -0.23px;
+  margin: 0;
+}
+
+.theme-main .simple_introduce p::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 11px;
+  background-color: #acacac;
+  position: absolute;
+  top: 3.5px;
+  right: -6px;
+}
+
+.theme-main .simple_introduce p:last-child::after {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .theme-main .banner_wrap {
     height: 863px;
@@ -167,6 +204,9 @@
     margin-right: 6px;
     padding: 6px;
     text-align: center;
+  }
+  .theme-main .simple_introduce p {
+    font-size: 15px;
   }
 }
 
