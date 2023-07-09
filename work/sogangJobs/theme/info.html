@@ -76,15 +76,18 @@
 
 <script type="text/javascript">
   $(function () {
-    $(".menu_list li span").click(function () {
-      var target = $(this).siblings(".menu_item");
-      if (target.hasClass("active")) {
-        $(this).removeClass("active");
-        target.removeClass("active");
-      } else {
-        $(this).addClass("active");
-        target.addClass("active");
-      }
-    });
+    var windowWidth = $(window).innerWidth();
+    if (windowWidth < 1024) {
+      $(".menu_list li span").click(function () {
+        var target = $(this).siblings(".menu_item");
+        if (target.hasClass("active")) {
+          $(this).removeClass("active");
+          target.removeClass("active");
+        } else {
+          $(this).addClass("active");
+          target.addClass("active");
+        }
+      });
+    }
   });
 </script>
