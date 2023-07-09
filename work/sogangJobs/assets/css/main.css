@@ -208,6 +208,9 @@
   .theme-main .simple_introduce p {
     font-size: 15px;
   }
+  .theme-main .simple_introduce p::after {
+    top: 5.5px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
