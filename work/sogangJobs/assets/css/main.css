@@ -142,7 +142,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  gap: 12px;
+  gap: 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -164,7 +164,7 @@
   background-color: #acacac;
   position: absolute;
   top: 3.5px;
-  right: -6px;
+  right: -8px;
 }
 
 .theme-main .simple_introduce p:last-child::after {
@@ -205,11 +205,15 @@
     padding: 6px;
     text-align: center;
   }
+  .theme-main .simple_introduce {
+    gap: 21px;
+  }
   .theme-main .simple_introduce p {
     font-size: 15px;
   }
   .theme-main .simple_introduce p::after {
     top: 5.5px;
+    right: -11px;
   }
 }
 

@@ -431,7 +431,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  gap: 12px;
+  gap: 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -453,7 +453,7 @@
   background-color: #acacac;
   position: absolute;
   top: 3.5px;
-  right: -6px;
+  right: -8px;
 }
 
 .theme-main .simple_introduce p:last-child::after {
@@ -494,11 +494,15 @@
     padding: 6px;
     text-align: center;
   }
+  .theme-main .simple_introduce {
+    gap: 21px;
+  }
   .theme-main .simple_introduce p {
     font-size: 15px;
   }
   .theme-main .simple_introduce p::after {
     top: 5.5px;
+    right: -11px;
   }
 }
 
@@ -534,10 +538,13 @@
   font-size: 40px;
   font-weight: 700;
   color: #fff;
-  margin: 0 0 15px;
+  padding: 0 0 10px;
+  border-bottom: 1px solid #ababab;
+  margin: 0;
 }
 
 .more_banner .text_box > span {
+  padding-top: 10px;
   font-size: 14px;
   font-weight: 400;
   color: #fff;
@@ -547,6 +554,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0.03em;
 }
 
 .more_banner .text_box > span p {
@@ -593,10 +604,11 @@
   }
   .more_banner .text_box > h3 {
     font-size: 64px;
-    margin: 0 0 27px;
   }
   .more_banner .text_box > span {
+    padding-top: 18px;
     font-size: 22px;
+    letter-spacing: 0.04em;
   }
   .more_banner .more_btn {
     margin: 27px auto 0;
