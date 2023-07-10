@@ -6,7 +6,7 @@
 
 .introduce .inner {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
   text-align: center;
@@ -90,7 +90,7 @@
   width: fit-content;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 830px) {
   .introduce {
     padding: 77px 0 50px;
   }
@@ -153,7 +153,7 @@
   }
   .introduce .plus_btn {
     position: absolute;
-    right: 22px;
+    right: 82px;
     bottom: 0;
   }
 }

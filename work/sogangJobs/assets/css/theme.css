@@ -36,11 +36,10 @@
 }
 
 .theme-header .menu_btn > img {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+  margin: 0 auto;
 }
 
 .theme-header .menu {
@@ -79,7 +78,7 @@
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 830px) {
   .theme-header .mobile_head {
     display: none;
   }
@@ -249,7 +248,7 @@
   text-align: right;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 830px) {
   .theme-footer .inner {
     padding: 25px 22px 21px;
   }
@@ -461,7 +460,7 @@
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 830px) {
   .theme-main .banner_wrap {
     height: 863px;
   }
@@ -570,9 +569,24 @@
   letter-spacing: -0.21px;
 }
 
-@media screen and (min-width: 1024px) {
+.more_banner .choice {
+  position: relative;
+}
+
+.more_banner .choice img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 5;
+}
+
+@media screen and (min-width: 830px) {
   .more_banner {
-    height: 819px;
+    height: calc(100vw * 819 / 1440);
   }
   .more_banner .text_box > p {
     font-size: 22px;
@@ -597,7 +611,7 @@
 
 .introduce .inner {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
   text-align: center;
@@ -681,7 +695,7 @@
   width: fit-content;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 830px) {
   .introduce {
     padding: 77px 0 50px;
   }
@@ -744,7 +758,7 @@
   }
   .introduce .plus_btn {
     position: absolute;
-    right: 22px;
+    right: 82px;
     bottom: 0;
   }
 }
@@ -887,7 +901,7 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 830px) {
   .eco .inner {
     padding: 98px 22px 115px;
   }
@@ -1007,7 +1021,7 @@
           transform: translateX(-50%);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 830px) {
   .creative .inner {
     padding: 77px 22px;
   }
@@ -1088,9 +1102,9 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 830px) {
   .repair {
-    height: 833px;
+    height: calc(100vw * 833 / 1440);
   }
   .repair .text_box p {
     font-size: 30px;
@@ -1224,7 +1238,7 @@
   border-top: 1px solid #e2e8f0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 830px) {
   .info .inner {
     padding: 149px 22px 12px;
     display: -webkit-box;

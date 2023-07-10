@@ -56,9 +56,9 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 830px) {
   .repair {
-    height: 833px;
+    height: calc(100vw * 833 / 1440);
   }
   .repair .text_box p {
     font-size: 30px;

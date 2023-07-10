@@ -49,7 +49,7 @@
           transform: translateX(-50%);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 830px) {
   .creative .inner {
     padding: 77px 22px;
   }

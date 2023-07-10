@@ -28,10 +28,9 @@
     height: 12px;
 
     > img {
-      width: 100%;
-      height: 100%;
       object-fit: cover;
       display: block;
+      margin: 0 auto;
     }
   }
 
@@ -70,7 +69,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 830px) {
     .mobile_head {
       display: none;
     }

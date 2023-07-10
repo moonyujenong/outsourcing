@@ -45,8 +45,8 @@
     }
   }
 
-  @media screen and (min-width: 1024px) {
-    height: 833px;
+  @media screen and (min-width: 830px) {
+    height: calc(100vw * 833 / 1440);
 
     .text_box {
       p {

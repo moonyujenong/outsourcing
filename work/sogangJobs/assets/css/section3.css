@@ -136,7 +136,7 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 830px) {
   .eco .inner {
     padding: 98px 22px 115px;
   }

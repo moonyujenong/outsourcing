@@ -51,8 +51,22 @@
     letter-spacing: -0.21px;
   }
 
-  @media screen and (min-width: 1024px) {
-    height: 819px;
+  .choice {
+    position: relative;
+
+    img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      z-index: 5;
+    }
+  }
+
+  @media screen and (min-width: 830px) {
+    height: calc(100vw * 819 / 1440);
 
     .text_box {
       > p {

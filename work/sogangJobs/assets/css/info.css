@@ -116,7 +116,7 @@
   border-top: 1px solid #e2e8f0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 830px) {
   .info .inner {
     padding: 149px 22px 12px;
     display: -webkit-box;
