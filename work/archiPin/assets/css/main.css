@@ -1,2 +1,11 @@
+.theme-main {
+  background-color: #f2f7fa;
+}
+
+.theme-main .weekly {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
 /*# sourceMappingURL=main.css.map */
