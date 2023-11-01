@@ -58,6 +58,15 @@ button {
   }
 }
 
+select,
+a {
+  &:focus,
+  &:active {
+    outline: none;
+    cursor: pointer;
+  }
+}
+
 #wrap {
   overflow-x: hidden;
   display: flex;

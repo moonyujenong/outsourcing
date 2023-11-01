@@ -176,7 +176,7 @@
 }
 
 .theme-main .weekly .input_list button {
-  background-color: #58becd;
+  background-color: #b4b4b4;
   padding: 6px;
   display: block;
   margin-top: 15px;
@@ -184,6 +184,10 @@
   font-weight: 500;
   letter-spacing: -0.26px;
   color: #fff;
+}
+
+.theme-main .weekly .input_list button.active {
+  background-color: #58becd;
 }
 
 .theme-main .weekly .content {
@@ -223,11 +227,41 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url() no-repeat center;
+  position: relative;
+  margin: 20px 0;
+  font-size: 12.9vw;
+  font-weight: 500;
+}
+
+.theme-main .weekly .score img {
+  width: 55.2vw;
+}
+
+.theme-main .weekly .score .text_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.theme-main .weekly .score p.big {
+  font-size: 25.9vw;
+  margin-top: -0.4em;
+  margin-left: 8px;
 }
 
 .theme-main .weekly .goal {
-  margin: 17px 0 0;
+  margin: 40px 0 0;
   padding: 8px 7px;
   border-radius: 5px;
   background-color: #f2f7fb;
@@ -267,6 +301,16 @@
   gap: 28px;
 }
 
+.theme-main .weekly .learn_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .theme-main .weekly .learn_box .title {
   color: #333;
   font-size: 13px;
@@ -282,6 +326,9 @@
   width: 100%;
   table-layout: fixed;
   text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .theme-main .weekly .learn_box table tbody th {
@@ -461,6 +508,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 12px;
 }
 
@@ -534,6 +584,268 @@
   background-size: cover;
 }
 
+@media screen and (min-width: 830px) {
+  .theme-main .weekly {
+    padding: 77px 25px;
+  }
+  .theme-main .weekly img.logo {
+    margin-bottom: 13px;
+  }
+  .theme-main .weekly h3.title {
+    font-size: 40px;
+    letter-spacing: -0.8px;
+  }
+  .theme-main .weekly .shadow_box {
+    border-radius: 20px;
+  }
+  .theme-main .weekly .shadow_box.user_info {
+    margin: 40px 0 78px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 24px 22px 28px 51px;
+  }
+  .theme-main .weekly .shadow_box.report .top {
+    padding: 25px 25px 25px 47px;
+  }
+  .theme-main .weekly .shadow_box.report .top > h3 {
+    font-size: 28px;
+    letter-spacing: -0.56px;
+  }
+  .theme-main .weekly .shadow_box.report .top > img {
+    width: 91px;
+  }
+  .theme-main .weekly .info {
+    gap: 20px;
+  }
+  .theme-main .weekly .info > img {
+    width: 90px;
+    height: 90px;
+  }
+  .theme-main .weekly .name_box p:first-child {
+    margin: 0;
+  }
+  .theme-main .weekly .input_place {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .theme-main .weekly .tab_select {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0;
+    padding: 3px 3px 4px;
+  }
+  .theme-main .weekly .tab_select button {
+    max-width: 180px;
+    padding: 3px;
+    font-size: 18px;
+    letter-spacing: -0.36px;
+  }
+  .theme-main .weekly .input_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    gap: 10px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .theme-main .weekly .input_list select {
+    max-width: 180px;
+    font-size: 15px;
+    height: auto;
+    padding: 9px 10px;
+  }
+  .theme-main .weekly .input_list button {
+    margin: 0;
+    padding: 5px 25px;
+    font-size: 18px;
+  }
+  .theme-main .weekly .content {
+    padding: 36px 40px;
+  }
+  .theme-main .weekly .content_title {
+    padding-bottom: 5px;
+    border-width: 2px;
+    font-size: 22px;
+  }
+  .theme-main .weekly .content_title::before {
+    width: 3px;
+    height: 10px;
+    margin-top: -5px;
+  }
+  .theme-main .weekly .report_detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 16px;
+  }
+  .theme-main .weekly .score {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 236px;
+            flex: 0 0 236px;
+    margin: 26px 0 0;
+    font-size: 48px;
+  }
+  .theme-main .weekly .score img {
+    width: 236px;
+  }
+  .theme-main .weekly .score p.big {
+    font-size: 81px;
+  }
+  .theme-main .weekly .goal {
+    margin: 0;
+    padding: 18px 20px;
+    border-radius: 10px;
+  }
+  .theme-main .weekly .goal > p {
+    font-size: 18px;
+    line-height: 30px;
+    /* 166.667% */
+    letter-spacing: -0.36px;
+  }
+  .theme-main .weekly .goal_title {
+    font-size: 19px;
+    margin-bottom: 14px;
+    border-radius: 5px;
+  }
+  .theme-main .weekly .weekly_learn {
+    padding: 39px 40px 114px;
+  }
+  .theme-main .weekly .learn_detail {
+    margin: 48px 0 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .theme-main .weekly .learn_box .title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .theme-main .weekly .learn_box table {
+    border-radius: 16px;
+  }
+  .theme-main .weekly .learn_box table tbody th {
+    padding: 6px;
+    font-size: 18px;
+  }
+  .theme-main .weekly .learn_box table tbody tr td {
+    font-size: 16px;
+    padding: 20px 0 16px;
+  }
+  .theme-main .weekly .learn_box table tbody tr td p {
+    font-size: 22px;
+  }
+  .theme-main .weekly .about_learn {
+    margin: 107px 0 0;
+  }
+  .theme-main .weekly .about_learn .title {
+    font-size: 20px;
+    margin-bottom: 43px;
+  }
+  .theme-main .weekly .about_learn .title img {
+    width: 50px;
+  }
+  .theme-main .weekly .tab_list {
+    background-color: #f7f7f7;
+    gap: 0;
+    border-radius: 100px;
+  }
+  .theme-main .weekly .tab_list li a {
+    padding: 27px;
+    font-size: 22px;
+    letter-spacing: -0.44px;
+  }
+  .theme-main .weekly .about_detail_wrap {
+    width: 100%;
+    max-width: 854px;
+    margin: 30px auto 0;
+    gap: 10px;
+  }
+  .theme-main .weekly .about_detail_inner {
+    padding: 14px 20px;
+    border-radius: 10px;
+  }
+  .theme-main .weekly .question_box {
+    margin: 14px 0 0;
+  }
+  .theme-main .weekly .question_box b,
+  .theme-main .weekly .question_box p {
+    font-size: 18px;
+  }
+  .theme-main .weekly .question_box p {
+    line-height: 30px;
+  }
+  .theme-main .weekly .question_box + .question_box {
+    margin: 25px 0 0;
+  }
+  .theme-main .weekly .voice_learn {
+    margin: 75px 0 82px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .theme-main .weekly .voice_learn img {
+    width: 203px;
+    margin: 0;
+  }
+  .theme-main .weekly .voice_box {
+    margin: 0;
+    max-width: 431px;
+    padding: 10px 44px 29px;
+  }
+  .theme-main .weekly .voice_box .title {
+    font-size: 24px;
+    letter-spacing: -0.48px;
+    margin-bottom: 23px;
+  }
+  .theme-main .weekly .voice_btn {
+    gap: 20px;
+  }
+  .theme-main .weekly .voice_btn button {
+    width: 98px;
+    height: 78px;
+  }
+  .theme-main .weekly .total_review {
+    max-width: 854px;
+    margin: 0 auto;
+    padding: 15px 20px;
+  }
+  .theme-main .weekly .total_review p {
+    font-size: 18px;
+    margin: 13px 0 0;
+    letter-spacing: -0.36px;
+  }
+  .theme-main .feel_label {
+    border-radius: 8px;
+    font-size: 18px;
+    width: 180px;
+  }
+  .theme-main .feel_label.review:after, .theme-main .feel_label.review:before {
+    width: 18px;
+    height: 18px;
+  }
+}
+
 html,
 body {
   width: 100%;
@@ -580,6 +892,13 @@ button {
 
 button:focus, button:active {
   outline: none;
+}
+
+select:focus, select:active,
+a:focus,
+a:active {
+  outline: none;
+  cursor: pointer;
 }
 
 #wrap {

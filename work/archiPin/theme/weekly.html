@@ -28,6 +28,7 @@
           <select name="" class="basic_select" id="">
             <option value="" checked>선택</option>
           </select>
+          <!-- TODO 버튼 활성화 시 클래스 active 추가합니다. -->
           <button class="submit" type="submit">확인</button>
         </div>
       </div>
@@ -45,8 +46,12 @@
         <h3 class="content_title">우리 아이의 현재 영어 수준</h3>
         <div class="report_detail">
           <div class="score">
-            <p style="color: #58becc">Lv.</p>
-            3.8
+            <img alt="score_bg" src="./assets/img/level_bg.png" />
+            <span class="text_box">
+              <p style="color: #58becc">Lv.</p>
+              <p class="big">3</p>
+              .8
+            </span>
           </div>
 
           <div class="goal">
@@ -195,3 +200,22 @@
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  $(function () {
+    $(".tab_select button").click(function () {
+      $(".tab_select button").removeClass("active");
+      $(this).addClass("active");
+    });
+
+    $(".tab_list li a").click(function () {
+      $(".tab_list li a").removeClass("active");
+      $(this).addClass("active");
+    });
+
+    $(".voice_btn button").click(function () {
+      $(".voice_btn button").removeClass("active");
+      $(this).addClass("active");
+    });
+  });
+</script>
