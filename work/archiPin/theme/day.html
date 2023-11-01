@@ -1,0 +1,144 @@
+<div class="day">
+  <div class="inner">
+    <img alt="logo" class="logo" src="./assets/img/logo.svg" />
+    <h3 class="title">우리아이 학습 리포트</h3>
+
+    <div class="user_info shadow_box">
+      <div class="info">
+        <!-- TODO 썸네일 -->
+        <img alt="thumbnail" src="./assets/img/basic_thumbnail.svg" />
+        <span class="name_box">
+          <p>Michael</p>
+          <p>박준호</p>
+        </span>
+      </div>
+
+      <div class="input_place">
+        <div class="tab_select">
+          <button class="first_btn active" type="button">The first day</button>
+          <button class="weekly_btn" type="button">Weekly</button>
+        </div>
+        <div class="input_list">
+          <select name="" class="basic_select" id="">
+            <option value="" checked>선택</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="report shadow_box">
+      <div class="top">
+        <h3 class="report_title">The First Day 학습 리포트</h3>
+        <img alt="logo" src="./assets/img/logo.svg" />
+      </div>
+      <div class="content">
+        <h3 class="content_title">우리 아이의 현재 영어 수준</h3>
+        <div class="report_detail">
+          <div class="score">
+            <img alt="score_bg" src="./assets/img/level_bg.png" />
+            <span class="text_box">
+              <p style="color: #5998ce">Lv.</p>
+              <p class="big">3</p>
+              .8
+            </span>
+          </div>
+
+          <div class="goal">
+            <span class="goal_title">Level 3 학습목표</span>
+            <p>
+              초등학교 3학년, CEFR의 PreA1, GSE의 15-18 수준의 학습 단계로,
+              간단한 인사말을 주고 받고 자신의 이름과 나이를 문장으로 말할 수
+              있으며, 인칭에 따른 be동사의 형태 변화를 알고있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shadow_box weekly_learn">
+      <h3 class="content_title">헬로 루디에서의 첫날, 이런 학습을 했어요!</h3>
+
+      <div class="about_learn">
+        <h3 class="title">
+          <img alt="emoticon" src="./assets/img/emoticon.svg" />
+          이런 내용을 학습했어요!
+        </h3>
+        <ul class="tab_list">
+          <li>
+            <a href="#!" class="tab_btn active">Grammer & Function</a>
+          </li>
+          <li>
+            <a href="#!" class="tab_btn">Vocabulary</a>
+          </li>
+          <li>
+            <a href="#!" class="tab_btn">Function</a>
+          </li>
+        </ul>
+        <div class="about_detail_wrap">
+          <div class="about_detail_inner">
+            <span class="feel_label excellent">Excellent!</span>
+            <div class="question_box">
+              <b class="q">안부를 묻고 안부 인사에 답하는 표현</b>
+              <p class="a">How are you?</p>
+              <p class="a">I'm good.</p>
+            </div>
+          </div>
+          <div class="about_detail_inner">
+            <span class="feel_label good">Good!</span>
+            <div class="question_box">
+              <b class="q">안부를 묻고 안부 인사에 답하는 표현</b>
+              <p class="a">How are you?</p>
+              <p class="a">I'm good.</p>
+            </div>
+            <div class="question_box">
+              <b class="q">안부를 묻고 안부 인사에 답하는 표현</b>
+              <p class="a">How are you?</p>
+              <p class="a">I'm good.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="voice_learn">
+        <img alt="character" src="./assets/img/character.svg" />
+        <div class="voice_box">
+          <h3 class="title">이렇게 대화 했어요!</h3>
+          <div class="voice_btn">
+            <!-- TODO button 태그를 안쓰더라도 클래스명은 동일하게 해주세요. -->
+            <!-- TODO 활성화 시 클래스 active 추가합니다. -->
+            <button class="audio active" type="button" />
+            <button class="audio" type="button" />
+            <button class="audio" type="button" />
+          </div>
+        </div>
+      </div>
+
+      <div class="week_report">
+        <span class="total_report feel_label">주간 리포트</span>
+        <p>
+          매일 조금이라도 학습하는 것이 중요해요. 꾸준히 학습할 수 있도록 지도해
+          주세요.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(function () {
+    $(".tab_select button").click(function () {
+      $(".tab_select button").removeClass("active");
+      $(this).addClass("active");
+    });
+
+    $(".tab_list li a").click(function () {
+      $(".tab_list li a").removeClass("active");
+      $(this).addClass("active");
+    });
+
+    $(".voice_btn button").click(function () {
+      $(".voice_btn button").removeClass("active");
+      $(this).addClass("active");
+    });
+  });
+</script>

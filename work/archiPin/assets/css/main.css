@@ -2,7 +2,8 @@
   background-color: #f2f7fa;
 }
 
-.theme-main .weekly {
+.theme-main .weekly,
+.theme-main .day {
   width: 100%;
   max-width: 1050px;
   margin: 0 auto;
@@ -533,19 +534,25 @@
   background-image: url(../img/audio_on.svg);
 }
 
-.theme-main .total_review {
+.theme-main .total_review,
+.theme-main .week_report {
   border-radius: 10px;
   background-color: #fff6f7;
   padding: 10px;
   min-height: 128px;
 }
 
-.theme-main .total_review p {
+.theme-main .total_review p,
+.theme-main .week_report p {
   margin: 12px 0 0;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: -0.24px;
   color: #555;
+}
+
+.theme-main .week_report {
+  background-color: #f2f7fb;
 }
 
 .theme-main .feel_label {
@@ -569,7 +576,7 @@
   background-color: #f3ad4c;
 }
 
-.theme-main .feel_label.review {
+.theme-main .feel_label.review, .theme-main .feel_label.total_report {
   background-color: #f07577;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,13 +590,29 @@
   padding: 3px 5px;
 }
 
-.theme-main .feel_label.review:after, .theme-main .feel_label.review::before {
+.theme-main .feel_label.review:after, .theme-main .feel_label.review::before, .theme-main .feel_label.total_report:after, .theme-main .feel_label.total_report::before {
   content: "";
   display: block;
   width: 10px;
   height: 10px;
   background-image: url(../img/icon_star.svg);
   background-size: cover;
+}
+
+.theme-main .feel_label.total_report {
+  background-color: #5998ce;
+}
+
+.theme-main .day .tab_select button.active {
+  background-color: #5998ce;
+}
+
+.theme-main .day .shadow_box.report .top {
+  background-color: #5998ce;
+}
+
+.theme-main .day .tab_list li a.active {
+  background-color: #5998ce;
 }
 
 @media screen and (min-width: 830px) {
@@ -834,12 +857,14 @@
     width: 98px;
     height: 78px;
   }
-  .theme-main .total_review {
+  .theme-main .total_review,
+  .theme-main .week_report {
     max-width: 854px;
     margin: 0 auto;
     padding: 15px 20px;
   }
-  .theme-main .total_review p {
+  .theme-main .total_review p,
+  .theme-main .week_report p {
     font-size: 18px;
     margin: 13px 0 0;
     letter-spacing: -0.36px;
@@ -849,7 +874,10 @@
     font-size: 18px;
     width: 180px;
   }
-  .theme-main .feel_label.review:after, .theme-main .feel_label.review:before {
+  .theme-main .feel_label.review, .theme-main .feel_label.total_report {
+    padding: 4px 8px;
+  }
+  .theme-main .feel_label.review:after, .theme-main .feel_label.review:before, .theme-main .feel_label.total_report:after, .theme-main .feel_label.total_report:before {
     width: 18px;
     height: 18px;
   }

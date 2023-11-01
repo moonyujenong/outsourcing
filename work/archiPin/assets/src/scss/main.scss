@@ -1,7 +1,8 @@
 .theme-main {
   background-color: #f2f7fa;
 
-  .weekly {
+  .weekly,
+  .day {
     width: 100%;
     max-width: 1050px;
     margin: 0 auto;
@@ -455,7 +456,8 @@
     }
   }
 
-  .total_review {
+  .total_review,
+  .week_report {
     border-radius: 10px;
     background-color: #fff6f7;
     padding: 10px;
@@ -468,6 +470,10 @@
       letter-spacing: -0.24px;
       color: #555;
     }
+  }
+
+  .week_report {
+    background-color: #f2f7fb;
   }
 
   .feel_label {
@@ -490,7 +496,8 @@
       background-color: #f3ad4c;
     }
 
-    &.review {
+    &.review,
+    &.total_report {
       background-color: #f07577;
       display: flex;
       align-items: center;
@@ -505,6 +512,37 @@
         height: 10px;
         background-image: url(../img/icon_star.svg);
         background-size: cover;
+      }
+    }
+
+    &.total_report {
+      background-color: #5998ce;
+    }
+  }
+
+  .day {
+    .tab_select {
+      button {
+        &.active {
+          background-color: #5998ce;
+        }
+      }
+    }
+    .shadow_box {
+      &.report {
+        .top {
+          background-color: #5998ce;
+        }
+      }
+    }
+
+    .tab_list {
+      li {
+        a {
+          &.active {
+            background-color: #5998ce;
+          }
+        }
       }
     }
   }
@@ -782,7 +820,8 @@
       }
     }
 
-    .total_review {
+    .total_review,
+    .week_report {
       max-width: 854px;
       margin: 0 auto;
       padding: 15px 20px;
@@ -799,7 +838,9 @@
       font-size: 18px;
       width: 180px;
 
-      &.review {
+      &.review,
+      &.total_report {
+        padding: 4px 8px;
         &:after,
         &:before {
           width: 18px;
