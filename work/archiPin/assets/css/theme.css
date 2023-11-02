@@ -616,7 +616,143 @@
   background-color: #5998ce;
 }
 
+.theme-main .learn_time {
+  margin: 24px 0 0;
+}
+
+.theme-main .learn_time .left {
+  position: relative;
+  text-align: center;
+}
+
+.theme-main .learn_time .left > img {
+  width: 118px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin: 0 auto 23px;
+}
+
+.theme-main .learn_time .left span {
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 12px);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+  color: #5998ce;
+}
+
+.theme-main .learn_time .right {
+  text-align: center;
+}
+
+.theme-main .learn_time .right .title {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: #5998ce;
+  margin-bottom: 9px;
+}
+
+.theme-main .time_text p {
+  margin: 4px 0 0;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: -0.759px;
+  color: #111;
+  line-height: 35px;
+}
+
+.theme-main span.crest,
+.theme-main span.word {
+  display: block;
+  background: url(../img/green_arrow.svg) no-repeat;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: -0.18px;
+  color: #fff;
+  width: 100%;
+  text-align: right;
+  background-size: 144px 30px;
+  margin: 9px auto 0;
+  padding-right: 20px;
+  max-width: 144px;
+  height: 30px;
+}
+
+.theme-main span.crest p,
+.theme-main span.word p {
+  font-size: 18px;
+  margin-right: 1px;
+  display: inline-block;
+  vertical-align: sub;
+}
+
+.theme-main span.crest + span.word {
+  margin: 2px auto 0;
+}
+
+.theme-main span.word {
+  background-image: url(../img/orange_arrow.svg);
+}
+
 @media screen and (min-width: 830px) {
+  .theme-main .day .goal {
+    min-height: 206px;
+  }
+  .theme-main .day .about_learn {
+    margin-top: 53px;
+  }
+  .theme-main span.crest + span.word {
+    margin: 7px 0 0;
+  }
+  .theme-main .learn_time {
+    margin: 57px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 46px;
+  }
+  .theme-main .learn_time .left > img {
+    width: 236px;
+    margin: 0;
+  }
+  .theme-main .learn_time .left span {
+    font-size: 24px;
+  }
+  .theme-main .learn_time .right .title {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+  .theme-main span.crest,
+  .theme-main span.word {
+    width: 294px;
+    max-width: 294px;
+    height: 60px;
+    background-size: 294px 60px;
+    padding-right: 41px;
+    line-height: 53px;
+    font-size: 18px;
+  }
+  .theme-main span.crest p,
+  .theme-main span.word p {
+    font-size: 36px;
+    margin-right: 5px;
+    vertical-align: baseline;
+  }
+  .theme-main .time_text p {
+    font-size: 76px;
+    line-height: 65px;
+  }
   .theme-main .weekly {
     padding: 77px 25px;
   }

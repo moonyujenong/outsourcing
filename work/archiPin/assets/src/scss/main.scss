@@ -547,7 +547,153 @@
     }
   }
 
+  .learn_time {
+    margin: 24px 0 0;
+
+    .left {
+      position: relative;
+      text-align: center;
+
+      > img {
+        width: 118px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto 23px;
+      }
+
+      span {
+        position: absolute;
+        left: 50%;
+        top: calc(50% + 12px);
+        transform: translate(-50%, -50%);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: -0.24px;
+        color: #5998ce;
+      }
+    }
+
+    .right {
+      text-align: center;
+
+      .title {
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: -0.3px;
+        color: #5998ce;
+        margin-bottom: 9px;
+      }
+    }
+  }
+
+  .time_text {
+    p {
+      margin: 4px 0 0;
+      font-size: 38px;
+      font-weight: 700;
+      letter-spacing: -0.759px;
+      color: #111;
+      line-height: 35px;
+    }
+  }
+
+  span.crest,
+  span.word {
+    display: block;
+    background: url(../img/green_arrow.svg) no-repeat;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: -0.18px;
+    color: #fff;
+    width: 100%;
+    text-align: right;
+    background-size: 144px 30px;
+    margin: 9px auto 0;
+    padding-right: 20px;
+    max-width: 144px;
+    height: 30px;
+
+    p {
+      font-size: 18px;
+      margin-right: 1px;
+      display: inline-block;
+      vertical-align: sub;
+    }
+  }
+
+  span.crest + span.word {
+    margin: 2px auto 0;
+  }
+
+  span.word {
+    background-image: url(../img/orange_arrow.svg);
+  }
+
   @media screen and (min-width: 830px) {
+    .day {
+      .goal {
+        min-height: 206px;
+      }
+
+      .about_learn {
+        margin-top: 53px;
+      }
+    }
+
+    span.crest + span.word {
+      margin: 7px 0 0;
+    }
+
+    .learn_time {
+      margin: 57px 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 46px;
+
+      .left {
+        > img {
+          width: 236px;
+          margin: 0;
+        }
+
+        span {
+          font-size: 24px;
+        }
+      }
+
+      .right {
+        .title {
+          font-size: 30px;
+          margin-bottom: 18px;
+        }
+      }
+    }
+
+    span.crest,
+    span.word {
+      width: 294px;
+      max-width: 294px;
+      height: 60px;
+      background-size: 294px 60px;
+      padding-right: 41px;
+      line-height: 53px;
+      font-size: 18px;
+
+      p {
+        font-size: 36px;
+        margin-right: 5px;
+        vertical-align: baseline;
+      }
+    }
+
+    .time_text {
+      p {
+        font-size: 76px;
+        line-height: 65px;
+      }
+    }
+
     .weekly {
       padding: 77px 25px;
     }
